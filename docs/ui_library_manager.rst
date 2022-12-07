@@ -12,7 +12,7 @@ Rapid look at the main panel buttons:
 
 * 1. Help Button:
 
-   - This is the tooltip for the Help button in the main panel
+   * This is the tooltip for the Help button in the main panel
 
 * 2. Library Selector (Drop-down menu):
 
@@ -21,3 +21,32 @@ Rapid look at the main panel buttons:
 * 3. Category Selector (Drop-down Menu):
 
    - This allows you to select the category (Each library will have its own category)
+
+* 4. Search category by entering text
+
+   - This allows you to search for a category by typing the name of the category
+
+* 5. Bakcground Selector (Icons Preview):
+
+   - This allows you to select the background (Each library will have its own background), a pop-up window will appear with the list of preview backgrounds
+
+* 6. UP-DOWN/LEFT-RIGHT Arrows:
+
+   - Up/Down arrows allow you to scroll through the list of categories
+   - Left/Right arrows allow you to scroll through the list of backgrounds (Into the selected category)
+
+* 7. Force reload icons:
+
+   - If the preview is not loaded correctly, this allows you to reload the preview
+
+* 8. Options Button:
+
+ - This button opens the Blender preferences window and goes directly to the "Options" section of HDRI Maker
+
+* 9. Search Background by entering text
+
+   - This allows you to search for a background by typing the name of the background (It work with the tag Restrictions if you need)
+
+* 10. Material Info Button:
+
+   - This button opens a menu with the information of the active material in the preview, you can see author / license / also modify the tags
