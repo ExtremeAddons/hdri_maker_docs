@@ -11,8 +11,7 @@ Welcome to HDRi Maker's documentation!
    :caption: Contents:
 
    how_to_install
-
-
+   ui_library_manager
 
 
 Indices and tables

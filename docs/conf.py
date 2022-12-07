@@ -12,6 +12,10 @@ copyright = '2022, Andrea Donati (Andrew_D)'
 author = 'Andrea Donati (Andrew_D)'
 release = '3.0.100'
 
+import os, sys
+
+sys.path.insert(0, os.path.abspath('../..'))
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
