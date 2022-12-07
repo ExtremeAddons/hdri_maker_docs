@@ -1,7 +1,7 @@
 Main Panel (Library Manager)
 ============================
 
-Rapid look at the main panel buttons:
+Quick overview of the Main Panel:
 -------------------------------------
 
 .. image:: _static/_images/main_panel/main_panel_legend.png
@@ -50,3 +50,20 @@ Rapid look at the main panel buttons:
 * 10. Material Info Button:
 
    - This button opens a menu with the information of the active material in the preview, you can see author / license / also modify the tags
+
+* 11. Tag Search Button:
+
+   - This button expands the menu where you can enter the tags to filter what to display in the preview and what not
+
+* 12. Remove Button:
+
+   - This button removes the world background from the scene (Press Shift+Click to remove completely the world background)
+
+* 13. Add Button:
+
+   - This button adds the selected background to the scene, (Press Shift+Click to importing an external background image file)
+
+* 14. Material Version Selctor:
+
+    - If in the library there are different versions of the same material, this selection allows you to choose which version to load (Press Add to confirm)
+
