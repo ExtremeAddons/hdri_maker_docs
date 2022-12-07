@@ -8,8 +8,6 @@ Rapid look at the main panel buttons:
     :width: 800
     :alt: Main Panel
 
-
-
 .. enumerate:
 
 * 1. Help Button:
