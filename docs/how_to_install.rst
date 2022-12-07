@@ -14,11 +14,11 @@ Step 1: Download Libraries
 
 
 
-.. image:: images/copertina_youtube_con_tanya.jpg
+.. image:: _images/copertina_youtube_con_tanya.jpg
     :width: 400
     :alt: Alternative text
 
-.. image:: ./images/copertina_youtube_con_tanya.jpg
+.. image:: ./_images/copertina_youtube_con_tanya.jpg
     :width: 400
     :alt: Alternative text
 
