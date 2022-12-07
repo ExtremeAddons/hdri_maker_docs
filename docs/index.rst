@@ -10,7 +10,7 @@ Welcome to HDRi Maker's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   summary
+   Installation
 
 
 
