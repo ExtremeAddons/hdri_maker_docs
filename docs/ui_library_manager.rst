@@ -25,13 +25,22 @@ Quick overview of the Main Panel:
 * 4. Search category by entering text
 
    - This allows you to search for a category by typing the name of the category
+
+
 .. image:: _static/_images/main_panel/search_category_dropdown.png
-    :width: 800
+    :width: 400
+    :align: center
     :alt: Main Panel
 
 * 5. Bakcground Selector (Icons Preview):
 
    - This allows you to select the background (Each library will have its own background), a pop-up window will appear with the list of preview backgrounds
+
+.. image:: _static/_images/main_panel/preview_icons_popup.png
+    :width: 400
+    :align: center
+    :alt: Main Panel
+
 
 * 6. UP-DOWN/LEFT-RIGHT Arrows:
 
@@ -57,6 +66,12 @@ Quick overview of the Main Panel:
 * 11. Tag Search Button:
 
    - This button expands the menu where you can enter the tags to filter what to display in the preview and what not
+
+
+.. image:: _static/_images/main_panel/tag_search.png
+    :width: 400
+    :align: center
+    :alt: Main Panel
 
 * 12. Remove Button:
 
