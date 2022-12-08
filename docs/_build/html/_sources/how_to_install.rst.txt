@@ -20,8 +20,7 @@ Step 1: Download Libraries
 .. Si può usare _static/ e anche ./_static/ per le immagini
 
 .. image:: _static/_images/installation/copertina_youtube_con_tanya.jpg
-    :scale: 100%
-    :align: center
+    :width: 800
     :alt: Main Panel
 
 

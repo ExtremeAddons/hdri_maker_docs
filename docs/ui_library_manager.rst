@@ -25,6 +25,9 @@ Quick overview of the Main Panel:
 * 4. Search category by entering text
 
    - This allows you to search for a category by typing the name of the category
+.. image:: _static/_images/main_panel/search_category_dropdown.png
+    :width: 800
+    :alt: Main Panel
 
 * 5. Bakcground Selector (Icons Preview):
 
