@@ -69,7 +69,7 @@ Quick overview of the Main Panel:
 
 
 .. image:: _static/_images/main_panel/tag_search.png
-    :width: 400
+    :width: 200
     :align: center
     :alt: Main Panel
 
