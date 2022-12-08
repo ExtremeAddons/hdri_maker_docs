@@ -1,5 +1,4 @@
-Lumache
-=======
+HDRi Maker Addon for Blender
+============================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers that
-creates recipes mixing random ingredients.
+HDRi Maker is a powerful addon for Blender.
