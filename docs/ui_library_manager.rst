@@ -32,7 +32,7 @@ Quick overview of the Main Panel:
     :align: center
     :alt: Main Panel
 
-* 5. Bakcground Selector (Icons Preview):
+* 5. Background Selector (Icons Preview):
 
    - This allows you to select the background (Each library will have its own background), a pop-up window will appear with the list of preview backgrounds
 
@@ -69,7 +69,7 @@ Quick overview of the Main Panel:
 
 
 .. image:: _static/_images/main_panel/tag_search.png
-    :width: 200
+    :width: 300
     :align: center
     :alt: Main Panel
 
@@ -81,7 +81,7 @@ Quick overview of the Main Panel:
 
    - This button adds the selected background to the scene, (Press Shift+Click to importing an external background image file)
 
-* 14. Material Version Selctor:
+* 14. Material Version Selector:
 
     - If in the library there are different versions of the same material, this selection allows you to choose which version to load (Press Add to confirm)
 

@@ -12,6 +12,7 @@ Welcome to HDRi Maker's documentation!
 
    how_to_install
    ui_library_manager
+   dome_projection_menu
 
 
 Indices and tables
