@@ -1,6 +1,11 @@
 Dome Projection
 ===============
 
+.. image:: _static/_images/dome_projection/dome_projection_example_no_wireframe_01.png
+    :width: 800
+    :align: center
+    :alt: Main Panel
+
 Introduction:
 -------------
 
@@ -12,7 +17,12 @@ with terrain. The terrain can also be made irregular through the features includ
 In addition there are various types of dome, including the newest "Cube" dome that allows you to be modified through
 the hook!
 
-Welcome to the Dome Projection Menu!
+**Welcome to the Dome Projection Menu!**
+
+.. image:: _static/_images/dome_projection/dome_projection_example_wireframe_01.png
+    :width: 800
+    :align: center
+    :alt: Main Panel
 
 
 Choose/Add/Remove Dome:
