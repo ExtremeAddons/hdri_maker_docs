@@ -6,13 +6,16 @@
 Welcome to HDRi Maker's documentation!
 ======================================
 
+
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents:
+   :maxdepth: 4
+   :caption: Sections:
 
    how_to_install
    ui_library_manager
    dome_projection_menu
+   volumetric_menu
+
 
 
 Indices and tables

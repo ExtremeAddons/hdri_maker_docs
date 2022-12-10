@@ -1,0 +1,10 @@
+Volumetric
+==========
+
+This section of the addon is dedicated to the creation of a Volumetric environment, ie an environment with a simulation
+of "Fog" or "Dust" in the air. This type of effect is very used in films and video games to create a more realistic atmosphere,
+especially if used with adequate lighting (See the "Lights" section ..TODO for more information).
+
+
+
+

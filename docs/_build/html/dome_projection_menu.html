@@ -28,6 +28,7 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
             <a href="index.html" class="icon icon-home"> HDRi Maker
+            <img src="_static/exa_logo_orange_512.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -37,7 +38,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Sections:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="how_to_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ui_library_manager.html">Main Panel (Library Manager)</a></li>
@@ -45,12 +46,45 @@
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#choose-add-remove-dome">Choose/Add/Remove Dome:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#add-dome">1. Add Dome</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#remove-dome">2. Remove Dome:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#center-view-in-dome">3. Center View In Dome:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dome-type">4. Dome Type:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-dome">2. Remove Dome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#center-view-in-dome">3. Center View In Dome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dome-type">4. Dome Type</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dome-shape"># Dome (Shape)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cube-shape"># Cube (Shape)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cylinder-shape"># Cylinder (Shape)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#dome">1. Dome:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dome-properties">Dome Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hide-dome">1. Hide Dome:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hide-reflection-plane">2. Hide Reflection Plane:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#display-wire">3. Display Wire:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scale-dome">4. Scale Dome:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dome-hooks">Dome Hooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-remove-hooks">1. Add/Remove Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hide-hooks">2. Hide Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hook-size">3. Hook Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expand-hooks">4. Expand Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hooks-type">5. Hooks Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dome-wrap">Dome Wrap</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wrap-button">1. Wrap Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wrap-objects-list">2. Wrap Objects List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-wrap-object">3. Remove Wrap Object:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wrap-object-name">4. Wrap Object Name:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#negative-positive-wrap">5. Negative / Positive Wrap:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toggle-object-visibility">6. Toggle Object Visibility:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unwrap-all">7. Unwrap All</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subdivision-level">8. Subdivision Level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smooth-factor">9. Smooth Factor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smooth-iterations">10. Smooth Iterations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ground-material">Ground Material</a></li>
 </ul>
 </li>
 </ul>
@@ -81,7 +115,9 @@
              
   <div class="section" id="dome-projection">
 <h1>Dome Projection<a class="headerlink" href="#dome-projection" title="Permalink to this heading"></a></h1>
-<a class="reference internal image-reference" href="_images/dome_projection_example_no_wireframe_01.png"><img alt="Dome Without Wireframe" class="align-center" src="_images/dome_projection_example_no_wireframe_01.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<img alt="Dome Without Wireframe" src="_images/dome_projection_example_no_wireframe_01.png" />
+</div>
 <div class="section" id="introduction">
 <h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>The projection of an HDR/EXR or other formats on a dome is a great formula to work in a photo-realistic environment.
@@ -91,10 +127,14 @@ So the dome Projection is a powerful function because it projects the image on a
 with terrain. The terrain can also be made irregular through the features included in this menu.
 In addition there are various types of dome, including the newest “Cube” dome that allows you to be modified through
 the hook!</p>
-<p><strong>Welcome to the Dome Projection Menu!</strong></p>
-<a class="reference internal image-reference" href="_images/dome_projection_example_wireframe_01.png"><img alt="Dome With Wireframe" class="align-center" src="_images/dome_projection_example_wireframe_01.png" style="width: 800px;" /></a>
+<p class="centered">
+<strong><strong>Welcome to the Dome Projection Menu!</strong></strong></p><div class="figure align-center">
+<img alt="Dome With Wireframe" src="_images/dome_projection_example_wireframe_01.png" />
+</div>
 <p><strong>The Dome Projection menu is presented as you see in this image, it’s composed of 7 submenus, which we will see more down</strong></p>
-<a class="reference internal image-reference" href="_images/dome_projection_panel_01.png"><img alt="Main Panel" class="align-center" src="_images/dome_projection_panel_01.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/dome_projection_panel_01.png"><img alt="Dome Projection Panel" src="_images/dome_projection_panel_01.png" style="width: 304.0px; height: 351.20000000000005px;" /></a>
+</div>
 </div>
 <div class="section" id="choose-add-remove-dome">
 <h2>Choose/Add/Remove Dome:<a class="headerlink" href="#choose-add-remove-dome" title="Permalink to this heading"></a></h2>
@@ -102,43 +142,344 @@ the hook!</p>
 So, before adding a dome, make sure you have added a background through the “Add” button from the main HDRi Maker panel,
 or you can also import one from your HDR/EXR background gallery (Even if it is not good practice, it will also accept
 PNG, JPG, BMP, and all image formats accepted by blender)</p>
-<p>1 :ref:’_target’</p>
-<a class="reference internal image-reference" href="_images/dome_add_remove_submenu.png"><img alt="Main Panel" class="align-center" src="_images/dome_add_remove_submenu.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/dome_add_remove_submenu.png"><img alt="Main Panel" src="_images/dome_add_remove_submenu.png" style="width: 306.40000000000003px; height: 352.8px;" /></a>
+</div>
 <div class="section" id="add-dome">
-<span id="target"></span><h3>1. Add Dome<a class="headerlink" href="#add-dome" title="Permalink to this heading"></a></h3>
+<h3>1. Add Dome<a class="headerlink" href="#add-dome" title="Permalink to this heading"></a></h3>
 <p>Before continuing, make sure you have added a background through the “Add” button from the HDRi Maker main panel.</p>
 <p>Choose a dome from the N4 property (Shown in the previous image) and click on “Add Dome” to add it to the scene.
 This button, in addition to adding a new dome, also has the function of replacing the one already present in the scene
 (if present) with the one chosen.</p>
-<p><strong>Note:</strong> The dome needs an image to load inside it, at the moment it only works if the scene has a background with an image
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The dome needs an image to load inside it, at the moment it only works if the scene has a background with an image
 inside it. It doesn’t matter what image, it will understand it by itself, through the node tree of the World material,
 which image to load inside the dome. If the world background is not of type HDRi Maker, it doesn’t matter, the first
 Environment image found inside the World will be taken.</p>
+</div>
 <p>In short, if there are more than 1 Environment image in the world shader, the first one found will be taken and used for the dome.</p>
 </div>
 <div class="section" id="remove-dome">
-<h3>2. Remove Dome:<a class="headerlink" href="#remove-dome" title="Permalink to this heading"></a></h3>
+<h3>2. Remove Dome<a class="headerlink" href="#remove-dome" title="Permalink to this heading"></a></h3>
 <p>The “Remove” button, simply removes the dome present in the scene and nothing more</p>
 </div>
 <div class="section" id="center-view-in-dome">
-<h3>3. Center View In Dome:<a class="headerlink" href="#center-view-in-dome" title="Permalink to this heading"></a></h3>
+<h3>3. Center View In Dome<a class="headerlink" href="#center-view-in-dome" title="Permalink to this heading"></a></h3>
 <p>This small button, serves to center the view at the center of the dome (We found it very useful in many situations)</p>
 </div>
 <div class="section" id="dome-type">
-<h3>4. Dome Type:<a class="headerlink" href="#dome-type" title="Permalink to this heading"></a></h3>
+<h3>4. Dome Type<a class="headerlink" href="#dome-type" title="Permalink to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To change the dome, press the “Add Dome” button (see above)</p>
+</div>
 <p>This is the interesting part, here you can choose the type of Dome you want to use, currently there are 3 types of Dome, namely:</p>
-</div>
-</div>
-<div class="section" id="dome">
-<h2>1. Dome:<a class="headerlink" href="#dome" title="Permalink to this heading"></a></h2>
+<div class="section" id="dome-shape">
+<h4># Dome (Shape)<a class="headerlink" href="#dome-shape" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><p>Classic Dome, This dome is interesting and is the most classic of domes, It has a grid on the ground that allows
-to do the Wrap (Explained later here) ..TODO
+to do the Wrap (Explained later here: <a class="reference internal" href="#dome-wrap"><span class="std std-ref">Dome Wrap</span></a>)
 It can be scaled, and thanks to the HDRi Maker node system, the projection can be set, scaling the mapping of the ground,
 in order to have a larger or smaller ground, or smaller, depending on your needs.
 It is also possible to modify the mapping of the sky part, in order to be able to set the projection as best as possible.</p>
 <p>All this is explained better in the “Dome Projection Vector” section ..TODO</p>
+<a class="reference internal image-reference" href="_images/dome_dome_shape_01.png"><img alt="Main Panel" class="align-center" src="_images/dome_dome_shape_01.png" style="width: 400px;" /></a>
 </div></blockquote>
+</div>
+<div class="section" id="cube-shape">
+<h4># Cube (Shape)<a class="headerlink" href="#cube-shape" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><p>This is the new dome from version 3.0.100, it is a cube that can be modified through the hook, in order to have a more irregular shape.
+It is also possible to modify the mapping of the sky part, in order to be able to set the projection as best as possible.</p>
+<a class="reference internal image-reference" href="_images/dome_cube_shape_01.png"><img alt="Main Panel" class="align-center" src="_images/dome_cube_shape_01.png" style="width: 400px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="cylinder-shape">
+<h4># Cylinder (Shape)<a class="headerlink" href="#cylinder-shape" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><p>This is the new dome from version 3.0.100, it is a cylinder that can be modified through the hook, in order to have a more irregular shape.
+It is also possible to modify the mapping of the sky part, in order to be able to set the projection as best as possible.</p>
+<a class="reference internal image-reference" href="_images/dome_cylinder_shape_01.png"><img alt="Main Panel" class="align-center" src="_images/dome_cylinder_shape_01.png" style="width: 400px;" /></a>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All domes have a grid on the ground that can be modified through custom objects (Wrap) Here <a class="reference internal" href="#dome-wrap"><span class="std std-ref">Dome Wrap</span></a>, this allows you to create much more realistic grounds,
+and with much more complex deformations. In the following chapters the interface of the Wrap is explained.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dome-properties">
+<h2>Dome Properties<a class="headerlink" href="#dome-properties" title="Permalink to this heading"></a></h2>
+<p>The Submenu “Dome Properties” is designed to modify some properties of the dome:</p>
+<a class="reference internal image-reference" href="_images/dome_properties_01.png"><img alt="Main Panel" class="align-center" src="_images/dome_properties_01.png" style="width: 500px;" /></a>
+<div class="section" id="hide-dome">
+<h3>1. Hide Dome:<a class="headerlink" href="#hide-dome" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>Hides the dome, in order to work better (If necessary), this allows you to keep all the settings chosen,
+so when you want to work with the dome again, just click on this button again to make it reappear.</p>
+</div></blockquote>
+</div>
+<div class="section" id="hide-reflection-plane">
+<h3>2. Hide Reflection Plane:<a class="headerlink" href="#hide-reflection-plane" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>The dome by default, has a reflection plane applied to its ground, this allows you to have realistic reflections
+on the ground (If necessary) the reflection plane is only necessary when using Eevee Render, if you use Cycles Render
+it is possible to disable it, so as not to display it.</p>
+</div></blockquote>
+<div class="figure align-center" id="id3">
+<img alt="Main Panel" src="_images/show_reflection_plane_01.png" />
+<p class="caption"><span class="caption-text">The 3d model (Mei Posed 001 - Female Walking Business Model) is licensed CC Attribution, comes from sketchfab, and was made by “Renderpeople” the link here: <a class="reference external" href="https://sketchfab.com/3d-model">https://sketchfab.com/3d-model</a></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<div class="legend">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The reflection plane follows the scale of the dome, it will always be the right size to adapt to the size
+of the ground of the dome. (If Hooks are used, the reflection plane will also follow the changes made with Hooks) ..TODO</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="display-wire">
+<h3>3. Display Wire:<a class="headerlink" href="#display-wire" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This option allows you to display the wireframe of the dome, This could be useful to understand the real mesh
+of the dome, and to understand how the Wrap behaves (Explained later here <a class="reference internal" href="#dome-wrap"><span class="std std-ref">Dome Wrap</span></a>)
+It is also very useful to adjust the vectors of the mapping of the dome material, especially during the use of the dome
+Cube or Cylinder.</p>
+<div class="figure align-center">
+<img alt="Main Panel" src="_images/display_wire_option_01.png" />
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To change the intensity of the wire, refer to the native Blender menu “Viewport Overlays” here below the image:</p>
+</div>
+<div class="figure align-center" id="id4">
+<img alt="Main Panel" src="_images/viewport_overlay_blender_01.png" />
+<p class="caption"><span class="caption-text">Example of wireframe settings modification</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="scale-dome">
+<h3>4. Scale Dome:<a class="headerlink" href="#scale-dome" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>Scale dome, serves to scale the dome in size.
+If you have applied the Wrap (Explained later here: <a class="reference internal" href="#dome-wrap"><span class="std std-ref">Dome Wrap</span></a>) then the wrap will scale with the dome, so as to
+always keep the same proportional size to the dome.
+If you are using the “Ground” Material (Explained later here) ..TODO then the objects to which you have applied the “Ground” material
+will scale with the dome, so as to always keep the same proportional size to the dome.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Light studio is not scaled with the dome at the moment</p>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="dome-hooks">
+<h2>Dome Hooks<a class="headerlink" href="#dome-hooks" title="Permalink to this heading"></a></h2>
+<div class="figure align-center">
+<img alt="Main Panel" src="_images/hooks_subpanel_01.png" />
+</div>
+<p>Dome Hooks is a feature introduced in version 3.0.100, It allows you to apply 25 Hooks to the dome plane, they allow you
+to modify the shape of the dome perimeter, in order to adapt it as best as possible according to the HDR scene in which
+you are. This allows you to make the scene in the dome even more realistic than before Here below an example image:</p>
+<div class="figure align-center" id="id5">
+<img alt="Main Panel" src="_images/parking_hooks_01.png" />
+<p class="caption"><span class="caption-text"><strong>In this image we see a dome of type “Cube”, Hooks have been used to modify the shape of the dome perimeter,
+This makes everything look much more realistic and aligned to the geometries of the HDR image</strong></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</div>
+<div class="figure align-center" id="id6">
+<img alt="Main Panel" src="_images/parking_hooks_wireframe_01.png" />
+<p class="caption"><span class="caption-text"><strong>In this image we see the same scene from a different angle, with the Hooks that work on the meshes of the dome,
+They have been positioned as best as possible to adapt to the proposed image</strong></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</div>
+<div class="section" id="add-remove-hooks">
+<h3>1. Add/Remove Hooks<a class="headerlink" href="#add-remove-hooks" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This button allows you to add or remove hooks, it is possible to add up to 25 hooks, and to remove them all at once.
+The hooks are applied to the dome plane, and are used to modify the shape of the dome perimeter, in order to adapt it
+as best as possible according to the HDR scene in which you are. This allows you to make the scene in the dome even
+more realistic than before.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Hooks currently work only with domes of type “Cube” and “Cylinder”</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="hide-hooks">
+<h3>2. Hide Hooks<a class="headerlink" href="#hide-hooks" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This checkbox allows you to hide the hooks, in order to work better (If necessary), this allows you to keep the hooks
+in place, so when you want to work with the hooks again, just click on this button again to make them reappear.</p>
+</div></blockquote>
+</div>
+<div class="section" id="hook-size">
+<h3>3. Hook Size<a class="headerlink" href="#hook-size" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This slider allows you to modify the size of the hooks, in order to make more confortable the work with the hooks.
+Big Hooks = More visible = More confortable to work with (If necessary)</p>
+</div></blockquote>
+</div>
+<div class="section" id="expand-hooks">
+<h3>4. Expand Hooks<a class="headerlink" href="#expand-hooks" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This slider allows you to do a kind of scale on the distance between the Hooks, in this way it is possible
+to expand or contract the distance of the hooks from the center of the dome (Uniformly).
+This differs from the slider “Dome Size” Since the projection of the image on the dome, does not adapt as in the
+case of the dome size, on the contrary, it allows you to adapt the geometry to the projected image as best as possible.</p>
+</div></blockquote>
+</div>
+<div class="section" id="hooks-type">
+<h3>5. Hooks Type<a class="headerlink" href="#hooks-type" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This dropdown menu allows you to choose the type of hooks to use. They will be changed simultaneously
+once chosen in the dropdown menu</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="dome-wrap">
+<span id="id1"></span><h2>Dome Wrap<a class="headerlink" href="#dome-wrap" title="Permalink to this heading"></a></h2>
+<p>Dome Wrap is a very powerful tool that uses Blender modifiers to create real displacement in the mesh of the ground of the dome
+(All types of dome present in HDRi Maker support the wrap).</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/wrap_submenu_01.png"><img alt="Main Panel" src="_images/wrap_submenu_01.png" style="width: 556.8000000000001px; height: 583.2px;" /></a>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once the wrap has been added to an object, if you intend to scale the dome, no problem, the wraped object(s) will
+scale with the dome, so as to always keep the same proportional size to the dome.</p>
+</div>
+<div class="figure align-center" id="id7">
+<img alt="Main Panel" src="_images/wrap_in_construction_site_01.png" />
+<p class="caption"><span class="caption-text">In this example the wrap has been applied to various objects generated with “A.N.T. Landscape” an addon already present in Blender</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</div>
+<div class="figure align-center" id="id8">
+<img alt="Main Panel" src="_images/wrap_in_construction_site_wireframe_01.png" />
+<p class="caption"><span class="caption-text">Here we have the same scene as before, with wireframe active, we can also see some “boxes” they are actually Landscapes
+generated with the “A.N.T. Landscape” addon and that have been applied to the dome ground as Wrap objects</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>I Suggest to activate the addon already present in Blender “A.N.T. Landscape”, From Blender:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Go to the “Edit” menu</p></li>
+<li><p>Select “Preferences”</p></li>
+<li><p>Select the “Addons” tab</p></li>
+<li><p>Search for “A.N.T. Landscape”</p></li>
+<li><p>Activate the addon</p></li>
+</ol>
+</div></blockquote>
+<p>Edit -&gt; Preferences -&gt; Addons -&gt; Search “A.N.T. Landscape” -&gt; Activate</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/ant_landscape_activation_01.png"><img alt="Main Panel" src="_images/ant_landscape_activation_01.png" style="width: 760.8000000000001px; height: 490.40000000000003px;" /></a>
+</div>
+</div>
+<div class="section" id="wrap-button">
+<h3>1. Wrap Button<a class="headerlink" href="#wrap-button" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>Before pressing Wrap, make sure you have a Mesh type object selected (An object created with A.N.T. Landscape
+is perfect for this purpose) You can also have more objects selected and press Wrap, in this case all the
+selected objects will become Wrap objects, and will be visible in the list (See in the next point 2)
+Now the ground of the dome is able to adapt to the shape of these objects, in this way it is possible to create
+much more realistic and detailed scenes.</p>
+</div></blockquote>
+</div>
+<div class="section" id="wrap-objects-list">
+<h3>2. Wrap Objects List<a class="headerlink" href="#wrap-objects-list" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This list shows all the objects that have been applied as Wrap objects, in this way it is possible to remove them
+from the list, or to modify their settings (Only the wrap objects will be in this list)
+The arrows on the left are used to select the wrap object in the scene</p>
+</div></blockquote>
+</div>
+<div class="section" id="remove-wrap-object">
+<h3>3. Remove Wrap Object:<a class="headerlink" href="#remove-wrap-object" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This button removes the wrap from the object in the list, so the object will return to the previous state to the Wrap.</p>
+</div></blockquote>
+</div>
+<div class="section" id="wrap-object-name">
+<h3>4. Wrap Object Name:<a class="headerlink" href="#wrap-object-name" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This text field shows the name of the object in the list, it is possible to change the name of the object
+in the list on the fly</p>
+</div></blockquote>
+</div>
+<div class="section" id="negative-positive-wrap">
+<h3>5. Negative / Positive Wrap:<a class="headerlink" href="#negative-positive-wrap" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>These two arrows (Up and down) allow you to decide in which vertical direction you want the wrap to be applied
+Use Cases:</p>
+<ul class="simple">
+<li><p>If the Wrap is Negative, the dome ground will adapt to the shape of the object only if the object is lower than the ground</p></li>
+<li><p>If the Wrap is Positive, the dome ground will adapt to the shape of the object only if the object is higher than the ground</p></li>
+<li><p>If both Wraps are active, the dome ground will adapt to the shape of the object in both directions</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Image Example:</strong>
+In this example there are 3 wrap objects, all the same but with different orientation options, the 1 is an object with negative Wrap,
+the 2 is an object with positive Wrap, the 3 is an object with negative and positive Wrap.</p>
+<a class="reference internal image-reference" href="_images/wrap_negative_positive_01.png"><img alt="Main Panel" class="align-center" src="_images/wrap_negative_positive_01.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="toggle-object-visibility">
+<h3>6. Toggle Object Visibility:<a class="headerlink" href="#toggle-object-visibility" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This button allows you to hide the object in the scene, in this way it is possible to work better with the object
+without having to remove it from the list</p>
+<p>This button allows you to switch between the visibility of the object in the scene and the visibility of the wrap
+object in the list:</p>
+<ul class="simple">
+<li><p>If active, the object will be visible in the form of an Invisible Box, only the edges of the box will be visible (But not in the final render)</p></li>
+<li><p>If disabled, the object will be visible as normal</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="unwrap-all">
+<h3>7. Unwrap All<a class="headerlink" href="#unwrap-all" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This button allows you to unwrap all the objects in the list in one click</p>
+</div></blockquote>
+</div>
+<div class="section" id="subdivision-level">
+<h3>8. Subdivision Level<a class="headerlink" href="#subdivision-level" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This slider allows you to modify the subdivision level of the dome ground, This allows you to have greater accuracy
+in the Wrap, but also increases the rendering time.
+The minimum value is 0 (So base grid), the maximum value is 6
+(The value is breakable, but it is not recommended to go beyond 6 because it could freeze Blender)</p>
+</div></blockquote>
+</div>
+<div class="section" id="smooth-factor">
+<h3>9. Smooth Factor<a class="headerlink" href="#smooth-factor" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This slider allows you to modify the smooth factor of the dome ground, This works in symbiosis with
+“Smooth Iterations” (Next point), if Smooth Factor is 0, even smooth iterations will not work</p>
+</div></blockquote>
+</div>
+<div class="section" id="smooth-iterations">
+<h3>10. Smooth Iterations<a class="headerlink" href="#smooth-iterations" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><p>This slider allows you to modify the smooth iterations of the dome ground, This works in symbiosis with
+“Smooth Factor” (Previous point), if Smooth Factor is 0, even smooth iterations will not work.
+This “Spreads” the smooth better, making it more expanded and more homogeneous.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="ground-material">
+<span id="id2"></span><h2>Ground Material<a class="headerlink" href="#ground-material" title="Permalink to this heading"></a></h2>
+<p>The Ground Material is exactly the material of which the dome is composed, this material is very important, and can be
+used on objects other than the dome, the most important feature is that this material is mapped on the center
+of the dome, so wherever you move the object on which you apply this material, it will always adapt
+and match the position of the dome ground.
+In short, it will always match the position of the image of the ground.
+From version 3.0.100 it is also possible to use it as a material that matches the top part of the dome,
+This is useful in some cases if you want to add some extra detail to the dome. More Aventi will be shown some examples.</p>
+<div class="figure align-center" id="id9">
+<img alt="Main Panel" src="_images/dome_ground_warrior_fauno.png" />
+<p class="caption"><span class="caption-text">This “Warrior Fauno” was downloaded from sketchfab, and was created by “Yamato” CC Attribution license. Link Here:
+<a class="reference external" href="https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9">https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9</a></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</div>
 </div>
 </div>
 
