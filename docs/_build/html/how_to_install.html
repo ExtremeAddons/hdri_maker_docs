@@ -29,7 +29,6 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
             <a href="index.html" class="icon icon-home"> HDRi Maker
-            <img src="_static/exa_logo_orange_512.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -42,12 +41,14 @@
               <p class="caption" role="heading"><span class="caption-text">Sections:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#install-the-addon-into-blender">Install the addon into Blender:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-1-download-libraries">Step 1: Download Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-exapack-library">New exapack library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-the-files">Download the files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-the-addon-in-blender">Install the addon in Blender</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ui_library_manager.html">Main Panel (Library Manager)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dome_projection_menu.html">Dome Projection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="volumetric_menu.html">Volumetric</a></li>
 </ul>
 
         </div>
@@ -76,15 +77,94 @@
              
   <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
-<div class="section" id="install-the-addon-into-blender">
-<h2>Install the addon into Blender:<a class="headerlink" href="#install-the-addon-into-blender" title="Permalink to this heading"></a></h2>
-<p>Download The files from Blendermarket:</p>
-<p><a class="reference external" href="https://blendermarket.com/account/orders">https://blendermarket.com/account/orders</a></p>
-<p>Download the addon from Gumroad:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are already a HDRi Maker user and you currently have a version prior to 3.0.100, please
+uninstall it and proceed with the installation of this new version.
+If you already have a version 3.0.100 or higher, you do not need to uninstall the previous one.</p>
 </div>
-<div class="section" id="step-1-download-libraries">
-<h2>Step 1: Download Libraries<a class="headerlink" href="#step-1-download-libraries" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/copertina_youtube_con_tanya.jpg"><img alt="Main Panel" src="_images/copertina_youtube_con_tanya.jpg" style="width: 800px;" /></a>
+<div class="section" id="new-exapack-library">
+<h2>New exapack library<a class="headerlink" href="#new-exapack-library" title="Permalink to this heading"></a></h2>
+<p>As for the libraries, from version 3.0.100 onwards, they will be distributed in the form of exapack packages.
+All new packages will be in the form of numbered volumes Here is an example of nomenclature:</p>
+<ul class="simple">
+<li><p><strong>HDRiMkr_1k_vol_1.exapack</strong>: HDRiMkr 1k Volume 1: Contains files from 1k, previews, and data files</p></li>
+<li><p><strong>HDRiMkr_2k_vol_1.exapack</strong>: HDRiMkr 1k Volume 2: Contains files from 2k, previews, and data files</p></li>
+<li><p><strong>HDRiMkr_4k_vol_1.exapack</strong>: HDRiMkr 1k Volume 3: Contains files from 4k, previews, and data files</p></li>
+<li><p><strong>HDRiMkr_8k_vol_1.exapack</strong>: HDRiMkr 1k Volume 4: Contains files from 8k, previews, and data files</p></li>
+<li><p><strong>HDRiMkr_16k_vol_1.exapack</strong>: HDRiMkr 1k Volume 5: Contains files from 16k, previews, and data files</p></li>
+</ul>
+<p>The packages are consecutive, Vol_1, Vol_2, Vol_3, The maximum weight of each package is 2.5 GB, this limit is not exceeded
+this limit to avoid download and installation problems, since those who have a slower connection, could
+encounter timeout problems.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The 2k packages are more, because the individual files contained in them are much larger.
+For example, the 2k package is about 4 times the size of the 1k package, so it needs more Volumes in order to
+not exceed the maximum weight of 2.5 GB.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="download-the-files">
+<h2>Download the files<a class="headerlink" href="#download-the-files" title="Permalink to this heading"></a></h2>
+<p>In your product page, you can find various files, the main ones for the installation are the following:</p>
+<ul class="simple">
+<li><p><strong>hdri_maker_v301##.zip</strong> is the addon for blender, While the</p></li>
+<li><p><strong>HDRiMkr_##_Vol_#.exapack</strong> are the files of the library. and they are divided with increasing number.</p></li>
+</ul>
+<p>The <strong>.exapack</strong> files are installed by the addon, they are not installed manually, the HDRi Maker addon
+once installed manages your exapack packages.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For Mac users, it often happens that Safari Browser is set to decompress .zip files, make sure this does not happen,
+otherwise the .zip file will no longer be a .zip file and you will not be able to install the addon as follows.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Just go to the Safari menu bar at the top left and click on Safari&gt;Preferences, then remove the check mark from
+“Open safe files after download” in the “General” window. Done, if in the future you download zipped files with safari,
+they will no longer be unzipped.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="install-the-addon-in-blender">
+<h2>Install the addon in Blender<a class="headerlink" href="#install-the-addon-in-blender" title="Permalink to this heading"></a></h2>
+<p>Now, download the addon and install it in Blender, the procedure is as follows:</p>
+<ol class="arabic">
+<li><p>Download the addon from here (Remember that you must be logged in):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you purchased on Blendermarket: <a class="reference external" href="https://blendermarket.com/account/orders">https://blendermarket.com/account/orders</a></p></li>
+<li><p>If you purchased on Gumroad: <a class="reference external" href="https://app.gumroad.com/library">https://app.gumroad.com/library</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Once the addon is downloaded, open Blender and go to:
+<code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Add-ons</span> <span class="pre">&gt;</span> <span class="pre">Install</span></code></p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/install_addon_in_blender_01.png"><img alt="Main Panel" src="_images/install_addon_in_blender_01.png" style="width: 800px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>Select the downloaded file and click on “Install Addon” (The name of the file can be different from version to version)</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/install_addon_zip_blender_01.png"><img alt="Main Panel" src="_images/install_addon_zip_blender_01.png" style="width: 800px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>If everything went well, the addon is in the list of installed addons, you can also search for it by typing “HDRi Maker”
+Mark the checkbox to activate it.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/install_addon_zip_blender_02.png"><img alt="Main Panel" src="_images/install_addon_zip_blender_02.png" style="width: 800px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>Now in the 3D view window of Blender you should already be able to see the HDRi Maker Welcome panel, click on
+“Go to install”, the HDRi Maker Preferences window will open on the “Install Libraries” section (TAB)</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/go_to_install_libraries_01.png"><img alt="Main Panel" src="_images/go_to_install_libraries_01.png" style="width: 800px;" /></a>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you do not see the HDRi Maker Welcome panel, you can open it by pressing the “N” key on the keyboard.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Download the file HDRiMkr_1k_vol_1.exapack, this is the package containing the 1k resolution files,
+it is also the smallest package in terms of MB, so it is easy and fast. You can download the others at any time.</p></li>
+</ol>
 </div>
 </div>
 
