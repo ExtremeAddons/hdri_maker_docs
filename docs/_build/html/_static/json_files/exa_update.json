@@ -1,0 +1,87 @@
+{
+  "communications": {
+    "install_lib_mex": "If there are any slowness issues, try disconnecting the VPN if you are using it. We will shortly intervene on the API of our Site, to improve the download speed. Thank you for the support. Andrew_D",
+    "emergency": ""
+  },
+  "workinprogressblock": {
+    "lock_operators": [
+      ""
+    ],
+    "description": ""
+  },
+  "updates": {
+    "3.0.102": {
+      "date": "11-11-2022",
+      "name": "HDRi Maker",
+      "edition": "Studio",
+      "url": false,
+      "urgency": false,
+      "lock_operators": [
+        ""
+      ],
+      "descriptions": {
+        "1": {
+          "title": "Completely redesigned interface",
+          "description": "The new interface has been completely redesigned to be simpler and more intuitive, we have inserted custom menus for each functionality of the addon, now the menus are sortable"
+        },
+        "2": {
+          "title": "Nuovi dome interattivi",
+          "description": "Ora ci sono nuovi tipi di Domes che permettono di adattarsi al tipo di immagine"
+        },
+        "3": {
+          "title": "Dome Cubo",
+          "description": "Questo dome è utile per immagini con ambientazioni interne, come ad esempio case, uffici, ecc. ma anche per ambientazioni esterne come giardini, parchi, ecc."
+        }
+      }
+    },
+
+    "3.0.101": {
+      "date": "11-11-2022",
+      "name": "HDRi Maker",
+      "edition": "Studio",
+      "url": false,
+      "urgency": false,
+      "lock_operators": [
+        ""
+      ],
+      "descriptions": {
+        "1": {
+          "title": "Completely redesigned interface",
+          "description": "The new interface has been completely redesigned to be simpler and more intuitive, we have inserted custom menus for each functionality of the addon, now the menus are sortable"
+        },
+        "2": {
+          "title": "Nuovi dome interattivi",
+          "description": "Ora ci sono nuovi tipi di Domes che permettono di adattarsi al tipo di immagine"
+        },
+        "3": {
+          "title": "Dome Cubo",
+          "description": "Questo dome è utile per immagini con ambientazioni interne, come ad esempio case, uffici, ecc. ma anche per ambientazioni esterne come giardini, parchi, ecc."
+        }
+      }
+    },
+    "3.0.100": {
+      "date": "11-11-2022",
+      "name": "HDRi Maker",
+      "edition": "Studio",
+      "url": false,
+      "urgency": false,
+      "lock_operators": [
+        ""
+      ],
+      "descriptions": {
+        "1": {
+          "title": "Completely redesigned interface",
+          "description": "The new interface has been completely redesigned to be simpler and more intuitive, we have inserted custom menus for each functionality of the addon, now the menus are sortable"
+        },
+        "2": {
+          "title": "Nuovi dome interattivi",
+          "description": "Ora ci sono nuovi tipi di Domes che permettono di adattarsi al tipo di immagine"
+        },
+        "3": {
+          "title": "Dome Cubo",
+          "description": "Questo dome è utile per immagini con ambientazioni interne, come ad esempio case, uffici, ecc. ma anche per ambientazioni esterne come giardini, parchi, ecc."
+        }
+      }
+    }
+  }
+}
