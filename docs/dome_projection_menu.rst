@@ -93,6 +93,7 @@ This is the interesting part, here you can choose the type of Dome you want to u
     It can be scaled, and thanks to the HDRi Maker node system, the projection can be set, scaling the mapping of the ground,
     in order to have a larger or smaller ground, or smaller, depending on your needs.
     It is also possible to modify the mapping of the sky part, in order to be able to set the projection as best as possible.
+    ..TODO: link to the Hook System
 
     All this is explained better in the "Dome Projection Vector" section ..TODO
 
@@ -353,10 +354,10 @@ Dome Wrap is a very powerful tool that uses Blender modifiers to create real dis
 In this example there are 3 wrap objects, all the same but with different orientation options, the 1 is an object with negative Wrap,
 the 2 is an object with positive Wrap, the 3 is an object with negative and positive Wrap.
 
-..  image:: _static/_images/dome_projection/wrap_negative_positive_01.png
-    :align: center
-    :width: 800
-    :alt: Main Panel
+    ..  image:: _static/_images/dome_projection/wrap_negative_positive_01.png
+        :align: center
+        :width: 800
+        :alt: Main Panel
 
 6. Toggle Object Visibility:
 ****************************

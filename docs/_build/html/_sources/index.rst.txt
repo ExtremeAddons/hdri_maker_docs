@@ -15,6 +15,7 @@ Welcome to HDRi Maker's documentation!
    ui_library_manager
    dome_projection_menu
    volumetric_menu
+   bugreport_info
 
 
 
