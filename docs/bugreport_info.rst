@@ -1,47 +1,52 @@
-Linee guida per il bugreport
-============================
+Guidelines for bugreport
+========================
 
-.. Note:: Per questioni pratiche, la segnalazione di bug viene effettuata tramite github, questo permette di tenere traccia di tutti
-          i bug segnalati dai nostri utenti, questo ci permette anche di rendere pubblica la soluzione dei bug, in modo che tutti
-          possano beneficiare delle segnalazioni e di controllare che il bug sia stato risolto.
-
-
-
-Posso garantire la risoluzione di bug solo se il prodotto è stato acquistato tramite i nostri canali ufficiali
+I can guarantee the resolution of bugs only if the product has been purchased through our official channels
 (extreme-addons.com, blendermaket.com, gumroad.com)
 
-In oltre a volte capita che alcune versioni di Blender non ufficiali, hanno delle API differenti dalla versione ufficiale,
-di Blender, purtroppo non sempre queste versioni rispettano le API ufficiali, e quindi non è possibile garantire la
-funzionalità dei nostri addon al 100%, questo non può essere considerato un bug, ma un problema di compatibilità con
-le versioni non ufficiali di Blender in questione.
+In addition, sometimes some versions of Blender are not official, have different APIs from the official version,
+unfortunately not always these versions respect the official APIs, and therefore it is not possible to guarantee the
+functionality of our addons at 100%, this cannot be considered a bug, but a compatibility problem with
+the unofficial versions of Blender in question.
 
-Assicurati che sia un bug
--------------------------
+Make sure it's a bug
+--------------------
 
-Prima di tutto assicurati che sia davvero un bug, e non un problema di configurazione o di utilizzo.
-Controlla anche a questa pagina https://github.com/ExtremeAddons/hdri_maker/issues se il bug non è già stato segnalato,
-puoi cominciare a pensare di farlo veramente.
+First of all, make sure it's really a bug, and not a configuration or usage problem.
+Also check this page: https://github.com/ExtremeAddons/hdri_maker/issues if the bug has not already been reported,
+you can start thinking of doing it really.
 
+------------------------------------------------------------------------------------------------------------------------
 
-Come riportare il bug
+How to report the bug
 ---------------------
 
-Metodo 1:
+Method 1:
 *********
-**( Migliore Metodo Richiede di essere registrato su Github )**
+**( Best Method Requires to be registered on Github )**
 
-Se hai installato l'addon HDRi Maker e sei in grado di andare nelle sue preferenze, puoi usare il pulsante "Report Bug"
-esso precompilerà il bug report in maniera che tu debba solo inserire la descrizione del bug, e inviarlo.
+If you have installed the HDRi Maker addon and are able to go to its preferences, you can use the "Report Bug" button
+it will precompile the bug report so that you only have to enter the description of the bug, and send it.
 
 .. Note::
-    Se il bottone non funziona, usa questo link e crea un nuovo Report: https://github.com/ExtremeAddons/hdri_maker/issues/new
-    se non sei registrato su github, ti verrà chiesto di registrarti, una volta registrato, potrai inviare il bug report.
+    If the button does not work, use this link and create a new Report: https://github.com/ExtremeAddons/hdri_maker/issues/new
+    if you are not registered on github, you will be asked to register, once registered, you can send the bug report.
 
 
-Metodo 2:
+Method 2:
 *********
-**( Sconsigliato )**
-Usate il bottone "System To Clipboard" per copiare le informazioni di sistema, e incollarle nel bug report, ora potrai
-incollare le informazioni di sistema e pensare di contattarmi su BlenderMarket (Se sei un utente Blendermarket)
-Oppure puoi contattarmi nella chat di Extreme-Addons la trovi in basso a destra sul sito https://extreme-addons.com
+**( Not Recommended )**
+
+Use the "System To Clipboard" button to copy the system information, and paste it into the bug report, now you can
+paste the system information and think of contacting me on BlenderMarket (If you are a Blendermarket user)
+Or you can contact me in the Extreme-Addons chat, you can find it at the bottom right on the website https://extreme-addons.com
+
+.. Note:: For practical reasons, it is better to report bugs via github, this allows you to keep track of all the bugs
+          reported by our users, this also allows us to make the solution of bugs public, so that everyone can benefit
+          from the reports and check that the bug has been fixed.
+
+
+
+
+
 
