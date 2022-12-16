@@ -6,6 +6,28 @@
 Welcome to HDRi Maker's documentation!
 ======================================
 
+.. figure:: _static/_images/arts/pastrocchio_and_hdri_maker_01.png
+    :scale: 35 %
+    :align: center
+    :alt: Pastrocchio and HDRi Maker
+
+
+.. Tip::
+      The HDRi Maker addon, has an interface with many buttons with a "Question mark" icon ( ? ) most
+      of these buttons redirect to the documentation aimed at that section. I invite you to use these buttons
+      to simplify the use and learning of HDRi Maker.
+
+      .. image:: _static/_images/docs_utils/docs_buttons_01.png
+          :width: 200
+          :align: center
+          :alt: Docs Buttons
+
+      |
+
+      I wish you a good read and good work / fun with HDRi Maker!
+      Andrew_D
+
+
 
 .. toctree::
    :maxdepth: 4

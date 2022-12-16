@@ -19,6 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Guidelines for bugreport" href="bugreport_info.html" />
     <link rel="prev" title="Dome Projection" href="dome_projection_menu.html" /> 
 </head>
 
@@ -42,7 +43,24 @@
 <li class="toctree-l1"><a class="reference internal" href="how_to_install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ui_library_manager.html">Main Panel (Library Manager)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dome_projection_menu.html">Dome Projection</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Volumetric</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Volumetric</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#volume-selector">1. Volume Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-remove-volume">2. Add/Remove (Volume)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unlink-volume">3. Unlink Volume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#volume-node-header">4. Volume Node Header</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#open-close-panel">1. Open/Close Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#restore-default">2. Restore Default</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lock-unlock">3. Lock/Unlock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show-info">4. Show Info</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#volume-node-panel">5. Volume Node Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#visibility-distance">6. Visibility Distance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#detail">7. Detail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#noise-volume-node-group">Noise Volume (Node Group)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 </ul>
 
         </div>
@@ -71,9 +89,234 @@
              
   <div class="section" id="volumetric">
 <h1>Volumetric<a class="headerlink" href="#volumetric" title="Permalink to this heading"></a></h1>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/car_into_fog_01.jpg"><img alt="car_into_fog_01" src="_images/car_into_fog_01.jpg" style="width: 708.0px; height: 274.40000000000003px;" /></a>
+</div>
 <p>This section of the addon is dedicated to the creation of a Volumetric environment, ie an environment with a simulation
 of “Fog” or “Dust” in the air. This type of effect is very used in films and video games to create a more realistic atmosphere,
 especially if used with adequate lighting (See the “Lights” section ..TODO for more information).</p>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="_images/volumetric_main_panel_01.png"><img alt="Main Panel" class="align-center" src="_images/volumetric_main_panel_01.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+<div class="section" id="volume-selector">
+<h2>1. Volume Selector<a class="headerlink" href="#volume-selector" title="Permalink to this heading"></a></h2>
+<p>The Volume Selector allows you to choose the volume to add to your scene. In the HDRi Maker package there are some types of
+volumes. This one we take as a reference is a type of “Noise” volume (Volumes may vary from version to version).</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="add-remove-volume">
+<h2>2. Add/Remove (Volume)<a class="headerlink" href="#add-remove-volume" title="Permalink to this heading"></a></h2>
+<p>These two buttons add or remove the volume from the scene. If the volume is already present in the scene, the “Add” button
+replaces the volume already present with the one selected. If the volume selector volume is the same, the volume is reloaded
+anyway, returning to its default properties.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="unlink-volume">
+<h2>3. Unlink Volume<a class="headerlink" href="#unlink-volume" title="Permalink to this heading"></a></h2>
+<p>Unlink Volume disconnects / reconnects the volume group node, from the world output node. This allows you to hide the volume
+from the scene, saving many resources, especially during work, when you don’t want to lose the volume settings, but you need
+to hide it.</p>
+<a class="reference internal image-reference" href="_images/unlink_volume_01.png"><img alt="Link Unlink Volume Node" class="align-center" src="_images/unlink_volume_01.png" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When the volume is disconnected, in the user panel, it is not possible to interact with the properties in the
+volume panel below. This is to avoid confusion, as they would have no immediate effect.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="volume-node-header">
+<h2>4. Volume Node Header<a class="headerlink" href="#volume-node-header" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/volume_node_header_01.png"><img alt="Link Unlink Volume Node" class="align-center" src="_images/volume_node_header_01.png" style="width: 400px;" /></a>
+<div class="section" id="open-close-panel">
+<h3>1. Open/Close Panel<a class="headerlink" href="#open-close-panel" title="Permalink to this heading"></a></h3>
+<p>This button opens or closes the volume panel. This is useful if you want to hide the volume node group panel.</p>
+</div>
+<div class="section" id="restore-default">
+<h3>2. Restore Default<a class="headerlink" href="#restore-default" title="Permalink to this heading"></a></h3>
+<p>This button restores all the default values of the volume in one go. (To lock the values see the next point)</p>
+</div>
+<div class="section" id="lock-unlock">
+<h3>3. Lock/Unlock<a class="headerlink" href="#lock-unlock" title="Permalink to this heading"></a></h3>
+<p>This button allows you to show next to all the properties of the node, a small lock, which allows you to lock the value of the
+property. This is useful if you want to lock a value if you intend to restore the values through “Restore Default”, in this way
+the value will not be restored while the others are not locked.</p>
+<a class="reference internal image-reference" href="_images/locked_sliders_01.png"><img alt="Lock Unlock" class="align-center" src="_images/locked_sliders_01.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="show-info">
+<h3>4. Show Info<a class="headerlink" href="#show-info" title="Permalink to this heading"></a></h3>
+<p>If pressed, it allows you to show information about the properties of the node, if they exist, a button (?) next to the
+property will be shown, pressing it, a popup will be shown with the description of the property, as in this image:</p>
+<a class="reference internal image-reference" href="_images/volume_sliders_info_01.png"><img alt="Show Info" class="align-center" src="_images/volume_sliders_info_01.png" style="width: 600px;" /></a>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="volume-node-panel">
+<h2>5. Volume Node Panel<a class="headerlink" href="#volume-node-panel" title="Permalink to this heading"></a></h2>
+<p>The Volumetric Group Nodes are redrawn to measure in this area, the panel is pre-drawn. For information on the operation,
+see the “Tutorials” section ..TODO</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="visibility-distance">
+<h2>6. Visibility Distance<a class="headerlink" href="#visibility-distance" title="Permalink to this heading"></a></h2>
+<p>This slider allows you to set the visibility distance of the volume. This is useful if you want to hide the volume at a certain
+distance, to avoid wasting resources.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="detail">
+<h2>7. Detail<a class="headerlink" href="#detail" title="Permalink to this heading"></a></h2>
+<p>This selector allows you to choose the level of detail of the volume. This feature has been preset with presets to automatically
+set the level of detail of the volume.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Values: (Very Low, Low, Default, High, Very High, Ultra)</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/fog_detail_enum_01.png"><img alt="Volumetric Detail" class="align-center" src="_images/fog_detail_enum_01.png" style="width: 200px;" /></a>
+</div>
+<div class="section" id="noise-volume-node-group">
+<h2>Noise Volume (Node Group)<a class="headerlink" href="#noise-volume-node-group" title="Permalink to this heading"></a></h2>
+<p>This Group is basically created to manage an animatable fog simulation, with Patches adjustable in size and intensity.
+It also simulates the wind or ascensional effect. You can adjust a range in which the fog must operate,
+you can set a few meters of fog (Example from 0 to 2 meters there is fog, beyond this limit on the Z axis it will not be shown)
+You can also invert the range of it or expand fully for total immersion in the mist. It is also useful for simulating
+the “Suspended Dust” present in some situations.</p>
+<p><strong>Inputs:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Color  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the color of the fog</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Density  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the intensity of the fog</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Emission Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the emission of the Volume. 0 = No Emission</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Noise Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the intensity of noise in fog (Subtractive)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Noise Scale  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the size (Scale) of the fog, the higher the scale, the smaller the patches</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>Noise Distortion  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the distortion of the fog. It needs to have the “Noise Strength” value greater than 0</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>Angle  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Z-axis rotation of the fog, this is useful for animation, so you can change the direction of the animated fog (If animation is on)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p><strong>Height  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the fog bank up or down on the Z-axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p><strong>Animation X  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the speed of the fog’s Horizontal (x) axis animation. If speed is 0 no animation. To adjust the direction, use the “Angle” slider. Requires Blender play animation to see the animation</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li><p><strong>Animation Z  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the speed of the vertical (z) axis animation of the fog. If speed is 0 no animation. To reverse direction, use Positive or Negative values. Requires Blender play animation to see the animation</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li><p><strong>Animation Seed  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Animate the fog noise generator seed. This animation has no direction.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p><strong>Volume Range  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the thickness of the fog bank. If you use “Flip Range” the fog bank will be above and below. (inverted)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="13">
+<li><p><strong>Flip Range  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>The Fog bank will be Inverted.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="14">
+<li><p><strong>Smooth Expand  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the smoothness of the Fog bank. The value closest to 0 means a sharp break in the fog bank.</p></li>
+</ul>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">param arg1</dt>
+<dd class="field-odd"><p>first argument</p>
+</dd>
+<dt class="field-even">type arg1</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">param arg2</dt>
+<dd class="field-odd"><p>second argument</p>
+</dd>
+<dt class="field-even">type arg2</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">module.AClass</span></code></p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>something</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">raises</dt>
+<dd class="field-odd"><p>TypeError</p>
+</dd>
+</dl>
+</div>
 </div>
 
 
@@ -81,6 +324,7 @@ especially if used with adequate lighting (See the “Lights” section ..TODO f
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="dome_projection_menu.html" class="btn btn-neutral float-left" title="Dome Projection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bugreport_info.html" class="btn btn-neutral float-right" title="Guidelines for bugreport" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
