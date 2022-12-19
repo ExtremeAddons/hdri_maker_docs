@@ -36,6 +36,12 @@ These two buttons add or remove the volume from the scene. If the volume is alre
 replaces the volume already present with the one selected. If the volume selector volume is the same, the volume is reloaded
 anyway, returning to its default properties.
 
+
+
+.. Note::
+    If you remove the World through the main panel, the volume will be removed with it, because it is a group node
+    directly connected to the World output.
+
 ------------------------------------------------------------------------------------------------------------------------
 
 3. Unlink Volume
@@ -199,18 +205,6 @@ the "Suspended Dust" present in some situations.
 14. **Smooth Expand  (Value)**
 
  - Adjust the smoothness of the Fog bank. The value closest to 0 means a sharp break in the fog bank.
-
-
-:param arg1: first argument
-:type arg1: string
-:param arg2: second argument
-:type arg2: :class:`module.AClass`
-:return: something
-:rtype: string
-:raises: TypeError
-
-
-
 
 
 

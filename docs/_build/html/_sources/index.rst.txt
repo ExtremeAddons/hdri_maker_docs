@@ -34,9 +34,10 @@ Welcome to HDRi Maker's documentation!
    :caption: Sections:
 
    how_to_install
-   ui_library_manager
-   dome_projection_menu
-   volumetric_menu
+   library_manager_panel
+   dome_projection_panel
+   volumetric_panel
+   lights_panel
    bugreport_info
 
 
