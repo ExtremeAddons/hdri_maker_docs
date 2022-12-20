@@ -106,7 +106,7 @@ This panel allows you to modify the values of the properties of each single ligh
     :alt: Lights Properties
 
 - **Energy Columns**: This column allows you to change the energy of each light individually.
-- **Color Button:** Open A Colorlab in order to get a colors palette (The color chosen will be applied to all the lights)
+- **Color Lab Button:** Open A Colorlab in order to get a colors palette (The color chosen will be applied to all the lights)
 - **Color Columns:** (Under Color Button): This column allows you to change the color of each light individually.
 - **Random Color:** This button allows you to randomize the color of the lights.
 - **Size Columns:** This column allows you to change the size of each light individually.
