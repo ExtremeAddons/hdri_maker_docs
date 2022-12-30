@@ -28,23 +28,28 @@ Welcome to HDRi Maker's documentation!
       Andrew_D
 
 
+.. toctree::
+   :maxdepth: 4
+   :caption: Get started:
+
+   how_to_install
+
 
 .. toctree::
    :maxdepth: 4
-   :caption: Sections:
+   :caption: Interface and functions:
 
-   how_to_install
    library_manager_panel
    dome_projection_panel
    volumetric_panel
    lights_panel
+   save_panel
    bugreport_info
 
+.. toctree::
+   :maxdepth: 4
+   :caption: Tutorials:
+
+   youtube_video
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
