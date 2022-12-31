@@ -1,30 +1,64 @@
+..
+ Tutti i testi in italiano devono essere tradotti in inglese. Subito dopo la scrittura.
+
 Main Panel (Library Manager)
 ============================
 
 Quick overview of the Main Panel:
--------------------------------------
 
-.. image:: _static/_images/main_panel/main_panel_legend.png
-    :width: 800
+
+.. image:: _static/_images/main_panel/main_panel_overview_01.png
+    :align: center
+    :width: 500
     :alt: Main Panel
 
-.. enumerate:
 
-* 1. Help Button:
+------------------------------------------------------------------------------------------------------------------------
 
-   * This is the tooltip for the Help button in the main panel
+1. Libraries selector
+---------------------
 
-* 2. Library Selector (Drop-down menu):
+.. image:: _static/_images/main_panel/libraries_selector_01.png
+    :align: center
+    :width: 300
+    :alt: Libraries selector
 
-   - This allows you to select the library (by default choose between Default Library and User Library)
 
-* 3. Category Selector (Drop-down Menu):
+Helps Button
+************
 
-   - This allows you to select the category (Each library will have its own category)
+    This button opens the Help section in the addon preferences window. This is useful to find more information on how to use the addon
 
-* 4. Search category by entering text
 
-   - This allows you to search for a category by typing the name of the category
+Library Selector (Drop-down menu)
+*********************************
+
+    This allows you to select the background library you want to use. All libraries added via
+    "Libraries" in the addon preferences menu will be displayed in this drop-down menu.
+    By default this Drop-down menu, contains the "Default" library, which is the library that comes with the addon.
+    and the "User" library, which is the library where you can add your saved backgrounds.
+
+.. image:: _static/_images/main_panel/libraries_selector_popup_01.png
+    :align: center
+    :width: 400
+    :alt: Libraries selector
+
+
+Category Selector (Drop-down Menu)
+**********************************
+
+   This allows you to select the category (Each library will have its own category)
+
+.. image:: _static/_images/main_panel/category_selector_dropdown_01.png
+    :align: center
+    :width: 400
+    :alt: Category selector dropdown
+
+
+Search category by entering text
+********************************
+
+   This allows you to search for a category by typing the name of the category
 
 
 .. image:: _static/_images/main_panel/search_category_dropdown.png
@@ -32,32 +66,91 @@ Quick overview of the Main Panel:
     :align: center
     :alt: Main Panel
 
-* 5. Background Selector (Icons Preview):
+------------------------------------------------------------------------------------------------------------------------
 
-   - This allows you to select the background (Each library will have its own background), a pop-up window will appear with the list of preview backgrounds
+2. Library Browser
+------------------
+
+   This allows you to search for the preview in the current Library and Category.
+
+.. image:: _static/_images/main_panel/preview_icon_manager_01.png
+    :align: center
+    :width: 400
+    :alt: Library Browser
+
+
+Preview Popup
+*************
+
+   This allows you to select the background (Each library will have its own background), a pop-up window will appear with the list of preview backgrounds
 
 .. image:: _static/_images/main_panel/preview_icons_popup.png
-    :width: 400
+    :width: 600
     :align: center
     :alt: Main Panel
 
 
-* 6. UP-DOWN/LEFT-RIGHT Arrows:
 
-   - Up/Down arrows allow you to scroll through the list of categories
-   - Left/Right arrows allow you to scroll through the list of backgrounds (Into the selected category)
 
-* 7. Force reload icons:
+UP-DOWN/LEFT-RIGHT Arrows
+*************************
 
-   - If the preview is not loaded correctly, this allows you to reload the preview
+   - Up/Down arrows allow you to scroll through the list of categories Left/Right arrows allow you to scroll through
+     the list of backgrounds (Into the selected category)
 
-* 8. Options Button:
+.. image:: _static/_images/main_panel/preview_icon_arrows_01.png
+    :align: center
+    :width: 300
+    :alt: UP-DOWN/LEFT-RIGHT Arrows
 
- - This button opens the Blender preferences window and goes directly to the "Options" section of HDRI Maker
 
-* 9. Search Background by entering text
+
+
+Force reload icons
+******************
+
+    - If the preview is not loaded correctly, this allows you to reload the preview
+
+.. image:: _static/_images/main_panel/force_reload_icons_01.png
+    :align: center
+    :width: 300
+    :alt: Force reload icons
+
+
+Options Button
+**************
+
+    - This button opens the Blender preferences window and goes directly to the "Options" section of HDRI Maker
+
+.. image:: _static/_images/main_panel/options_button_01.png
+    :align: center
+    :width: 300
+    :alt: Options Button
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+3. Tag Search Size Selector
+---------------------------
+
+    - This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
+      Contains The search for tag / background name and information on the background currently in the preview.
+
+.. image:: _static/_images/main_panel/tag_search_info_panel_01.png
+    :align: center
+    :width: 400
+    :alt: Tag Search Size Selector
+
+
+Search Background by entering text
+**********************************
 
    - This allows you to search for a background by typing the name of the background (It work with the tag Restrictions if you need)
+
+.. image:: _static/_images/main_panel/search_background_dropdown_01.png
+    :align: center
+    :width: 400
+    :alt: Search Background by entering text
 
 * 10. Material Info Button:
 
@@ -73,13 +166,40 @@ Quick overview of the Main Panel:
     :align: center
     :alt: Main Panel
 
-* 12. Remove Button:
+------------------------------------------------------------------------------------------------------------------------
 
-   - This button removes the world background from the scene (Press Shift+Click to remove completely the world background)
+4. Add Remove Buttons
+---------------------
 
-* 13. Add Button:
+    - Add (From the preview) / Remove (From the scene) buttons
 
-   - This button adds the selected background to the scene, (Press Shift+Click to importing an external background image file)
+.. image:: _static/_images/main_panel/add_remove_buttons_01.png
+    :align: center
+    :width: 300
+    :alt: Add Remove Buttons
+
+
+Add Button:
+***********
+
+   - This button adds the selected background to the scene.
+     Use Ctrl + Click to open the File Browser and import a background from an external file
+
+    .. Note:: If you are in the "Tools" category this button acquires the "Add Tool" function and allows you to add the tools
+                included in the Tools directly to the scene. Example: In "Tools" -> "Light Studio" adds a solid color dome, And directional lights.
+
+
+Remove Button
+*************
+
+   - This button removes the world background from the scene.
+     By default, it removes the HDRi Maker background and replaces it with the default Blender background.
+     Press Shift+Click to remove completely the world background)
+
+
+
+
+
 
 * 14. Material Version Selector:
 
