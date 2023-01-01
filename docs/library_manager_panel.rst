@@ -1,10 +1,16 @@
-..
- Tutti i testi in italiano devono essere tradotti in inglese. Subito dopo la scrittura.
-
-Main Panel (Library Manager)
-============================
+Main Panel
+==========
 
 Quick overview of the Main Panel:
+
+
+   - :ref:`libraries_selector`
+
+   - :ref:`library_browser`
+
+   - :ref:`tag_search_size_selector`
+
+   - :ref:`add_remove_buttons`
 
 
 .. image:: _static/_images/main_panel/main_panel_overview_01.png
@@ -15,8 +21,12 @@ Quick overview of the Main Panel:
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _libraries_selector:
+
 1. Libraries selector
----------------------
+#####################
+
+    - This area is used to choose the library, the category (of the library) and the category search via the text field.
 
 .. image:: _static/_images/main_panel/libraries_selector_01.png
     :align: center
@@ -27,16 +37,17 @@ Quick overview of the Main Panel:
 Helps Button
 ************
 
-    This button opens the Help section in the addon preferences window. This is useful to find more information on how to use the addon
+    - This button opens the Help section in the addon preferences window. This is useful to find more information
+      on how to use the addon
 
 
 Library Selector (Drop-down menu)
 *********************************
 
-    This allows you to select the background library you want to use. All libraries added via
-    "Libraries" in the addon preferences menu will be displayed in this drop-down menu.
-    By default this Drop-down menu, contains the "Default" library, which is the library that comes with the addon.
-    and the "User" library, which is the library where you can add your saved backgrounds.
+    - This allows you to select the background library you want to use. All libraries added via
+      "Libraries" in the addon preferences menu will be displayed in this drop-down menu.
+      By default this Drop-down menu, contains the "Default" library, which is the library that comes with the addon.
+      and the "User" library, which is the library where you can add your saved backgrounds.
 
 .. image:: _static/_images/main_panel/libraries_selector_popup_01.png
     :align: center
@@ -47,7 +58,7 @@ Library Selector (Drop-down menu)
 Category Selector (Drop-down Menu)
 **********************************
 
-   This allows you to select the category (Each library will have its own category)
+   - This allows you to select the category (Each library will have its own category)
 
 .. image:: _static/_images/main_panel/category_selector_dropdown_01.png
     :align: center
@@ -58,7 +69,7 @@ Category Selector (Drop-down Menu)
 Search category by entering text
 ********************************
 
-   This allows you to search for a category by typing the name of the category
+   - This allows you to search for a category by typing the name of the category
 
 
 .. image:: _static/_images/main_panel/search_category_dropdown.png
@@ -68,10 +79,12 @@ Search category by entering text
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _library_browser:
+
 2. Library Browser
 ------------------
 
-   This allows you to search for the preview in the current Library and Category.
+   - This allows you to search for the preview in the current Library and Category.
 
 .. image:: _static/_images/main_panel/preview_icon_manager_01.png
     :align: center
@@ -82,7 +95,8 @@ Search category by entering text
 Preview Popup
 *************
 
-   This allows you to select the background (Each library will have its own background), a pop-up window will appear with the list of preview backgrounds
+   - This allows you to select the background (Each library will have its own background), a pop-up window will appear
+     with the list of preview backgrounds
 
 .. image:: _static/_images/main_panel/preview_icons_popup.png
     :width: 600
@@ -130,6 +144,8 @@ Options Button
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _tag_search_size_selector:
+
 3. Tag Search Size Selector
 ---------------------------
 
@@ -152,26 +168,70 @@ Search Background by entering text
     :width: 400
     :alt: Search Background by entering text
 
-* 10. Material Info Button:
 
-   - This button opens a menu with the information of the active material in the preview, you can see author / license / also modify the tags
+Search for tag
+**************
 
-* 11. Tag Search Button:
+   - This allows you to search for a background by typing the name of the tag
+      - In the upper field, you can enter the name of the tag you want to include in the search
+      - In the lower field, you can enter the name of the tag you want to exclude from the search
 
-   - This button expands the menu where you can enter the tags to filter what to display in the preview and what not
+      Keep the tags separated with a space if you want to include more than one tag in the search.
 
-* 14. Material Version Selector:
+      In this way, the categories and the previews will be filtered according to the tags entered.
+
+
+.. image:: _static/_images/main_panel/tag_seatch_box_01.png
+    :align: center
+    :width: 400
+    :alt: Search for tag
+
+
+Info & Tag
+**********
+
+    - This button will open a dialog window with information about the background currently in preview.
+      inside there will be information about the author, the license.
+      There will also be the tags that have been assigned to the background, they can also be modified from here.
+
+.. image:: _static/_images/main_panel/info_tag_panel_popup_01.png
+    :align: center
+    :width: 600
+    :alt: Info & Tag Panel
+
+
+
+Edit Tags
+#########
+
+    - In the info & Tag panel you can edit the tags assigned to the background.
+      To do this, just click on the "Edit Tags" button and enter the desired tags.
+      You can also delete existing tags, just press on them, and a dialog box will be displayed
+      that will ask you if you want to delete the tag.
+
+.. image:: _static/_images/main_panel/tag_modify.png
+    :align: center
+    :width: 400
+    :alt: Edit Tag Panel
+
+.. Note::
+    - Tags can only be edited if you have checked the "Edit Tags" box
+
+
+
+Material Version Selector
+*************************
 
     - If in the library there are different versions of the same material, this selection allows you to choose which version to load (Press Add to confirm)
 
-
-
-.. image:: _static/_images/main_panel/tag_search.png
-    :width: 300
+.. image:: _static/_images/main_panel/material_version_selector_01.png
     :align: center
-    :alt: Main Panel
+    :width: 400
+    :alt: Material Version Selector
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _add_remove_buttons:
 
 4. Add Remove Buttons
 ---------------------
