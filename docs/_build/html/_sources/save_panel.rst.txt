@@ -65,18 +65,156 @@ Otherwise, the whole world node tree will be saved (All world node tree nodes).
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Batch From Foder
-****************
+
+Batch From Folder
+*****************
+
+   - This option allows you to save in Batch (That is, many backgrounds at once). If you have a folder with many HDR files,
+     or with Blender files with a world already set, this option does the rest.
+
+     To proceed, you must select the folder where the files to be saved are located (Choose the source folder button),
+     and then press the "Batch Save" button.
 
 .. image:: _static/_images/save/batch_from_folder_panel_01.png
   :width: 300
   :align: center
   :alt: Batch From Folder Panel
 
-Questa opzione, ti permette di salvare in Batch (Cioè molti Backgrounds in una volta sola). Se hai una cartella con tanti
-file HDR, oppure con dei Blender file con un mondo già impostato, questa opzione fa tutto il resto.
+Once the "Batch Save" button is pressed, a dialog box will appear that will allow you to check which files
+have been added to be processed and saved.
 
-Per procedere è necessario Selezionare la cartella dove sono contenuti i file da salvare, e poi premere il pulsante "Batch Save".
+.. image:: _static/_images/save/batch_save_popup_01.png
+  :width: 800
+  :align: center
+  :alt: Batch Save Popup
+
+
+You can remove a file from the list before proceeding, you can click on the button with the "X", it will disappear from the list and will not be saved in the batch process.
+
+.. Tip:: Even the .blend files can be added to the list, HDRi Maker will try to load the world in the file (If present)
+          and save it in your User Library. The operation can succeed only if there is a world already set in the .blend file.
+
+
+During the Batch process, a small panel will appear in HDRi Maker with the name "Batch Mode" where the progress of the save will be shown.
+
+You can press the ESC button to stop the process.
+
+.. image:: _static/_images/save/batch_save_progress_bar_01.png
+  :width: 300
+  :align: center
+  :alt: Batch Save Progress Bar
+
+.. Note:: The interface should lock for a few seconds during the batch process. About 3 seconds of waiting between one
+          save and the other have been programmed, to be able to interact and possibly stop the process during those
+          3 seconds. This is because a Blender Modal Operator has been used.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Save 360° Background
+********************
+
+.. image:: _static/_images/save/sphere_360_example_01.png
+  :width: 800
+  :align: center
+  :alt: Sphere 360° Example
+
+
+This is useful if you have particularly complex scenes and want to create a 360° background to use in other projects.
+In many cases this saves the rendering time, because you will not need the original scene, which usually includes a
+very high Polygon Faces and Vertices count.
+
+   - Once this option is chosen, a "Add 360 sphere" button will be shown, this is used to place a sphere in the scene
+     that will be the exact point from which the 360° image will be taken. (Like te image above)
+
+.. image:: _static/_images/save/add_360_sphere_button.png
+  :width: 300
+  :align: center
+  :alt: Save 360° Panel
+
+
+.. Tip:: I suggest taking the picture between 1.5 and 2.5 meters high from the ground. In order to have a point of view
+         of the height similar to that of human eyes.
+
+Once the 360 sphere is added to the scene:
+
+   - **360 Cam On Cursor**:
+        This option allows you to place the 360 sphere on the cursor position.
+
+   - **Find Camera**:
+        This button, places the point of view in front of the sphere, if for some reason you can't find where you placed it.
+
+.. image:: _static/_images/save/360_camera_operators_01.png
+  :width: 400
+  :align: center
+  :alt: 360 Camera Operators
+
+
+Panorama Save Panel
+###################
+
+You must press the "Panorama Save" button, a popup will appear that you can see below:
+
+.. image:: _static/_images/save/panorama_save_panel_01.png
+  :width: 800
+  :align: center
+  :alt: Panorama Save Panel
+
+
+- **Background Name:**
+    The name of the background to be saved. You can choose the name you want, but it must be unique into the current category.
+
+- **Custom Size:**
+    This option allows you to insert a custom size expressed in k, 1 = 1k (1024x512), 2 = 2k (2048x1024), 4 = 4k (4096x2048), etc.
+    (Use only Integers)
+
+- **Use HDRi Maker Render Attributes:**
+    If active, use the best parameters for the precompiled 360 render. If disabled, use the current scene parameters.
+    (Recommended)
+
+- **Size Selctor:**
+    This option allows you to choose a size from a list of precompiled sizes.
+
+- **Use Denoising:**
+    If active, use the denoising filter to reduce noise in the render.
+    More options will be available in the "Denoising" section if this option is active.
+
+- **Render Samples:**
+    This option allows you to choose the number of samples to be used in the render. (Recommended 128 or more)
+    The higher the number of samples, the cleaner and more detailed the render will be, but the longer it will take to be completed.
+
+- **Ok Button:**
+    This button allows you to start the 360° render.
+
+
+.. Note:: During the rendering, a Blender window will open with the rendering in progress. This window is necessary
+          to be able to interrupt the rendering if necessary. Do not close this window, otherwise the rendering
+          will be interrupted and you will not be able to save the background. When the render is finished, a confirmation
+          message will be shown in the same window. !! do not interrupt the rendering !!
+
+          - **During Rendering**:
+
+          .. image:: _static/_images/save/360_during_render_example_01.png
+            :width: 400
+            :align: center
+            :alt: Panorama Save Popup
+
+          --------------------------------------------------------------------------------------------------------------
+
+          - **After Rendering completed**:
+
+          .. image:: _static/_images/save/RENDER_FINISHED.png
+            :width: 400
+            :align: center
+            :alt: Panorama Save
+
+
+
+
+
+
+
+
+
 
 
 

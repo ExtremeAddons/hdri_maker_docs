@@ -44,7 +44,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel (Library Manager)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dome_projection_panel.html">Dome Projection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
@@ -52,7 +52,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#export-image"><strong>1 - Export Image</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#save-type"><strong>2 - Save Type</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#save-current-background">Save Current Background</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#batch-from-foder">Batch From Foder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#batch-from-folder">Batch From Folder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#save-360-background">Save 360° Background</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#panorama-save-panel">Panorama Save Panel</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -140,12 +144,133 @@ where you can save your own backgrounds.</p>
 Otherwise, the whole world node tree will be saved (All world node tree nodes).</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="batch-from-foder">
-<h3>Batch From Foder<a class="headerlink" href="#batch-from-foder" title="Permalink to this heading"></a></h3>
+<div class="section" id="batch-from-folder">
+<h3>Batch From Folder<a class="headerlink" href="#batch-from-folder" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul>
+<li><p>This option allows you to save in Batch (That is, many backgrounds at once). If you have a folder with many HDR files,
+or with Blender files with a world already set, this option does the rest.</p>
+<p>To proceed, you must select the folder where the files to be saved are located (Choose the source folder button),
+and then press the “Batch Save” button.</p>
+</li>
+</ul>
+</div></blockquote>
 <a class="reference internal image-reference" href="_images/batch_from_folder_panel_01.png"><img alt="Batch From Folder Panel" class="align-center" src="_images/batch_from_folder_panel_01.png" style="width: 300px;" /></a>
-<p>Questa opzione, ti permette di salvare in Batch (Cioè molti Backgrounds in una volta sola). Se hai una cartella con tanti
-file HDR, oppure con dei Blender file con un mondo già impostato, questa opzione fa tutto il resto.</p>
-<p>Per procedere è necessario Selezionare la cartella dove sono contenuti i file da salvare, e poi premere il pulsante “Batch Save”.</p>
+<p>Once the “Batch Save” button is pressed, a dialog box will appear that will allow you to check which files
+have been added to be processed and saved.</p>
+<a class="reference internal image-reference" href="_images/batch_save_popup_01.png"><img alt="Batch Save Popup" class="align-center" src="_images/batch_save_popup_01.png" style="width: 800px;" /></a>
+<p>You can remove a file from the list before proceeding, you can click on the button with the “X”, it will disappear from the list and will not be saved in the batch process.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Even the .blend files can be added to the list, HDRi Maker will try to load the world in the file (If present)
+and save it in your User Library. The operation can succeed only if there is a world already set in the .blend file.</p>
+</div>
+<p>During the Batch process, a small panel will appear in HDRi Maker with the name “Batch Mode” where the progress of the save will be shown.</p>
+<p>You can press the ESC button to stop the process.</p>
+<a class="reference internal image-reference" href="_images/batch_save_progress_bar_01.png"><img alt="Batch Save Progress Bar" class="align-center" src="_images/batch_save_progress_bar_01.png" style="width: 300px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The interface should lock for a few seconds during the batch process. About 3 seconds of waiting between one
+save and the other have been programmed, to be able to interact and possibly stop the process during those
+3 seconds. This is because a Blender Modal Operator has been used.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="save-360-background">
+<h3>Save 360° Background<a class="headerlink" href="#save-360-background" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sphere_360_example_01.png"><img alt="Sphere 360° Example" class="align-center" src="_images/sphere_360_example_01.png" style="width: 800px;" /></a>
+<p>This is useful if you have particularly complex scenes and want to create a 360° background to use in other projects.
+In many cases this saves the rendering time, because you will not need the original scene, which usually includes a
+very high Polygon Faces and Vertices count.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Once this option is chosen, a “Add 360 sphere” button will be shown, this is used to place a sphere in the scene
+that will be the exact point from which the 360° image will be taken. (Like te image above)</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/add_360_sphere_button.png"><img alt="Save 360° Panel" class="align-center" src="_images/add_360_sphere_button.png" style="width: 300px;" /></a>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>I suggest taking the picture between 1.5 and 2.5 meters high from the ground. In order to have a point of view
+of the height similar to that of human eyes.</p>
+</div>
+<p>Once the 360 sphere is added to the scene:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt><strong>360 Cam On Cursor</strong>:</dt><dd><p>This option allows you to place the 360 sphere on the cursor position.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Find Camera</strong>:</dt><dd><p>This button, places the point of view in front of the sphere, if for some reason you can’t find where you placed it.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/360_camera_operators_01.png"><img alt="360 Camera Operators" class="align-center" src="_images/360_camera_operators_01.png" style="width: 400px;" /></a>
+<div class="section" id="panorama-save-panel">
+<h4>Panorama Save Panel<a class="headerlink" href="#panorama-save-panel" title="Permalink to this heading"></a></h4>
+<p>You must press the “Panorama Save” button, a popup will appear that you can see below:</p>
+<a class="reference internal image-reference" href="_images/panorama_save_panel_01.png"><img alt="Panorama Save Panel" class="align-center" src="_images/panorama_save_panel_01.png" style="width: 800px;" /></a>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Background Name:</strong></dt><dd><p>The name of the background to be saved. You can choose the name you want, but it must be unique into the current category.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Custom Size:</strong></dt><dd><p>This option allows you to insert a custom size expressed in k, 1 = 1k (1024x512), 2 = 2k (2048x1024), 4 = 4k (4096x2048), etc.
+(Use only Integers)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Use HDRi Maker Render Attributes:</strong></dt><dd><p>If active, use the best parameters for the precompiled 360 render. If disabled, use the current scene parameters.
+(Recommended)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Size Selctor:</strong></dt><dd><p>This option allows you to choose a size from a list of precompiled sizes.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Use Denoising:</strong></dt><dd><p>If active, use the denoising filter to reduce noise in the render.
+More options will be available in the “Denoising” section if this option is active.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Render Samples:</strong></dt><dd><p>This option allows you to choose the number of samples to be used in the render. (Recommended 128 or more)
+The higher the number of samples, the cleaner and more detailed the render will be, but the longer it will take to be completed.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Ok Button:</strong></dt><dd><p>This button allows you to start the 360° render.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>During the rendering, a Blender window will open with the rendering in progress. This window is necessary
+to be able to interrupt the rendering if necessary. Do not close this window, otherwise the rendering
+will be interrupted and you will not be able to save the background. When the render is finished, a confirmation
+message will be shown in the same window. !! do not interrupt the rendering !!</p>
+<ul class="simple">
+<li><p><strong>During Rendering</strong>:</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/360_during_render_example_01.png"><img alt="Panorama Save Popup" class="align-center" src="_images/360_during_render_example_01.png" style="width: 400px;" /></a>
+<ul class="simple">
+<li><p><strong>After Rendering completed</strong>:</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/RENDER_FINISHED.png"><img alt="Panorama Save" class="align-center" src="_images/RENDER_FINISHED.png" style="width: 400px;" /></a>
+</div>
+</div>
 </div>
 </div>
 </div>
