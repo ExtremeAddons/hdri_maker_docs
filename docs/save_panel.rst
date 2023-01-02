@@ -7,20 +7,30 @@ There is also a section to manipulate the user library.
 
 .. Tip:: You must be in User Library to be able to manipulate and save your backgrounds!
 
-.. image:: _static/_images/save/save_panel_01.png
-  :width: 600
-  :align: center
-  :alt: Save Panel Overview
+.. |save_panel| image:: _static/_images/save/save_panel_01.png
+                  :width: 800
+                  :alt: Save Panel Overview
 
-1 - Export Image
-----------------
+
++------------------------+---------------------+-------------------------+
+| 1. :ref:`export_image` | 2. :ref:`save_type` | 3. :ref:`library_tools` |
++---+--------------------+---------------------+---------------------+---+
+|   |       |save_panel|                                             |   |
++---+----------------------------------------------------------------+---+
+
+
+.. _export_image:
+
+Export Image
+------------
 
 If in the current scene there is a World and in the nodes of the world there is one or more images in the nodes of type "TEX_ENVIRONMENT"
 This button allows you to export the image / s and save them in the chosen directory.
 
+.. _save_type:
 
-2 - Save Type
--------------
+Save Type
+---------
 
 
 This area allows you to choose 3 types of saving options:
@@ -211,9 +221,10 @@ You must press the "Panorama Save" button, a popup will appear that you can see 
             :align: center
             :alt: Panorama Save
 
+.. _library_tools:
 
-3 - Library Tools
------------------
+Library Tools
+-------------
 
    - This submenu is dedicated to the manipulation of the User Library (The library where you can save your Backgrounds).
 
@@ -222,6 +233,7 @@ You must press the "Panorama Save" button, a popup will appear that you can see 
    :width: 300
    :align: center
    :alt: Library Tools Interface
+
 
 
 Add New Category

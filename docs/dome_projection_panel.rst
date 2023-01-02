@@ -1,7 +1,7 @@
 .. ALT + 96 to make: ` `
 
-Dome Projection
-===============
+Dome
+====
 
 .. figure:: _static/_images/dome_projection/dome_projection_example_no_wireframe_01.png
     :align: center
@@ -42,6 +42,10 @@ So, before adding a dome, make sure you have added a background through the "Add
 or you can also import one from your HDR/EXR background gallery (Even if it is not good practice, it will also accept
 PNG, JPG, BMP, and all image formats accepted by blender)
 
++--------------------+-----------------------+------------------------------+----------------------+
+| 1. :ref:`add_dome` | 2. :ref:`remove_dome` | 3. :ref:`center_view_on_dome`| 4. :ref:`dome_type`  |
++--------------------+-----------------------+------------------------------+----------------------+
+
 
 .. figure:: _static/_images/dome_projection/dome_add_remove_submenu.png
     :scale: 80%
@@ -49,8 +53,10 @@ PNG, JPG, BMP, and all image formats accepted by blender)
     :alt: Main Panel
 
 
-1. Add Dome
-***********
+.. _add_dome:
+
+Add Dome
+********
 
 Before continuing, make sure you have added a background through the "Add" button from the HDRi Maker main panel.
 
@@ -66,18 +72,24 @@ This button, in addition to adding a new dome, also has the function of replacin
 
 In short, if there are more than 1 Environment image in the world shader, the first one found will be taken and used for the dome.
 
-2. Remove Dome
-**************
+.. _remove_dome:
+
+Remove Dome
+***********
 
 The "Remove" button, simply removes the dome present in the scene and nothing more
 
-3. Center View In Dome
-**********************
+.. _center_view_on_dome:
+
+Center View on Dome
+*******************
 
 This small button, serves to center the view at the center of the dome (We found it very useful in many situations)
 
-4. Dome Type
-************
+.. _dome_type:
+
+Dome Type
+*********
 
 
 .. note::
@@ -137,19 +149,30 @@ Dome Properties
 
 The Submenu "Dome Properties" is designed to modify some properties of the dome:
 
+
++---------------------+---------------------------------+------------------------+----------------------+
+| 1. :ref:`hide_dome` | 2. :ref:`hide_reflection_plane` | 3. :ref:`display_wire` | 4. :ref:`scale_dome` |
++---------------------+---------------------------------+------------------------+----------------------+
+
+
+
 .. image:: _static/_images/dome_projection/dome_properties_01.png
     :width: 500
     :align: center
     :alt: Main Panel
 
-1. Hide Dome:
-*************
+.. _hide_dome:
+
+Hide Dome:
+**********
 
     Hides the dome, in order to work better (If necessary), this allows you to keep all the settings chosen,
     so when you want to work with the dome again, just click on this button again to make it reappear.
 
-2. Hide Reflection Plane:
-*************************
+.. _hide_reflection_plane:
+
+Hide Reflection Plane
+*********************
 
     The dome by default, has a reflection plane applied to its ground, this allows you to have realistic reflections
     on the ground (If necessary) the reflection plane is only necessary when using Eevee Render, if you use Cycles Render
@@ -165,8 +188,10 @@ The Submenu "Dome Properties" is designed to modify some properties of the dome:
         The reflection plane follows the scale of the dome, it will always be the right size to adapt to the size
         of the ground of the dome. (If Hooks are used, the reflection plane will also follow the changes made with Hooks) ..TODO
 
-3. Display Wire:
-****************
+.. _display_wire:
+
+Display Wire
+************
 
     This option allows you to display the wireframe of the dome, This could be useful to understand the real mesh
     of the dome, and to understand how the Wrap behaves (Explained later here :ref:`dome_wrap`)
@@ -186,8 +211,11 @@ The Submenu "Dome Properties" is designed to modify some properties of the dome:
 
         Example of wireframe settings modification
 
-4. Scale Dome:
-**************
+
+.. _scale_dome:
+
+Scale Dome
+**********
 
     Scale dome, serves to scale the dome in size.
     If you have applied the Wrap (Explained later here: :ref:`dome_wrap`) then the wrap will scale with the dome, so as to
@@ -201,6 +229,14 @@ The Submenu "Dome Properties" is designed to modify some properties of the dome:
 
 Dome Hooks
 ----------
+
+
++----------------------------+----------------------------+------------------------+-----------------------------------+
+|                            | 1. :ref:`add_remove_hooks` | 3. :ref:`hook_size`    |                                   |
+|                            | 2. :ref:`hide_hooks`       | 4. :ref:`expand_hooks` |                                   |
+|                            |                            | 5. :ref:`hooks_type`   |                                   |
++----------------------------+----------------------------+------------------------+-----------------------------------+
+
 
 ..  figure:: _static/_images/dome_projection/hooks_subpanel_01.png
         :align: center
@@ -226,8 +262,10 @@ you are. This allows you to make the scene in the dome even more realistic than 
         They have been positioned as best as possible to adapt to the proposed image**
 
 
-1. Add/Remove Hooks
-*******************
+.. _add_remove_hooks:
+
+Add/Remove Hooks
+****************
 
     This button allows you to add or remove hooks, it is possible to add up to 25 hooks, and to remove them all at once.
     The hooks are applied to the dome plane, and are used to modify the shape of the dome perimeter, in order to adapt it
@@ -237,31 +275,43 @@ you are. This allows you to make the scene in the dome even more realistic than 
     .. Note::
         The Hooks currently work only with domes of type "Cube" and "Cylinder"
 
-2. Hide Hooks
-*************
+
+.. _hide_hooks:
+
+Hide Hooks
+**********
+
 
     This checkbox allows you to hide the hooks, in order to work better (If necessary), this allows you to keep the hooks
     in place, so when you want to work with the hooks again, just click on this button again to make them reappear.
 
-3. Hook Size
-************
+.. _hook_size:
+
+Hook Size
+*********
 
     This slider allows you to modify the size of the hooks, in order to make more confortable the work with the hooks.
     Big Hooks = More visible = More confortable to work with (If necessary)
 
-4. Expand Hooks
-***************
+
+.. _expand_hooks:
+
+Expand Hooks
+************
 
     This slider allows you to do a kind of scale on the distance between the Hooks, in this way it is possible
     to expand or contract the distance of the hooks from the center of the dome (Uniformly).
     This differs from the slider "Dome Size" Since the projection of the image on the dome, does not adapt as in the
     case of the dome size, on the contrary, it allows you to adapt the geometry to the projected image as best as possible.
 
-5. Hooks Type
-*************
+.. _hooks_type:
+
+Hooks Type
+**********
 
     This dropdown menu allows you to choose the type of hooks to use. They will be changed simultaneously
     once chosen in the dropdown menu
+
 
 .. _dome_wrap:
 
@@ -271,10 +321,28 @@ Dome Wrap
 Dome Wrap is a very powerful tool that uses Blender modifiers to create real displacement in the mesh of the ground of the dome
 (All types of dome present in HDRi Maker support the wrap).
 
-..  figure:: _static/_images/dome_projection/wrap_submenu_01.png
-        :scale: 80%
-        :align: center
-        :alt: Main Panel
+
+.. |wrap_submenu| image:: _static/_images/dome_projection/wrap_submenu_01.png
+                    :alt: Wrap Submenu
+                    :width: 600
+
+
+
++-----------------------------------+
+| 1. :ref:`wrap_button`             |
+| 2. :ref:`wrap_objects_list`       |
+| 3. :ref:`remove_wrap_object`      |
+| 4. :ref:`wrap_object_name`        |
+| 5. :ref:`negative_positive_wrap`  |
+| 6. :ref:`toggle_object_visibility`|
+| 7. :ref:`unwrap_all`              |
+| 8. :ref:`subdivision_level`       |
+| 9. :ref:`smooth_factor`           |
+| 10. :ref:`smooth_iterations`      |
++-----------------------------------+
+|          |wrap_submenu|           |
++-----------------------------------+
+
 
 .. Note::
 
@@ -313,8 +381,10 @@ Dome Wrap is a very powerful tool that uses Blender modifiers to create real dis
         :alt: Main Panel
 
 
-1. Wrap Button
-**************
+.. _wrap_button:
+
+Wrap Button
+***********
 
     Before pressing Wrap, make sure you have a Mesh type object selected (An object created with A.N.T. Landscape
     is perfect for this purpose) You can also have more objects selected and press Wrap, in this case all the
@@ -322,26 +392,35 @@ Dome Wrap is a very powerful tool that uses Blender modifiers to create real dis
     Now the ground of the dome is able to adapt to the shape of these objects, in this way it is possible to create
     much more realistic and detailed scenes.
 
-2. Wrap Objects List
-********************
+.. _wrap_objects_list:
+
+Wrap Objects List
+*****************
 
     This list shows all the objects that have been applied as Wrap objects, in this way it is possible to remove them
     from the list, or to modify their settings (Only the wrap objects will be in this list)
     The arrows on the left are used to select the wrap object in the scene
 
-3. Remove Wrap Object:
-**********************
+.. _remove_wrap_object:
+
+Remove Wrap Object
+******************
 
     This button removes the wrap from the object in the list, so the object will return to the previous state to the Wrap.
 
-4. Wrap Object Name:
-********************
+
+.. _wrap_object_name:
+
+Wrap Object Name
+****************
 
     This text field shows the name of the object in the list, it is possible to change the name of the object
     in the list on the fly
 
-5. Negative / Positive Wrap:
-****************************
+.. _negative_positive_wrap:
+
+Negative / Positive Wrap
+************************
 
     These two arrows (Up and down) allow you to decide in which vertical direction you want the wrap to be applied
     Use Cases:
@@ -351,16 +430,22 @@ Dome Wrap is a very powerful tool that uses Blender modifiers to create real dis
     - If both Wraps are active, the dome ground will adapt to the shape of the object in both directions
 
 **Image Example:**
-In this example there are 3 wrap objects, all the same but with different orientation options, the 1 is an object with negative Wrap,
-the 2 is an object with positive Wrap, the 3 is an object with negative and positive Wrap.
+
+   - In this example there are 3 wrap objects, all the same but with different orientation options
+
+      - **1.** is an object with negative Wrap
+      - **2.** is an object with positive Wrap
+      - **3.** is an object with negative and positive Wrap
 
     ..  image:: _static/_images/dome_projection/wrap_negative_positive_01.png
         :align: center
         :width: 800
         :alt: Main Panel
 
-6. Toggle Object Visibility:
-****************************
+.. _toggle_object_visibility:
+
+Toggle Object Visibility
+************************
 
     This button allows you to hide the object in the scene, in this way it is possible to work better with the object
     without having to remove it from the list
@@ -371,31 +456,40 @@ the 2 is an object with positive Wrap, the 3 is an object with negative and posi
     - If active, the object will be visible in the form of an Invisible Box, only the edges of the box will be visible (But not in the final render)
     - If disabled, the object will be visible as normal
 
-7. Unwrap All
-*************
+.. _unwrap_all:
+
+Unwrap All
+**********
 
     This button allows you to unwrap all the objects in the list in one click
 
-8. Subdivision Level
-********************
+.. _subdivision_level:
+
+Subdivision Level
+*****************
 
     This slider allows you to modify the subdivision level of the dome ground, This allows you to have greater accuracy
     in the Wrap, but also increases the rendering time.
     The minimum value is 0 (So base grid), the maximum value is 6
     (The value is breakable, but it is not recommended to go beyond 6 because it could freeze Blender)
 
-9. Smooth Factor
-****************
+.. _smooth_factor:
+
+Smooth Factor
+*************
 
     This slider allows you to modify the smooth factor of the dome ground, This works in symbiosis with
     "Smooth Iterations" (Next point), if Smooth Factor is 0, even smooth iterations will not work
 
-10. Smooth Iterations
-*********************
+.. _smooth_iterations:
+
+Smooth Iterations
+*****************
 
     This slider allows you to modify the smooth iterations of the dome ground, This works in symbiosis with
     "Smooth Factor" (Previous point), if Smooth Factor is 0, even smooth iterations will not work.
     This "Spreads" the smooth better, making it more expanded and more homogeneous.
+
 
 .. _ground_material:
 
@@ -514,6 +608,172 @@ Flip Faces
 .. Tip::
     This is very useful especially in interior projections, if you want to add some detail to the dome where the Hook
     system has some limitations, this comes to the rescue
+
+
+Dome Color (Node Group)
+-----------------------
+
+
+.. image:: _static/_images/dome_projection/dome_color_panel_01.png
+    :align: center
+    :width: 400
+    :alt: Dome Color Panel
+
+
+1. **Use Solid Color  (Button)**
+
+ - If on, it will use a solid color instead of the image. The color property will appear once activated.
+
+2. **Solid Color  (Rgba)**
+
+ - Adjust solid color. (Make sure the Colorize Strength is set to 0 to get a correct solid color).
+
+3. **Exposure Full  (Value)**
+
+ - It adjusts the exposure of the entire dome, both the ground and the sky, and also acts as an illuminator
+
+4. **Exposure Ground  (Value)**
+
+ - It adjusts the exposure of the ground only.
+
+5. **Hue  (Value)**
+
+ - Adjust the HUE on the whole dome
+
+6. **Saturation  (Value)**
+
+ - Adjust the Saturation  on the whole dome
+
+7. **Colorize  (Rgba)**
+
+ - Color to colorize. (Needs to raise the Strength property to be visible)
+
+8. **Strength  (Value)**
+
+ - Adjusts the strength of the colorize
+
+9. **Specular  (Value)**
+
+ - Adjust the ground reflection. (The ground is reflective in the center and towards the edges it is blended with a gradient, in order to render only the ground without affecting the vertical part of the dome)
+
+10. **Roughness  (Value)**
+
+ - Adjust the ground Roughness. (The ground is reflective in the center and towards the edges it is blended with a gradient, in order to render only the ground without affecting the vertical part of the dome)
+
+11. **Metallic  (Value)**
+
+ - Adjust the ground Metal effect. (The ground is reflective in the center and towards the edges it is blended with a gradient, in order to render only the ground without affecting the vertical part of the dome)
+
+12. **Bump Strength  (Value)**
+
+ - Adjust the bump strength, the bump map is simulated by the main image, which changes from Colors to black and white. It only affects the Ground
+
+13. **Bump Distance  (Value)**
+
+ - Adjust the bump distance, the bump map is simulated by the main image, which changes from Colors to black and white. It only affects the Ground
+
+14. **Flip  (Button)**
+
+ - Flip the Bump Direction
+
+
+
+Dome Vectors (Node Group)
+-------------------------
+
+.. image:: _static/_images/dome_projection/dome_vectors_panel_01.png
+    :align: center
+    :width: 400
+    :alt: Dome Vectors Panel
+
+
+
+1. **Angle  (Value)**
+
+ - Rotate the image completely on the Z axis
+ - You can also Sync the angle of the rotation with the world rotation of the dome, in this way the image will rotate with the dome.
+
+**Locations**
+
+2. **LX  (Value)**
+
+ - (Location X) Move the image completely on the X axis
+
+3. **LY  (Value)**
+
+ - (Location Y) Move the image completely on the Y axis
+
+4. **LZ  (Value)**
+
+ - (Location Z) Move the image completely on the Z axis
+
+**Top:**
+
+5. **LX  (Value)**
+
+ - Move the top of the image on the X axis
+
+6. **LY  (Value)**
+
+ - Move the top of the image on the Y axis
+
+7. **LZ  (Value)**
+
+ - Move the top of the image on the Z axis
+
+8. **Scale  (Value)**
+
+ - distanceScale only the top of the Dome. The ground will not be scaled
+
+**Ground:**
+
+9. **LX  (Value)**
+
+ - Move the image projected onto the ground on the X axis
+
+10. **LY  (Value)**
+
+ - Move the image projected onto the ground on the Y axis
+
+11. **Scale X  (Value)**
+
+ - Scale image projected on the ground on the X axis
+
+12. **Scale Y  (Value)**
+
+ - Scale image projected on the ground on the Y axis
+
+13. **Scale  (Value)**
+
+ - Scale image projected on the ground uniformly
+
+14. **Blur Strength  (Value)**
+
+ - Set the hardness of the Blurry effect
+
+15. **Blur Distance  (Value)**
+
+ - Set the distance from which the Blurry effect is to be seen
+
+16. **Blur Flip  (Button)**
+
+ - Invert the blurry effect. The blurry part will become the non-blurry part etc.
+
+17. **Adjust Boundary  (Value)**
+
+ - Adjust the part of the image where it meets the ground. Useful in some cases, when changing the scale and position properties, especially on the ground.
+
+18. **Expand Catcher Plane  (Value)**
+
+ - The Catcher Plane is the plane of the dome on which the shadow and all the effects (Specular-Roughness-Bump etc.) can be projected. The more it expands, the wider the action plane will be.
+
+19. **Expand On Top  (Button)**
+
+ - Expand The Catcher even beyond the floor to the entire top
+
+
+
+
 
 
 

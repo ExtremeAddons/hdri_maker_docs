@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Guidelines for bugreport" href="bugreport_info.html" />
+    <link rel="next" title="Save" href="save_panel.html" />
     <link rel="prev" title="Volumetric" href="volumetric_panel.html" /> 
 </head>
 
@@ -38,27 +38,35 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Sections:</span></p>
-<ul class="current">
+              <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="how_to_install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel (Library Manager)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dome_projection_panel.html">Dome Projection</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dome_projection_panel.html">Dome</a></li>
 <li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Lights</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#lamps-menu">1. Lamps Menu</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#add-reload-remove-1">Add-Reload/Remove (1)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#light-count-2">Light Count (2)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lamps-3">Lamps (3)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#target-4">Target (4)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#light-type-area-shape-5">Light Type / Area Shape (5)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lights-properties-6">Lights Properties (6)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lamps-menu">Lamps Menu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-reload-remove">Add-Reload/Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#light-count">Light Count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lamps">Lamps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#target">Target</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#light-type-area-shape">Light Type / Area Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lights-properties">Lights Properties</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#sun-menu">2. Sun Menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#eevee-shadow-detail">3. Eevee Shadow Detail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sun-menu">Sun Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eevee-shadow-detail">Eevee Shadow Detail</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="youtube_video.html">Youtube Tutorial</a></li>
 </ul>
 
         </div>
@@ -90,9 +98,32 @@
 <p>The light panel was introduced by version of HDRi Maker 3.0.100, and allows to create 2 types of lighting:
 Solar / Studio Light</p>
 <p><strong>Example of basic panel:</strong></p>
-<a class="reference internal image-reference" href="_images/lights_panel_closed_01.png"><img alt="Lights Panel" class="align-center" src="_images/lights_panel_closed_01.png" style="width: 300px;" /></a>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 28%" />
+<col style="width: 43%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#lamps-menu"><span class="std std-ref">Lamps Menu</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="2">
+<li><p><a class="reference internal" href="#sun-menu"><span class="std std-ref">Sun Menu</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="3">
+<li><p><a class="reference internal" href="#eevee-shadow-detail"><span class="std std-ref">Eevee Shadow Detail</span></a></p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td colspan="3"><p><a class="reference internal" href="_images/lights_panel_closed_01.png"><img alt="Lights Panel" src="_images/lights_panel_closed_01.png" style="width: 500px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="lamps-menu">
-<h2>1. Lamps Menu<a class="headerlink" href="#lamps-menu" title="Permalink to this heading"></a></h2>
+<span id="id1"></span><h2>Lamps Menu<a class="headerlink" href="#lamps-menu" title="Permalink to this heading"></a></h2>
 <p>Lamps allows you to create a set of lights at your own choice on the fly. It will create a Circle with anchored to it the set of lights.
 It has in addition a target point (See yellow arrow in the image) this allows you to keep the lights pointed where you want.
 (More you explain how to make the target point parent of the object you want to illuminate in order to be able to point
@@ -100,22 +131,64 @@ the lights also on objects that move)</p>
 <a class="reference internal image-reference" href="_images/lamps_and_target_01.png"><img alt="Lights Panel" class="align-center" src="_images/lamps_and_target_01.png" style="width: 800px;" /></a>
 <hr class="docutils" />
 <p><strong>The panel looks like this once the lights have been added via the “Add” button:</strong></p>
-<a class="reference internal image-reference" href="_images/lights_panel_lamps_01.png"><img alt="Lights Panel Lamps" class="align-center" src="_images/lights_panel_lamps_01.png" style="width: 600px;" /></a>
-<div class="section" id="add-reload-remove-1">
-<h3>Add-Reload/Remove (1)<a class="headerlink" href="#add-reload-remove-1" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 46%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ul class="simple">
+<li><ol class="arabic simple">
+<li><p><a class="reference internal" href="#add-reload-remove"><span class="std std-ref">Add-Reload/Remove</span></a></p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p><a class="reference internal" href="#lamps"><span class="std std-ref">Lamps</span></a></p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="5">
+<li><p><a class="reference internal" href="#light-type-area-shape"><span class="std std-ref">Light Type / Area Shape</span></a></p></li>
+</ol>
+</li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><ol class="arabic simple" start="2">
+<li><p><a class="reference internal" href="#light-count"><span class="std std-ref">Light Count</span></a></p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p><a class="reference internal" href="#target"><span class="std std-ref">Target</span></a></p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="6">
+<li><p><a class="reference internal" href="#lights-properties"><span class="std std-ref">Lights Properties</span></a></p></li>
+</ol>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><p><a class="reference internal" href="_images/lights_panel_lamps_01.png"><img alt="Lights Panel Lamps" src="_images/lights_panel_lamps_01.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div></div></blockquote>
+<div class="section" id="add-reload-remove">
+<span id="id2"></span><h3>Add-Reload/Remove<a class="headerlink" href="#add-reload-remove" title="Permalink to this heading"></a></h3>
 <p>These 2 buttons add or remove the set of lights, the amount of lights depends on the value “Light Count” set.
 (At the moment only 1 set of lights can be added HDRiMaker 3.0.100)</p>
 </div>
-<div class="section" id="light-count-2">
-<h3>Light Count (2)<a class="headerlink" href="#light-count-2" title="Permalink to this heading"></a></h3>
+<div class="section" id="light-count">
+<span id="id3"></span><h3>Light Count<a class="headerlink" href="#light-count" title="Permalink to this heading"></a></h3>
 <p>This value (Integer) changes the number of lights connected to the set of lights, the addon will divide the circle evenly.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you increase the number of lights, these new ones will have the same properties as the last one at the bottom of the list.</p>
 </div>
 </div>
-<div class="section" id="lamps-3">
-<h3>Lamps (3)<a class="headerlink" href="#lamps-3" title="Permalink to this heading"></a></h3>
+<div class="section" id="lamps">
+<span id="id4"></span><h3>Lamps<a class="headerlink" href="#lamps" title="Permalink to this heading"></a></h3>
 <p>Lamps changes the position of the set of lights on the X-Y-Z axis.</p>
 <p>The button next to it (Link) is to link the set of lights to any object selected in the scene, this is useful
 to make the set of lights move with the object indicated.</p>
@@ -124,16 +197,16 @@ to make the set of lights move with the object indicated.</p>
 Take a look in the image below:</p>
 <a class="reference internal image-reference" href="_images/link_unlink_parent_lamps_01.png"><img alt="Link Unlink Parent Lamps" class="align-center" src="_images/link_unlink_parent_lamps_01.png" style="width: 400px;" /></a>
 </div>
-<div class="section" id="target-4">
-<h3>Target (4)<a class="headerlink" href="#target-4" title="Permalink to this heading"></a></h3>
+<div class="section" id="target">
+<span id="id5"></span><h3>Target<a class="headerlink" href="#target" title="Permalink to this heading"></a></h3>
 <p>Target is the point where the set of lights will be pointed, it is useful to keep the lights pointed at the object
 you want to illuminate.</p>
 <p>The target is an empty object that is created automatically when you add the set of lights, it is anchored to the set of lights.</p>
 <p>Like a Lamps, the button next to it (Link) is to link the target to any object selected in the scene, this is useful
 to make the target move with the object indicated in order to keep the lights pointed at the object you want to illuminate when it moves.</p>
 </div>
-<div class="section" id="light-type-area-shape-5">
-<h3>Light Type / Area Shape (5)<a class="headerlink" href="#light-type-area-shape-5" title="Permalink to this heading"></a></h3>
+<div class="section" id="light-type-area-shape">
+<span id="id6"></span><h3>Light Type / Area Shape<a class="headerlink" href="#light-type-area-shape" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>Light type allows you to choose between many types of lights:</dt><dd><ul class="simple">
 <li><p>Area: Enum into next property (Square, Disc, Rectangle, Ellipse)</p></li>
@@ -149,8 +222,8 @@ to make the target move with the object indicated in order to keep the lights po
 (Square, Disc, Rectangle, Ellipse)</p>
 </div>
 </div>
-<div class="section" id="lights-properties-6">
-<h3>Lights Properties (6)<a class="headerlink" href="#lights-properties-6" title="Permalink to this heading"></a></h3>
+<div class="section" id="lights-properties">
+<span id="id7"></span><h3>Lights Properties<a class="headerlink" href="#lights-properties" title="Permalink to this heading"></a></h3>
 <p>This panel allows you to modify the values of the properties of each single light or all the lights together.</p>
 <a class="reference internal image-reference" href="_images/light_properties_01.png"><img alt="Lights Properties" class="align-center" src="_images/light_properties_01.png" style="width: 400px;" /></a>
 <ul class="simple">
@@ -173,14 +246,14 @@ this will allow you to change all the values at once.</p>
 </dl>
 </li>
 </ul>
-</div>
-</div>
 <hr class="docutils" />
+</div>
+</div>
 <div class="section" id="sun-menu">
-<h2>2. Sun Menu<a class="headerlink" href="#sun-menu" title="Permalink to this heading"></a></h2>
+<span id="id8"></span><h2>Sun Menu<a class="headerlink" href="#sun-menu" title="Permalink to this heading"></a></h2>
 </div>
 <div class="section" id="eevee-shadow-detail">
-<h2>3. Eevee Shadow Detail<a class="headerlink" href="#eevee-shadow-detail" title="Permalink to this heading"></a></h2>
+<span id="id9"></span><h2>Eevee Shadow Detail<a class="headerlink" href="#eevee-shadow-detail" title="Permalink to this heading"></a></h2>
 <p>This is a selector of Eevee shadow detail level. I compiled in it some presets that automatically modify the settings
 of the Eevee shadow detail level (Only works with Eevee)</p>
 <p>Enum In (Very Low, Low, Default, High, Very High, Ultra)</p>
@@ -195,7 +268,7 @@ it can be changed at any time.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="volumetric_panel.html" class="btn btn-neutral float-left" title="Volumetric" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="bugreport_info.html" class="btn btn-neutral float-right" title="Guidelines for bugreport" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="save_panel.html" class="btn btn-neutral float-right" title="Save" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

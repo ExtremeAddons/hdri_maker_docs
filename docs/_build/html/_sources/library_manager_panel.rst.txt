@@ -3,28 +3,29 @@ Main Panel
 
 Quick overview of the Main Panel:
 
-
-   - :ref:`libraries_selector`
-
-   - :ref:`library_browser`
-
-   - :ref:`tag_search_size_selector`
-
-   - :ref:`add_remove_buttons`
+.. |main_panel| image:: _static/_images/main_panel/main_panel_overview_01.png
+                    :width: 800
+                    :alt: Main Panel
 
 
-.. image:: _static/_images/main_panel/main_panel_overview_01.png
-    :align: center
-    :width: 500
-    :alt: Main Panel
++--+-------------------------------------+-+
+|  |  1. :ref:`libraries_selector`       | |
+|  |  2. :ref:`library_browser`          | |
+|  |  3. :ref:`tag_search_size_selector` | |
+|  |  4. :ref:`add_remove_buttons`       | |
++--+-------------------------------------+-+
+|  | |main_panel|                        | |
++--+-------------------------------------+-+
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
 
 .. _libraries_selector:
 
-1. Libraries selector
----------------------
+Libraries selector
+------------------
 
     - This area is used to choose the library, the category (of the library) and the category search via the text field.
 
@@ -81,8 +82,8 @@ Search category by entering text
 
 .. _library_browser:
 
-2. Library Browser
-------------------
+Library Browser
+---------------
 
    - This allows you to search for the preview in the current Library and Category.
 
@@ -146,8 +147,8 @@ Options Button
 
 .. _tag_search_size_selector:
 
-3. Tag Search Size Selector
----------------------------
+Tag Search Size Selector
+------------------------
 
     - This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
       Contains The search for tag / background name and information on the background currently in the preview.
@@ -233,8 +234,8 @@ Material Version Selector
 
 .. _add_remove_buttons:
 
-4. Add Remove Buttons
----------------------
+Add Remove Buttons
+------------------
 
     - Add (From the preview) / Remove (From the scene) buttons
 

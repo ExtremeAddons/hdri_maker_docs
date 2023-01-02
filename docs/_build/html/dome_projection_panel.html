@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dome Projection &mdash; HDRi Maker 3.0.100 documentation</title>
+  <title>Dome &mdash; HDRi Maker 3.0.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -45,13 +45,13 @@
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Dome Projection</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dome</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#choose-add-remove-dome">Choose/Add/Remove Dome:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#add-dome">1. Add Dome</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#remove-dome">2. Remove Dome</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#center-view-in-dome">3. Center View In Dome</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dome-type">4. Dome Type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-dome">Add Dome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-dome">Remove Dome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#center-view-on-dome">Center View on Dome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dome-type">Dome Type</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#dome-shape"># Dome (Shape)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cube-shape"># Cube (Shape)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cylinder-shape"># Cylinder (Shape)</a></li>
@@ -60,31 +60,31 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#dome-properties">Dome Properties</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#hide-dome">1. Hide Dome:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hide-reflection-plane">2. Hide Reflection Plane:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#display-wire">3. Display Wire:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#scale-dome">4. Scale Dome:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hide-dome">Hide Dome:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hide-reflection-plane">Hide Reflection Plane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#display-wire">Display Wire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scale-dome">Scale Dome</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#dome-hooks">Dome Hooks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#add-remove-hooks">1. Add/Remove Hooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hide-hooks">2. Hide Hooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hook-size">3. Hook Size</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#expand-hooks">4. Expand Hooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hooks-type">5. Hooks Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-remove-hooks">Add/Remove Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hide-hooks">Hide Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hook-size">Hook Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expand-hooks">Expand Hooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hooks-type">Hooks Type</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#dome-wrap">Dome Wrap</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#wrap-button">1. Wrap Button</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wrap-objects-list">2. Wrap Objects List</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#remove-wrap-object">3. Remove Wrap Object:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wrap-object-name">4. Wrap Object Name:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#negative-positive-wrap">5. Negative / Positive Wrap:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#toggle-object-visibility">6. Toggle Object Visibility:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#unwrap-all">7. Unwrap All</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#subdivision-level">8. Subdivision Level</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#smooth-factor">9. Smooth Factor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#smooth-iterations">10. Smooth Iterations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wrap-button">Wrap Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wrap-objects-list">Wrap Objects List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-wrap-object">Remove Wrap Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wrap-object-name">Wrap Object Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#negative-positive-wrap">Negative / Positive Wrap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toggle-object-visibility">Toggle Object Visibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unwrap-all">Unwrap All</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subdivision-level">Subdivision Level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smooth-factor">Smooth Factor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smooth-iterations">Smooth Iterations</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ground-material">Ground Material</a><ul>
@@ -100,6 +100,8 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#dome-color-node-group">Dome Color (Node Group)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dome-vectors-node-group">Dome Vectors (Node Group)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
@@ -126,7 +128,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Dome Projection</li>
+      <li>Dome</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/dome_projection_panel.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -136,8 +138,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="dome-projection">
-<h1>Dome Projection<a class="headerlink" href="#dome-projection" title="Permalink to this heading"></a></h1>
+  <div class="section" id="dome">
+<h1>Dome<a class="headerlink" href="#dome" title="Permalink to this heading"></a></h1>
 <div class="figure align-center">
 <img alt="Dome Without Wireframe" src="_images/dome_projection_example_no_wireframe_01.png" />
 </div>
@@ -165,11 +167,38 @@ the hook!</p>
 So, before adding a dome, make sure you have added a background through the “Add” button from the main HDRi Maker panel,
 or you can also import one from your HDR/EXR background gallery (Even if it is not good practice, it will also accept
 PNG, JPG, BMP, and all image formats accepted by blender)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 24%" />
+<col style="width: 32%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#add-dome"><span class="std std-ref">Add Dome</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="2">
+<li><p><a class="reference internal" href="#remove-dome"><span class="std std-ref">Remove Dome</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="3">
+<li><p><a class="reference internal" href="#center-view-on-dome"><span class="std std-ref">Center View on Dome</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="4">
+<li><p><a class="reference internal" href="#dome-type"><span class="std std-ref">Dome Type</span></a></p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/dome_add_remove_submenu.png"><img alt="Main Panel" src="_images/dome_add_remove_submenu.png" style="width: 306.40000000000003px; height: 352.8px;" /></a>
 </div>
 <div class="section" id="add-dome">
-<h3>1. Add Dome<a class="headerlink" href="#add-dome" title="Permalink to this heading"></a></h3>
+<span id="id1"></span><h3>Add Dome<a class="headerlink" href="#add-dome" title="Permalink to this heading"></a></h3>
 <p>Before continuing, make sure you have added a background through the “Add” button from the HDRi Maker main panel.</p>
 <p>Choose a dome from the N4 property (Shown in the previous image) and click on “Add Dome” to add it to the scene.
 This button, in addition to adding a new dome, also has the function of replacing the one already present in the scene
@@ -184,15 +213,15 @@ Environment image found inside the World will be taken.</p>
 <p>In short, if there are more than 1 Environment image in the world shader, the first one found will be taken and used for the dome.</p>
 </div>
 <div class="section" id="remove-dome">
-<h3>2. Remove Dome<a class="headerlink" href="#remove-dome" title="Permalink to this heading"></a></h3>
+<span id="id2"></span><h3>Remove Dome<a class="headerlink" href="#remove-dome" title="Permalink to this heading"></a></h3>
 <p>The “Remove” button, simply removes the dome present in the scene and nothing more</p>
 </div>
-<div class="section" id="center-view-in-dome">
-<h3>3. Center View In Dome<a class="headerlink" href="#center-view-in-dome" title="Permalink to this heading"></a></h3>
+<div class="section" id="center-view-on-dome">
+<span id="id3"></span><h3>Center View on Dome<a class="headerlink" href="#center-view-on-dome" title="Permalink to this heading"></a></h3>
 <p>This small button, serves to center the view at the center of the dome (We found it very useful in many situations)</p>
 </div>
 <div class="section" id="dome-type">
-<h3>4. Dome Type<a class="headerlink" href="#dome-type" title="Permalink to this heading"></a></h3>
+<span id="id4"></span><h3>Dome Type<a class="headerlink" href="#dome-type" title="Permalink to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To change the dome, press the “Add Dome” button (see above)</p>
@@ -237,24 +266,51 @@ and with much more complex deformations. In the following chapters the interface
 <div class="section" id="dome-properties">
 <h2>Dome Properties<a class="headerlink" href="#dome-properties" title="Permalink to this heading"></a></h2>
 <p>The Submenu “Dome Properties” is designed to modify some properties of the dome:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+<col style="width: 22%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#hide-dome"><span class="std std-ref">Hide Dome:</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="2">
+<li><p><a class="reference internal" href="#hide-reflection-plane"><span class="std std-ref">Hide Reflection Plane</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="3">
+<li><p><a class="reference internal" href="#display-wire"><span class="std std-ref">Display Wire</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="4">
+<li><p><a class="reference internal" href="#scale-dome"><span class="std std-ref">Scale Dome</span></a></p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
 <a class="reference internal image-reference" href="_images/dome_properties_01.png"><img alt="Main Panel" class="align-center" src="_images/dome_properties_01.png" style="width: 500px;" /></a>
 <div class="section" id="hide-dome">
-<h3>1. Hide Dome:<a class="headerlink" href="#hide-dome" title="Permalink to this heading"></a></h3>
+<span id="id5"></span><h3>Hide Dome:<a class="headerlink" href="#hide-dome" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>Hides the dome, in order to work better (If necessary), this allows you to keep all the settings chosen,
 so when you want to work with the dome again, just click on this button again to make it reappear.</p>
 </div></blockquote>
 </div>
 <div class="section" id="hide-reflection-plane">
-<h3>2. Hide Reflection Plane:<a class="headerlink" href="#hide-reflection-plane" title="Permalink to this heading"></a></h3>
+<span id="id6"></span><h3>Hide Reflection Plane<a class="headerlink" href="#hide-reflection-plane" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>The dome by default, has a reflection plane applied to its ground, this allows you to have realistic reflections
 on the ground (If necessary) the reflection plane is only necessary when using Eevee Render, if you use Cycles Render
 it is possible to disable it, so as not to display it.</p>
 </div></blockquote>
-<div class="figure align-center" id="id10">
+<div class="figure align-center" id="id33">
 <img alt="Main Panel" src="_images/show_reflection_plane_01.png" />
-<p class="caption"><span class="caption-text">The 3d model (Mei Posed 001 - Female Walking Business Model) is licensed CC Attribution, comes from sketchfab, and was made by “Renderpeople” the link here: <a class="reference external" href="https://sketchfab.com/3d-model">https://sketchfab.com/3d-model</a></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p class="caption"><span class="caption-text">The 3d model (Mei Posed 001 - Female Walking Business Model) is licensed CC Attribution, comes from sketchfab, and was made by “Renderpeople” the link here: <a class="reference external" href="https://sketchfab.com/3d-model">https://sketchfab.com/3d-model</a></span><a class="headerlink" href="#id33" title="Permalink to this image"></a></p>
 <div class="legend">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -265,7 +321,7 @@ of the ground of the dome. (If Hooks are used, the reflection plane will also fo
 </div>
 </div>
 <div class="section" id="display-wire">
-<h3>3. Display Wire:<a class="headerlink" href="#display-wire" title="Permalink to this heading"></a></h3>
+<span id="id7"></span><h3>Display Wire<a class="headerlink" href="#display-wire" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This option allows you to display the wireframe of the dome, This could be useful to understand the real mesh
 of the dome, and to understand how the Wrap behaves (Explained later here <a class="reference internal" href="#dome-wrap"><span class="std std-ref">Dome Wrap</span></a>)
@@ -278,14 +334,14 @@ Cube or Cylinder.</p>
 <p class="admonition-title">Note</p>
 <p>To change the intensity of the wire, refer to the native Blender menu “Viewport Overlays” here below the image:</p>
 </div>
-<div class="figure align-center" id="id11">
+<div class="figure align-center" id="id34">
 <img alt="Main Panel" src="_images/viewport_overlay_blender_01.png" />
-<p class="caption"><span class="caption-text">Example of wireframe settings modification</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+<p class="caption"><span class="caption-text">Example of wireframe settings modification</span><a class="headerlink" href="#id34" title="Permalink to this image"></a></p>
 </div>
 </div></blockquote>
 </div>
 <div class="section" id="scale-dome">
-<h3>4. Scale Dome:<a class="headerlink" href="#scale-dome" title="Permalink to this heading"></a></h3>
+<span id="id8"></span><h3>Scale Dome<a class="headerlink" href="#scale-dome" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>Scale dome, serves to scale the dome in size.
 If you have applied the Wrap (Explained later here: <a class="reference internal" href="#dome-wrap"><span class="std std-ref">Dome Wrap</span></a>) then the wrap will scale with the dome, so as to
@@ -301,24 +357,48 @@ will scale with the dome, so as to always keep the same proportional size to the
 </div>
 <div class="section" id="dome-hooks">
 <h2>Dome Hooks<a class="headerlink" href="#dome-hooks" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 21%" />
+<col style="width: 30%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#add-remove-hooks"><span class="std std-ref">Add/Remove Hooks</span></a></p></li>
+<li><p><a class="reference internal" href="#hide-hooks"><span class="std std-ref">Hide Hooks</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="3">
+<li><p><a class="reference internal" href="#hook-size"><span class="std std-ref">Hook Size</span></a></p></li>
+<li><p><a class="reference internal" href="#expand-hooks"><span class="std std-ref">Expand Hooks</span></a></p></li>
+<li><p><a class="reference internal" href="#hooks-type"><span class="std std-ref">Hooks Type</span></a></p></li>
+</ol>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <div class="figure align-center">
 <img alt="Main Panel" src="_images/hooks_subpanel_01.png" />
 </div>
 <p>Dome Hooks is a feature introduced in version 3.0.100, It allows you to apply 25 Hooks to the dome plane, they allow you
 to modify the shape of the dome perimeter, in order to adapt it as best as possible according to the HDR scene in which
 you are. This allows you to make the scene in the dome even more realistic than before Here below an example image:</p>
-<div class="figure align-center" id="id12">
+<div class="figure align-center" id="id35">
 <img alt="Main Panel" src="_images/parking_hooks_01.png" />
 <p class="caption"><span class="caption-text"><strong>In this image we see a dome of type “Cube”, Hooks have been used to modify the shape of the dome perimeter,
-This makes everything look much more realistic and aligned to the geometries of the HDR image</strong></span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+This makes everything look much more realistic and aligned to the geometries of the HDR image</strong></span><a class="headerlink" href="#id35" title="Permalink to this image"></a></p>
 </div>
-<div class="figure align-center" id="id13">
+<div class="figure align-center" id="id36">
 <img alt="Main Panel" src="_images/parking_hooks_wireframe_01.png" />
 <p class="caption"><span class="caption-text"><strong>In this image we see the same scene from a different angle, with the Hooks that work on the meshes of the dome,
-They have been positioned as best as possible to adapt to the proposed image</strong></span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+They have been positioned as best as possible to adapt to the proposed image</strong></span><a class="headerlink" href="#id36" title="Permalink to this image"></a></p>
 </div>
 <div class="section" id="add-remove-hooks">
-<h3>1. Add/Remove Hooks<a class="headerlink" href="#add-remove-hooks" title="Permalink to this heading"></a></h3>
+<span id="id9"></span><h3>Add/Remove Hooks<a class="headerlink" href="#add-remove-hooks" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This button allows you to add or remove hooks, it is possible to add up to 25 hooks, and to remove them all at once.
 The hooks are applied to the dome plane, and are used to modify the shape of the dome perimeter, in order to adapt it
@@ -331,21 +411,21 @@ more realistic than before.</p>
 </div></blockquote>
 </div>
 <div class="section" id="hide-hooks">
-<h3>2. Hide Hooks<a class="headerlink" href="#hide-hooks" title="Permalink to this heading"></a></h3>
+<span id="id10"></span><h3>Hide Hooks<a class="headerlink" href="#hide-hooks" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This checkbox allows you to hide the hooks, in order to work better (If necessary), this allows you to keep the hooks
 in place, so when you want to work with the hooks again, just click on this button again to make them reappear.</p>
 </div></blockquote>
 </div>
 <div class="section" id="hook-size">
-<h3>3. Hook Size<a class="headerlink" href="#hook-size" title="Permalink to this heading"></a></h3>
+<span id="id11"></span><h3>Hook Size<a class="headerlink" href="#hook-size" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This slider allows you to modify the size of the hooks, in order to make more confortable the work with the hooks.
 Big Hooks = More visible = More confortable to work with (If necessary)</p>
 </div></blockquote>
 </div>
 <div class="section" id="expand-hooks">
-<h3>4. Expand Hooks<a class="headerlink" href="#expand-hooks" title="Permalink to this heading"></a></h3>
+<span id="id12"></span><h3>Expand Hooks<a class="headerlink" href="#expand-hooks" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This slider allows you to do a kind of scale on the distance between the Hooks, in this way it is possible
 to expand or contract the distance of the hooks from the center of the dome (Uniformly).
@@ -354,7 +434,7 @@ case of the dome size, on the contrary, it allows you to adapt the geometry to t
 </div></blockquote>
 </div>
 <div class="section" id="hooks-type">
-<h3>5. Hooks Type<a class="headerlink" href="#hooks-type" title="Permalink to this heading"></a></h3>
+<span id="id13"></span><h3>Hooks Type<a class="headerlink" href="#hooks-type" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This dropdown menu allows you to choose the type of hooks to use. They will be changed simultaneously
 once chosen in the dropdown menu</p>
@@ -362,25 +442,45 @@ once chosen in the dropdown menu</p>
 </div>
 </div>
 <div class="section" id="dome-wrap">
-<span id="id1"></span><h2>Dome Wrap<a class="headerlink" href="#dome-wrap" title="Permalink to this heading"></a></h2>
+<span id="id14"></span><h2>Dome Wrap<a class="headerlink" href="#dome-wrap" title="Permalink to this heading"></a></h2>
 <p>Dome Wrap is a very powerful tool that uses Blender modifiers to create real displacement in the mesh of the ground of the dome
 (All types of dome present in HDRi Maker support the wrap).</p>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="_images/wrap_submenu_01.png"><img alt="Main Panel" src="_images/wrap_submenu_01.png" style="width: 556.8000000000001px; height: 583.2px;" /></a>
-</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#wrap-button"><span class="std std-ref">Wrap Button</span></a></p></li>
+<li><p><a class="reference internal" href="#wrap-objects-list"><span class="std std-ref">Wrap Objects List</span></a></p></li>
+<li><p><a class="reference internal" href="#remove-wrap-object"><span class="std std-ref">Remove Wrap Object</span></a></p></li>
+<li><p><a class="reference internal" href="#wrap-object-name"><span class="std std-ref">Wrap Object Name</span></a></p></li>
+<li><p><a class="reference internal" href="#negative-positive-wrap"><span class="std std-ref">Negative / Positive Wrap</span></a></p></li>
+<li><p><a class="reference internal" href="#toggle-object-visibility"><span class="std std-ref">Toggle Object Visibility</span></a></p></li>
+<li><p><a class="reference internal" href="#unwrap-all"><span class="std std-ref">Unwrap All</span></a></p></li>
+<li><p><a class="reference internal" href="#subdivision-level"><span class="std std-ref">Subdivision Level</span></a></p></li>
+<li><p><a class="reference internal" href="#smooth-factor"><span class="std std-ref">Smooth Factor</span></a></p></li>
+<li><p><a class="reference internal" href="#smooth-iterations"><span class="std std-ref">Smooth Iterations</span></a></p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/wrap_submenu_01.png"><img alt="Wrap Submenu" src="_images/wrap_submenu_01.png" style="width: 600px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Once the wrap has been added to an object, if you intend to scale the dome, no problem, the wraped object(s) will
 scale with the dome, so as to always keep the same proportional size to the dome.</p>
 </div>
-<div class="figure align-center" id="id14">
+<div class="figure align-center" id="id37">
 <img alt="Main Panel" src="_images/wrap_in_construction_site_01.png" />
-<p class="caption"><span class="caption-text">In this example the wrap has been applied to various objects generated with “A.N.T. Landscape” an addon already present in Blender</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+<p class="caption"><span class="caption-text">In this example the wrap has been applied to various objects generated with “A.N.T. Landscape” an addon already present in Blender</span><a class="headerlink" href="#id37" title="Permalink to this image"></a></p>
 </div>
-<div class="figure align-center" id="id15">
+<div class="figure align-center" id="id38">
 <img alt="Main Panel" src="_images/wrap_in_construction_site_wireframe_01.png" />
 <p class="caption"><span class="caption-text">Here we have the same scene as before, with wireframe active, we can also see some “boxes” they are actually Landscapes
-generated with the “A.N.T. Landscape” addon and that have been applied to the dome ground as Wrap objects</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+generated with the “A.N.T. Landscape” addon and that have been applied to the dome ground as Wrap objects</span><a class="headerlink" href="#id38" title="Permalink to this image"></a></p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -400,7 +500,7 @@ generated with the “A.N.T. Landscape” addon and that have been applied to th
 </div>
 </div>
 <div class="section" id="wrap-button">
-<h3>1. Wrap Button<a class="headerlink" href="#wrap-button" title="Permalink to this heading"></a></h3>
+<span id="id15"></span><h3>Wrap Button<a class="headerlink" href="#wrap-button" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>Before pressing Wrap, make sure you have a Mesh type object selected (An object created with A.N.T. Landscape
 is perfect for this purpose) You can also have more objects selected and press Wrap, in this case all the
@@ -410,7 +510,7 @@ much more realistic and detailed scenes.</p>
 </div></blockquote>
 </div>
 <div class="section" id="wrap-objects-list">
-<h3>2. Wrap Objects List<a class="headerlink" href="#wrap-objects-list" title="Permalink to this heading"></a></h3>
+<span id="id16"></span><h3>Wrap Objects List<a class="headerlink" href="#wrap-objects-list" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This list shows all the objects that have been applied as Wrap objects, in this way it is possible to remove them
 from the list, or to modify their settings (Only the wrap objects will be in this list)
@@ -418,20 +518,20 @@ The arrows on the left are used to select the wrap object in the scene</p>
 </div></blockquote>
 </div>
 <div class="section" id="remove-wrap-object">
-<h3>3. Remove Wrap Object:<a class="headerlink" href="#remove-wrap-object" title="Permalink to this heading"></a></h3>
+<span id="id17"></span><h3>Remove Wrap Object<a class="headerlink" href="#remove-wrap-object" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This button removes the wrap from the object in the list, so the object will return to the previous state to the Wrap.</p>
 </div></blockquote>
 </div>
 <div class="section" id="wrap-object-name">
-<h3>4. Wrap Object Name:<a class="headerlink" href="#wrap-object-name" title="Permalink to this heading"></a></h3>
+<span id="id18"></span><h3>Wrap Object Name<a class="headerlink" href="#wrap-object-name" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This text field shows the name of the object in the list, it is possible to change the name of the object
 in the list on the fly</p>
 </div></blockquote>
 </div>
 <div class="section" id="negative-positive-wrap">
-<h3>5. Negative / Positive Wrap:<a class="headerlink" href="#negative-positive-wrap" title="Permalink to this heading"></a></h3>
+<span id="id19"></span><h3>Negative / Positive Wrap<a class="headerlink" href="#negative-positive-wrap" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>These two arrows (Up and down) allow you to decide in which vertical direction you want the wrap to be applied
 Use Cases:</p>
@@ -441,15 +541,26 @@ Use Cases:</p>
 <li><p>If both Wraps are active, the dome ground will adapt to the shape of the object in both directions</p></li>
 </ul>
 </div></blockquote>
-<p><strong>Image Example:</strong>
-In this example there are 3 wrap objects, all the same but with different orientation options, the 1 is an object with negative Wrap,
-the 2 is an object with positive Wrap, the 3 is an object with negative and positive Wrap.</p>
+<p><strong>Image Example:</strong></p>
+<blockquote>
+<div><ul>
+<li><p>In this example there are 3 wrap objects, all the same but with different orientation options</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>1.</strong> is an object with negative Wrap</p></li>
+<li><p><strong>2.</strong> is an object with positive Wrap</p></li>
+<li><p><strong>3.</strong> is an object with negative and positive Wrap</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
 <blockquote>
 <div><a class="reference internal image-reference" href="_images/wrap_negative_positive_01.png"><img alt="Main Panel" class="align-center" src="_images/wrap_negative_positive_01.png" style="width: 800px;" /></a>
 </div></blockquote>
+</div></blockquote>
 </div>
 <div class="section" id="toggle-object-visibility">
-<h3>6. Toggle Object Visibility:<a class="headerlink" href="#toggle-object-visibility" title="Permalink to this heading"></a></h3>
+<span id="id20"></span><h3>Toggle Object Visibility<a class="headerlink" href="#toggle-object-visibility" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This button allows you to hide the object in the scene, in this way it is possible to work better with the object
 without having to remove it from the list</p>
@@ -462,13 +573,13 @@ object in the list:</p>
 </div></blockquote>
 </div>
 <div class="section" id="unwrap-all">
-<h3>7. Unwrap All<a class="headerlink" href="#unwrap-all" title="Permalink to this heading"></a></h3>
+<span id="id21"></span><h3>Unwrap All<a class="headerlink" href="#unwrap-all" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This button allows you to unwrap all the objects in the list in one click</p>
 </div></blockquote>
 </div>
 <div class="section" id="subdivision-level">
-<h3>8. Subdivision Level<a class="headerlink" href="#subdivision-level" title="Permalink to this heading"></a></h3>
+<span id="id22"></span><h3>Subdivision Level<a class="headerlink" href="#subdivision-level" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This slider allows you to modify the subdivision level of the dome ground, This allows you to have greater accuracy
 in the Wrap, but also increases the rendering time.
@@ -477,14 +588,14 @@ The minimum value is 0 (So base grid), the maximum value is 6
 </div></blockquote>
 </div>
 <div class="section" id="smooth-factor">
-<h3>9. Smooth Factor<a class="headerlink" href="#smooth-factor" title="Permalink to this heading"></a></h3>
+<span id="id23"></span><h3>Smooth Factor<a class="headerlink" href="#smooth-factor" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This slider allows you to modify the smooth factor of the dome ground, This works in symbiosis with
 “Smooth Iterations” (Next point), if Smooth Factor is 0, even smooth iterations will not work</p>
 </div></blockquote>
 </div>
 <div class="section" id="smooth-iterations">
-<h3>10. Smooth Iterations<a class="headerlink" href="#smooth-iterations" title="Permalink to this heading"></a></h3>
+<span id="id24"></span><h3>Smooth Iterations<a class="headerlink" href="#smooth-iterations" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>This slider allows you to modify the smooth iterations of the dome ground, This works in symbiosis with
 “Smooth Factor” (Previous point), if Smooth Factor is 0, even smooth iterations will not work.
@@ -493,7 +604,7 @@ This “Spreads” the smooth better, making it more expanded and more homogeneo
 </div>
 </div>
 <div class="section" id="ground-material">
-<span id="id2"></span><h2>Ground Material<a class="headerlink" href="#ground-material" title="Permalink to this heading"></a></h2>
+<span id="id25"></span><h2>Ground Material<a class="headerlink" href="#ground-material" title="Permalink to this heading"></a></h2>
 <p>The Ground Material is exactly the material of which the dome is composed, this material is very important, and can be
 used on objects other than the dome, the most important feature is that this material is mapped on the center
 of the dome, so wherever you move the object on which you apply this material, it will always adapt
@@ -501,10 +612,10 @@ and match the position of the dome ground.
 In short, it will always match the position of the image of the ground.
 From version 3.0.100 it is also possible to use it as a material that matches the top part of the dome,
 This is useful in some cases if you want to add some extra detail to the dome. More Aventi will be shown some examples.</p>
-<div class="figure align-center" id="id16">
+<div class="figure align-center" id="id39">
 <img alt="Main Panel" src="_images/dome_ground_warrior_fauno.png" />
 <p class="caption"><span class="caption-text">This “Warrior Fauno” was downloaded from sketchfab, and was created by “Yamato” CC Attribution license. Link Here:
-<a class="reference external" href="https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9">https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9</a></span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+<a class="reference external" href="https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9">https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9</a></span><a class="headerlink" href="#id39" title="Permalink to this image"></a></p>
 </div>
 <p>This is an example with 3 objects to which the ground material of the Dome has been applied:</p>
 <blockquote>
@@ -552,7 +663,7 @@ and will be shown in the list as in the example below. If the dome is scaled, th
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/ground_submenu_01.png"><img alt="Main Panel" class="align-center" src="_images/ground_submenu_01.png" style="width: 600px;" /></a>
 <div class="section" id="add-ground">
-<span id="id3"></span><h4>Add Ground<a class="headerlink" href="#add-ground" title="Permalink to this heading"></a></h4>
+<span id="id26"></span><h4>Add Ground<a class="headerlink" href="#add-ground" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><blockquote>
 <div><ul class="simple">
@@ -569,7 +680,7 @@ remove any material present in the object and apply the Ground material.</p>
 </div></blockquote>
 </div>
 <div class="section" id="select-object">
-<span id="id4"></span><h4>Select Object<a class="headerlink" href="#select-object" title="Permalink to this heading"></a></h4>
+<span id="id27"></span><h4>Select Object<a class="headerlink" href="#select-object" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>This button allows you to select the object in the list, if the object is Active, it will be highlighted in the list.</p></li>
@@ -577,7 +688,7 @@ remove any material present in the object and apply the Ground material.</p>
 </div></blockquote>
 </div>
 <div class="section" id="remove-ground">
-<span id="id5"></span><h4>Remove Ground<a class="headerlink" href="#remove-ground" title="Permalink to this heading"></a></h4>
+<span id="id28"></span><h4>Remove Ground<a class="headerlink" href="#remove-ground" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>This button allows you to remove the ground material from the object in the list, in this way the object will return to the previous state
@@ -586,7 +697,7 @@ to the application of the Ground material it will be removed from the list and w
 </div></blockquote>
 </div>
 <div class="section" id="remove-all">
-<span id="id6"></span><h4>Remove All<a class="headerlink" href="#remove-all" title="Permalink to this heading"></a></h4>
+<span id="id29"></span><h4>Remove All<a class="headerlink" href="#remove-all" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>This button allows you to remove the ground material from all the objects in the list, in this way all the objects will return to the previous state
@@ -595,7 +706,7 @@ to the application of the Ground material, they will be removed from the list an
 </div></blockquote>
 </div>
 <div class="section" id="material-type-ground">
-<span id="id7"></span><h4>Material type “Ground”<a class="headerlink" href="#material-type-ground" title="Permalink to this heading"></a></h4>
+<span id="id30"></span><h4>Material type “Ground”<a class="headerlink" href="#material-type-ground" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>If selected, the material assumes the projection of type “Ground” will only project the ground part.</p></li>
@@ -603,7 +714,7 @@ to the application of the Ground material, they will be removed from the list an
 </div></blockquote>
 </div>
 <div class="section" id="material-type-top">
-<span id="id8"></span><h4>Material type “Top”<a class="headerlink" href="#material-type-top" title="Permalink to this heading"></a></h4>
+<span id="id31"></span><h4>Material type “Top”<a class="headerlink" href="#material-type-top" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>If selected, the material assumes the projection of type “Top” The material will be projected completely, as if it were
@@ -612,7 +723,7 @@ the top part of the dome. This is useful if you want to create walls to apply to
 </div></blockquote>
 </div>
 <div class="section" id="flip-faces">
-<span id="id9"></span><h4>Flip Faces<a class="headerlink" href="#flip-faces" title="Permalink to this heading"></a></h4>
+<span id="id32"></span><h4>Flip Faces<a class="headerlink" href="#flip-faces" title="Permalink to this heading"></a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>Switch between face orientation, if the faces are flipped, the material will be projected in the opposite direction.
@@ -626,6 +737,282 @@ system has some limitations, this comes to the rescue</p>
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="dome-color-node-group">
+<h2>Dome Color (Node Group)<a class="headerlink" href="#dome-color-node-group" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/dome_color_panel_01.png"><img alt="Dome Color Panel" class="align-center" src="_images/dome_color_panel_01.png" style="width: 400px;" /></a>
+<ol class="arabic simple">
+<li><p><strong>Use Solid Color  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>If on, it will use a solid color instead of the image. The color property will appear once activated.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Solid Color  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust solid color. (Make sure the Colorize Strength is set to 0 to get a correct solid color).</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Exposure Full  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>It adjusts the exposure of the entire dome, both the ground and the sky, and also acts as an illuminator</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Exposure Ground  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>It adjusts the exposure of the ground only.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Hue  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the HUE on the whole dome</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>Saturation  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Saturation  on the whole dome</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>Colorize  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Color to colorize. (Needs to raise the Strength property to be visible)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p><strong>Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the strength of the colorize</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p><strong>Specular  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the ground reflection. (The ground is reflective in the center and towards the edges it is blended with a gradient, in order to render only the ground without affecting the vertical part of the dome)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li><p><strong>Roughness  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the ground Roughness. (The ground is reflective in the center and towards the edges it is blended with a gradient, in order to render only the ground without affecting the vertical part of the dome)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li><p><strong>Metallic  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the ground Metal effect. (The ground is reflective in the center and towards the edges it is blended with a gradient, in order to render only the ground without affecting the vertical part of the dome)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p><strong>Bump Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the bump strength, the bump map is simulated by the main image, which changes from Colors to black and white. It only affects the Ground</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="13">
+<li><p><strong>Bump Distance  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the bump distance, the bump map is simulated by the main image, which changes from Colors to black and white. It only affects the Ground</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="14">
+<li><p><strong>Flip  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Flip the Bump Direction</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="dome-vectors-node-group">
+<h2>Dome Vectors (Node Group)<a class="headerlink" href="#dome-vectors-node-group" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/dome_vectors_panel_01.png"><img alt="Dome Vectors Panel" class="align-center" src="_images/dome_vectors_panel_01.png" style="width: 400px;" /></a>
+<ol class="arabic simple">
+<li><p><strong>Angle  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Rotate the image completely on the Z axis</p></li>
+<li><p>You can also Sync the angle of the rotation with the world rotation of the dome, in this way the image will rotate with the dome.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Locations</strong></p>
+<ol class="arabic simple" start="2">
+<li><p><strong>LX  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>(Location X) Move the image completely on the X axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>LY  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>(Location Y) Move the image completely on the Y axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>LZ  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>(Location Z) Move the image completely on the Z axis</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Top:</strong></p>
+<ol class="arabic simple" start="5">
+<li><p><strong>LX  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the top of the image on the X axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>LY  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the top of the image on the Y axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>LZ  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the top of the image on the Z axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p><strong>Scale  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>distanceScale only the top of the Dome. The ground will not be scaled</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Ground:</strong></p>
+<ol class="arabic simple" start="9">
+<li><p><strong>LX  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the image projected onto the ground on the X axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li><p><strong>LY  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the image projected onto the ground on the Y axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li><p><strong>Scale X  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Scale image projected on the ground on the X axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p><strong>Scale Y  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Scale image projected on the ground on the Y axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="13">
+<li><p><strong>Scale  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Scale image projected on the ground uniformly</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="14">
+<li><p><strong>Blur Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Set the hardness of the Blurry effect</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="15">
+<li><p><strong>Blur Distance  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Set the distance from which the Blurry effect is to be seen</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="16">
+<li><p><strong>Blur Flip  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Invert the blurry effect. The blurry part will become the non-blurry part etc.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="17">
+<li><p><strong>Adjust Boundary  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the part of the image where it meets the ground. Useful in some cases, when changing the scale and position properties, especially on the ground.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="18">
+<li><p><strong>Expand Catcher Plane  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>The Catcher Plane is the plane of the dome on which the shadow and all the effects (Specular-Roughness-Bump etc.) can be projected. The more it expands, the wider the action plane will be.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="19">
+<li><p><strong>Expand On Top  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Expand The Catcher even beyond the floor to the entire top</p></li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 
