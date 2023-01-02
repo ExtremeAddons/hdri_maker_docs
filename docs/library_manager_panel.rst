@@ -24,7 +24,7 @@ Quick overview of the Main Panel:
 .. _libraries_selector:
 
 1. Libraries selector
-#####################
+---------------------
 
     - This area is used to choose the library, the category (of the library) and the category search via the text field.
 

@@ -12,15 +12,15 @@ There is also a section to manipulate the user library.
   :align: center
   :alt: Save Panel Overview
 
-**1 - Export Image**
---------------------
+1 - Export Image
+----------------
 
 If in the current scene there is a World and in the nodes of the world there is one or more images in the nodes of type "TEX_ENVIRONMENT"
 This button allows you to export the image / s and save them in the chosen directory.
 
 
-**2 - Save Type**
------------------------
+2 - Save Type
+-------------
 
 
 This area allows you to choose 3 types of saving options:
@@ -112,6 +112,10 @@ You can press the ESC button to stop the process.
 
 Save 360° Background
 ********************
+
+   - Save the scene in an image taken from the point of view of the 360° camera.
+     This option is useful to create panoramic images to be used as backgrounds also in other programs.
+     The images created can also be exported in HDR format
 
 .. image:: _static/_images/save/sphere_360_example_01.png
   :width: 800
@@ -208,21 +212,51 @@ You must press the "Panorama Save" button, a popup will appear that you can see 
             :alt: Panorama Save
 
 
+3 - Library Tools
+-----------------
+
+   - This submenu is dedicated to the manipulation of the User Library (The library where you can save your Backgrounds).
 
 
+.. image:: _static/_images/save/library_tools_interface_01.png
+   :width: 300
+   :align: center
+   :alt: Library Tools Interface
 
 
+Add New Category
+****************
+
+   - This option allows you to add a new category to the User Library. It is not allowed to add more than one category
+     with the same name (Lowercase and uppercase do not make a difference)
+
+Move Background to Category
+***************************
+
+   - This option allows you to move a background from one category to another.
+     (If the name of the background exists in the destination category, the background will not be moved)
 
 
+Rename Background
+*****************
+
+   - This option allows you to rename a background. If the name is already present in the current category, the operation will not be completed.
+
+Rename Category
+***************
+
+   - This option allows you to rename a category. If the name is already present in the User Library, the operation will not be completed.
+
+Open Current Folder
+*******************
+
+   - For convenience, this button opens the current folder of the user library, so that you can access and check the saved files.
 
 
+Danger Zone
+***********
 
+   - This section contains the options to delete categories and backgrounds from the User Library.
 
-
-
-
-
-
-
-
+    .. Note:: The deletion of a category will also delete all the backgrounds contained in it.
 

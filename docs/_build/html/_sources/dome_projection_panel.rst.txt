@@ -418,6 +418,112 @@ This is useful in some cases if you want to add some extra detail to the dome. M
     https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9
 
 
+This is an example with 3 objects to which the ground material of the Dome has been applied:
+
+    - This function allows you to make the dome even more detailed if you want. You can apply the material also to custom walls.
+      As in the image example below, above in which the wall is detailed with extrusions at the height of the doors and windows of the ruin.
+
+
+.. image:: _static/_images/dome_projection/ground_objects_example_01.png
+    :align: center
+    :width: 800
+    :alt: Main Panel
+
+------------------------------------------------------------------------------------------------------------------------
+
+Ground Material Menu
+********************
+
+   - All objects to which the material will be applied via the "Add Ground" button will automatically be made children of the dome,
+     and will be shown in the list as in the example below. If the dome is scaled, the child objects will also be scaled in proportion.
+
+|
+
+
+                                +-------------------------+--------------------------------+
+                                | 1. :ref:`add_ground`    | 5. :ref:`material_type_ground` |
+                                | 2. :ref:`select_object` | 6. :ref:`material_type_top`    |
+                                | 3. :ref:`remove_ground` | 7. :ref:`flip_faces`           |
+                                | 4. :ref:`remove_all`    |                                |
+                                +-------------------------+--------------------------------+
+
+.. image:: _static/_images/dome_projection/ground_submenu_01.png
+    :align: center
+    :width: 600
+    :alt: Main Panel
+
+.. _add_ground:
+
+Add Ground
+##########
+
+    - This button allows you to add the ground material to the selected object, in this way the object will become a child of the dome,
+      and will be visible in the list.
+
+
+   .. Note:: If the object already has a material that is not of type Ground, for safety reasons, it is not replaced,
+             This to avoid any errors on the part of the user. If you want to replace the material, you must first
+             remove any material present in the object and apply the Ground material.
+
+.. _select_object:
+
+Select Object
+#############
+
+    - This button allows you to select the object in the list, if the object is Active, it will be highlighted in the list.
+
+.. _remove_ground:
+
+Remove Ground
+#############
+
+    - This button allows you to remove the ground material from the object in the list, in this way the object will return to the previous state
+      to the application of the Ground material it will be removed from the list and will no longer be a child of the dome.
+
+.. _remove_all:
+
+Remove All
+##########
+
+    - This button allows you to remove the ground material from all the objects in the list, in this way all the objects will return to the previous state
+      to the application of the Ground material, they will be removed from the list and will no longer be children of the dome.
+
+.. _material_type_ground:
+
+Material type "Ground"
+######################
+
+    - If selected, the material assumes the projection of type "Ground" will only project the ground part.
+
+.. _material_type_top:
+
+Material type "Top"
+###################
+
+    - If selected, the material assumes the projection of type "Top" The material will be projected completely, as if it were
+      the top part of the dome. This is useful if you want to create walls to apply to the dome, in order to put more details.
+
+.. _flip_faces:
+
+Flip Faces
+##########
+
+    - Switch between face orientation, if the faces are flipped, the material will be projected in the opposite direction.
+      The backfaces are invisible (like the dome)
+
+.. Tip::
+    This is very useful especially in interior projections, if you want to add some detail to the dome where the Hook
+    system has some limitations, this comes to the rescue
+
+
+
+
+
+
+
+
+
+
 
 
 

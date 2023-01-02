@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Volumetric" href="volumetric_panel.html" />
-    <link rel="prev" title="Main Panel (Library Manager)" href="library_manager_panel.html" /> 
+    <link rel="prev" title="Main Panel" href="library_manager_panel.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -38,10 +38,13 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Sections:</span></p>
-<ul class="current">
+              <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="how_to_install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel (Library Manager)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Dome Projection</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#choose-add-remove-dome">Choose/Add/Remove Dome:</a><ul>
@@ -84,11 +87,29 @@
 <li class="toctree-l3"><a class="reference internal" href="#smooth-iterations">10. Smooth Iterations</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#ground-material">Ground Material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ground-material">Ground Material</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ground-material-menu">Ground Material Menu</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#add-ground">Add Ground</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#select-object">Select Object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#remove-ground">Remove Ground</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#remove-all">Remove All</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#material-type-ground">Material type “Ground”</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#material-type-top">Material type “Top”</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flip-faces">Flip Faces</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
+<li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="youtube_video.html">Youtube Tutorial</a></li>
 </ul>
 
         </div>
@@ -231,9 +252,9 @@ so when you want to work with the dome again, just click on this button again to
 on the ground (If necessary) the reflection plane is only necessary when using Eevee Render, if you use Cycles Render
 it is possible to disable it, so as not to display it.</p>
 </div></blockquote>
-<div class="figure align-center" id="id3">
+<div class="figure align-center" id="id10">
 <img alt="Main Panel" src="_images/show_reflection_plane_01.png" />
-<p class="caption"><span class="caption-text">The 3d model (Mei Posed 001 - Female Walking Business Model) is licensed CC Attribution, comes from sketchfab, and was made by “Renderpeople” the link here: <a class="reference external" href="https://sketchfab.com/3d-model">https://sketchfab.com/3d-model</a></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p class="caption"><span class="caption-text">The 3d model (Mei Posed 001 - Female Walking Business Model) is licensed CC Attribution, comes from sketchfab, and was made by “Renderpeople” the link here: <a class="reference external" href="https://sketchfab.com/3d-model">https://sketchfab.com/3d-model</a></span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 <div class="legend">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -257,9 +278,9 @@ Cube or Cylinder.</p>
 <p class="admonition-title">Note</p>
 <p>To change the intensity of the wire, refer to the native Blender menu “Viewport Overlays” here below the image:</p>
 </div>
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id11">
 <img alt="Main Panel" src="_images/viewport_overlay_blender_01.png" />
-<p class="caption"><span class="caption-text">Example of wireframe settings modification</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p class="caption"><span class="caption-text">Example of wireframe settings modification</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </div>
 </div></blockquote>
 </div>
@@ -286,15 +307,15 @@ will scale with the dome, so as to always keep the same proportional size to the
 <p>Dome Hooks is a feature introduced in version 3.0.100, It allows you to apply 25 Hooks to the dome plane, they allow you
 to modify the shape of the dome perimeter, in order to adapt it as best as possible according to the HDR scene in which
 you are. This allows you to make the scene in the dome even more realistic than before Here below an example image:</p>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id12">
 <img alt="Main Panel" src="_images/parking_hooks_01.png" />
 <p class="caption"><span class="caption-text"><strong>In this image we see a dome of type “Cube”, Hooks have been used to modify the shape of the dome perimeter,
-This makes everything look much more realistic and aligned to the geometries of the HDR image</strong></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+This makes everything look much more realistic and aligned to the geometries of the HDR image</strong></span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
 </div>
-<div class="figure align-center" id="id6">
+<div class="figure align-center" id="id13">
 <img alt="Main Panel" src="_images/parking_hooks_wireframe_01.png" />
 <p class="caption"><span class="caption-text"><strong>In this image we see the same scene from a different angle, with the Hooks that work on the meshes of the dome,
-They have been positioned as best as possible to adapt to the proposed image</strong></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+They have been positioned as best as possible to adapt to the proposed image</strong></span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
 </div>
 <div class="section" id="add-remove-hooks">
 <h3>1. Add/Remove Hooks<a class="headerlink" href="#add-remove-hooks" title="Permalink to this heading"></a></h3>
@@ -352,14 +373,14 @@ once chosen in the dropdown menu</p>
 <p>Once the wrap has been added to an object, if you intend to scale the dome, no problem, the wraped object(s) will
 scale with the dome, so as to always keep the same proportional size to the dome.</p>
 </div>
-<div class="figure align-center" id="id7">
+<div class="figure align-center" id="id14">
 <img alt="Main Panel" src="_images/wrap_in_construction_site_01.png" />
-<p class="caption"><span class="caption-text">In this example the wrap has been applied to various objects generated with “A.N.T. Landscape” an addon already present in Blender</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p class="caption"><span class="caption-text">In this example the wrap has been applied to various objects generated with “A.N.T. Landscape” an addon already present in Blender</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
 </div>
-<div class="figure align-center" id="id8">
+<div class="figure align-center" id="id15">
 <img alt="Main Panel" src="_images/wrap_in_construction_site_wireframe_01.png" />
 <p class="caption"><span class="caption-text">Here we have the same scene as before, with wireframe active, we can also see some “boxes” they are actually Landscapes
-generated with the “A.N.T. Landscape” addon and that have been applied to the dome ground as Wrap objects</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+generated with the “A.N.T. Landscape” addon and that have been applied to the dome ground as Wrap objects</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -480,10 +501,130 @@ and match the position of the dome ground.
 In short, it will always match the position of the image of the ground.
 From version 3.0.100 it is also possible to use it as a material that matches the top part of the dome,
 This is useful in some cases if you want to add some extra detail to the dome. More Aventi will be shown some examples.</p>
-<div class="figure align-center" id="id9">
+<div class="figure align-center" id="id16">
 <img alt="Main Panel" src="_images/dome_ground_warrior_fauno.png" />
 <p class="caption"><span class="caption-text">This “Warrior Fauno” was downloaded from sketchfab, and was created by “Yamato” CC Attribution license. Link Here:
-<a class="reference external" href="https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9">https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9</a></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<a class="reference external" href="https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9">https://sketchfab.com/3d-models/warrior-fauno-007eae3f0d934aedb32f910e941bcca9</a></span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+</div>
+<p>This is an example with 3 objects to which the ground material of the Dome has been applied:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This function allows you to make the dome even more detailed if you want. You can apply the material also to custom walls.
+As in the image example below, above in which the wall is detailed with extrusions at the height of the doors and windows of the ruin.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/ground_objects_example_01.png"><img alt="Main Panel" class="align-center" src="_images/ground_objects_example_01.png" style="width: 800px;" /></a>
+<hr class="docutils" />
+<div class="section" id="ground-material-menu">
+<h3>Ground Material Menu<a class="headerlink" href="#ground-material-menu" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>All objects to which the material will be applied via the “Add Ground” button will automatically be made children of the dome,
+and will be shown in the list as in the example below. If the dome is scaled, the child objects will also be scaled in proportion.</p></li>
+</ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#add-ground"><span class="std std-ref">Add Ground</span></a></p></li>
+<li><p><a class="reference internal" href="#select-object"><span class="std std-ref">Select Object</span></a></p></li>
+<li><p><a class="reference internal" href="#remove-ground"><span class="std std-ref">Remove Ground</span></a></p></li>
+<li><p><a class="reference internal" href="#remove-all"><span class="std std-ref">Remove All</span></a></p></li>
+</ol>
+</td>
+<td><ol class="arabic simple" start="5">
+<li><p><a class="reference internal" href="#material-type-ground"><span class="std std-ref">Material type “Ground”</span></a></p></li>
+<li><p><a class="reference internal" href="#material-type-top"><span class="std std-ref">Material type “Top”</span></a></p></li>
+<li><p><a class="reference internal" href="#flip-faces"><span class="std std-ref">Flip Faces</span></a></p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/ground_submenu_01.png"><img alt="Main Panel" class="align-center" src="_images/ground_submenu_01.png" style="width: 600px;" /></a>
+<div class="section" id="add-ground">
+<span id="id3"></span><h4>Add Ground<a class="headerlink" href="#add-ground" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p>This button allows you to add the ground material to the selected object, in this way the object will become a child of the dome,
+and will be visible in the list.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the object already has a material that is not of type Ground, for safety reasons, it is not replaced,
+This to avoid any errors on the part of the user. If you want to replace the material, you must first
+remove any material present in the object and apply the Ground material.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="select-object">
+<span id="id4"></span><h4>Select Object<a class="headerlink" href="#select-object" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>This button allows you to select the object in the list, if the object is Active, it will be highlighted in the list.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="remove-ground">
+<span id="id5"></span><h4>Remove Ground<a class="headerlink" href="#remove-ground" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>This button allows you to remove the ground material from the object in the list, in this way the object will return to the previous state
+to the application of the Ground material it will be removed from the list and will no longer be a child of the dome.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="remove-all">
+<span id="id6"></span><h4>Remove All<a class="headerlink" href="#remove-all" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>This button allows you to remove the ground material from all the objects in the list, in this way all the objects will return to the previous state
+to the application of the Ground material, they will be removed from the list and will no longer be children of the dome.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="material-type-ground">
+<span id="id7"></span><h4>Material type “Ground”<a class="headerlink" href="#material-type-ground" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>If selected, the material assumes the projection of type “Ground” will only project the ground part.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="material-type-top">
+<span id="id8"></span><h4>Material type “Top”<a class="headerlink" href="#material-type-top" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>If selected, the material assumes the projection of type “Top” The material will be projected completely, as if it were
+the top part of the dome. This is useful if you want to create walls to apply to the dome, in order to put more details.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="flip-faces">
+<span id="id9"></span><h4>Flip Faces<a class="headerlink" href="#flip-faces" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>Switch between face orientation, if the faces are flipped, the material will be projected in the opposite direction.
+The backfaces are invisible (like the dome)</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This is very useful especially in interior projections, if you want to add some detail to the dome where the Hook
+system has some limitations, this comes to the rescue</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -492,7 +633,7 @@ This is useful in some cases if you want to add some extra detail to the dome. M
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="library_manager_panel.html" class="btn btn-neutral float-left" title="Main Panel (Library Manager)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="library_manager_panel.html" class="btn btn-neutral float-left" title="Main Panel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="volumetric_panel.html" class="btn btn-neutral float-right" title="Volumetric" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

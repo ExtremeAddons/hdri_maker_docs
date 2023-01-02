@@ -49,14 +49,23 @@
 <li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Save</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#export-image"><strong>1 - Export Image</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#save-type"><strong>2 - Save Type</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#export-image">1 - Export Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#save-type">2 - Save Type</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#save-current-background">Save Current Background</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#batch-from-folder">Batch From Folder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#save-360-background">Save 360° Background</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#panorama-save-panel">Panorama Save Panel</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#library-tools">3 - Library Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-new-category">Add New Category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#move-background-to-category">Move Background to Category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rename-background">Rename Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rename-category">Rename Category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-current-folder">Open Current Folder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#danger-zone">Danger Zone</a></li>
 </ul>
 </li>
 </ul>
@@ -102,12 +111,12 @@
 </div>
 <a class="reference internal image-reference" href="_images/save_panel_01.png"><img alt="Save Panel Overview" class="align-center" src="_images/save_panel_01.png" style="width: 600px;" /></a>
 <div class="section" id="export-image">
-<h2><strong>1 - Export Image</strong><a class="headerlink" href="#export-image" title="Permalink to this heading"></a></h2>
+<h2>1 - Export Image<a class="headerlink" href="#export-image" title="Permalink to this heading"></a></h2>
 <p>If in the current scene there is a World and in the nodes of the world there is one or more images in the nodes of type “TEX_ENVIRONMENT”
 This button allows you to export the image / s and save them in the chosen directory.</p>
 </div>
 <div class="section" id="save-type">
-<h2><strong>2 - Save Type</strong><a class="headerlink" href="#save-type" title="Permalink to this heading"></a></h2>
+<h2>2 - Save Type<a class="headerlink" href="#save-type" title="Permalink to this heading"></a></h2>
 <p>This area allows you to choose 3 types of saving options:</p>
 <a class="reference internal image-reference" href="_images/save_type_01.png"><img alt="Save Panel Overview" class="align-center" src="_images/save_type_01.png" style="width: 300px;" /></a>
 <div class="admonition note">
@@ -178,6 +187,13 @@ save and the other have been programmed, to be able to interact and possibly sto
 <hr class="docutils" />
 <div class="section" id="save-360-background">
 <h3>Save 360° Background<a class="headerlink" href="#save-360-background" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Save the scene in an image taken from the point of view of the 360° camera.
+This option is useful to create panoramic images to be used as backgrounds also in other programs.
+The images created can also be exported in HDR format</p></li>
+</ul>
+</div></blockquote>
 <a class="reference internal image-reference" href="_images/sphere_360_example_01.png"><img alt="Sphere 360° Example" class="align-center" src="_images/sphere_360_example_01.png" style="width: 800px;" /></a>
 <p>This is useful if you have particularly complex scenes and want to create a 360° background to use in other projects.
 In many cases this saves the rendering time, because you will not need the original scene, which usually includes a
@@ -271,6 +287,71 @@ message will be shown in the same window. !! do not interrupt the rendering !!</
 <a class="reference internal image-reference" href="_images/RENDER_FINISHED.png"><img alt="Panorama Save" class="align-center" src="_images/RENDER_FINISHED.png" style="width: 400px;" /></a>
 </div>
 </div>
+</div>
+</div>
+<div class="section" id="library-tools">
+<h2>3 - Library Tools<a class="headerlink" href="#library-tools" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>This submenu is dedicated to the manipulation of the User Library (The library where you can save your Backgrounds).</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/library_tools_interface_01.png"><img alt="Library Tools Interface" class="align-center" src="_images/library_tools_interface_01.png" style="width: 300px;" /></a>
+<div class="section" id="add-new-category">
+<h3>Add New Category<a class="headerlink" href="#add-new-category" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>This option allows you to add a new category to the User Library. It is not allowed to add more than one category
+with the same name (Lowercase and uppercase do not make a difference)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="move-background-to-category">
+<h3>Move Background to Category<a class="headerlink" href="#move-background-to-category" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>This option allows you to move a background from one category to another.
+(If the name of the background exists in the destination category, the background will not be moved)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="rename-background">
+<h3>Rename Background<a class="headerlink" href="#rename-background" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>This option allows you to rename a background. If the name is already present in the current category, the operation will not be completed.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="rename-category">
+<h3>Rename Category<a class="headerlink" href="#rename-category" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>This option allows you to rename a category. If the name is already present in the User Library, the operation will not be completed.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="open-current-folder">
+<h3>Open Current Folder<a class="headerlink" href="#open-current-folder" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>For convenience, this button opens the current folder of the user library, so that you can access and check the saved files.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="danger-zone">
+<h3>Danger Zone<a class="headerlink" href="#danger-zone" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>This section contains the options to delete categories and backgrounds from the User Library.</p></li>
+</ul>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The deletion of a category will also delete all the backgrounds contained in it.</p>
+</div>
+</div></blockquote>
+</div></blockquote>
 </div>
 </div>
 </div>
