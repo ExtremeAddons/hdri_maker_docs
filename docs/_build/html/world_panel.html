@@ -66,11 +66,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#invert-diffuse-light">Invert Diffuse/Light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#change-light">Change Light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#remove-light">Remove Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-light-path">Change Light Path</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="dome_projection_panel.html">Dome</a></li>
 <li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadow_catcher.html">Shadow Catcher</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 </ul>
@@ -135,21 +137,24 @@ found in the world node tree, so it is drawn based on the various situations.</p
 <div class="section" id="add-diffuse-light">
 <span id="id1"></span><h2>Add Diffuse/Light<a class="headerlink" href="#add-diffuse-light" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p>In Base alla necessità, può capitare che tu voglia Mostrare un colore solido visivamente come sfondo e mantenere l’illuminazione
-dell’HDR immagine. Qui di seguito i 2 bottoni che ti permettono di fare questo:</p></li>
+<li><p>Depending on the situation, it may happen that you want to show a solid color visually as a background and keep the HDR image
+lighting. Here below the 2 buttons that allow you to do this:</p></li>
 </ul>
 <div class="section" id="add-diffuse">
 <h3>Add Diffuse<a class="headerlink" href="#add-diffuse" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Se vuoi aggiungere un colore solido e mantenere lo sfondo attuale, questo bottone aggiungerà un nuovo sfondo sulla
-sinistra del pannello, esso sarà visibile, ma non avrà effetto sulla scena, quindi non influenzerà la luce.</p></li>
+<li><p>If you want to add a solid color and keep the current background, this button will add a new background on the
+left of the panel, it will be visible, but it will not have any effect on the scene, so it will not affect the light.</p></li>
 </ul>
 </div>
 <div class="section" id="add-light">
 <h3>Add Light<a class="headerlink" href="#add-light" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Se aggiungerai lo sfondo tramite questo bottone, l’attuale sfondo sarà visibile, ma non influenzerà la luce, mentre il nuovo
-sfondo non sarà visibile e influenzerà la luce.</p></li>
+<li><dl class="simple">
+<dt>If you add the background through this button, the current background will be visible, but it will not affect the light,</dt><dd><p>while the new background will not be visible and will affect the light.</p>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 </div>
@@ -245,7 +250,7 @@ sfondo non sarà visibile e influenzerà la luce.</p></li>
 <li><p>Depending on the situation, additional properties may be displayed.</p></li>
 </ul>
 <div class="section" id="transparent-background">
-<h3>Transparent Background<a class="headerlink" href="#transparent-background" title="Permalink to this heading"></a></h3>
+<span id="id3"></span><h3>Transparent Background<a class="headerlink" href="#transparent-background" title="Permalink to this heading"></a></h3>
 <ul>
 <li><p>If on, the background will be transparent, this is useful to make rendering with transparent background, or to use the
 background as a mask for compositing.</p>
@@ -294,7 +299,7 @@ background as a mask for compositing.</p>
 </div>
 </div>
 <div class="section" id="remove-diffuse">
-<span id="id3"></span><h2>Remove Diffuse<a class="headerlink" href="#remove-diffuse" title="Permalink to this heading"></a></h2>
+<span id="id4"></span><h2>Remove Diffuse<a class="headerlink" href="#remove-diffuse" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>This button removes the diffuse node group from the node tree. Once removed, the “Light” node takes the role of the
 diffuse and light, so the color of the diffuse will be that of the Light, and the Light will be visible.
@@ -302,32 +307,57 @@ diffuse and light, so the color of the diffuse will be that of the Light, and th
 </ul>
 </div>
 <div class="section" id="change-diffuse">
-<span id="id4"></span><h2>Change Diffuse<a class="headerlink" href="#change-diffuse" title="Permalink to this heading"></a></h2>
+<span id="id5"></span><h2>Change Diffuse<a class="headerlink" href="#change-diffuse" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>This button is used to load a background for the Diffuse <strong>Press SHIFT+Click to import a Background</strong>.
 (If SHIFT is not pressed, it will be loaded from the current preview of the HDRi Maker library)</p></li>
 </ul>
 </div>
 <div class="section" id="invert-diffuse-light">
-<span id="id5"></span><h2>Invert Diffuse/Light<a class="headerlink" href="#invert-diffuse-light" title="Permalink to this heading"></a></h2>
+<span id="id6"></span><h2>Invert Diffuse/Light<a class="headerlink" href="#invert-diffuse-light" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>This button inverts the Diffuse with the Light, and vice versa. Once pressed, in the interface, the left column moves
 to the right, and the right column to the left.</p></li>
 </ul>
 </div>
 <div class="section" id="change-light">
-<span id="id6"></span><h2>Change Light<a class="headerlink" href="#change-light" title="Permalink to this heading"></a></h2>
+<span id="id7"></span><h2>Change Light<a class="headerlink" href="#change-light" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>This button is used to load a background for the Light <strong>Press SHIFT+Click to import a Background</strong>.
 (If SHIFT is not pressed, it will be loaded from the current preview of the HDRi Maker library)</p></li>
 </ul>
 </div>
 <div class="section" id="remove-light">
-<span id="id7"></span><h2>Remove Light<a class="headerlink" href="#remove-light" title="Permalink to this heading"></a></h2>
+<span id="id8"></span><h2>Remove Light<a class="headerlink" href="#remove-light" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>This button removes the Light node group from the node tree. Once removed, the “Diffuse” node takes the role of the
 diffuse and light, so the color of the diffuse will be that of the Diffuse, and the Diffuse will be visible.
 (You return to the initial state) See here: <a class="reference internal" href="#standard-hdri-maker-background"><span class="std std-ref">World</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="change-light-path">
+<span id="id9"></span><h2>Change Light Path<a class="headerlink" href="#change-light-path" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>This selector allows you to choose which type of blend to use between Diffuse and Light, there are 2 options</p>
+<ul>
+<li><dl class="simple">
+<dt><strong>Is camera ray</strong></dt><dd><ul>
+<li><p>Allows you to view the Diffuse only in the camera and point of view, but it will have no effect on the light.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Is Reflection Ray</strong></dt><dd><ul>
+<li><p>Excludes the Light in reflections, this in some cases is useful for the shadow catcher, when you add a reflection
+on the shadowcatcher, it will reflect only the objects in the scene, but not the Light, so you will not see
+any image of the background reflected on the shadowcatcher. TODO: link allo shadowcatcher</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>

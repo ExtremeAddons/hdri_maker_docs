@@ -42,21 +42,21 @@ found in the world node tree, so it is drawn based on the various situations.
 Add Diffuse/Light
 *****************
 
-- In Base alla necessità, può capitare che tu voglia Mostrare un colore solido visivamente come sfondo e mantenere l'illuminazione
-  dell'HDR immagine. Qui di seguito i 2 bottoni che ti permettono di fare questo:
+- Depending on the situation, it may happen that you want to show a solid color visually as a background and keep the HDR image
+  lighting. Here below the 2 buttons that allow you to do this:
 
 Add Diffuse
 ###########
 
-- Se vuoi aggiungere un colore solido e mantenere lo sfondo attuale, questo bottone aggiungerà un nuovo sfondo sulla
-  sinistra del pannello, esso sarà visibile, ma non avrà effetto sulla scena, quindi non influenzerà la luce.
+- If you want to add a solid color and keep the current background, this button will add a new background on the
+  left of the panel, it will be visible, but it will not have any effect on the scene, so it will not affect the light.
 
 
 Add Light
 #########
 
-- Se aggiungerai lo sfondo tramite questo bottone, l'attuale sfondo sarà visibile, ma non influenzerà la luce, mentre il nuovo
-  sfondo non sarà visibile e influenzerà la luce.
+- If you add the background through this button, the current background will be visible, but it will not affect the light,
+    while the new background will not be visible and will affect the light.
 
 
 .. _color_properties:
@@ -121,6 +121,7 @@ Other Properties
 - Depending on the situation, additional properties may be displayed.
 
 
+.. _transparent_background:
 
 Transparent Background
 ######################
@@ -214,3 +215,19 @@ Remove Light
 - This button removes the Light node group from the node tree. Once removed, the "Diffuse" node takes the role of the
   diffuse and light, so the color of the diffuse will be that of the Diffuse, and the Diffuse will be visible.
   (You return to the initial state) See here: :ref:`standard_hdri_maker_background`
+
+
+.. _change_light_path:
+
+Change Light Path
+*****************
+
+- This selector allows you to choose which type of blend to use between Diffuse and Light, there are 2 options
+
+  - **Is camera ray**
+     - Allows you to view the Diffuse only in the camera and point of view, but it will have no effect on the light.
+
+  - **Is Reflection Ray**
+     - Excludes the Light in reflections, this in some cases is useful for the shadow catcher, when you add a reflection
+       on the shadowcatcher, it will reflect only the objects in the scene, but not the Light, so you will not see
+       any image of the background reflected on the shadowcatcher. TODO: link allo shadowcatcher

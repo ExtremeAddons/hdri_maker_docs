@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shadow Catcher &mdash; HDRi Maker 3.0.100 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Save" href="save_panel.html" />
+    <link rel="prev" title="Lights" href="lights_panel.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> HDRi Maker
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="how_to_install.html">Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="world_panel.html">World</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dome_projection_panel.html">Dome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Shadow Catcher</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#add-shadow-catcher">Add Shadow Catcher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remove-shadow-catcher">Remove Shadow Catcher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shadow-catcher-node-group-inputs">Shadow Catcher Node Group inputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shadow-catcher-normals">Shadow Catcher Normals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shadow-catcher-options">Shadow Catcher Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#film-transparent">Film Transparent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hide-sc-reflection-plane">Hide SC Reflection Plane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hide-cycles-plane">Hide Cycles Plane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shadow-details-sc">Shadow Details (SC)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="youtube_video.html">Youtube Tutorial</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HDRi Maker</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Shadow Catcher</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/shadow_catcher.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="shadow-catcher">
+<h1>Shadow Catcher<a class="headerlink" href="#shadow-catcher" title="Permalink to this heading"></a></h1>
+<div class="figure align-center">
+<img alt="_images/shadow_catcher_800x300.png" src="_images/shadow_catcher_800x300.png" />
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>In Eevee the shadow catcher need a light source to work because the background in Eevee does not produce shadows
+unlike Cycles.</p>
+</div>
+<p>The shadow catcher in HDRi Maker works also in Eevee as well as in Cycles.
+This tool is used to create shadows and reflections of objects in the scene on an Invisible plane.
+This technique is very suitable when you want an image with a transparent background, in order to apply another background
+in post-production, keeping the original shadows and reflections.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The shadow catcher components automatically adapt by switching between Cycles and Eevee.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Panel Without Shadow Catcher</strong></p></td>
+<td><p><strong>Panel With Shadow Catcher</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/shadow_catcher_panel_inactive_01.png"><img alt="Shadow Catcher Panel Inactive" src="_images/shadow_catcher_panel_inactive_01.png" style="width: 400px;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/shadow_catcher_panel_active_01.png"><img alt="Shadow Catcher Panel Active" src="_images/shadow_catcher_panel_active_01.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="add-shadow-catcher">
+<h2>Add Shadow Catcher<a class="headerlink" href="#add-shadow-catcher" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Pressing the “Add Shadow Catcher” button, a plane is added at the 3D cursor in the scene.
+When it is present in the scene, the “Shadow Catcher” panel will be activated.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/shadow_catcher_plane_eevee_01.png"><img alt="Shadow Catcher Panel Active" src="_images/shadow_catcher_plane_eevee_01.png" style="width: 800px;" /></a>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 62%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p><strong>The shadow catcher panel activated</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#remove-shadow-catcher"><span class="std std-ref">Remove Shadow Catcher</span></a></p></li>
+<li><p><a class="reference internal" href="#shadow-catcher-node-group-inputs"><span class="std std-ref">Shadow Catcher Node Group inputs</span></a></p></li>
+<li><p><a class="reference internal" href="#shadow-catcher-normals"><span class="std std-ref">Shadow Catcher Normals</span></a></p></li>
+<li><p><a class="reference internal" href="#shadow-catcher-options"><span class="std std-ref">Shadow Catcher Options</span></a></p></li>
+</ol>
+</td>
+<td><p><a class="reference internal" href="_images/shadow_catcher_panel_legenda_01.png"><img alt="Shadow Catcher Panel Legenda" src="_images/shadow_catcher_panel_legenda_01.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="remove-shadow-catcher">
+<span id="id1"></span><h2>Remove Shadow Catcher<a class="headerlink" href="#remove-shadow-catcher" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Pressing the “Remove Shadow Catcher” button, the plane is removed from the scene.
+If you have manually removed the shadow catcher
+from the scene, there will certainly be components of it in the scene (Like the reflection plane)
+To remove them, use this button that will remove all the components of the shadow catcher from the scene.</p></li>
+</ul>
+</div>
+<div class="section" id="shadow-catcher-node-group-inputs">
+<span id="id2"></span><h2>Shadow Catcher Node Group inputs<a class="headerlink" href="#shadow-catcher-node-group-inputs" title="Permalink to this heading"></a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In Eevee Shadow Strength is very important and must be dosed well to get a shadow, this is never the same
+as it must be manually adjusted, depending on the illumination of the scene. In some cases the plane
+may result Completely black or completely without shadows, in this case it is necessary to adjust the
+value of Shadow Strength.</p>
+</div>
+<ul>
+<li><p>The panel allows you to control the input values of the “Shadow Catcher” node group.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Shadow Color  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust color of the shadow</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Eevee Only:</strong></p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Shadow Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the amount of shadow to cast. Attention, the shadow will only be shown if a light is placed in the scene. World Background does not cast shadows (Affects Eevee only)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>From Min  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the minimum shadow range (Eevee only)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>From Max  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the maximum shadow range (Eevee only)</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Cycles &amp; Eevee:</strong></p>
+<ol class="arabic simple" start="5">
+<li><p><strong>Reflection Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the strength of the reflection</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>Reflection Range  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the range of the (Circular) area of the reflection. The greater the value, the smaller the area</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>Reflection Smooth  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the hue from reflection to non-reflection, from the center to the outside. A larger value increases the hue more</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p><strong>Roughness  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Strength of Roughness, has visible effect only if “Reflection Strength” is greater than 0</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="shadow-catcher-normals">
+<span id="id3"></span><h2>Shadow Catcher Normals<a class="headerlink" href="#shadow-catcher-normals" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p>With the selector you can apply some normals map, you can choose between 3 types of normals, or none.</p>
+<p>An example with the “water” normals:</p>
+<a class="reference internal image-reference" href="_images/shadow_catcher_water_plane_eevee_01.png"><img alt="Shadow Catcher Normals Water" src="_images/shadow_catcher_water_plane_eevee_01.png" style="width: 600px;" /></a>
+</li>
+</ul>
+</div>
+<div class="section" id="shadow-catcher-options">
+<span id="id4"></span><h2>Shadow Catcher Options<a class="headerlink" href="#shadow-catcher-options" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 69%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#film-transparent"><span class="std std-ref">Film Transparent</span></a></p></li>
+<li><p><a class="reference internal" href="#hide-sc-reflection-plane"><span class="std std-ref">Hide SC Reflection Plane</span></a></p></li>
+<li><p><a class="reference internal" href="#hide-cycles-plane"><span class="std std-ref">Hide Cycles Plane</span></a></p></li>
+<li><p><a class="reference internal" href="#shadow-details-sc"><span class="std std-ref">Shadow Details (SC)</span></a></p></li>
+</ol>
+</td>
+<td><p><a class="reference internal" href="_images/shadow_catcher_options_01.png"><img alt="Shadow Catcher Options" src="_images/shadow_catcher_options_01.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="film-transparent">
+<span id="id5"></span><h3>Film Transparent<a class="headerlink" href="#film-transparent" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>As already explained Here <a class="reference internal" href="world_panel.html#transparent-background"><span class="std std-ref">Transparent Background</span></a>, this box, if active, render the background Transparent</p></li>
+</ul>
+</div>
+<div class="section" id="hide-sc-reflection-plane">
+<span id="id6"></span><h3>Hide SC Reflection Plane<a class="headerlink" href="#hide-sc-reflection-plane" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>If active, the reflection plane will not be visible in the viewport, the reflection plane is only used for Eevee engine,
+in Cycles the reflection is done by the “Shadow Catcher” node group directly on the object. (It is an Eevee limitation)</p></li>
+</ul>
+</div>
+<div class="section" id="hide-cycles-plane">
+<span id="id7"></span><h3>Hide Cycles Plane<a class="headerlink" href="#hide-cycles-plane" title="Permalink to this heading"></a></h3>
+<ul>
+<li><p>If active, the plane used for Cycles will not be visible in the viewport, the plane is only used for Cycles engine,
+in Eevee the reflection is done by the “Shadow Catcher” node group directly on the object. (It is an Eevee limitation)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is managed automatically by the addon, you do not need to activate it manually</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="shadow-details-sc">
+<span id="id8"></span><h3>Shadow Details (SC)<a class="headerlink" href="#shadow-details-sc" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Shadow detail</strong> (Only in Eevee) allows you to change between 6 options:</p>
+<ul>
+<li><p><strong>Very Low</strong>: Shadows are very undefined, consumes very little resources (Useful during the editing phase)</p></li>
+<li><p><strong>Low</strong>: Shadows are undefined, consumes few resources</p></li>
+<li><p><strong>Default</strong>: Shadows are as in Blender by default</p></li>
+<li><p><strong>High</strong>: Shadows are defined, consumes many resources</p></li>
+<li><p><strong>Very High</strong>: Shadows are very defined, consumes many resources</p></li>
+<li><p><strong>Ultra</strong>: Shadows are very defined, consumes many resources (This setting is very heavy, it takes full advantage of Eevee’s capabilities, but it is very heavy, not recommended for computers not very powerful)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="lights_panel.html" class="btn btn-neutral float-left" title="Lights" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="save_panel.html" class="btn btn-neutral float-right" title="Save" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Andrea Donati (Andrew_D).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

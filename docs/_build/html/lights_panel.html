@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Save" href="save_panel.html" />
+    <link rel="next" title="Shadow Catcher" href="shadow_catcher.html" />
     <link rel="prev" title="Volumetric" href="volumetric_panel.html" /> 
 </head>
 
@@ -45,6 +45,7 @@
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="world_panel.html">World</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dome_projection_panel.html">Dome</a></li>
 <li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Lights</a><ul>
@@ -58,9 +59,27 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#sun-menu">Sun Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sun-menu-legenda">Sun Menu legenda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-sun">Add Sun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-sun">Remove Sun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-height">Sun Height</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-rotation">Sun Rotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sync-sun">Sync Sun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#un-sync-sun">Un Sync Sun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-color">Sun Color</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-color-lab">Sun Color Lab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-strength">Sun Strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-angle">Sun Angle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-max-bounces">Sun Max Bounces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-cast-shadow">Sun Cast Shadow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-multiple-importance">Sun Multiple Importance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-shadow-caustic">Sun Shadow Caustic</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#eevee-shadow-detail">Eevee Shadow Detail</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="shadow_catcher.html">Shadow Catcher</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 </ul>
@@ -251,9 +270,147 @@ this will allow you to change all the values at once.</p>
 </div>
 <div class="section" id="sun-menu">
 <span id="id8"></span><h2>Sun Menu<a class="headerlink" href="#sun-menu" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>The sun menu allows you to create a sun light and manage it in a simple way.</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Panel Without HDRi Maker Sun in the scene</strong></p></td>
+<td><p><strong>Panel when the sun has been added</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/light_sun_inactive_01.png"><img alt="Sun Menu" src="_images/light_sun_inactive_01.png" style="width: 800px;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/light_sun_active_01.png"><img alt="Sun Menu" src="_images/light_sun_active_01.png" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sun-menu-legenda">
+<h2>Sun Menu legenda<a class="headerlink" href="#sun-menu-legenda" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>1 <a class="reference internal" href="#add-sun"><span class="std std-ref">Add Sun</span></a></p></li>
+<li><p>4 <a class="reference internal" href="#sun-rotation"><span class="std std-ref">Sun Rotation</span></a></p></li>
+<li><p>5 <a class="reference internal" href="#sync-sun"><span class="std std-ref">Sync Sun</span></a></p></li>
+<li><p>7 <a class="reference internal" href="#sun-color"><span class="std std-ref">Sun Color</span></a></p></li>
+<li><p>12 <a class="reference internal" href="#sun-cast-shadow"><span class="std std-ref">Sun Cast Shadow</span></a></p></li>
+<li><p>13 <a class="reference internal" href="#sun-multiple-importance"><span class="std std-ref">Sun Multiple Importance</span></a></p></li>
+<li><p>14 <a class="reference internal" href="#sun-shadow-caustic"><span class="std std-ref">Sun Shadow Caustic</span></a></p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>2 <a class="reference internal" href="#remove-sun"><span class="std std-ref">Remove Sun</span></a></p></li>
+<li><p>6 <a class="reference internal" href="#un-sync-sun"><span class="std std-ref">Un Sync Sun</span></a></p></li>
+<li><p>8 <a class="reference internal" href="#sun-color-lab"><span class="std std-ref">Sun Color Lab</span></a></p></li>
+<li><p>9 <a class="reference internal" href="#sun-strength"><span class="std std-ref">Sun Strength</span></a></p></li>
+<li><p>10 <a class="reference internal" href="#sun-angle"><span class="std std-ref">Sun Angle</span></a></p></li>
+<li><p>11 <a class="reference internal" href="#sun-max-bounces"><span class="std std-ref">Sun Max Bounces</span></a></p></li>
+<li><p>15 <a class="reference internal" href="#eevee-shadow-detail"><span class="std std-ref">Eevee Shadow Detail</span></a></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><p><a class="reference internal" href="_images/light_sun_panel_legenda_01.png"><img alt="Sun Menu Legend" src="_images/light_sun_panel_legenda_01.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="add-sun">
+<span id="id9"></span><h3>Add Sun<a class="headerlink" href="#add-sun" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This button adds a sun in the scene, this is different from adding a sun manually via Blender,
+because this sun is recognized by HDRi Maker and can be managed via the Sun menu.</p></li>
+</ul>
+</div>
+<div class="section" id="remove-sun">
+<span id="id10"></span><h3>Remove Sun<a class="headerlink" href="#remove-sun" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This button removes the sun from the scene.</p></li>
+</ul>
+</div>
+<div class="section" id="sun-height">
+<span id="id11"></span><h3>Sun Height<a class="headerlink" href="#sun-height" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This value is useful to change the height of the sun in the scene, in any position it is located.</p></li>
+</ul>
+</div>
+<div class="section" id="sun-rotation">
+<span id="id12"></span><h3>Sun Rotation<a class="headerlink" href="#sun-rotation" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This slider manage the rotation of the sun around the point 0,0,0 of the scene. It is managed by an “Empty” object that rotates,
+the sun consequently rotates with it, keeping the same distance from the center of the scene.</p></li>
+</ul>
+</div>
+<div class="section" id="sync-sun">
+<span id="id13"></span><h3>Sync Sun<a class="headerlink" href="#sync-sun" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This button syncs the sun with the background, in fact, if you rotate the sun after pressing this button,
+the background will rotate accordingly. (Useful if you want to keep the sun consistent with the background)</p></li>
+</ul>
+</div>
+<div class="section" id="un-sync-sun">
+<span id="id14"></span><h3>Un Sync Sun<a class="headerlink" href="#un-sync-sun" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This button removes the synchronization of the sun with the background.</p></li>
+</ul>
+</div>
+<div class="section" id="sun-color">
+<span id="id15"></span><h3>Sun Color<a class="headerlink" href="#sun-color" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This allows you to change the color of the sun.</p></li>
+</ul>
+</div>
+<div class="section" id="sun-color-lab">
+<span id="id16"></span><h3>Sun Color Lab<a class="headerlink" href="#sun-color-lab" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This button opens a color lab in order to get a colors palette (The color chosen will be applied to the sun)</p></li>
+</ul>
+</div>
+<div class="section" id="sun-strength">
+<span id="id17"></span><h3>Sun Strength<a class="headerlink" href="#sun-strength" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This slider allows you to change the strength of the sun.</p></li>
+</ul>
+</div>
+<div class="section" id="sun-angle">
+<span id="id18"></span><h3>Sun Angle<a class="headerlink" href="#sun-angle" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Angular diameter of the sun, as seen from the earth.</p></li>
+</ul>
+</div>
+<div class="section" id="sun-max-bounces">
+<span id="id19"></span><h3>Sun Max Bounces<a class="headerlink" href="#sun-max-bounces" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Maximum number of times light from the light is allowed to Bounce. Limited by scene-wide bounce settings.</p></li>
+</ul>
+</div>
+<div class="section" id="sun-cast-shadow">
+<span id="id20"></span><h3>Sun Cast Shadow<a class="headerlink" href="#sun-cast-shadow" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Light casts shadows</p></li>
+</ul>
+</div>
+<div class="section" id="sun-multiple-importance">
+<span id="id21"></span><h3>Sun Multiple Importance<a class="headerlink" href="#sun-multiple-importance" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>By default lights use only direct light sampling. For area lights and sharp glossy reflections, however, this can be noisy, and enabling this option will enable indirect light sampling to be used in addition to reduce noise.</p></li>
+</ul>
+</div>
+<div class="section" id="sun-shadow-caustic">
+<span id="id22"></span><h3>Sun Shadow Caustic<a class="headerlink" href="#sun-shadow-caustic" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Mark a light as a refractive caustic caster. This setting can be used in conjunction with the Cast and Receive caustics object settings to selectively speed up refractive caustic rendering of select objects.</p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="eevee-shadow-detail">
-<span id="id9"></span><h2>Eevee Shadow Detail<a class="headerlink" href="#eevee-shadow-detail" title="Permalink to this heading"></a></h2>
+<span id="id23"></span><h2>Eevee Shadow Detail<a class="headerlink" href="#eevee-shadow-detail" title="Permalink to this heading"></a></h2>
 <p>This is a selector of Eevee shadow detail level. I compiled in it some presets that automatically modify the settings
 of the Eevee shadow detail level (Only works with Eevee)</p>
 <p>Enum In (Very Low, Low, Default, High, Very High, Ultra)</p>
@@ -268,7 +425,7 @@ it can be changed at any time.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="volumetric_panel.html" class="btn btn-neutral float-left" title="Volumetric" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="save_panel.html" class="btn btn-neutral float-right" title="Save" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="shadow_catcher.html" class="btn btn-neutral float-right" title="Shadow Catcher" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

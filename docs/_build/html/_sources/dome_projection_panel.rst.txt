@@ -1,4 +1,3 @@
-.. ALT + 96 to make: ` `
 
 Dome
 ====
@@ -231,16 +230,20 @@ Dome Hooks
 ----------
 
 
+..  |hooks_subpanel| image:: _static/_images/dome_projection/hooks_subpanel_01.png
+                        :alt: Main Panel
+                        :width: 800
+
 +----------------------------+----------------------------+------------------------+-----------------------------------+
 |                            | 1. :ref:`add_remove_hooks` | 3. :ref:`hook_size`    |                                   |
 |                            | 2. :ref:`hide_hooks`       | 4. :ref:`expand_hooks` |                                   |
 |                            |                            | 5. :ref:`hooks_type`   |                                   |
 +----------------------------+----------------------------+------------------------+-----------------------------------+
+|                                           |hooks_subpanel|                                                           |
++----------------------------------------------------------------------------------------------------------------------+
 
 
-..  figure:: _static/_images/dome_projection/hooks_subpanel_01.png
-        :align: center
-        :alt: Main Panel
+
 
 
 Dome Hooks is a feature introduced in version 3.0.100, It allows you to apply 25 Hooks to the dome plane, they allow you

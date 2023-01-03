@@ -44,6 +44,7 @@ Welcome to HDRi Maker's documentation!
    dome_projection_panel
    volumetric_panel
    lights_panel
+   shadow_catcher
    save_panel
    bugreport_info
 

@@ -160,6 +160,158 @@ This panel allows you to modify the values of the properties of each single ligh
 Sun Menu
 --------
 
+- The sun menu allows you to create a sun light and manage it in a simple way.
+
+.. |sun_inactive_panel| image:: _static/_images/lights/light_sun_inactive_01.png
+                        :width: 800
+                        :alt: Sun Menu
+
+.. |sun_active_panel| image:: _static/_images/lights/light_sun_active_01.png
+                        :width: 800
+                        :alt: Sun Menu
+
+
++-----------------------------------------------+-----------------------------------------------+
+| **Panel Without HDRi Maker Sun in the scene** | **Panel when the sun has been added**         |
++-----------------------------------------------+-----------------------------------------------+
+| |sun_inactive_panel|                          | |sun_active_panel|                            |
++-----------------------------------------------+-----------------------------------------------+
+
+
+Sun Menu legenda
+----------------
+
+
+.. |light_sun_legenda| image:: _static/_images/lights/light_sun_panel_legenda_01.png
+    :width: 400
+    :alt: Sun Menu Legend
+
++-------------------------------------+-------------------------------------+
+| - 1 :ref:`add_sun`                  | - 2 :ref:`remove_sun`               |
+|                                     |                                     |
+| - 4 :ref:`sun_rotation`             |                                     |
+|                                     | - 6 :ref:`un_sync_sun`              |
+| - 5 :ref:`sync_sun`                 | - 8 :ref:`sun_color_lab`            |
+| - 7 :ref:`sun_color`                | - 9 :ref:`sun_strength`             |
+|                                     | - 10 :ref:`sun_angle`               |
+|                                     | - 11 :ref:`sun_max_bounces`         |
+| - 12 :ref:`sun_cast_shadow`         |                                     |
+| - 13 :ref:`sun_multiple_importance` |                                     |
+| - 14 :ref:`sun_shadow_caustic`      |                                     |
+|                                     | - 15 :ref:`eevee_shadow_detail`     |
++-------------------------------------+-------------------------------------+
+|  |light_sun_legenda|                                                      |
++-------------------------------------+-------------------------------------+
+
+
+.. _add_sun:
+
+Add Sun
+*******
+
+- This button adds a sun in the scene, this is different from adding a sun manually via Blender,
+  because this sun is recognized by HDRi Maker and can be managed via the Sun menu.
+
+.. _remove_sun:
+
+Remove Sun
+**********
+
+- This button removes the sun from the scene.
+
+.. _sun_height:
+
+Sun Height
+**********
+
+- This value is useful to change the height of the sun in the scene, in any position it is located.
+
+.. _sun_rotation:
+
+Sun Rotation
+************
+
+- This slider manage the rotation of the sun around the point 0,0,0 of the scene. It is managed by an "Empty" object that rotates,
+  the sun consequently rotates with it, keeping the same distance from the center of the scene.
+
+.. _sync_sun:
+
+Sync Sun
+********
+
+- This button syncs the sun with the background, in fact, if you rotate the sun after pressing this button,
+  the background will rotate accordingly. (Useful if you want to keep the sun consistent with the background)
+
+.. _un_sync_sun:
+
+Un Sync Sun
+***********
+
+- This button removes the synchronization of the sun with the background.
+
+.. _sun_color:
+
+Sun Color
+*********
+
+- This allows you to change the color of the sun.
+
+.. _sun_color_lab:
+
+Sun Color Lab
+*************
+
+- This button opens a color lab in order to get a colors palette (The color chosen will be applied to the sun)
+
+.. _sun_strength:
+
+Sun Strength
+************
+
+- This slider allows you to change the strength of the sun.
+
+.. _sun_angle:
+
+Sun Angle
+*********
+
+- Angular diameter of the sun, as seen from the earth.
+
+.. _sun_max_bounces:
+
+Sun Max Bounces
+***************
+
+- Maximum number of times light from the light is allowed to Bounce. Limited by scene-wide bounce settings.
+
+
+.. _sun_cast_shadow:
+
+Sun Cast Shadow
+***************
+
+- Light casts shadows
+
+.. _sun_multiple_importance:
+
+Sun Multiple Importance
+***********************
+
+- By default lights use only direct light sampling. For area lights and sharp glossy reflections, however, this can be noisy, and enabling this option will enable indirect light sampling to be used in addition to reduce noise.
+
+
+
+.. _sun_shadow_caustic:
+
+Sun Shadow Caustic
+******************
+
+- Mark a light as a refractive caustic caster. This setting can be used in conjunction with the Cast and Receive caustics object settings to selectively speed up refractive caustic rendering of select objects.
+
+
+
+
+
 .. _eevee_shadow_detail:
 
 Eevee Shadow Detail
