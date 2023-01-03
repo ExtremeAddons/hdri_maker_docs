@@ -168,6 +168,7 @@ Hide Dome:
     Hides the dome, in order to work better (If necessary), this allows you to keep all the settings chosen,
     so when you want to work with the dome again, just click on this button again to make it reappear.
 
+
 .. _hide_reflection_plane:
 
 Hide Reflection Plane
