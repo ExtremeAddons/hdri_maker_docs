@@ -1,8 +1,10 @@
 Youtube Tutorial
 ================
 
-Qui una serie di tutorial su come usare HDRi Maker, Ti consiglio vivamente di iscriverti al canale per rimanere aggiornato
-su nuovi tutorials e novità.
+
+Here a series of tutorials on how to use HDRi Maker, I strongly recommend you to subscribe to the channel to stay updated
+on new tutorials and news.
+
 
 
 Basic Tutorials
@@ -12,7 +14,7 @@ Basic Tutorials
 World manipulation
 ******************
 
-In questo tutorial viene mostrato come manipolare Il background del mondo tramite il pannello World di HDRi Maker.
+- In this tutorial you can see how to manipulate the world background using the World panel of HDRi Maker.
 
 .. raw:: html
 
@@ -26,7 +28,7 @@ In questo tutorial viene mostrato come manipolare Il background del mondo tramit
 Wrap Dome Ground
 ****************
 
-In questo tutorial viene mostrato come manipolare la forma del ground tramite le funzioni wrap.
+- In this tutorial you can see how to manipulate the ground shape using the wrap functions.
 
 .. raw:: html
 
@@ -40,7 +42,7 @@ In questo tutorial viene mostrato come manipolare la forma del ground tramite le
 Shadow Catcher
 **************
 
-In questo tutorial viene mostrato come creare un Shadow Catcher, utilizzabile in Eevee e Cycles.
+- In this tutorial you can see how to create a Shadow Catcher, usable in Eevee and Cycles.
 
 .. raw:: html
 
@@ -50,14 +52,16 @@ In questo tutorial viene mostrato come creare un Shadow Catcher, utilizzabile in
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _custom_dome_with_hooks:
+
 Custom Dome with Hooks
 **********************
 
-In questo tutorial viene mostrato come utilizzare i Dome Hooks, per modificare la forma del Dome.
+- In this tutorial you can see how to use the Dome Hooks, to modify the shape of the Dome.
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/p9iwq_rUsVs" title="YouTube video player"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p9iwq_rUsVs" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 

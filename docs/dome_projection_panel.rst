@@ -243,7 +243,13 @@ Dome Hooks
 |                                           |hooks_subpanel|                                                           |
 +----------------------------------------------------------------------------------------------------------------------+
 
+.. seealso:: Here you can see a video tutorial on how to use the hooks: :ref:`custom_dome_with_hooks`
 
+    .. raw:: html
+
+        <iframe width="650" height="360" src="https://www.youtube.com/embed/p9iwq_rUsVs" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
 
 
@@ -329,7 +335,6 @@ Dome Wrap is a very powerful tool that uses Blender modifiers to create real dis
 .. |wrap_submenu| image:: _static/_images/dome_projection/wrap_submenu_01.png
                     :alt: Wrap Submenu
                     :width: 600
-
 
 
 +-----------------------------------+
