@@ -270,5 +270,5 @@ Danger Zone
 
    - This section contains the options to delete categories and backgrounds from the User Library.
 
-    .. Note:: The deletion of a category will also delete all the backgrounds contained in it.
+    .. Warning:: The deletion of a category will also delete all the backgrounds contained in it.
 

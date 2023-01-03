@@ -40,6 +40,7 @@ Welcome to HDRi Maker's documentation!
    :caption: Interface and functions:
 
    library_manager_panel
+   world_panel
    dome_projection_panel
    volumetric_panel
    lights_panel

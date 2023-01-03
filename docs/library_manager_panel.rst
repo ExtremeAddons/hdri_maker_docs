@@ -248,11 +248,29 @@ Add Remove Buttons
 Add Button:
 ***********
 
-   - This button adds the selected background to the scene.
-     Use Ctrl + Click to open the File Browser and import a background from an external file
+.. |tcls| image:: _static/_images/main_panel/tools_category_light_studio_01.png
+              :width: 300
+              :alt: Tools Category Light Studio
 
-    .. Note:: If you are in the "Tools" category this button acquires the "Add Tool" function and allows you to add the tools
-                included in the Tools directly to the scene. Example: In "Tools" -> "Light Studio" adds a solid color dome, And directional lights.
+
+.. |tcli| image:: _static/_images/main_panel/tools_category_import_01.png
+              :width: 295
+              :alt: Tools Category Import
+
+
+
+- This button adds the selected background to the scene.
+  Use Ctrl + Click to open the File Browser and import a background from an external file
+
+.. Note:: If you are in the "Tools" category this button acquires the "Add Tool" function and allows you to add the tools
+         included in the Tools directly to the scene. Example: In "Tools" -> "Light Studio" adds a solid color dome, And directional lights.
+
+
+         +-------------------+-------------------+
+         | Light Studio      | Import Background |
+         +-------------------+-------------------+
+         | |tcls|            | |tcli|            |
+         +-------------------+-------------------+
 
 
 Remove Button

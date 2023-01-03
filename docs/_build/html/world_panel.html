@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World &mdash; HDRi Maker 3.0.100 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dome" href="dome_projection_panel.html" />
+    <link rel="prev" title="Main Panel" href="library_manager_panel.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> HDRi Maker
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="how_to_install.html">Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">World</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#add-diffuse-light">Add Diffuse/Light</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-diffuse">Add Diffuse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-light">Add Light</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#color-properties-inputs">Color Properties (Inputs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vector-properties-inputs">Vector Properties (Inputs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-properties">Other Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#transparent-background">Transparent Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#solve-node-problems">Solve Node Problems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#diffuse-and-light-situation">Diffuse and Light Situation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#remove-diffuse">Remove Diffuse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-diffuse">Change Diffuse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#invert-diffuse-light">Invert Diffuse/Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-light">Change Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remove-light">Remove Light</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dome_projection_panel.html">Dome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="volumetric_panel.html">Volumetric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
+<li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="youtube_video.html">Youtube Tutorial</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HDRi Maker</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>World</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/world_panel.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="world">
+<span id="standard-hdri-maker-background"></span><h1>World<a class="headerlink" href="#world" title="Permalink to this heading"></a></h1>
+<p>Here below the World Panel is shown as it is usually when a new world is added, from the HDRi Maker library:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p><strong>Example With HDRi Maker Standard Background</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#add-diffuse-light"><span class="std std-ref">Add Diffuse/Light</span></a></p></li>
+<li><p><a class="reference internal" href="#color-properties"><span class="std std-ref">Color Properties (Inputs)</span></a></p></li>
+<li><p><a class="reference internal" href="#vector-properties"><span class="std std-ref">Vector Properties (Inputs)</span></a></p></li>
+<li><p><a class="reference internal" href="#other-properties"><span class="std std-ref">Other Properties</span></a></p></li>
+</ol>
+</td>
+<td><p><a class="reference internal" href="_images/world_panel_simple_01.png"><img alt="Tools Category Light Studio" src="_images/world_panel_simple_01.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The World panel is the one that allows you to adjust the World Background, it is consistent with the nodes that are
+found in the world node tree, so it is drawn based on the various situations.</p>
+<ul>
+<li><p>Example of the simple HDRi Maker Node Tree setup:</p>
+<a class="reference internal image-reference" href="_images/world_node_complete_01.png"><img alt="World Node Tree Example Complete" class="align-center" src="_images/world_node_complete_01.png" style="width: 600px;" /></a>
+</li>
+</ul>
+<div class="section" id="add-diffuse-light">
+<span id="id1"></span><h2>Add Diffuse/Light<a class="headerlink" href="#add-diffuse-light" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>In Base alla necessità, può capitare che tu voglia Mostrare un colore solido visivamente come sfondo e mantenere l’illuminazione
+dell’HDR immagine. Qui di seguito i 2 bottoni che ti permettono di fare questo:</p></li>
+</ul>
+<div class="section" id="add-diffuse">
+<h3>Add Diffuse<a class="headerlink" href="#add-diffuse" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Se vuoi aggiungere un colore solido e mantenere lo sfondo attuale, questo bottone aggiungerà un nuovo sfondo sulla
+sinistra del pannello, esso sarà visibile, ma non avrà effetto sulla scena, quindi non influenzerà la luce.</p></li>
+</ul>
+</div>
+<div class="section" id="add-light">
+<h3>Add Light<a class="headerlink" href="#add-light" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Se aggiungerai lo sfondo tramite questo bottone, l’attuale sfondo sarà visibile, ma non influenzerà la luce, mentre il nuovo
+sfondo non sarà visibile e influenzerà la luce.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="color-properties-inputs">
+<span id="color-properties"></span><h2>Color Properties (Inputs)<a class="headerlink" href="#color-properties-inputs" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Use Solid Color  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>If on, it will use a solid color instead of the image. The color property will appear once activated.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Solid Color  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>The color of the solid background. (Only visible if Use Solid Color is on)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Emission  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the emissivity of the background world. If at 0 no emissivity (therefore completely black/dark background). Attention, on Eevee at the moment the background does not produce shadows, to add shadows, it is advisable to add a ‘SUN’ light</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Exposure  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust background exposure</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Hue  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the HUE of the background</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>Saturation  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Saturation of the background</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>Colorize  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Colorize the background without completely replacing the image with color.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p><strong>C. Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the amount of colorization</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="vector-properties-inputs">
+<span id="vector-properties"></span><h2>Vector Properties (Inputs)<a class="headerlink" href="#vector-properties-inputs" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Blur Strength  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>The strength of the blur applied to the background image, 0 = no blur, 1 = full blur</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Angle  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>The rotation angle of the background image</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="other-properties">
+<span id="id2"></span><h2>Other Properties<a class="headerlink" href="#other-properties" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Depending on the situation, additional properties may be displayed.</p></li>
+</ul>
+<div class="section" id="transparent-background">
+<h3>Transparent Background<a class="headerlink" href="#transparent-background" title="Permalink to this heading"></a></h3>
+<ul>
+<li><p>If on, the background will be transparent, this is useful to make rendering with transparent background, or to use the
+background as a mask for compositing.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure you render with RGBA otherwise the transparency will not be displayed, in this example, the rendering is set as PNG (Which supports the Alpha channel, i.e. transparency)</p>
+<a class="reference internal image-reference" href="_images/render_png_rgba_01.png"><img alt="Render PNG RGBA" class="align-center" src="_images/render_png_rgba_01.png" style="width: 300px;" /></a>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="solve-node-problems">
+<h3>Solve Node Problems<a class="headerlink" href="#solve-node-problems" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>In some cases (If for example the node tree has been manually manipulated) this should solve any problems with the node tree, so that it can be used again.</p></li>
+</ul>
+<hr class="docutils" />
+<div class="section" id="diffuse-and-light-situation">
+<h4>Diffuse and Light Situation<a class="headerlink" href="#diffuse-and-light-situation" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p>If you have added a Diffuse or Light node, the World panel will change in this way:</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p><strong>Example With HDRi Maker Diffuse + Light Background</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p><a class="reference internal" href="#remove-diffuse"><span class="std std-ref">Remove Diffuse</span></a></p></li>
+<li><p><a class="reference internal" href="#change-diffuse"><span class="std std-ref">Change Diffuse</span></a></p></li>
+<li><p><a class="reference internal" href="#invert-diffuse-light"><span class="std std-ref">Invert Diffuse/Light</span></a></p></li>
+<li><p><a class="reference internal" href="#change-light"><span class="std std-ref">Change Light</span></a></p></li>
+<li><p><a class="reference internal" href="#remove-light"><span class="std std-ref">Remove Light</span></a></p></li>
+</ol>
+</td>
+<td><p><a class="reference internal" href="_images/world_panel_diffuse_light_01.png"><img alt="World Panel Diffuse and Light" src="_images/world_panel_diffuse_light_01.png" style="width: 400px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="remove-diffuse">
+<span id="id3"></span><h2>Remove Diffuse<a class="headerlink" href="#remove-diffuse" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>This button removes the diffuse node group from the node tree. Once removed, the “Light” node takes the role of the
+diffuse and light, so the color of the diffuse will be that of the Light, and the Light will be visible.
+(You return to the initial state) See here: <a class="reference internal" href="#standard-hdri-maker-background"><span class="std std-ref">World</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="change-diffuse">
+<span id="id4"></span><h2>Change Diffuse<a class="headerlink" href="#change-diffuse" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>This button is used to load a background for the Diffuse <strong>Press SHIFT+Click to import a Background</strong>.
+(If SHIFT is not pressed, it will be loaded from the current preview of the HDRi Maker library)</p></li>
+</ul>
+</div>
+<div class="section" id="invert-diffuse-light">
+<span id="id5"></span><h2>Invert Diffuse/Light<a class="headerlink" href="#invert-diffuse-light" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>This button inverts the Diffuse with the Light, and vice versa. Once pressed, in the interface, the left column moves
+to the right, and the right column to the left.</p></li>
+</ul>
+</div>
+<div class="section" id="change-light">
+<span id="id6"></span><h2>Change Light<a class="headerlink" href="#change-light" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>This button is used to load a background for the Light <strong>Press SHIFT+Click to import a Background</strong>.
+(If SHIFT is not pressed, it will be loaded from the current preview of the HDRi Maker library)</p></li>
+</ul>
+</div>
+<div class="section" id="remove-light">
+<span id="id7"></span><h2>Remove Light<a class="headerlink" href="#remove-light" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>This button removes the Light node group from the node tree. Once removed, the “Diffuse” node takes the role of the
+diffuse and light, so the color of the diffuse will be that of the Diffuse, and the Diffuse will be visible.
+(You return to the initial state) See here: <a class="reference internal" href="#standard-hdri-maker-background"><span class="std std-ref">World</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="library_manager_panel.html" class="btn btn-neutral float-left" title="Main Panel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dome_projection_panel.html" class="btn btn-neutral float-right" title="Dome" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Andrea Donati (Andrew_D).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
