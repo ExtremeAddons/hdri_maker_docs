@@ -230,4 +230,4 @@ Change Light Path
   - **Is Reflection Ray**
      - Excludes the Light in reflections, this in some cases is useful for the shadow catcher, when you add a reflection
        on the shadowcatcher, it will reflect only the objects in the scene, but not the Light, so you will not see
-       any image of the background reflected on the shadowcatcher. TODO: link allo shadowcatcher
+       any image of the background reflected on the shadowcatcher here: :ref:`shadow_catcher`

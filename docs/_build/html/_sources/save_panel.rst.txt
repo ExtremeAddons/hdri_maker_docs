@@ -1,6 +1,7 @@
 Save
 ====
 
+
 This section of the addon is dedicated to the background saves, the export, and the creation of 360° backgrounds from a scene.
 
 There is also a section to manipulate the user library.
@@ -40,9 +41,9 @@ This area allows you to choose 3 types of saving options:
   :align: center
   :alt: Save Panel Overview
 
-.. Note:: Prima di procedere al salvataggio è necessatio creare una categoria nuova o selezionarne una esistente nella
-          User Library. Per fare questo, trovi qui la sezione dedicata alla manipolazione della User Library:
-          ..TODO: link "Library Tools"
+.. Note:: Before proceeding with the save, it is necessary to create a new category or select an existing one in the
+          User Library. To do this, you will find here the section dedicated to the manipulation of the User Library: :ref:`library_tools`
+
 
 
 Save Current Background

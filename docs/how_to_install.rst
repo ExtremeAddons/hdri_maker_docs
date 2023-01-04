@@ -52,6 +52,7 @@ once installed manages your exapack packages.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _how_to_install_libraries:
 
 Install the addon in Blender
 ----------------------------

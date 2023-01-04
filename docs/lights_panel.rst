@@ -1,3 +1,5 @@
+.. _light_section:
+
 Lights
 ======
 

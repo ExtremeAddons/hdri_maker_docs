@@ -1,3 +1,5 @@
+.. _shadow_catcher:
+
 Shadow Catcher
 ==============
 

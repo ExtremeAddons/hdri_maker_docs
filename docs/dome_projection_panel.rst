@@ -103,10 +103,8 @@ This is the interesting part, here you can choose the type of Dome you want to u
     to do the Wrap (Explained later here: :ref:`dome_wrap`)
     It can be scaled, and thanks to the HDRi Maker node system, the projection can be set, scaling the mapping of the ground,
     in order to have a larger or smaller ground, or smaller, depending on your needs.
-    It is also possible to modify the mapping of the sky part, in order to be able to set the projection as best as possible.
-    ..TODO: link to the Hook System
-
-    All this is explained better in the "Dome Projection Vector" section ..TODO
+    It is also possible to modify the mapping of the sky part, in order to be able to set the projection as best as possible
+    All this is explained better in the "Dome Projection Vector" section: :ref:`dome_vectors:`
 
     .. image:: _static/_images/dome_projection/dome_dome_shape_01.png
         :width: 400
@@ -186,7 +184,8 @@ Hide Reflection Plane
 
     .. note::
         The reflection plane follows the scale of the dome, it will always be the right size to adapt to the size
-        of the ground of the dome. (If Hooks are used, the reflection plane will also follow the changes made with Hooks) ..TODO
+        of the ground of the dome. (If Hooks are used, the reflection plane will also follow the changes made with Hooks)
+
 
 .. _display_wire:
 
@@ -220,7 +219,7 @@ Scale Dome
     Scale dome, serves to scale the dome in size.
     If you have applied the Wrap (Explained later here: :ref:`dome_wrap`) then the wrap will scale with the dome, so as to
     always keep the same proportional size to the dome.
-    If you are using the "Ground" Material (Explained later here) ..TODO then the objects to which you have applied the "Ground" material
+    If you are using the "Ground" Material (Explained later here :ref:`ground_material`) then the objects to which you have applied the "Ground" material
     will scale with the dome, so as to always keep the same proportional size to the dome.
 
     .. Note::
@@ -686,6 +685,7 @@ Dome Color (Node Group)
  - Flip the Bump Direction
 
 
+.. _dome_vectors:
 
 Dome Vectors (Node Group)
 -------------------------

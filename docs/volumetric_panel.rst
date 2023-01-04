@@ -10,7 +10,7 @@ Volumetric
 
 This section of the addon is dedicated to the creation of a Volumetric environment, ie an environment with a simulation
 of "Fog" or "Dust" in the air. This type of effect is very used in films and video games to create a more realistic atmosphere,
-especially if used with adequate lighting (See the "Lights" section ..TODO for more information).
+especially if used with adequate lighting (See the :ref:`light_section` section for more information).
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ especially if used with adequate lighting (See the "Lights" section ..TODO for m
 |                                                       | 4. :ref:`volume_node_header`   |
 |                                                       | 5. :ref:`volume_node_panel`    |
 |                                                       | 6. :ref:`visibility_distance`  |
-|                                                       | 7. :ref:`detail`               |
+|                                                       | 7. :ref:`volumetric_detail`    |
 +-------------------------------------------------------+--------------------------------+
 
 
@@ -144,8 +144,7 @@ property will be shown, pressing it, a popup will be shown with the description 
 Volume Node Panel
 *****************
 
-The Volumetric Group Nodes are redrawn to measure in this area, the panel is pre-drawn. For information on the operation,
-see the "Tutorials" section ..TODO
+The Volumetric Group Nodes are redrawn in this area, the panel is pre-drawn by the HDRi Maker API.
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -159,7 +158,7 @@ distance, to avoid wasting resources.
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. _detail:
+.. _volumetric_detail:
 
 Detail
 ******

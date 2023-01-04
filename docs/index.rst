@@ -47,6 +47,7 @@ Welcome to HDRi Maker's documentation!
    shadow_catcher
    save_panel
    bugreport_info
+   preferences
 
 .. toctree::
    :maxdepth: 4
