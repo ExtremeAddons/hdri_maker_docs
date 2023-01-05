@@ -32,7 +32,7 @@ Welcome to HDRi Maker's documentation!
    :maxdepth: 4
    :caption: Get started:
 
-   how_to_install
+   installation
 
 
 .. toctree::

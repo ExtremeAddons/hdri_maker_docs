@@ -37,12 +37,19 @@ Install Into Blender
 
 Now, download the addon and install it in Blender, the procedure is as follows:
 
-1) Download the addon from here (Remember that you must be logged in):
+**1)** Download the addon (Remember that you must be logged in):
+
+    - If you purchased on Blendermarket you can find the addon here:
+
+       - https://blendermarket.com/account/orders
+
+
+    - If you purchased on Gumroad you can find the addon here:
+
+       - https://app.gumroad.com/library
 
     - Addon name Example: **hdri_maker_v30100.zip** (The number can be different, it depends on the version you are downloading)
 
-    - If you purchased on Blendermarket: https://blendermarket.com/account/orders
-    - If you purchased on Gumroad: https://app.gumroad.com/library
 
    .. Important:: The addon file must remain in zip format! Do not unzip the file, otherwise you will not be able to install it correctly.
                   This note is especially for Mac users. If you do not know how to prevent Safari from decompressing zip files, take a look here :ref:`mac_safari_zip`
