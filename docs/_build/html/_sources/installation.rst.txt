@@ -6,6 +6,8 @@ Installation
           If you already have a version 3.0.100 or higher, you do not need to uninstall the previous one.
 
 
+------------------------------------------------------------------------------------------------------------------------
+
 Instal the addon
 -------------------------
 
@@ -19,8 +21,29 @@ Download the files
 In your product page, you can find various files, the main ones for the installation are the following:
 
 - **hdri_maker_v301##.zip** is the addon for blender, this is the first element to download and install
+
+  .. image:: _static/_images/installation/addon_zipped_01.png
+      :align: center
+      :width: 300
+      :alt: Addon zipped 01
+
 - **HDRiMkr_##_Vol_#.exapack** are the files of the library. and they are divided with increasing number.
   Example of downloaded .exapack files on the computer, below in the image:
+
+
+  .. image:: _static/_images/installation/exapack_files_on_computer_01.png
+      :align: center
+      :width: 300
+      :alt: Exapack files on computer
+
+|
+
+- **HDRMAPS_VOL_##.zip** These are the files of the library that I have inserted thanks to the support of the author of these backgrounds **Grzegorz Wronkowski**
+  you can find these maps also on the site https://hdrmaps.com/ They are free and are granted under the CC BY license, you can find them at this
+  link: https://hdrmaps.com/freebies/free-hdri-maps/
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 
 The **.exapack** files are installed by the addon, they do not need to be installed manually! After installing the
@@ -35,6 +58,8 @@ HDRi Maker addon, it will manage your exapack packages and install them. (You wi
           "Open safe files after download" in the "General" window. Done, if in the future you download zipped files with safari,
           they will no longer be unzipped.
 
+
+------------------------------------------------------------------------------------------------------------------------
 
 Install Into Blender
 ********************
@@ -79,6 +104,9 @@ Now, download the addon and install it in Blender, the procedure is as follows:
 .. image:: _static/_images/installation/install_addon_zip_blender_02.png
     :width: 800
     :alt: Install addon zip in Blender 2
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 
 .. _how_to_install_libraries:
@@ -143,7 +171,17 @@ Then press the button in the file browser window **Choose Exapacks** to confirm
 
 During the installation process of the .exapack packages, the interface will show the progress of the installed packages
 You can also stop the process whenever you want (Just press the button (X) next to the big status bar) in this case,
-the installed packages will remain installed. **You can resume the installation process at a later time**
+the installed packages will remain installed.
+
+
+.. Important:: **I want to emphasize:** All installed packages will remain installed, even if the installation process is interrupted.
+               If the installation is resumed, the installation process will resume from where it was interrupted,
+               because the addon recognizes the already installed files and skips them.
+
+
+.. image:: _static/_images/installation/exapack_installation_progress.png
+    :width: 800
+    :alt: Exapack installation progress
 
 
 .. Note:: The installation speed depends a lot on the type of disk in use, I have done various tests, and the installation on
@@ -152,32 +190,51 @@ the installed packages will remain installed. **You can resume the installation 
           you can decide to use it.
 
 
+5. When you have completed the entire (or even just in part) installation, the addon will be ready to be used:
+   In this image we see that this Background is present in 3 different resolutions, 1k, 2k and 4k, the 8k and 16k versions
+   can be installed via exapack also at a later time (If needed)
+
+.. Image:: _static/_images/installation/addon_ready_01.png
+    :align: center
+    :width: 600
+    :alt: Addon ready 01
+
+.. Note:: The 1k, 2k, 4k, 8k, 16k versions are present in the complete edition. Some versions may not contain all the resolution versions.
+          If you want to upgrade to the full version, you only pay the difference
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+At the end of this process, on your computer, in the indicated path, 2 folders will have been created (3 if you also installed the HDRMAPS expansion)
+
+- **HDRI_MAKER_DEFAULT_LIBRARY** (This folder contains all the files of the HDRi Maker libraries)
+- **HDRI_MAKER_USER_LIBRARY** (This folder is an empty folder, and will be used in case you want to save your personal HDRi)
+
+If you also installed the HDRMAPS expansion, then a third folder will also be created and will be named after the expansion.
+
+To manipulate the paths to the libraries, it is enough to go to the HDRi Maker settings and go to the **Libraries** (TAB) section
+
+For more information on this section you can find the chapter :ref:`preferences_library_tab`
+
+
+.. image:: _static/_images/installation/libraries_manipulation_01.png
+    :align: center
+    :width: 600
+    :alt: Libraries manipulation 01
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-New exapack library
--------------------
+Abouth Exapack
+--------------
 
 As for the libraries, from version 3.0.100 onwards, they will be distributed in the form of exapack packages.
-All new packages will be in the form of numbered volumes Here is an example of nomenclature:
+All new packages will be in the form of numbered volumes Here is an example of nomenclature
+
+Default Library
+***************
 
 - **HDRiMkr_1k_vol_1.exapack**: HDRiMkr 1k Volume 1: Contains files from 1k, previews, and data files
 - **HDRiMkr_2k_vol_1.exapack**: HDRiMkr 1k Volume 2: Contains files from 2k, previews, and data files
@@ -185,13 +242,74 @@ All new packages will be in the form of numbered volumes Here is an example of n
 - **HDRiMkr_8k_vol_1.exapack**: HDRiMkr 1k Volume 4: Contains files from 8k, previews, and data files
 - **HDRiMkr_16k_vol_1.exapack**: HDRiMkr 1k Volume 5: Contains files from 16k, previews, and data files
 
-The packages are consecutive, Vol_1, Vol_2, Vol_3, The maximum weight of each package is 2.5 GB, this limit is not exceeded
-this limit to avoid download and installation problems, since those who have a slower connection, could
+The packages are consecutive, Vol_1, Vol_2, Vol_3, I tried to limit as much as possible the size of the packages,
+so that their maximum is around 2GB (Some can reach 2.5GB).
+This limit to avoid download and installation problems, since those who have a slower connection, could
 encounter timeout problems.
 
-.. Note:: The 2k packages are more, because the individual files contained in them are much larger.
-          For example, the 2k package is about 4 times the size of the 1k package, so it needs more Volumes in order to
-          not exceed the maximum weight of 2.5 GB.
+.. Note:: The large size packages like 8k and 16k will have more volumes, because they are much larger.
+          The small size packages like 1k and 2k will have less volumes, because they are much smaller.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Expansion Library
+*****************
+
+As for the expansions that are always distributed in the form of .exapack, the nomenclature may vary.
+For example, the expansions of HDRMaps are distributed without the resolution variant, this because it is a much smaller library.
+
+   .. image:: _static/_images/installation/hdrmaps_exapack_example_01.png
+       :align: center
+       :width: 300
+       :alt: Expansion exapack nomenclature
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Problem with the installation
+-----------------------------
+
+Below are some problems that may occur during installation and how to solve them.
+This section will be expanded as new problems are reported.
+
+
+The addon does not install correctly
+************************************
+
+- Make sure to:
+
+    - Use an official version of Blender downloaded from the official Blender website: https://www.blender.org/download/
+    - Use a version preferably 3.0 or higher
+    - Have enough space on the disk (The complete library takes up a lot of space)
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Problem with corrupted exapack
+******************************
+
+.. image:: _static/_images/installation/broken_exapack_example_01.png
+    :align: center
+    :width: 600
+    :alt: Broken exapack example 01
+
+It can happen that during the download of an exapack, the download is interrupted for one reason or another.
+Among the main causes of interruption of the download, there are:
+
+- **The computer shut down unexpectedly**
+- **The internet connection was interrupted**
+- **The server timeout has been reached** --> To solve this problem, try to download fewer files at the same time
+
+In these cases, the downloaded file may be damaged, and therefore it cannot be installed.
+This you can check at the time of the installation of the damaged exapack, so download the damaged exapack again
+
+
+
+
+
+
 
 
 

@@ -48,7 +48,16 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#install-the-library">Install The library</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-exapack-library">New exapack library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#abouth-exapack">Abouth Exapack</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#default-library">Default Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expansion-library">Expansion Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-with-the-installation">Problem with the installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-addon-does-not-install-correctly">The addon does not install correctly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#problem-with-corrupted-exapack">Problem with corrupted exapack</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -101,17 +110,31 @@
 uninstall it and proceed with the installation of this new version.
 If you already have a version 3.0.100 or higher, you do not need to uninstall the previous one.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="instal-the-addon">
 <h2>Instal the addon<a class="headerlink" href="#instal-the-addon" title="Permalink to this heading"></a></h2>
 <p>The first step is to install the addon in Blender. Below are instructions for installing the addon</p>
 <div class="section" id="download-the-files">
 <span id="mac-safari-zip"></span><h3>Download the files<a class="headerlink" href="#download-the-files" title="Permalink to this heading"></a></h3>
 <p>In your product page, you can find various files, the main ones for the installation are the following:</p>
-<ul class="simple">
-<li><p><strong>hdri_maker_v301##.zip</strong> is the addon for blender, this is the first element to download and install</p></li>
+<ul>
+<li><p><strong>hdri_maker_v301##.zip</strong> is the addon for blender, this is the first element to download and install</p>
+<a class="reference internal image-reference" href="_images/addon_zipped_01.png"><img alt="Addon zipped 01" class="align-center" src="_images/addon_zipped_01.png" style="width: 300px;" /></a>
+</li>
 <li><p><strong>HDRiMkr_##_Vol_#.exapack</strong> are the files of the library. and they are divided with increasing number.
-Example of downloaded .exapack files on the computer, below in the image:</p></li>
+Example of downloaded .exapack files on the computer, below in the image:</p>
+<a class="reference internal image-reference" href="_images/exapack_files_on_computer_01.png"><img alt="Exapack files on computer" class="align-center" src="_images/exapack_files_on_computer_01.png" style="width: 300px;" /></a>
+</li>
 </ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>HDRMAPS_VOL_##.zip</strong> These are the files of the library that I have inserted thanks to the support of the author of these backgrounds <strong>Grzegorz Wronkowski</strong>
+you can find these maps also on the site <a class="reference external" href="https://hdrmaps.com/">https://hdrmaps.com/</a> They are free and are granted under the CC BY license, you can find them at this
+link: <a class="reference external" href="https://hdrmaps.com/freebies/free-hdri-maps/">https://hdrmaps.com/freebies/free-hdri-maps/</a></p></li>
+</ul>
+<hr class="docutils" />
 <p>The <strong>.exapack</strong> files are installed by the addon, they do not need to be installed manually! After installing the
 HDRi Maker addon, it will manage your exapack packages and install them. (You will see in the following steps)</p>
 <div class="admonition note">
@@ -123,6 +146,7 @@ otherwise the .zip file will no longer be a .zip file and you will not be able t
 they will no longer be unzipped.</p>
 </div>
 </div>
+<hr class="docutils" />
 <div class="section" id="install-into-blender">
 <h3>Install Into Blender<a class="headerlink" href="#install-into-blender" title="Permalink to this heading"></a></h3>
 <p>Now, download the addon and install it in Blender, the procedure is as follows:</p>
@@ -167,6 +191,7 @@ This note is especially for Mac users. If you do not know how to prevent Safari 
 Mark the checkbox to activate it.</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/install_addon_zip_blender_02.png"><img alt="Install addon zip in Blender 2" src="_images/install_addon_zip_blender_02.png" style="width: 800px;" /></a>
+<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="install-the-library">
@@ -222,7 +247,14 @@ Then press the button in the file browser window <strong>Choose Exapacks</strong
 <a class="reference internal image-reference" href="_images/install_from_exapack_files.png"><img alt="Install from exapack files" src="_images/install_from_exapack_files.png" style="width: 800px;" /></a>
 <p>During the installation process of the .exapack packages, the interface will show the progress of the installed packages
 You can also stop the process whenever you want (Just press the button (X) next to the big status bar) in this case,
-the installed packages will remain installed. <strong>You can resume the installation process at a later time</strong></p>
+the installed packages will remain installed.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>I want to emphasize:</strong> All installed packages will remain installed, even if the installation process is interrupted.
+If the installation is resumed, the installation process will resume from where it was interrupted,
+because the addon recognizes the already installed files and skips them.</p>
+</div>
+<a class="reference internal image-reference" href="_images/exapack_installation_progress.png"><img alt="Exapack installation progress" src="_images/exapack_installation_progress.png" style="width: 800px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The installation speed depends a lot on the type of disk in use, I have done various tests, and the installation on
@@ -230,11 +262,35 @@ SSD is very fast. I do not recommend the use of an external Mechanical Hard Disk
 I noticed that these disks are very slow for this process. But if you do not have time problems and you have patience,
 you can decide to use it.</p>
 </div>
+<ol class="arabic simple" start="5">
+<li><p>When you have completed the entire (or even just in part) installation, the addon will be ready to be used:
+In this image we see that this Background is present in 3 different resolutions, 1k, 2k and 4k, the 8k and 16k versions
+can be installed via exapack also at a later time (If needed)</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/addon_ready_01.png"><img alt="Addon ready 01" class="align-center" src="_images/addon_ready_01.png" style="width: 600px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The 1k, 2k, 4k, 8k, 16k versions are present in the complete edition. Some versions may not contain all the resolution versions.
+If you want to upgrade to the full version, you only pay the difference</p>
 </div>
-<div class="section" id="new-exapack-library">
-<h2>New exapack library<a class="headerlink" href="#new-exapack-library" title="Permalink to this heading"></a></h2>
+<hr class="docutils" />
+<p>At the end of this process, on your computer, in the indicated path, 2 folders will have been created (3 if you also installed the HDRMAPS expansion)</p>
+<ul class="simple">
+<li><p><strong>HDRI_MAKER_DEFAULT_LIBRARY</strong> (This folder contains all the files of the HDRi Maker libraries)</p></li>
+<li><p><strong>HDRI_MAKER_USER_LIBRARY</strong> (This folder is an empty folder, and will be used in case you want to save your personal HDRi)</p></li>
+</ul>
+<p>If you also installed the HDRMAPS expansion, then a third folder will also be created and will be named after the expansion.</p>
+<p>To manipulate the paths to the libraries, it is enough to go to the HDRi Maker settings and go to the <strong>Libraries</strong> (TAB) section</p>
+<p>For more information on this section you can find the chapter <a class="reference internal" href="preferences.html#preferences-library-tab"><span class="std std-ref">Libraries Tab</span></a></p>
+<a class="reference internal image-reference" href="_images/libraries_manipulation_01.png"><img alt="Libraries manipulation 01" class="align-center" src="_images/libraries_manipulation_01.png" style="width: 600px;" /></a>
+</div>
+<hr class="docutils" />
+<div class="section" id="abouth-exapack">
+<h2>Abouth Exapack<a class="headerlink" href="#abouth-exapack" title="Permalink to this heading"></a></h2>
 <p>As for the libraries, from version 3.0.100 onwards, they will be distributed in the form of exapack packages.
-All new packages will be in the form of numbered volumes Here is an example of nomenclature:</p>
+All new packages will be in the form of numbered volumes Here is an example of nomenclature</p>
+<div class="section" id="default-library">
+<h3>Default Library<a class="headerlink" href="#default-library" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>HDRiMkr_1k_vol_1.exapack</strong>: HDRiMkr 1k Volume 1: Contains files from 1k, previews, and data files</p></li>
 <li><p><strong>HDRiMkr_2k_vol_1.exapack</strong>: HDRiMkr 1k Volume 2: Contains files from 2k, previews, and data files</p></li>
@@ -242,14 +298,58 @@ All new packages will be in the form of numbered volumes Here is an example of n
 <li><p><strong>HDRiMkr_8k_vol_1.exapack</strong>: HDRiMkr 1k Volume 4: Contains files from 8k, previews, and data files</p></li>
 <li><p><strong>HDRiMkr_16k_vol_1.exapack</strong>: HDRiMkr 1k Volume 5: Contains files from 16k, previews, and data files</p></li>
 </ul>
-<p>The packages are consecutive, Vol_1, Vol_2, Vol_3, The maximum weight of each package is 2.5 GB, this limit is not exceeded
-this limit to avoid download and installation problems, since those who have a slower connection, could
+<p>The packages are consecutive, Vol_1, Vol_2, Vol_3, I tried to limit as much as possible the size of the packages,
+so that their maximum is around 2GB (Some can reach 2.5GB).
+This limit to avoid download and installation problems, since those who have a slower connection, could
 encounter timeout problems.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The 2k packages are more, because the individual files contained in them are much larger.
-For example, the 2k package is about 4 times the size of the 1k package, so it needs more Volumes in order to
-not exceed the maximum weight of 2.5 GB.</p>
+<p>The large size packages like 8k and 16k will have more volumes, because they are much larger.
+The small size packages like 1k and 2k will have less volumes, because they are much smaller.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="expansion-library">
+<h3>Expansion Library<a class="headerlink" href="#expansion-library" title="Permalink to this heading"></a></h3>
+<p>As for the expansions that are always distributed in the form of .exapack, the nomenclature may vary.
+For example, the expansions of HDRMaps are distributed without the resolution variant, this because it is a much smaller library.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/hdrmaps_exapack_example_01.png"><img alt="Expansion exapack nomenclature" class="align-center" src="_images/hdrmaps_exapack_example_01.png" style="width: 300px;" /></a>
+</div></blockquote>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="problem-with-the-installation">
+<h2>Problem with the installation<a class="headerlink" href="#problem-with-the-installation" title="Permalink to this heading"></a></h2>
+<p>Below are some problems that may occur during installation and how to solve them.
+This section will be expanded as new problems are reported.</p>
+<div class="section" id="the-addon-does-not-install-correctly">
+<h3>The addon does not install correctly<a class="headerlink" href="#the-addon-does-not-install-correctly" title="Permalink to this heading"></a></h3>
+<ul>
+<li><p>Make sure to:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Use an official version of Blender downloaded from the official Blender website: <a class="reference external" href="https://www.blender.org/download/">https://www.blender.org/download/</a></p></li>
+<li><p>Use a version preferably 3.0 or higher</p></li>
+<li><p>Have enough space on the disk (The complete library takes up a lot of space)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="problem-with-corrupted-exapack">
+<h3>Problem with corrupted exapack<a class="headerlink" href="#problem-with-corrupted-exapack" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/broken_exapack_example_01.png"><img alt="Broken exapack example 01" class="align-center" src="_images/broken_exapack_example_01.png" style="width: 600px;" /></a>
+<p>It can happen that during the download of an exapack, the download is interrupted for one reason or another.
+Among the main causes of interruption of the download, there are:</p>
+<ul class="simple">
+<li><p><strong>The computer shut down unexpectedly</strong></p></li>
+<li><p><strong>The internet connection was interrupted</strong></p></li>
+<li><p><strong>The server timeout has been reached</strong> –&gt; To solve this problem, try to download fewer files at the same time</p></li>
+</ul>
+<p>In these cases, the downloaded file may be damaged, and therefore it cannot be installed.
+This you can check at the time of the installation of the damaged exapack, so download the damaged exapack again</p>
 </div>
 </div>
 </div>
