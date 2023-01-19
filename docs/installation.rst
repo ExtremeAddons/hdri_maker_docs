@@ -18,6 +18,8 @@ The first step is to install the addon in Blender. Below are instructions for in
 Download the files
 ******************
 
+**You can download the files wherever you want, but it would be better to create a temporary folder where to put them all**
+
 In your product page, you can find various files, the main ones for the installation are the following:
 
 - **hdri_maker_v301##.zip** is the addon for blender, this is the first element to download and install
@@ -116,33 +118,43 @@ Install The library
 
 - If you have installed the addon correctly, now you can proceed with the installation of the library.
 
-1. Download the file HDRiMkr_1k_vol_1.exapack, this is the package containing the 1k resolution files,
-   it is also the smallest package in terms of MB, so it is easy and fast. You can download the others at any time.
-   **You can download all the .exapack files and run everything at once if you wish**
+Step 1
+******
 
-|
+Download the file HDRiMkr_1k_vol_1.exapack, this is the package containing the 1k resolution files,
+it is also the smallest package in terms of Size, so it is easy and fast. You can download the others at any time.
+**You can download all the .exapack files and run everything at once if you wish**
 
-2. When you have finished downloading the **exapack** files you want to install, go to the HDRi Maker Preferences window
-   and go to the **Install Libraries** (TAB) section and press the "Default Library" button you see in the following image
-   in red.
+------------------------------------------------------------------------------------------------------------------------
 
-    .. Tip:: If you do not see the HDRi Maker Welcome panel, you can open it by pressing the "N" key on the keyboard.
+Step 2
+******
 
-    .. image:: _static/_images/installation/go_to_install_libraries_01.png
-        :width: 600
-        :alt: Go to install libraries 01
+When you have finished downloading the **exapack** files you want to install, go to the HDRi Maker Preferences window
+and go to the **Install Libraries** (TAB) section and press the "Default Library" button you see in the following image
+in red.
 
-    When you press this button, a file browser will open, you will have to choose a location on your computer where the
-    root folder of the entire **Default Library** will be created
+.. Tip:: If you do not see the HDRi Maker Welcome panel, you can open it by pressing the "N" key on the keyboard.
 
-    .. Warning:: 1. Do not choose the path in the path where blender installs the addons!
-                 2. Avoid choosing paths on LAN connected disks, resources may not be reachable
-                 3. If you are also installing the expansion.exapack, these will be installed in another root folder, in the same location where the **Default Library** is located
-                 4. It is not recommended to use an external Hard Disk connected via USB (Unless it is an external SSD disk)
+.. image:: _static/_images/installation/go_to_install_libraries_01.png
+    :width: 600
+    :alt: Go to install libraries 01
+
+When you press this button, a file browser will open, you will have to choose a location on your computer where the
+root folder of the entire **Default Library** will be created
+
+.. Warning:: 1. Do not choose the path in the path where blender installs the addons!
+             2. Avoid choosing paths on LAN connected disks, resources may not be reachable
+             3. If you are also installing the expansion.exapack, these will be installed in another root folder, in the same location where the **Default Library** is located
+             4. It is not recommended to use an external Hard Disk connected via USB (Unless it is an external SSD disk)
 
 
+------------------------------------------------------------------------------------------------------------------------
 
-3. Now the situation should look like this, where the **"Choose Exapacks"** button appears.
+Step 3
+******
+
+Now the situation should look like this, where the **"Choose Exapacks"** button appears.
 
 .. image:: _static/_images/installation/choose_exapacks_ready.png
     :width: 800
@@ -161,8 +173,17 @@ Then press the button in the file browser window **Choose Exapacks** to confirm
     :alt: Browse exapack to install 01
 
 
-4. Now you should have the list of exapack files selected, in list, ready to be installed, you will just have to press the
-   **"Install From Exapack Files"** button to proceed with the installation. As follows in this image:
+------------------------------------------------------------------------------------------------------------------------
+
+Step 4
+******
+
+Now you should have the list of exapack files selected, in list, ready to be installed, you will just have to press the
+**"Install From Exapack Files"** button to proceed with the installation. As follows in this image:
+
+.. Note:: The exapack files are deleted once installed by the addon, this is for space issues
+          if you want to keep them (Not Recommended) check the **"Keep Exapack After Install"** box and the files will be kept on the disk.
+          But be careful, this means that you will have the weight of the library almost X2
 
 .. image:: _static/_images/installation/install_from_exapack_files.png
     :width: 800
@@ -190,9 +211,14 @@ the installed packages will remain installed.
           you can decide to use it.
 
 
-5. When you have completed the entire (or even just in part) installation, the addon will be ready to be used:
-   In this image we see that this Background is present in 3 different resolutions, 1k, 2k and 4k, the 8k and 16k versions
-   can be installed via exapack also at a later time (If needed)
+------------------------------------------------------------------------------------------------------------------------
+
+Step 5
+******
+
+When you have completed the entire (or even just in part) installation, the addon will be ready to be used:
+In this image we see that this Background is present in 3 different resolutions, 1k, 2k and 4k, the 8k and 16k versions
+can be installed via exapack also at a later time (If needed)
 
 .. Image:: _static/_images/installation/addon_ready_01.png
     :align: center
