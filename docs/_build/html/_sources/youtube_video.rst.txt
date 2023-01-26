@@ -12,6 +12,8 @@ Basic tutorial
 - This series is about basic tutorials on how to use HDRi Maker, so it's faster and faster than advanced tutorials.
 
 
+.. _world_manipulation:
+
 World manipulation
 ******************
 
@@ -26,6 +28,8 @@ World manipulation
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _wrap_dome_ground:
+
 Wrap Dome Ground
 ****************
 
@@ -39,6 +43,8 @@ Wrap Dome Ground
 
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _shadow_catcher:
 
 Shadow Catcher
 **************
@@ -69,6 +75,8 @@ Custom Dome with Hooks
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _light_studio:
+
 Light Studio
 ************
 
@@ -84,6 +92,8 @@ Light Studio
 
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _adjust_dome_projection:
 
 Adjust dome Projection
 **********************
@@ -101,6 +111,7 @@ Adjust dome Projection
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _create_hdr_from_scene:
 
 Create HDR from scene
 *********************
@@ -115,6 +126,8 @@ Create HDR from scene
 
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _batch_scene:
 
 Batch Save
 **********
@@ -136,13 +149,14 @@ there is a World Background applied to the main scene of the file.blend, it will
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
 Advanced Tutorials
 ------------------
 
 - This series of tutorials is a bit more advanced, and is used to show how to make certain scenes with HDRi Maker, and how
   to use the advanced functions of HDRi Maker.
 
+
+.. _fog_volumetric:
 
 Fog (Volumetric)
 ****************
@@ -159,6 +173,8 @@ Fog (Volumetric)
 
 ------------------------------------------------------------------------------------------------------------------------
 
+
+.. _walking_into_dome:
 
 Walking into dome (Animation)
 *****************************

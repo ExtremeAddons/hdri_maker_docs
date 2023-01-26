@@ -30,6 +30,10 @@ especially if used with adequate lighting (See the :ref:`light_section` section 
 +-------------------------------------------------------+--------------------------------+
 
 
+.. Tip::
+        You can find a video tutorial on how to use the volumetric and create animated fog here: :ref:`fog_volumetric`
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 .. _volume_selector:

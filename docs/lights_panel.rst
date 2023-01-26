@@ -38,6 +38,9 @@ the lights also on objects that move)
 
 ========================================================================================================================
 
+.. Tip::
+        You can find a video tutorial on how to use the Light studio: :ref:`light_studio`
+
 
 **The panel looks like this once the lights have been added via the "Add" button:**
 

@@ -100,11 +100,11 @@ This is the interesting part, here you can choose the type of Dome you want to u
 ##############
 
     Classic Dome, This dome is interesting and is the most classic of domes, It has a grid on the ground that allows
-    to do the Wrap (Explained later here: :ref:`dome_wrap`)
+    to do the Wrap (Explained later here: :ref:`dome_wrap` )
     It can be scaled, and thanks to the HDRi Maker node system, the projection can be set, scaling the mapping of the ground,
     in order to have a larger or smaller ground, or smaller, depending on your needs.
     It is also possible to modify the mapping of the sky part, in order to be able to set the projection as best as possible
-    All this is explained better in the "Dome Projection Vector" section: :ref:`dome_vectors:`
+    All this is explained better in the "Dome Projection Vector" section: :ref:`dome_vectors`
 
     .. image:: _static/_images/dome_projection/dome_dome_shape_01.png
         :width: 400
@@ -271,6 +271,7 @@ you are. This allows you to make the scene in the dome even more realistic than 
         They have been positioned as best as possible to adapt to the proposed image**
 
 
+
 .. _add_remove_hooks:
 
 Add/Remove Hooks
@@ -326,6 +327,10 @@ Hooks Type
 
 Dome Wrap
 ---------
+
+.. Tip::
+        Here you can find a video tutorial on how to use the Wrap: :ref:`wrap_dome_ground`
+
 
 Dome Wrap is a very powerful tool that uses Blender modifiers to create real displacement in the mesh of the ground of the dome
 (All types of dome present in HDRi Maker support the wrap).
@@ -685,6 +690,8 @@ Dome Color (Node Group)
  - Flip the Bump Direction
 
 
+------------------------------------------------------------------------------------------------------------------------
+
 .. _dome_vectors:
 
 Dome Vectors (Node Group)
@@ -694,6 +701,10 @@ Dome Vectors (Node Group)
     :align: center
     :width: 400
     :alt: Dome Vectors Panel
+
+
+.. Tip::
+        You can find a video tutorial on how to use Dome Vectors and adjust your projection: :ref:`adjust_dome_projection`
 
 
 

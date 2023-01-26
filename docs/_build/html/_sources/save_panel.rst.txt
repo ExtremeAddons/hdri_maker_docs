@@ -86,6 +86,12 @@ Batch From Folder
      To proceed, you must select the folder where the files to be saved are located (Choose the source folder button),
      and then press the "Batch Save" button.
 
+
+.. Tip::
+        You can find a video tutorial on how to save in batch almost 100 images: :ref:`batch_scene`
+
+
+
 .. image:: _static/_images/save/batch_from_folder_panel_01.png
   :width: 300
   :align: center
@@ -132,6 +138,11 @@ Save 360° Background
   :width: 800
   :align: center
   :alt: Sphere 360° Example
+
+
+
+.. Tip::
+        You can find a video tutorial on how to create a 360° background with HDRi Maker: :ref:`create_hdr_from_scene`
 
 
 This is useful if you have particularly complex scenes and want to create a 360° background to use in other projects.
