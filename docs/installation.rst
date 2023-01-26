@@ -91,12 +91,14 @@ Now, download the addon and install it in Blender, the procedure is as follows:
    ``Edit > Preferences > Add-ons > Install``
 
 .. image:: _static/_images/installation/install_addon_in_blender_01.png
+    :align: center
     :width: 800
     :alt: Install addon in Blender
 
 3) Select the downloaded file (**hdri_maker_v30100.zip** <-- !This name is only an example!) and click on "Install Addon" (The name of the file can be different from version to version)
 
 .. image:: _static/_images/installation/install_addon_zip_blender_01.png
+    :align: center
     :width: 800
     :alt: Install addon zip in Blender
 
@@ -104,6 +106,7 @@ Now, download the addon and install it in Blender, the procedure is as follows:
    Mark the checkbox to activate it.
 
 .. image:: _static/_images/installation/install_addon_zip_blender_02.png
+    :align: center
     :width: 800
     :alt: Install addon zip in Blender 2
 
@@ -137,6 +140,7 @@ in red.
 .. Tip:: If you do not see the HDRi Maker Welcome panel, you can open it by pressing the "N" key on the keyboard.
 
 .. image:: _static/_images/installation/go_to_install_libraries_01.png
+    :align: center
     :width: 600
     :alt: Go to install libraries 01
 
@@ -157,6 +161,7 @@ Step 3
 Now the situation should look like this, where the **"Choose Exapacks"** button appears.
 
 .. image:: _static/_images/installation/choose_exapacks_ready.png
+    :align: center
     :width: 800
     :alt: Choose Exapacks ready
 
@@ -169,6 +174,7 @@ Then press the button in the file browser window **Choose Exapacks** to confirm
 
 
 .. image:: _static/_images/installation/browse_exapack_to_install_01.png
+    :align: center
     :width: 800
     :alt: Browse exapack to install 01
 
@@ -186,6 +192,7 @@ Now you should have the list of exapack files selected, in list, ready to be ins
           But be careful, this means that you will have the weight of the library almost X2
 
 .. image:: _static/_images/installation/install_from_exapack_files.png
+    :align: center
     :width: 800
     :alt: Install from exapack files
 
@@ -201,6 +208,7 @@ the installed packages will remain installed.
 
 
 .. image:: _static/_images/installation/exapack_installation_progress.png
+    :align: center
     :width: 800
     :alt: Exapack installation progress
 
@@ -287,6 +295,46 @@ For example, the expansions of HDRMaps are distributed without the resolution va
        :align: center
        :width: 300
        :alt: Expansion exapack nomenclature
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Convert Old Library
+-------------------
+
+Se sei un utente che possiede le librerie precedenti alla versione 3.0.100, puoi convertire le librerie senza dover riscaricarle.
+Per fare questo devi solo seguire questi semplici passi:
+
+- Installa il nuovo HDRi Maker (Disinstalla quello vecchio e installa il nuovo) Non eliminare le librerie!
+- Apri il nuovo HDRi Maker
+- Dal pannello principale, di HDRi Maker, Inserisci i Percorsi alle tue librerie (Default e User)
+- Le librerie, se vecchia versione, vengono riconosciute in quanto tali, quindi apparirà un bottone per la conversione
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Move Libraries
+--------------
+
+If you intend to move the libraries, you must follow these simple steps:
+
+- Find the path of the libraries (Default and User) which usually have the name 'HDRI_MAKER_DEFAULT_LIBRARY' and 'HDRI_MAKER_USER_LIBRARY'
+- Copy the folder to the destination disk (For example you can copy it to an external USB disk)
+- Connect the USB disk to your destination computer
+- Install HDRi Maker on Blender on your destination computer (Do not run the installation of the libraries)
+- Open the new HDRi Maker
+- Now go to the "Preferences" panel and go to the "Libraries" (TAB) section
+
+.. image:: _static/_images/preferences/preferences_libraries_01.png
+    :align: center
+    :width: 600
+    :alt: Preferences libraries 01
+
+
+- Enter the paths of the libraries Default **(1)** and User **(2)** that you copied to the USB disk
+- If you also copied the Expansion libraries, add an expansion library and indicate the path of the folder **(3)**
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------

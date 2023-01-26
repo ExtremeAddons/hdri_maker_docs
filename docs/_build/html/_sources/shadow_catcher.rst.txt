@@ -7,6 +7,12 @@ Shadow Catcher
 .. Figure:: _static/_images/shadow_catcher/shadow_catcher_800x300.png
             :align: center
 
+.. class:: center
+
+    This model "Lightning Mage (Free Download)" comes from sketchfab and was created by **Adipriatna** under license **CC BY**,
+    you can find it at this link:https://sketchfab.com/3d-models/lightning-mage-free-download-f89b591b51cb42c98f84606999e4ec89
+
+
 .. Important:: In Eevee the shadow catcher need a light source to work because the background in Eevee does not produce shadows
                unlike Cycles.
 
