@@ -1,3 +1,6 @@
+
+.. _installation:
+
 Installation
 ============
 
@@ -299,16 +302,49 @@ For example, the expansions of HDRMaps are distributed without the resolution va
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Update The Addon
+----------------
+
+From time to time, I release updates. They can be checked from the **Preferences** menu "Updates" (TAB)
+In that section you will understand if the addon is updated or not.
+
+If a new version of the addon is available, you can find it on the download page of the site where you bought the addon.
+
+Download it, uninstall the previous version **Do not remove the libraries, if you had already installed them there is no need to reinstall them**
+and install the new version. The steps for the installation can be found above here: :ref:`installation`
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 Convert Old Library
 -------------------
 
-Se sei un utente che possiede le librerie precedenti alla versione 3.0.100, puoi convertire le librerie senza dover riscaricarle.
-Per fare questo devi solo seguire questi semplici passi:
+If you are a user who owns the libraries prior to version 3.0.100, you can convert the libraries without having to download them again.
+To do this, you just need to follow these simple steps:
 
-- Installa il nuovo HDRi Maker (Disinstalla quello vecchio e installa il nuovo) Non eliminare le librerie!
-- Apri il nuovo HDRi Maker
-- Dal pannello principale, di HDRi Maker, Inserisci i Percorsi alle tue librerie (Default e User)
-- Le librerie, se vecchia versione, vengono riconosciute in quanto tali, quindi apparirà un bottone per la conversione
+- Install the new HDRi Maker (Uninstall the old one and install the new one) Do not remove the libraries!
+- Open the new HDRi Maker
+- From the main panel of HDRi Maker, enter the paths to your libraries (Default and User)
+- The libraries, if old version, are recognized as such, so a button for conversion will appear
+
+
+In this image, we see that 2 old version libraries have been connected to the 3.0.100 version. The addon recognizes them automatically
+and asks us to convert them.
+
+It will be enough to indicate the paths where you want them to be converted and click on the "Convert" button to start the process.
+
+This process creates a new folder with the new structure of the libraries. In this way, it is not necessary to download
+the libraries again that are already present on the computer.
+
+(If you want to avoid this step, you can simply download the libraries again and don't worry about this)
+
+
+.. image:: _static/_images/installation/convert_old_libraries_01.png
+    :align: center
+    :width: 300
+    :alt: Convert old libraries 01
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------

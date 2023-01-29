@@ -85,6 +85,44 @@ Updates Tab
     :alt: Updates Tab
 
 
+
+Addon updates
+******************
+
+This section allows you to check if there are updates for the addon. If there are and to compare the installed version with the available one.
+
+.. image:: _static/_images/preferences/update_addon_check_01.png
+    :align: center
+    :width: 800
+    :alt: Addon updates
+
+
+.. Note:: To update the addon, make sure to go to the store where you purchased HDRi Maker and download the latest version available.
+          Usually it is named like this **hdri_maker_v30100.zip** (The numbers are indicative and may vary)
+          Here you can find how to install it: :ref:`installation`
+
+
+
+Library updates
+******************
+
+This section allows you to keep track of the installed libraries, and to check if there are updates for them.
+All packages with the green check mark are installed in the addon library. Remember that you must have the libraries connected to the addon to use this menu.
+So make sure you have connected the libraries you want to check to the addon.
+
+
+.. image:: _static/_images/preferences/update_libraries_menu_01.png
+    :align: center
+    :width: 800
+    :alt: Updates Tab
+
+
+.. Note:: To update the libraries, just download the missing .exapack packages and install them.
+          Here is how: :ref:`how_to_install_libraries`
+
+
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 
