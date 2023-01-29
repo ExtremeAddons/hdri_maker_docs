@@ -53,6 +53,6 @@ Welcome to HDRi Maker's documentation!
    :maxdepth: 4
    :caption: Tutorials:
 
-   youtube_video
+   video_tutorials
 
 
