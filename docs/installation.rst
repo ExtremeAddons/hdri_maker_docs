@@ -124,6 +124,17 @@ Install The library
 
 - If you have installed the addon correctly, now you can proceed with the installation of the library.
 
+.. Note:: If you are a user coming from a version of HDRi Maker 2.0 you can convert your library **HDRI_MAKER_LIB**
+          In the new library, just follow this guide: :ref:`convert_old_library` This allows you to avoid downloading the
+          library 1k 2k 4k and 8k. In addition you can check later what you are missing in the library
+          via the menu in the preferences under "UPDATES" (TAB) in which under you will have the full picture of what is online and what
+          you have already installed.
+
+          .. image:: _static/_images/preferences/update_libraries_menu_01.png
+              :align: center
+              :width: 600
+              :alt: Updates tab
+
 Step 1
 ******
 
@@ -263,7 +274,7 @@ For more information on this section you can find the chapter :ref:`preferences_
 ------------------------------------------------------------------------------------------------------------------------
 
 
-Abouth Exapack
+About Exapack
 --------------
 
 As for the libraries, from version 3.0.100 onwards, they will be distributed in the form of exapack packages.
@@ -305,7 +316,7 @@ For example, the expansions of HDRMaps are distributed without the resolution va
 Update The Addon
 ----------------
 
-From time to time, I release updates. They can be checked from the **Preferences** menu "Updates" (TAB)
+From time to time, I release updates. They can be checked from the **Preferences** menu "Updates" (TAB) here: :ref:`update_tab`
 In that section you will understand if the addon is updated or not.
 
 If a new version of the addon is available, you can find it on the download page of the site where you bought the addon.
@@ -315,6 +326,8 @@ and install the new version. The steps for the installation can be found above h
 
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _convert_old_library:
 
 Convert Old Library
 -------------------
@@ -345,8 +358,6 @@ the libraries again that are already present on the computer.
     :alt: Convert old libraries 01
 
 
-
-
 ------------------------------------------------------------------------------------------------------------------------
 
 Move Libraries
@@ -369,6 +380,12 @@ If you intend to move the libraries, you must follow these simple steps:
 
 - Enter the paths of the libraries Default **(1)** and User **(2)** that you copied to the USB disk
 - If you also copied the Expansion libraries, add an expansion library and indicate the path of the folder **(3)**
+
+.. Attention:: In the library there is a folder named **"._data"** if this is not present
+               the program will not recognize the library as valid and it will not be able to be used. If something does not work
+               check that the folder is present. (It may be necessary to view hidden files to see it)
+               Depending on the operating system in use, make sure to proceed to the display of hidden files if you intend to search for the folders "._data".
+
 
 
 
