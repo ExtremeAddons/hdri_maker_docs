@@ -56,3 +56,8 @@ Welcome to HDRi Maker's documentation!
    video_tutorials
 
 
+.. toctree::
+   :maxdepth: 4
+   :caption: Helps & FAQs:
+
+   faqs
