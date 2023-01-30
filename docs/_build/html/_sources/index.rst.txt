@@ -46,7 +46,6 @@ Welcome to HDRi Maker's documentation!
    lights_panel
    shadow_catcher
    save_panel
-   bugreport_info
    preferences
 
 .. toctree::
@@ -62,3 +61,4 @@ Welcome to HDRi Maker's documentation!
 
    faqs
    troubleshooting
+   bugreport_info

@@ -20,6 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Guidelines for bugreport" href="bugreport_info.html" />
     <link rel="prev" title="FAQs" href="faqs.html" /> 
 </head>
 
@@ -51,7 +52,6 @@
 <li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shadow_catcher.html">Shadow Catcher</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
@@ -61,7 +61,13 @@
 <p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#find-options-menu">Find Options Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pink-background">Pink Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#black-background">Black Background</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 </ul>
 
         </div>
@@ -94,6 +100,37 @@
 This section will be updated over time based on the major problems encountered by users.
 Problems related to HDRi Maker bugs are usually solved. Here are some of the most common problems.
 Question and answer</p>
+<hr class="docutils" />
+<div class="section" id="find-options-menu">
+<h2>Find Options Menu<a class="headerlink" href="#find-options-menu" title="Permalink to this heading"></a></h2>
+<p>To go to the HDRi Maker options, you have to go to the addon preferences. But to make this process easier there is
+a button directly in the HDRi Maker interface:</p>
+<a class="reference internal image-reference" href="_images/options_button_011.png"><img alt="Options Button 01" class="align-center" src="_images/options_button_011.png" style="width: 200px;" /></a>
+</div>
+<hr class="docutils" />
+<div class="section" id="pink-background">
+<h2>Pink Background<a class="headerlink" href="#pink-background" title="Permalink to this heading"></a></h2>
+<p>If you find yourself in a situation of background or Dome with Pink color, this means in 99% of cases that the image
+to which the background refers is no longer linked to the project.</p>
+<a class="reference internal image-reference" href="_images/pink_background_01.png"><img alt="Pink Background 01" class="align-center" src="_images/pink_background_01.png" style="width: 600px;" /></a>
+<p>To solve the problem, go to the HDRi Maker options and click on the “Find Lost Images” button</p>
+<a class="reference internal image-reference" href="_images/find_lost_images_01.png"><img alt="Find Lost Images 01" class="align-center" src="_images/find_lost_images_01.png" style="width: 600px;" /></a>
+<p>A file search window will open. Indicate the path where the HDRi Maker library is located or where you think
+that the file you are looking for may be. Once the path is indicated, click on “Find Missing Files”.</p>
+<p>The search will be performed in the indicated path and in all subfolders.</p>
+<p><strong>Note</strong>: The process may take a while, depending on the number of files in the library.</p>
+<a class="reference internal image-reference" href="_images/find_missing_files_01.png"><img alt="Find Missing Files 01" class="align-center" src="_images/find_missing_files_01.png" style="width: 600px;" /></a>
+</div>
+<hr class="docutils" />
+<div class="section" id="black-background">
+<h2>Black Background<a class="headerlink" href="#black-background" title="Permalink to this heading"></a></h2>
+<p>In this case there may be a problem when creating a file in a newer version of Blender, and then after saving the project
+it is opened in a previous version of Blender.</p>
+<p>Sometimes Blender updates its nodes, so it may be that the nodes are no longer retro compatible with the previous version.
+To solve this I have provided a function that tries to replace the “Unknown” nodes</p>
+<p>You can find it in the HDRi Maker Options menu:</p>
+<a class="reference internal image-reference" href="_images/fix_unknown_nodes_01.png"><img alt="Fix Unknown Nodes 01" class="align-center" src="_images/fix_unknown_nodes_01.png" style="width: 600px;" /></a>
+</div>
 </div>
 
 
@@ -101,6 +138,7 @@ Question and answer</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="faqs.html" class="btn btn-neutral float-left" title="FAQs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bugreport_info.html" class="btn btn-neutral float-right" title="Guidelines for bugreport" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

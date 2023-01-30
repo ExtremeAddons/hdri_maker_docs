@@ -1,13 +1,6 @@
 FAQs
 =====================
 
-What is HDRi Maker?
-*************************
-
-HDRi Maker is a very complete addon to make it easy to add 360 Degree Backgrounds, it makes the workflow very fast and it has a huge library ready to use.
-
-------------------------------------------------------------------------------------------------------------------------
-
 How many backgrounds are included?
 ****************************************
 
@@ -76,7 +69,8 @@ Cycles and Eevee are the rendering engines supported by HDRi Maker, support for 
 Is there support?
 *****************
 
-Of course! Both on Blendermarket via message, and on extreme-addons.com you can find a chat in the bottom right
+Of course! You can contact me on https://blendermarket.com/ or on http://extreme-addons.com/
+(On extreme-addons.com you can find a chat button in the bottom right corner)
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -84,5 +78,25 @@ Can I use HDRi Maker on Software other than Blender?
 ****************************************************
 
 At the moment support for other platforms is not planned, but it is possible that in the future there will be
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Can I export the dome as a 3D model?
+*******************************************
+
+Not yet, but it is possible that in the future there will be
+
+------------------------------------------------------------------------------------------------------------------------
+
+Can I import videos as backgrounds?
+*****************************************
+
+This is not currently planned for 2 reasons. Videos are currently huge in GB quantity, so we have not yet intended
+to address the issue. I have also been asked many times if you can import videos made with the normal camera.
+The answer is yes, but it doesn't make sense. It's not a VFX addon, so it's not planned to use it.
+
+
+
 
 

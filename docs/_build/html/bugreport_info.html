@@ -20,8 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Youtube Tutorial" href="youtube_video.html" />
-    <link rel="prev" title="Save" href="save_panel.html" /> 
+    <link rel="prev" title="Troubleshooting" href="troubleshooting.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,10 +40,10 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="how_to_install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="library_manager_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="world_panel.html">World</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dome_projection_panel.html">Dome</a></li>
@@ -52,19 +51,26 @@
 <li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shadow_catcher.html">Shadow Catcher</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Guidelines for bugreport</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#make-sure-it-s-a-bug">Make sure it’s a bug</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-report-the-bug">How to report the bug</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#method-1">Method 1:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#method-2">Method 2:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#method-3">Method 3:</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="youtube_video.html">Youtube Tutorial</a></li>
 </ul>
 
         </div>
@@ -94,7 +100,7 @@
   <div class="section" id="guidelines-for-bugreport">
 <h1>Guidelines for bugreport<a class="headerlink" href="#guidelines-for-bugreport" title="Permalink to this heading"></a></h1>
 <p>I can guarantee the resolution of bugs only if the product has been purchased through our official channels
-(extreme-addons.com, blendermaket.com, gumroad.com)</p>
+(extreme-addons.com, blendermarket.com, gumroad.com)</p>
 <p>In addition, sometimes some versions of Blender are not official, have different APIs from the official version,
 unfortunately not always these versions respect the official APIs, and therefore it is not possible to guarantee the
 functionality of our addons at 100%, this cannot be considered a bug, but a compatibility problem with
@@ -110,27 +116,40 @@ you can start thinking of doing it really.</p>
 <h2>How to report the bug<a class="headerlink" href="#how-to-report-the-bug" title="Permalink to this heading"></a></h2>
 <div class="section" id="method-1">
 <h3>Method 1:<a class="headerlink" href="#method-1" title="Permalink to this heading"></a></h3>
+<p><strong>If you bought on BlenderMarket</strong> You can contact me through the messaging system of Blendermarket, this is really good
+because I can also see if you are really a user. So you will have the assistance worthy of a customer.</p>
+<p>Log into your account, then messages can be sent by clicking under the lifebelt icon in Auto-Rig Pro page Ask a Question
+in this page: <a class="reference external" href="https://blendermarket.com/products/hdri-maker">https://blendermarket.com/products/hdri-maker</a></p>
+<p><strong>If you bought on Gumroad</strong> You can contact me on the <a class="reference external" href="https://extreme-addons.com">https://extreme-addons.com</a> Chat (In the bottom right corner of the page)</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="method-2">
+<h3>Method 2:<a class="headerlink" href="#method-2" title="Permalink to this heading"></a></h3>
 <p><strong>( Best Method Requires to be registered on Github )</strong></p>
 <p>If you have installed the HDRi Maker addon and are able to go to its preferences, you can use the “Report Bug” button
 it will precompile the bug report so that you only have to enter the description of the bug, and send it.</p>
+<a class="reference internal image-reference" href="_images/bugreport_github_01.png"><img alt="BugReport Github 01" class="align-center" src="_images/bugreport_github_01.png" style="width: 500px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If the button does not work, use this link and create a new Report: <a class="reference external" href="https://github.com/ExtremeAddons/hdri_maker/issues/new">https://github.com/ExtremeAddons/hdri_maker/issues/new</a>
 if you are not registered on github, you will be asked to register, once registered, you can send the bug report.</p>
 </div>
 </div>
-<div class="section" id="method-2">
-<h3>Method 2:<a class="headerlink" href="#method-2" title="Permalink to this heading"></a></h3>
-<p><strong>( Not Recommended )</strong></p>
+<hr class="docutils" />
+<div class="section" id="method-3">
+<h3>Method 3:<a class="headerlink" href="#method-3" title="Permalink to this heading"></a></h3>
 <p>Use the “System To Clipboard” button to copy the system information, and paste it into the bug report, now you can
-paste the system information and think of contacting me on BlenderMarket (If you are a Blendermarket user)
-Or you can contact me in the Extreme-Addons chat, you can find it at the bottom right on the website <a class="reference external" href="https://extreme-addons.com">https://extreme-addons.com</a></p>
+paste the system information and think of contacting me on BlenderMarket (If you are a Blendermarket user) <a class="reference external" href="https://blendermarket.com/products/hdri-maker">https://blendermarket.com/products/hdri-maker</a></p>
+<p>Or you can contact me in the Extreme-Addons chat, you can find it at the bottom right on the website <a class="reference external" href="https://extreme-addons.com">https://extreme-addons.com</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For practical reasons, it is better to report bugs via github, this allows you to keep track of all the bugs
 reported by our users, this also allows us to make the solution of bugs public, so that everyone can benefit
 from the reports and check that the bug has been fixed.</p>
 </div>
+<ul class="simple">
+<li></li>
+</ul>
 </div>
 </div>
 </div>
@@ -139,8 +158,7 @@ from the reports and check that the bug has been fixed.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="save_panel.html" class="btn btn-neutral float-left" title="Save" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="youtube_video.html" class="btn btn-neutral float-right" title="Youtube Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="troubleshooting.html" class="btn btn-neutral float-left" title="Troubleshooting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
