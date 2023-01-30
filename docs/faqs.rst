@@ -13,12 +13,13 @@ Can I use the backgrounds for commercial projects?
 
 Yes, the entire Default library of HDRi Maker is provided under CC0 license, so you can use it even without citing the license. If you want to use the backgrounds contained in the Hdr Maps expansion, you can do it, but you will have to cite the author and the license
 
-------------------------------------------------------------------------------------------------------------------------
+In any case I have inserted in each Background the type of license of use. This can be viewed by pressing the Button
+"Info" as in the image below, a popup opens, and from there you can see the type of license of use.
 
-What is the Dome projection?
-******************************
-
-It is a function that projects the background onto an object, in this case a dome or a cube, in this way you can have a background that adapts to the shape of the object. This allows you to have a real terrain in the scene, and in addition to being able to zoom on the background (something that is usually not possible)
+.. image:: _static/_images/faqs/info_license_01.png
+    :align: center
+    :width: 600
+    :alt: Info License 01
 
 
 ------------------------------------------------------------------------------------------------------------------------

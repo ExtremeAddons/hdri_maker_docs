@@ -30,6 +30,12 @@ because I can also see if you are really a user. So you will have the assistance
 Log into your account, then messages can be sent by clicking under the lifebelt icon in Auto-Rig Pro page Ask a Question
 in this page: https://blendermarket.com/products/hdri-maker
 
+.. image:: _static/_images/troubleshooting/ask_a_question_01.png
+    :align: center
+    :width: 200
+    :alt: Ask a question 01
+
+
 
 **If you bought on Gumroad** You can contact me on the https://extreme-addons.com Chat (In the bottom right corner of the page)
 
