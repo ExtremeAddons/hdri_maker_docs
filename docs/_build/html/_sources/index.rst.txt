@@ -6,10 +6,18 @@
 Welcome to HDRi Maker's documentation!
 ======================================
 
-.. figure:: _static/_images/arts/pastrocchio_and_hdri_maker_01.png
-    :scale: 35 %
+I invite you to take a look at this documentation to get an overview of HDRi Maker.
+
+I wish you a good reading!
+Andrew_D
+
+
+
+.. image:: _static/_images/arts/bm_cover_01.png
     :align: center
-    :alt: Pastrocchio and HDRi Maker
+    :width: 800
+    :alt: BM Cover 01
+
 
 
 .. Tip::

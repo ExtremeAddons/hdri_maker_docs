@@ -1,6 +1,12 @@
 FAQs
 =====================
 
+Here below there are the most frequent questions and answers about the HDRi Maker addon. Even if you are not interested
+I invite you to take a look. It could be useful for you.
+
+Happy reading!
+Andrew_D
+
 How many backgrounds are included?
 ****************************************
 
@@ -96,6 +102,38 @@ Can I import videos as backgrounds?
 This is not currently planned for 2 reasons. Videos are currently huge in GB quantity, so we have not yet intended
 to address the issue. I have also been asked many times if you can import videos made with the normal camera.
 The answer is yes, but it doesn't make sense. It's not a VFX addon, so it's not planned to use it.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Posso usare le mie librerie?
+******************************
+
+Si, ma attenzione! Se sono librerie create con HDRi Maker si. Nel caso in cui tu abbia delle librerie di immagini HDR o EXR
+puoi creare delle librerie personalizzate in HDRi Maker con l'uso di Batch Save. Questo strumento compreso in HDRi Maker
+ti permette di importare in batch anche centinaia di Sfondi HDR/EXR in un colpo solo, questo fa si che esso crei una categoria
+nella libreria "USER Library" in maniera da avere in HDRi Maker tutte le tue librerie personalizzate.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Does it work with Blender Asset Browser?
+*******************************************
+
+I start from the assumption that at the moment HDRi Maker already has its integrated Asset Browser, so it is not necessary.
+In addition, it is a tool dedicated to the creation of Scenes with Dome/Lights/Hooks interactive objects.
+
+At the moment I do not consider it necessary to integrate it in Blender Asset Browser, since it is more dedicated to things "Done and finished"
+while HDRi Maker builds the scene based on the buttons that are pressed from the interface itself of HDRi Maker.
+
+In any case, I have built a small tool that will be shown in Asset Browser, in case you have a library in it of
+HDR backgrounds. This Tenta to convert these backgrounds into an HDRi Maker background, so that you can use them in HDRi Maker with its
+its functions. **Attention** this tool is still under development, so it may not work with all types
+of background libraries of the Blender asset browser.
+
+
+
+
+
 
 
 
