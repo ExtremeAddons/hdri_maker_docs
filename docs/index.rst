@@ -19,6 +19,7 @@ Andrew_D
     :alt: BM Cover 01
 
 
+------------------------------------------------------------------------------------------------------------------------
 
 .. Tip::
       The HDRi Maker addon, has an interface with many buttons with a "Question mark" icon ( ? ) most
