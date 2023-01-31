@@ -12,6 +12,48 @@ Basic tutorial
 - This series is about basic tutorials on how to use HDRi Maker, so it's faster and faster than advanced tutorials.
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+.. _first_installation:
+
+
+First installation
+********************
+
+
+This installation is to be performed if you are a new user of HDRi Maker and it is the first time you install it:
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nb9IKZQB7uk" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _upgrade_from_2_0_to_3_0:
+
+Upgrade from HDRi Maker 2.0 to 3.0
+************************************
+
+If you are a user who has already installed the version of HDRi Maker 2.0, you can update directly to version 3.0 by following
+this video tutorial. This allows you to avoid downloading the libraries that you already have on your computer.
+The libraries for HDRi Maker 3.0 have been modified in structure, but I have inserted within HDRi Maker 3.0 a
+system that allows you to update the libraries from version 2.0 to version 3.0.
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eGVxiqmfXxs" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _world_manipulation:
 
 World manipulation

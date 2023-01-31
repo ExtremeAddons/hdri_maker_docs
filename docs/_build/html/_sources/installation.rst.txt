@@ -4,6 +4,33 @@
 Installation
 ============
 
+Qui di seguito 2 video dedicati a 2 tipi di utenti differenti (Nuovi e vecchi utenti) che vogliono installare o aggiorare l'addon:
+
+
+.. Tip::
+        This video shows how to install HDRi Maker 3.0 (Studio edition) from scratch. If you already have version 2.0 and you need to update
+        go to the next video
+
+        .. raw:: html
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nb9IKZQB7uk" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                web-share" allowfullscreen></iframe>
+
+
+        In this video we will see how to update HDRi Maker 2.0 to version 3.0 (Studio edition) if you are a new user
+        follow the previous video, not this.
+
+        .. raw:: html
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eGVxiqmfXxs" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                web-share" allowfullscreen></iframe>
+
+
+
+
+
 .. Note:: If you are already a HDRi Maker user and you currently have a version prior to 3.0.100, please
           uninstall it and proceed with the installation of this new version.
           If you already have a version 3.0.100 or higher, you do not need to uninstall the previous one.
@@ -15,6 +42,8 @@ Instal the addon
 -------------------------
 
 The first step is to install the addon in Blender. Below are instructions for installing the addon
+
+
 
 .. _mac_safari_zip:
 
