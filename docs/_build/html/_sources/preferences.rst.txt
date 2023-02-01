@@ -122,6 +122,23 @@ So make sure you have connected the libraries you want to check to the addon.
           Here is how: :ref:`how_to_install_libraries`
 
 
+Remove Volume
+####################
+
+
+This button allows you to remove the volume and all its files from the library.
+
+.. Warning:: This action is irreversible, if you delete the volume, the backgrounds of the library that were contained in this
+             volume, will be deleted!
+
+
+.. image:: _static/_images/preferences/remove_volume_01.png
+    :align: center
+    :width: 800
+    :alt: Remove Volume
+
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
