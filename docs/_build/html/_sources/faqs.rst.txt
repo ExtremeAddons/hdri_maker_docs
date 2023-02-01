@@ -7,6 +7,19 @@ I invite you to take a look. It could be useful for you.
 Happy reading!
 Andrew_D
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Which version of Blender is compatible?
+***************************************
+
+The addon is compatible with all versions from 3.0 (Included) onwards.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 How many backgrounds are included?
 ****************************************
 
@@ -30,11 +43,25 @@ In any case I have inserted in each Background the type of license of use. This 
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Why are the library packages distributed in files of up to 2GB?
+****************************************************************
+
+This is because there are some users with a slow line, so files too big sometimes reach a timeout on Blendermarket.
+This was a problem for some users in the past, so I decided to divide the packages into smaller files.
+
+I understand that this is not the best way to distribute the packages, but it is the best solution for everyone.
+
+In addition, those who have a fast line can download all the packages at once, and those who have a slow line can download the packages in more times.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 Are updates free?
 ***********************
 
 HDRi Maker was born in 2019 and since then all users who have purchased the addon have received all updates for free. This means that if you buy the addon today, you will have access to all future updates.
 
+So, Yes!
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -106,13 +133,14 @@ The answer is yes, but it doesn't make sense. It's not a VFX addon, so it's not 
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Posso usare le mie librerie?
+Can I use my libraries?
 ******************************
 
-Si, ma attenzione! Se sono librerie create con HDRi Maker si. Nel caso in cui tu abbia delle librerie di immagini HDR o EXR
-puoi creare delle librerie personalizzate in HDRi Maker con l'uso di Batch Save. Questo strumento compreso in HDRi Maker
-ti permette di importare in batch anche centinaia di Sfondi HDR/EXR in un colpo solo, questo fa si che esso crei una categoria
-nella libreria "USER Library" in maniera da avere in HDRi Maker tutte le tue librerie personalizzate.
+Yes, but be careful! If they are libraries created with HDRi Maker yes. In the case in which you have HDR or EXR image libraries
+you can create custom libraries in HDRi Maker with the use of Batch Save. This tool included in HDRi Maker
+allows you to import in batch even hundreds of HDR / EXR backgrounds in one go, this makes it so that it creates a category
+in the library "USER Library" so as to have in HDRi Maker all your custom libraries.
+
 
 ------------------------------------------------------------------------------------------------------------------------
 

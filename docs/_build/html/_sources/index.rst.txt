@@ -21,6 +21,7 @@ Andrew_D
 
 ------------------------------------------------------------------------------------------------------------------------
 
+
 .. Tip::
       The HDRi Maker addon, has an interface with many buttons with a "Question mark" icon ( ? ) most
       of these buttons redirect to the documentation aimed at that section. I invite you to use these buttons

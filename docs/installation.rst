@@ -4,7 +4,21 @@
 Installation
 ============
 
-Qui di seguito 2 video dedicati a 2 tipi di utenti differenti (Nuovi e vecchi utenti) che vogliono installare o aggiorare l'addon:
+
+
+Below 2 videos dedicated to 2 different types of users (New and old users) who want to install or update the addon:
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+========================================================================================================================
+                                   !Please read carefully before proceeding with the installation!
+========================================================================================================================
+
+I suggest you to watch the videos about the installation.
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 
 .. Tip::
