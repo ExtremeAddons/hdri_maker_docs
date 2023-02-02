@@ -159,9 +159,21 @@ its functions. **Attention** this tool is still under development, so it may not
 of background libraries of the Blender asset browser.
 
 
+------------------------------------------------------------------------------------------------------------------------
 
+The dome can be modified?
+***************************
 
+Yes, the dome "Cube" and the dome "Cylinder" can be manually modified to adapt the image to the perimeter of the dome. (Or vice versa)
 
+------------------------------------------------------------------------------------------------------------------------
+
+Will I get a perfect projection with the dome?
+***********************************************
+
+No, the projection will never be perfect 100% because the image is without Parallax, but given the wide use that is made today
+of HDR and EXR images, you can safely say that with HDRi Maker you have an easy and innovative system to manage your domes
+I personally think that it is the best you can find (But I am biased and my judgment counts little)
 
 
 
