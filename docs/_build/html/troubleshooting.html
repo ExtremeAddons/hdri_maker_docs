@@ -65,6 +65,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#find-options-menu">Find Options Menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pink-background">Pink Background</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#black-background">Black Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projection-distorted">Projection distorted</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -130,6 +131,25 @@ it is opened in a previous version of Blender.</p>
 To solve this I have provided a function that tries to replace the “Unknown” nodes</p>
 <p>You can find it in the HDRi Maker Options menu:</p>
 <a class="reference internal image-reference" href="_images/fix_unknown_nodes_01.png"><img alt="Fix Unknown Nodes 01" class="align-center" src="_images/fix_unknown_nodes_01.png" style="width: 600px;" /></a>
+</div>
+<hr class="docutils" />
+<div class="section" id="projection-distorted">
+<h2>Projection distorted<a class="headerlink" href="#projection-distorted" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Distorion Example:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/dome_distortion_01.png"><img alt="Projection Distorted 01" class="align-center" src="_images/dome_distortion_01.png" style="width: 600px;" /></a>
+<p>The projection of the dome is a great feature but not all images can be projected correctly.</p>
+<p>First of all, keep in mind that the image is 2D and does not have the characteristics of the parallax, for example:
+<strong>Everything behind a tree in reality can be seen by turning around the tree, In an image No</strong></p>
+<p>Keep this rule in mind.</p>
+<p>The same thing applies to an object like a “Stick”, the stick could result “Splamato” on the floor especially if the image
+the stick is very close to the camera.</p>
+<p>Another example is that the image is taken in a point of the grass. Obviously you will only see the grass from one direction, that is
+from the center to the outside of the imaginary circle that forms the grass. But if you look at the image from another point.
+If in the projections you try to frame the grass from the outside point to the center, you will see that the grass is “Splamato” on the floor.</p>
+<p>This can be solved by using a CUBE type dome and using the Hooks system to modify the perimeter of the dome here the page: <a class="reference internal" href="dome_projection_panel.html#dome-hooks"><span class="std std-ref">Dome Hooks</span></a>
+In addition you can use the “Dome Vectors” submenu to correct the projection: <a class="reference internal" href="dome_projection_panel.html#dome-vectors"><span class="std std-ref">Dome Vectors (Node Group)</span></a></p>
 </div>
 </div>
 

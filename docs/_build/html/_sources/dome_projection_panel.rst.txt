@@ -226,6 +226,8 @@ Scale Dome
         Light studio is not scaled with the dome at the moment
 
 
+.. _dome_hooks:
+
 Dome Hooks
 ----------
 

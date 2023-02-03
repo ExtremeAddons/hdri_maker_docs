@@ -82,6 +82,14 @@ You can find it in the HDRi Maker Options menu:
 Projection distorted
 --------------------
 
+* **Distorion Example:**
+
+
+.. image:: _static/_images/troubleshooting/dome_distortion_01.png
+    :align: center
+    :width: 600
+    :alt: Projection Distorted 01
+
 The projection of the dome is a great feature but not all images can be projected correctly.
 
 First of all, keep in mind that the image is 2D and does not have the characteristics of the parallax, for example:
@@ -96,8 +104,11 @@ Another example is that the image is taken in a point of the grass. Obviously yo
 from the center to the outside of the imaginary circle that forms the grass. But if you look at the image from another point.
 If in the projections you try to frame the grass from the outside point to the center, you will see that the grass is "Splamato" on the floor.
 
+This can be solved by using a CUBE type dome and using the Hooks system to modify the perimeter of the dome here the page: :ref:`dome_hooks`
+In addition you can use the "Dome Vectors" submenu to correct the projection: :ref:`dome_vectors`
 
-These are the most typical limitations of the projection
+
+
 
 
 
