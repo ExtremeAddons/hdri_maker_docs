@@ -77,6 +77,29 @@ You can find it in the HDRi Maker Options menu:
 
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Projection distorted
+--------------------
+
+The projection of the dome is a great feature but not all images can be projected correctly.
+
+First of all, keep in mind that the image is 2D and does not have the characteristics of the parallax, for example:
+**Everything behind a tree in reality can be seen by turning around the tree, In an image No**
+
+Keep this rule in mind.
+
+The same thing applies to an object like a "Stick", the stick could result "Splamato" on the floor especially if the image
+the stick is very close to the camera.
+
+Another example is that the image is taken in a point of the grass. Obviously you will only see the grass from one direction, that is
+from the center to the outside of the imaginary circle that forms the grass. But if you look at the image from another point.
+If in the projections you try to frame the grass from the outside point to the center, you will see that the grass is "Splamato" on the floor.
+
+
+These are the most typical limitations of the projection
+
+
 
 
 
