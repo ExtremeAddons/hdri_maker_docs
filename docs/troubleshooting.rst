@@ -6,6 +6,13 @@ This section will be updated over time based on the major problems encountered b
 Problems related to HDRi Maker bugs are usually solved. Here are some of the most common problems.
 Question and answer
 
+
+I do not receive mail from BlenderMarket
+-----------------------------------------
+
+Make sure you consented to receive emails from creators in your Blender Market account preferences:
+https://blendermarket.com/account/privacy-center/consents
+
 ------------------------------------------------------------------------------------------------------------------------
 
 Find Options Menu
@@ -106,6 +113,7 @@ If in the projections you try to frame the grass from the outside point to the c
 
 This can be solved by using a CUBE type dome and using the Hooks system to modify the perimeter of the dome here the page: :ref:`dome_hooks`
 In addition you can use the "Dome Vectors" submenu to correct the projection: :ref:`dome_vectors`
+
 
 
 
