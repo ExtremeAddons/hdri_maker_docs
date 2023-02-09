@@ -32,8 +32,10 @@ I suggest you to watch the videos about the installation.
                 web-share" allowfullscreen></iframe>
 
 
+
         In this video we will see how to update HDRi Maker 2.0 to version 3.0 (Studio edition) if you are a new user
         follow the previous video, not this.
+
 
         .. raw:: html
 
@@ -74,6 +76,8 @@ In your product page, you can find various files, the main ones for the installa
       :align: center
       :width: 300
       :alt: Addon zipped 01
+
+|
 
 - **HDRiMkr_##_Vol_#.exapack** are the files of the library. and they are divided with increasing number.
   Example of downloaded .exapack files on the computer, below in the image:
