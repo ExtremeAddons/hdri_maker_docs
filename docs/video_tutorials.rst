@@ -86,6 +86,22 @@ Wrap Dome Ground
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _blur_tutorial:
+
+Blur Tutorial
+*************
+
+- In this video you will see how the Blur works directly in the dome, without having to use the camera
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2xpez9oxfAs" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _shadow_catcher:
 
 Shadow Catcher
@@ -229,6 +245,10 @@ Walking into dome (Animation)
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ri7JK2DDb-U" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
     web-share" allowfullscreen></iframe>
+
+
+
+
 
 
 
