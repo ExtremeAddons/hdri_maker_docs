@@ -1,7 +1,7 @@
-
+# Queste funzioni vengono eseguite al momento della compilazione della documentazione, dal file conf.py
 
 def update_changelog():
-    print("Recompile updates_log.rst")
+
     import os
     import requests
     # "updates.rst" è il file rst contenuto nella directory docs che contiene la lista delle modifiche
@@ -42,3 +42,5 @@ def update_changelog():
                 f.write("\n")
                 f.write("    " + description + "\n")
                 f.write("\n")
+
+    print("updates_log.rst recompiled :)")

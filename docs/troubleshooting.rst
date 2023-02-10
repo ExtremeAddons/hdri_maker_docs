@@ -115,6 +115,43 @@ This can be solved by using a CUBE type dome and using the Hooks system to modif
 In addition you can use the "Dome Vectors" submenu to correct the projection: :ref:`dome_vectors`
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Moving libraries to another computer
+------------------------------------
+
+(Only for HDRi Maker 3.0 or higher versions)
+
+To move the libraries to another computer, just copy the "HDRI_MAKER_DEFAULT_LIB" and "HDRI_MAKER_USER_LIB" folders
+if you also have the "Hdr Maps" library (Expansion) move it to the destination disk.
+
+If once connected the libraries from the "Libraries" menu in HDRi Maker preferences the addon does not work,
+it could be that in the folders mentioned above, the "._data" folders are missing, so make sure they are inside each library.
+
+- **To Show the hidden folders in Windows:**
+
+    1. Open File Explorer from the application bar.
+    2. Select View > Options > Modify folder and search options.
+    3. Select the View tab and in Advanced settings, select Show hidden folders, files and drives and OK.
+
+- **To Show the hidden folders in Mac:**
+
+    1. Access the folder where you think there are hidden files.
+    2. Step 2: Press the keys "Command + Shift + (.)"
+
+    Or:
+
+    1. In Finder, open up your Macintosh HD folder
+    2. Press Command+Shift+Dot
+    3. Your hidden files will become visible. Repeat step 2 to hide them again!
+
+- **To Show the hidden folders in Linux:**
+
+    Press the menu button in the top-right corner of the window and select Show Hidden Files, or press Ctrl+H.
+
+
+
+
 
 
 
