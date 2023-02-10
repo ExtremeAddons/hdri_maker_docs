@@ -128,6 +128,11 @@ if you also have the "Hdr Maps" library (Expansion) move it to the destination d
 If once connected the libraries from the "Libraries" menu in HDRi Maker preferences the addon does not work,
 it could be that in the folders mentioned above, the "._data" folders are missing, so make sure they are inside each library.
 
+.. image:: _static/_images/troubleshooting/data_folder.png
+    :align: center
+    :width: 600
+    :alt: Data Folder
+
 - **To Show the hidden folders in Windows:**
 
     1. Open File Explorer from the application bar.
