@@ -72,3 +72,9 @@ Andrew_D
    faqs
    troubleshooting
    bugreport_info
+
+.. toctree::
+    :maxdepth: 4
+    :caption: Changelog:
+
+    updates_log

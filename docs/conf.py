@@ -16,8 +16,15 @@ import os, sys
 
 sys.path.insert(0, os.path.abspath('../..'))
 
+# Inseriamo il percorso al file conf.py:
+sys.path.append(os.path.relpath(os.path.dirname(__file__)))
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+
+from convert_json_updates_to_rst import update_changelog
+
+update_changelog()
 
 extensions = ['sphinx_rtd_theme']
 

@@ -11,9 +11,9 @@ Below 2 videos dedicated to 2 different types of users (New and old users) who w
 ------------------------------------------------------------------------------------------------------------------------
 
 
-========================================================================================================================
-                                   !Please read carefully before proceeding with the installation!
-========================================================================================================================
+
+                                   **!Please read carefully before proceeding with the installation!**
+
 
 I suggest you to watch the videos about the installation.
 
@@ -320,7 +320,6 @@ For more information on this section you can find the chapter :ref:`preferences_
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
 About Exapack
 --------------
 
@@ -407,8 +406,8 @@ the libraries again that are already present on the computer.
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Move Libraries
---------------
+Move Libraries/Relink
+---------------------
 
 If you intend to move the libraries, you must follow these simple steps:
 
