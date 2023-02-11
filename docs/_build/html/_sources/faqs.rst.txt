@@ -10,11 +10,16 @@ Andrew_D
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Come posso contattarti per assistenza?
+How can I contact you for assistance?
 ***************************************
 
-Se hai acquistato l'addon su BlenderMarket, vai direttamente nella pagina dell'addon e clicca su "Ask a question".
+If you have purchased the addon on BlenderMarket, go directly to the addon page and click on "Ask a question"
+usually I answer within 24 hours
 
+If you have purchased the addon on Gumroad, you can contact me via the chat at the bottom right on https://extreme-addons.com/
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 Which version of Blender is compatible?
 ***************************************
