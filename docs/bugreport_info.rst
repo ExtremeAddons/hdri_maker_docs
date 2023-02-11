@@ -27,7 +27,7 @@ Method 1:
 **If you bought on BlenderMarket** You can contact me through the messaging system of Blendermarket, this is really good
 because I can also see if you are really a user. So you will have the assistance worthy of a customer.
 
-Log into your account, then messages can be sent by clicking under the lifebelt icon in Auto-Rig Pro page Ask a Question
+Log into your account, then messages can be sent by clicking under the lifebelt icon in HDRi Maker page Ask a Question
 in this page: https://blendermarket.com/products/hdri-maker
 
 .. image:: _static/_images/troubleshooting/ask_a_question_01.png

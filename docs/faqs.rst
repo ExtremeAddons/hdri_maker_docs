@@ -10,6 +10,11 @@ Andrew_D
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Come posso contattarti per assistenza?
+***************************************
+
+Se hai acquistato l'addon su BlenderMarket, vai direttamente nella pagina dell'addon e clicca su "Ask a question".
+
 
 Which version of Blender is compatible?
 ***************************************
