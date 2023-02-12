@@ -67,8 +67,12 @@ Download the files
 ******************
 
 .. Tip:: **You can download the .exapack files little by little and install only 1 volume at a time, it doesn't matter the order.**
+
          I suggest you to download first the HDRMkr_1k_Vol_001.exapack and the HDRMkr_Main_Vol_001.exapack packages.
+
          You can install the others at any time. The addon recognizes what has already been installed and what not.
+
+         This will allow you to try HDRi Maker while the other files are downloaded
 
 In your product page, you can find various files, the main ones for the installation are the following:
 
