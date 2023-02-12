@@ -66,7 +66,9 @@ The first step is to install the addon in Blender. Below are instructions for in
 Download the files
 ******************
 
-**You can download the files wherever you want, but it would be better to create a temporary folder where to put them all**
+.. Tip:: **You can download the .exapack files little by little and install only 1 volume at a time, it doesn't matter the order.**
+         I suggest you to download first the HDRMkr_1k_Vol_001.exapack and the HDRMkr_Main_Vol_001.exapack packages.
+         You can install the others at any time. The addon recognizes what has already been installed and what not.
 
 In your product page, you can find various files, the main ones for the installation are the following:
 

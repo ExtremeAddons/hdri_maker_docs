@@ -4,7 +4,7 @@ Updates Log
 3.0.100
 -------
 
-**Release date: 5-02-2023 (D/M/Y)**
+**Release date: 20-02-2023 (D/M/Y)**
 
 - **Completely redesigned interface**
 
@@ -100,7 +100,7 @@ Updates Log
 
 - **Reflections on the Ground**
 
-    As mentioned earlier, now it is possible to add reflections on the ground, metallic and roughness effect
+    As mentioned earlier, now it is possible to add reflections on the ground, metallic and roughness effect 
 
 - **Sun, Background, Dome Synchronization**
 
