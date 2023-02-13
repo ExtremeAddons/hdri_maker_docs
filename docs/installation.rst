@@ -20,7 +20,6 @@ I suggest you to watch the videos about the installation.
 ------------------------------------------------------------------------------------------------------------------------
 
 
-
 .. Tip::
         This video shows how to install HDRi Maker 3.0 (Studio edition) from scratch. If you already have version 2.0 and you need to update
         go to the next video

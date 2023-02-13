@@ -69,6 +69,24 @@ World manipulation
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _solid_color_tutorial:
+
+Use solid colors as background
+*******************************
+
+- In this tutorial you can see how to use solid colors as background while maintaining the possibility of using
+  the HDRi lighting.
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_wiMJClm_b0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _wrap_dome_ground:
 
 Wrap Dome Ground
