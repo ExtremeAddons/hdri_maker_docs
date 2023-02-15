@@ -103,6 +103,23 @@ Wrap Dome Ground
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _custom_dome_projection_tutorial:
+
+Custom Dome Projection
+***********************
+
+- In this tutorial you can see how to use the custom dome projection using the Hooks System.
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xZ5Z_90T2lQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _blur_tutorial:
 
 Blur Tutorial
