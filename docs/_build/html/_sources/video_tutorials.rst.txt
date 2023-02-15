@@ -110,11 +110,24 @@ Custom Dome Projection
 
 - In this tutorial you can see how to use the custom dome projection using the Hooks System.
 
+
+**Quick tutorial**
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p9iwq_rUsVs" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+**More complete tutorial**
+
 .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/xZ5Z_90T2lQ" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
         web-share" allowfullscreen></iframe>
+
 
 
 
@@ -148,22 +161,6 @@ Shadow Catcher
     <iframe width="560" height="315" src="https://www.youtube.com/embed/g39ZD10VLM4" title="Shadow Catcher"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
     picture-in-picture" allowfullscreen></iframe>
-
-------------------------------------------------------------------------------------------------------------------------
-
-.. _custom_dome_with_hooks:
-
-Custom Dome with Hooks
-**********************
-
-- In this tutorial you can see how to use the Dome Hooks, to modify the shape of the Dome.
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/p9iwq_rUsVs" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-
 
 ------------------------------------------------------------------------------------------------------------------------
 
