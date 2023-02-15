@@ -5,6 +5,23 @@ Here a series of tutorials on how to use HDRi Maker, I strongly recommend you to
 on new tutorials and news.
 
 
+.. Tip:: At the moment all the video tutorials are on my youtube channel, I strongly recommend you to subscribe to stay updated on new tutorials and news.
+         Also activate the bell to receive a notification when I publish a new video.
+
+         .. image:: _static/_images/logos/yt_logo_rgb_light.png
+                  :align: center
+                  :width: 300
+                  :alt: Addon zipped 01
+
+         |
+
+         This is the link to my official channel on Youtube: https://www.youtube.com/channel/UCe5vB8ehr9hrQrYvfCb8j9w
+
+
+
+
+
+
 Basic tutorial
 --------------
 
