@@ -48,7 +48,7 @@ Updates Log
 
 - **Additions of Expansion Packs**
 
-    From this version, it is possible to add Expansion, 1 Expansion is already provided with the addon, this Expansion, contains more than 100 new backgrounds from HdrMaps.com, the owner of this site has approved with pleasure the use of his backgrounds, for this reason, it was decided to add this Expansion
+    From this version, it is possible to add Expansion, 1 Expansion is already provided with the addon, this Expansion, contains more than 100+ new backgrounds from HdrMaps.com, the owner of this site has approved with pleasure the use of his backgrounds, for this reason, it was decided to add this Expansion
 
 - **Import on the fly**
 
@@ -125,4 +125,8 @@ Updates Log
 - **New documentation**
 
     Now the online documentation has been improved, now throughout the addon it is possible to access it through the buttons with the (?) icon, this opens directly the online documentation page to the corresponding page
+
+- **Improved the import of Backgrounds**
+
+    Now you can Try to import World Backgrounds from your .blend files, the addon tries to recover the first Background from the .blend project, this is not guaranteed to work every time, but in most cases if your .blend file contains a Background, it will be imported correctly
 
