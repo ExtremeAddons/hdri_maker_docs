@@ -4,7 +4,7 @@ Updates Log
 3.0.100
 -------
 
-**Release date: 20-02-2023 (D/M/Y)**
+**Release date: 28-02-2023 (D/M/Y)**
 
 - **Completely redesigned interface**
 
