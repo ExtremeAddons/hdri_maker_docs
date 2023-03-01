@@ -1,6 +1,15 @@
 Updates Log
 ===========
 
+3.0.101
+-------
+
+**Release date: 01-03-2023 (D/M/Y)**
+
+- **Installation Bugfix for Mac-Linux**
+
+    For some reason, using os.path.realpath didn't work well on Mac and Linux. It has been replaced with ntpath.normpath module, this blocked the installation of files.exapack now it's back it works on Win-Mac-Linux
+
 3.0.100
 -------
 
