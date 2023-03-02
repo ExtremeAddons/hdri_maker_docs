@@ -1,6 +1,19 @@
 Updates Log
 ===========
 
+3.0.102
+-------
+
+**Release date: 02-03-2023 (D/M/Y)**
+
+- **Bugfix when installing expansions**
+
+    It could happen that during the installation of Expansions, if they were already present on the disk and not in the list of HDRi Maker expansions, they were installed in the Default library. This could rarely happen, only if they had already been installed before. I fixed this to avoid potential confusion in some rare cases.
+
+- **Bugfix: Removes files of expansion volumes**
+
+    Expansion volumes were not removed from the Updates menu, they can now be removed.
+
 3.0.101
 -------
 
