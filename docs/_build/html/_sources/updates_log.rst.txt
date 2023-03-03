@@ -1,6 +1,15 @@
 Updates Log
 ===========
 
+3.0.103
+-------
+
+**Release date: 03-03-2023 (D/M/Y)**
+
+- **Bugfix - (Choose path) For Mac and Linux**
+
+    For some reason, it was no longer possible to select the library paths. I had used the ntpath.normpath module to make sure I normalized the paths. It worked during testing, but now it doesn't work anymore on Mac and Linux. Maybe I missed something. The new version checks the path with os.path.normpath. You should now be able to select the path to the libraries correctly
+
 3.0.102
 -------
 
