@@ -1,6 +1,15 @@
 Updates Log
 ===========
 
+3.0.104
+-------
+
+**Release date: 03-03-2023 (D/M/Y)**
+
+- **Bugfix - Retrocompatibility Dome Material**
+
+    Dome material was reflective on Blender versions 3.0 to 3.3 (Not on 3.4) Fixed issue, it was the Mix nodes that didn't have proper input and black was grayed out, causing reflection to always be on, and also the metallic. Now everything should work from Blender 3.0 and up. Previous versions have been abandoned, as they are now obsolete. a positive note for the support of Blender 3.3 which is an LTS release, so it is necessary to make HDRi Maker workable on it.
+
 3.0.103
 -------
 
