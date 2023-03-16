@@ -1,6 +1,27 @@
 Updates Log
 ===========
 
+3.0.105
+-------
+
+**Release date: 16-03-2023 (D/M/Y)**
+
+- **Bugfix - Pose Mode Bug**
+
+    If in Pose Mode, trying to add Backgrouns-Dome-Lamps, an error occurred. This has now been fixed, if you are in pose mode and do one of the above operations, the object goes back to Edit Mode, and the script executes correctly.
+
+- **New feature - Dome Rotation**
+
+    A property has been added to rotate the Dome, this is useful, because when the Hooks are applied, now the Hook will rotate with the dome, in order not to have to rotate the objects in the scene
+
+- **Bug Fix - Installation User Library Missing**
+
+    It could happen that during the first installation, the user chose the USER_LIBRARY directory, in a non-existent location, this did not start HDRi Maker and had to be removed, then add the USER LIBRARY, now this is solved, The addon if it sees that there is no USER Library In the chosen path, it will create it automatically during installation (Exapack installation) This already happened, but only if no User Library path was selected
+
+- **Improvement - Save the Expansion Library directories**
+
+    When you update the addon from version 3.x and up of HDRi Maker, the addon now also saves the directories and names of the Expansion Library, so that if you update the addon, you do not have to re-indicate the paths of the Expansion Library. Now all directories are stored in a json file, in order to simplify the update phase of the addon. Even when you switch to a later version of Blender, the addon always recognizes the directories, as long as they still exist and have not been moved on the computer to another location
+
 3.0.104
 -------
 
