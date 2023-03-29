@@ -41,6 +41,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#create-asset-browser">Create Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul>
@@ -66,12 +67,13 @@
 <p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Updates Log</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.105</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.104</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.103</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.102</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.101</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.100</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.110</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.105</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.104</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.103</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.102</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.100</a></li>
 </ul>
 </li>
 </ul>
@@ -103,7 +105,28 @@
   <div class="section" id="updates-log">
 <h1>Updates Log<a class="headerlink" href="#updates-log" title="Permalink to this heading"></a></h1>
 <div class="section" id="id1">
-<h2>3.0.105<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>3.0.110<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p><strong>Release date: 29-03-2023 (D/M/Y)</strong></p>
+<ul>
+<li><p><strong>Added - Creation of library in Asset Browser</strong></p>
+<blockquote>
+<div><p>For now it is limited to Worlds only, if drag and drop is done, only the world is added. All other features need to be added via the HDRi Maker panel. This python API limitation of Asset Browser.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Added - Convert World to HDRi Maker World</strong></p>
+<blockquote>
+<div><p>Now if the World is not of type HDRi Maker, the usual menu appears in the HDRi Maker World panel, with a button called TRY TO CONVERT, this operator, attempts to convert any World to an HDRi Maker Wordl. This will only work if there is an HDR/EXR File in the World. This for obvious reasons, first of all, will allow you to use some functions present only if the group nodes are recognized by HDRi maker.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Added - Reload Dome Image</strong></p>
+<blockquote>
+<div><p>A new Reload Image button has been added to the Dome menu. This is useful if you work with asset browsers, once any World (even of a non-HDRi Maker type) has been added, it can also be added to the dome, without necessarily having to add a new dome. This works provided that in the World Added to the scene, there is an HDR or EXR image inside the World nodes.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>3.0.105<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 16-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Pose Mode Bug</strong></p>
@@ -128,8 +151,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h2>3.0.104<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<div class="section" id="id3">
+<h2>3.0.104<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Retrocompatibility Dome Material</strong></p>
@@ -139,8 +162,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h2>3.0.103<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<div class="section" id="id4">
+<h2>3.0.103<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - (Choose path) For Mac and Linux</strong></p>
@@ -150,8 +173,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h2>3.0.102<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<div class="section" id="id5">
+<h2>3.0.102<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 02-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix when installing expansions</strong></p>
@@ -166,8 +189,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h2>3.0.101<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<div class="section" id="id6">
+<h2>3.0.101<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 01-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Installation Bugfix for Mac-Linux</strong></p>
@@ -177,8 +200,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h2>3.0.100<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<div class="section" id="id7">
+<h2>3.0.100<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 28-02-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Completely redesigned interface</strong></p>

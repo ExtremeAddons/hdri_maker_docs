@@ -1,6 +1,23 @@
 Updates Log
 ===========
 
+3.0.110
+-------
+
+**Release date: 29-03-2023 (D/M/Y)**
+
+- **Added - Creation of library in Asset Browser**
+
+    For now it is limited to Worlds only, if drag and drop is done, only the world is added. All other features need to be added via the HDRi Maker panel. This python API limitation of Asset Browser.
+
+- **Added - Convert World to HDRi Maker World**
+
+    Now if the World is not of type HDRi Maker, the usual menu appears in the HDRi Maker World panel, with a button called TRY TO CONVERT, this operator, attempts to convert any World to an HDRi Maker Wordl. This will only work if there is an HDR/EXR File in the World. This for obvious reasons, first of all, will allow you to use some functions present only if the group nodes are recognized by HDRi maker.
+
+- **Added - Reload Dome Image**
+
+    A new Reload Image button has been added to the Dome menu. This is useful if you work with asset browsers, once any World (even of a non-HDRi Maker type) has been added, it can also be added to the dome, without necessarily having to add a new dome. This works provided that in the World Added to the scene, there is an HDR or EXR image inside the World nodes.
+
 3.0.105
 -------
 

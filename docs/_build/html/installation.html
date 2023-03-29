@@ -70,6 +70,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#create-asset-browser">Create Asset Browser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul>
@@ -472,6 +476,67 @@ Among the main causes of interruption of the download, there are:</p>
 </ul>
 <p>In these cases, the downloaded file may be damaged, and therefore it cannot be installed.
 This you can check at the time of the installation of the damaged exapack, so download the damaged exapack again</p>
+</div>
+</div>
+</div>
+<div class="section" id="create-asset-browser">
+<h1>Create Asset Browser<a class="headerlink" href="#create-asset-browser" title="Permalink to this heading"></a></h1>
+<p>Here below is indicated the procedure to create the asset browser</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create the asset browser it is necessary that the addon is correctly installed and that at least one library has been installed.
+In addition, make sure you have a version 4.0.110 or higher of HDRi Maker</p>
+</div>
+<a class="reference internal image-reference" href="_images/asset_browser_example.png"><img alt="Asset browser example" class="align-center" src="_images/asset_browser_example.png" style="width: 600px;" /></a>
+<p>To create the asset browser, you must have installed the HDRi Maker libraries.</p>
+<ul>
+<li><p><strong>Video Tutorial</strong></p>
+<blockquote>
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/3RwC5JV44XQ" title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" allowfullscreen></iframe></div></blockquote>
+</li>
+</ul>
+<div class="section" id="steps">
+<h2>Steps<a class="headerlink" href="#steps" title="Permalink to this heading"></a></h2>
+<p>Procedure:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Open a new Blender project and do not save it
+(This is essential, it is a matter of security not to risk damaging your projects)</p></li>
+<li><p>Make sure you have installed version 4.0.110 of HDRi Maker or higher</p></li>
+<li><p>Press the “Open Preferences” button</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/options_button_02.png"><img alt="Open new project" class="align-center" src="_images/options_button_02.png" style="width: 200px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Go to the “Libraries” tab, If all the libraries have been installed correctly, you should see a situation like this, they will be</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/create_asset_browser_buttons_01.png"><img alt="Create asset browser buttons 01" class="align-center" src="_images/create_asset_browser_buttons_01.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Press the button in the list of buttons in the “Make Asset Browser” box to create the corresponding version also in the asset browser</p></li>
+<li><p>During the process of Creating the asset browser, it may be necessary to wait a few minutes, you can
+interrupt the process by pressing the “X” button next to the progress bar, this will stop the process,
+but will already make the conversions done up to that moment effective</p></li>
+<li><p>Restart Blender to make the changes effective</p></li>
+<li><p>Set the Asset Browser in the Blender screen area:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/set_asset_browser_screen_01.png"><img alt="Set asset browser screen 01" class="align-center" src="_images/set_asset_browser_screen_01.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p>Now in the list of assets you should see the new assets, repeat this operation for all the HDRi Maker libraries</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Current limitations in Asset Browser:</strong></p>
+<p>Backgrounds applied via Asset Browser are not automatically applied to the dome.
+What convinced me to do this function is the mere fact of having the possibility to apply only the Backgrounds
+on the fly directly from the Asset Browser. But at the moment I think that the use of HDRi Maker is more complete through its interface (Which already has its own Browser)
+I received many requests regarding the asset browser which led me to create this new feature.
+But at the moment Blender’s Asset Browser has some big limitations on the Python side, so many things still can’t be done.</p>
+<p>Surely in the future they are planned.</p>
 </div>
 </div>
 </div>

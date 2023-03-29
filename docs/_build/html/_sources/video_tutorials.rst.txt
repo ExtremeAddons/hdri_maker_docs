@@ -67,6 +67,25 @@ system that allows you to update the libraries from version 2.0 to version 3.0.
         web-share" allowfullscreen></iframe>
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+.. _make_asset_browser:
+
+Make Asset Browser
+***********************
+
+This tutorial shows how to make an Asset Browser for HDRi Maker libraries.
+
+.. Note:: Requires the version of HDRi Maker Studio 4.0.110 or higher. and to have already installed the libraries in it.
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3RwC5JV44XQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
 
 ------------------------------------------------------------------------------------------------------------------------
 

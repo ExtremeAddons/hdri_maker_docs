@@ -26,9 +26,7 @@ a button directly in the HDRi Maker interface:
     :width: 200
     :alt: Options Button 01
 
-
 ------------------------------------------------------------------------------------------------------------------------
-
 
 Pink Background
 ---------------
@@ -64,7 +62,6 @@ The search will be performed in the indicated path and in all subfolders.
 
 
 ------------------------------------------------------------------------------------------------------------------------
-
 
 Black Background
 ----------------

@@ -237,3 +237,39 @@ Change Light Path
      - Excludes the Light in reflections, this in some cases is useful for the shadow catcher, when you add a reflection
        on the shadowcatcher, it will reflect only the objects in the scene, but not the Light, so you will not see
        any image of the background reflected on the shadowcatcher here: :ref:`shadow_catcher`
+
+
+
+
+
+Unknown world Situation
+***********************
+
+When a World is not recognized as an HDRi Maker world, the panel draws an interface similar to the native
+of Blender, this is good, but it is not optimal, because with it it is not possible to use some advanced functions of HDRi Maker.
+
+Here is an example of the situation that can occur:
+
+.. image:: _static/_images/world/unknown_world_01.png
+        :width: 400
+        :align: center
+        :alt: Unknown World 01 IT
+
+
+This situation occurs in 2 occasions:
+
+1. When the World present in the scene was not created with HDRi Maker
+2. When you remove a World with HDRi Maker, and a Default World "Gray" is created automatically (By the way, if you don't want it to happen, press "Shift" + Remove)
+
+
+So the "Try To convert" button will try to recover an HDR/EXR image from the World, if present, the image will be taken
+and transported into an HDRi Maker World, then it will be applied to the scene. This is useful to fully exploit the
+HDRi Maker functions.
+
+.. Note:: It will only work if there is an HDR/EXR image. The script analyzes all Group nodes and Subgroup nodes,
+          so in most cases it should work.
+
+
+If you want to use this configuration as "Light" or "Diffuse" you can do it, just press one of the 2 buttons (+) at the top of the panel
+this will try to use the current nodes as if they were those of HDRi Maker to configure a "Diffuse" or a "Light" As explained here: :ref:`add_diffuse_light`
+

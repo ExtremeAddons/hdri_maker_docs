@@ -41,9 +41,11 @@ So, before adding a dome, make sure you have added a background through the "Add
 or you can also import one from your HDR/EXR background gallery (Even if it is not good practice, it will also accept
 PNG, JPG, BMP, and all image formats accepted by blender)
 
-+--------------------+-----------------------+------------------------------+----------------------+
-| 1. :ref:`add_dome` | 2. :ref:`remove_dome` | 3. :ref:`center_view_on_dome`| 4. :ref:`dome_type`  |
-+--------------------+-----------------------+------------------------------+----------------------+
++----------------------+-------------------------------+------------------------------+
+| 1. :ref:`add_dome`   | 2. :ref:`remove_dome`         | 3. :ref:`center_view_on_dome`|
++----------------------+-------------------------------+------------------------------+
+| 4. :ref:`dome_type`  | 5. :ref:`dome_reload_image`   |                              |
++----------------------+-------------------------------+------------------------------+
 
 
 .. figure:: _static/_images/dome_projection/dome_add_remove_submenu.png
@@ -70,6 +72,18 @@ This button, in addition to adding a new dome, also has the function of replacin
     Environment image found inside the World will be taken.
 
 In short, if there are more than 1 Environment image in the world shader, the first one found will be taken and used for the dome.
+
+.. _dome_reload_image:
+
+Reload Image
+************
+
+This button is useful in case you want to load/reload the image of the Background on the dome, it was introduced to be able
+to load the image of the Background even if it is not part of HDRi Maker. This will update the Dome without having to reload
+itself.
+
+This is very useful if you use asset Browser!
+
 
 .. _remove_dome:
 

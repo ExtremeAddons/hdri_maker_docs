@@ -42,6 +42,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#create-asset-browser">Create Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul class="current">
@@ -51,6 +52,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#choose-add-remove-dome">Choose/Add/Remove Dome:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#add-dome">Add Dome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reload-image">Reload Image</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remove-dome">Remove Dome</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#center-view-on-dome">Center View on Dome</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dome-type">Dome Type</a><ul>
@@ -122,6 +124,10 @@
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
+</ul>
 
         </div>
       </div>
@@ -178,10 +184,9 @@ or you can also import one from your HDR/EXR background gallery (Even if it is n
 PNG, JPG, BMP, and all image formats accepted by blender)</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 24%" />
-<col style="width: 32%" />
-<col style="width: 23%" />
+<col style="width: 27%" />
+<col style="width: 37%" />
+<col style="width: 36%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><ol class="arabic simple">
@@ -196,15 +201,21 @@ PNG, JPG, BMP, and all image formats accepted by blender)</p>
 <li><p><a class="reference internal" href="#center-view-on-dome"><span class="std std-ref">Center View on Dome</span></a></p></li>
 </ol>
 </td>
-<td><ol class="arabic simple" start="4">
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
 <li><p><a class="reference internal" href="#dome-type"><span class="std std-ref">Dome Type</span></a></p></li>
 </ol>
 </td>
+<td><ol class="arabic simple" start="5">
+<li><p><a class="reference internal" href="#dome-reload-image"><span class="std std-ref">Reload Image</span></a></p></li>
+</ol>
+</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/dome_add_remove_submenu.png"><img alt="Main Panel" src="_images/dome_add_remove_submenu.png" style="width: 306.40000000000003px; height: 352.8px;" /></a>
+<a class="reference internal image-reference" href="_images/dome_add_remove_submenu.png"><img alt="Main Panel" src="_images/dome_add_remove_submenu.png" style="width: 348.0px; height: 377.6px;" /></a>
 </div>
 <div class="section" id="add-dome">
 <span id="id1"></span><h3>Add Dome<a class="headerlink" href="#add-dome" title="Permalink to this heading"></a></h3>
@@ -220,6 +231,13 @@ which image to load inside the dome. If the world background is not of type HDRi
 Environment image found inside the World will be taken.</p>
 </div>
 <p>In short, if there are more than 1 Environment image in the world shader, the first one found will be taken and used for the dome.</p>
+</div>
+<div class="section" id="reload-image">
+<span id="dome-reload-image"></span><h3>Reload Image<a class="headerlink" href="#reload-image" title="Permalink to this heading"></a></h3>
+<p>This button is useful in case you want to load/reload the image of the Background on the dome, it was introduced to be able
+to load the image of the Background even if it is not part of HDRi Maker. This will update the Dome without having to reload
+itself.</p>
+<p>This is very useful if you use asset Browser!</p>
 </div>
 <div class="section" id="remove-dome">
 <span id="id2"></span><h3>Remove Dome<a class="headerlink" href="#remove-dome" title="Permalink to this heading"></a></h3>
@@ -393,7 +411,7 @@ will scale with the dome, so as to always keep the same proportional size to the
 </table>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p>Here you can see a video tutorial on how to use the hooks: <a class="reference internal" href="video_tutorials.html#custom-dome-with-hooks"><span class="std std-ref">Custom Dome with Hooks</span></a></p>
+<p>Here you can see a video tutorial on how to use the hooks: <span class="xref std std-ref">custom_dome_with_hooks</span></p>
 <iframe width="650" height="360" src="https://www.youtube.com/embed/p9iwq_rUsVs" title="YouTube video player"
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe></div>
