@@ -76,7 +76,7 @@ Make Asset Browser
 
 This tutorial shows how to make an Asset Browser for HDRi Maker libraries.
 
-.. Note:: Requires the version of HDRi Maker Studio 4.0.110 or higher. and to have already installed the libraries in it.
+.. Note:: Requires the version of HDRi Maker Studio 3.0.110 or higher. and to have already installed the libraries in it.
 
 
 .. raw:: html

@@ -493,7 +493,7 @@ Here below is indicated the procedure to create the asset browser
 
 
 .. Note:: To create the asset browser it is necessary that the addon is correctly installed and that at least one library has been installed.
-          In addition, make sure you have a version 4.0.110 or higher of HDRi Maker
+          In addition, make sure you have a version 3.0.110 or higher of HDRi Maker
 
 .. image:: _static/_images/asset_browser/asset_browser_example.png
     :align: center
@@ -521,7 +521,7 @@ Procedure:
        (This is essential, it is a matter of security not to risk damaging your projects)
 
 
-    2. Make sure you have installed version 4.0.110 of HDRi Maker or higher
+    2. Make sure you have installed version 3.0.110 of HDRi Maker or higher
 
 
 
