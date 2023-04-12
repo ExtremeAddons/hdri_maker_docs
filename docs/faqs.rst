@@ -157,17 +157,10 @@ in the library "USER Library" so as to have in HDRi Maker all your custom librar
 Does it work with Blender Asset Browser?
 *******************************************
 
-I start from the assumption that at the moment HDRi Maker already has its integrated Asset Browser, so it is not necessary.
-In addition, it is a tool dedicated to the creation of Scenes with Dome/Lights/Hooks interactive objects.
-
-At the moment I do not consider it necessary to integrate it in Blender Asset Browser, since it is more dedicated to things "Done and finished"
-while HDRi Maker builds the scene based on the buttons that are pressed from the interface itself of HDRi Maker.
-
-In any case, I have built a small tool that will be shown in Asset Browser, in case you have a library in it of
-HDR backgrounds. This Tenta to convert these backgrounds into an HDRi Maker background, so that you can use them in HDRi Maker with its
-its functions. **Attention** this tool is still under development, so it may not work with all types
-of background libraries of the Blender asset browser.
-
+Yes, from version 3.0.110 of HDRi Maker it is possible, but there are some limitations! The Blender Asset Browser for
+now does not allow you to use a Handler that recognizes the drag and drop, so for now HDRi Maker will be able to have
+the version of its library also in asset Browser, spending a few minutes, it will be created automatically by HDRi Maker
+following the procedure described in the "Get Started" section of this manual.
 
 ------------------------------------------------------------------------------------------------------------------------
 
