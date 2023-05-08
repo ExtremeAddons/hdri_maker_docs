@@ -1,6 +1,23 @@
 Updates Log
 ===========
 
+3.0.111
+-------
+
+**Release date: 08-05-2023 (D/M/Y)**
+
+- **Bugfix - Error During Asset Browser Creation**
+
+    In some cases (Probably still to be fully understood) it showed a mat_info.get() error, this is because an exception had not been set to check if mat_info really existed. It has now been fixed and the error will no longer appear
+
+- **Added - Remind me later button**
+
+    In order to hide the update message (If the addon need update) a new button has been added to the message, this button will hide the message in the current Blender Session
+
+- **Bugfix - check_existing Error**
+
+    During the creation of the Asset Browser In versions prior to Blender 3.4 an error (check_existing) occurred, this was due to the fact that the check_existing parameter was not present in the bpy.ops.preferences.asset_library_add operator, now this parameter has been removed if the Blender version is prior to 3.4
+
 3.0.110
 -------
 

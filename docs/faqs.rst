@@ -129,7 +129,13 @@ At the moment support for other platforms is not planned, but it is possible tha
 Can I export the dome as a 3D model?
 *******************************************
 
-Not yet, but it is possible that in the future there will be
+The addon is primarily built to work in Blender, the addon does not include tools to export the Dome or backgrounds.
+
+The dome export problem is that the nodes that make up the dome material are quite complex, so the only solution would
+be the Bake of the dome, but the baking also has many problems, first in the "Quality" list after various tests I have
+decided not to include this tool, as it doesn't reproduce exactly what the dome does, like capturing shadows only on the
+plane and not on the top.
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
