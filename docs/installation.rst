@@ -5,7 +5,6 @@ Installation
 ============
 
 
-
 Below 2 videos dedicated to 2 different types of users (New and old users) who want to install or update the addon:
 
 ------------------------------------------------------------------------------------------------------------------------
