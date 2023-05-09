@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Save &mdash; HDRi Maker 3.0.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -11,16 +12,15 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Guidelines for bugreport" href="bugreport_info.html" />
+    <link rel="next" title="Preferences" href="preferences.html" />
     <link rel="prev" title="Shadow Catcher" href="shadow_catcher.html" /> 
 </head>
 
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> HDRi Maker
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HDRi Maker
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -42,6 +46,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#create-asset-browser">Create Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul class="current">
@@ -73,12 +78,21 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="youtube_video.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
 </ul>
 
         </div>
@@ -94,8 +108,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Save</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Save</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/save_panel.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -105,7 +119,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="save">
+  <section id="save">
 <h1>Save<a class="headerlink" href="#save" title="Permalink to this heading"></a></h1>
 <p>This section of the addon is dedicated to the background saves, the export, and the creation of 360° backgrounds from a scene.</p>
 <p>There is also a section to manipulate the user library.</p>
@@ -114,13 +128,6 @@
 <p>You must be in User Library to be able to manipulate and save your backgrounds!</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 29%" />
-<col style="width: 31%" />
-<col style="width: 31%" />
-<col style="width: 4%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td colspan="2"><ol class="arabic simple">
 <li><p><a class="reference internal" href="#export-image"><span class="std std-ref">Export Image</span></a></p></li>
@@ -141,12 +148,12 @@
 </tr>
 </tbody>
 </table>
-<div class="section" id="export-image">
+<section id="export-image">
 <span id="id1"></span><h2>Export Image<a class="headerlink" href="#export-image" title="Permalink to this heading"></a></h2>
 <p>If in the current scene there is a World and in the nodes of the world there is one or more images in the nodes of type “TEX_ENVIRONMENT”
 This button allows you to export the image / s and save them in the chosen directory.</p>
-</div>
-<div class="section" id="save-type">
+</section>
+<section id="save-type">
 <span id="id2"></span><h2>Save Type<a class="headerlink" href="#save-type" title="Permalink to this heading"></a></h2>
 <p>This area allows you to choose 3 types of saving options:</p>
 <a class="reference internal image-reference" href="_images/save_type_01.png"><img alt="Save Panel Overview" class="align-center" src="_images/save_type_01.png" style="width: 300px;" /></a>
@@ -155,7 +162,7 @@ This button allows you to export the image / s and save them in the chosen direc
 <p>Before proceeding with the save, it is necessary to create a new category or select an existing one in the
 User Library. To do this, you will find here the section dedicated to the manipulation of the User Library: <a class="reference internal" href="#library-tools"><span class="std std-ref">Library Tools</span></a></p>
 </div>
-<div class="section" id="save-current-background">
+<section id="save-current-background">
 <h3>Save Current Background<a class="headerlink" href="#save-current-background" title="Permalink to this heading"></a></h3>
 <p>This Options allows you to save the current background into the User library. The user library is your personal library,
 where you can save your own backgrounds.</p>
@@ -181,9 +188,9 @@ where you can save your own backgrounds.</p>
 <p>When everything is ready, select “Yes” and press the “Ok” button to proceed with the save.</p>
 <p>If the background type is based on Images, HDRi Maker will try to save only the main image.
 Otherwise, the whole world node tree will be saved (All world node tree nodes).</p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="batch-from-folder">
+<section id="batch-from-folder">
 <h3>Batch From Folder<a class="headerlink" href="#batch-from-folder" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul>
@@ -196,7 +203,7 @@ and then press the “Batch Save” button.</p>
 </div></blockquote>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can find a video tutorial on how to save in batch almost 100 images: <a class="reference internal" href="youtube_video.html#batch-scene"><span class="std std-ref">Batch Save</span></a></p>
+<p>You can find a video tutorial on how to save in batch almost 100 images: <a class="reference internal" href="video_tutorials.html#batch-scene"><span class="std std-ref">Batch Save</span></a></p>
 </div>
 <a class="reference internal image-reference" href="_images/batch_from_folder_panel_01.png"><img alt="Batch From Folder Panel" class="align-center" src="_images/batch_from_folder_panel_01.png" style="width: 300px;" /></a>
 <p>Once the “Batch Save” button is pressed, a dialog box will appear that will allow you to check which files
@@ -217,9 +224,9 @@ and save it in your User Library. The operation can succeed only if there is a w
 save and the other have been programmed, to be able to interact and possibly stop the process during those
 3 seconds. This is because a Blender Modal Operator has been used.</p>
 </div>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="save-360-background">
+<section id="save-360-background">
 <h3>Save 360° Background<a class="headerlink" href="#save-360-background" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
@@ -231,7 +238,7 @@ The images created can also be exported in HDR format</p></li>
 <a class="reference internal image-reference" href="_images/sphere_360_example_01.png"><img alt="Sphere 360° Example" class="align-center" src="_images/sphere_360_example_01.png" style="width: 800px;" /></a>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can find a video tutorial on how to create a 360° background with HDRi Maker: <a class="reference internal" href="youtube_video.html#create-hdr-from-scene"><span class="std std-ref">Create HDR from scene</span></a></p>
+<p>You can find a video tutorial on how to create a 360° background with HDRi Maker: <a class="reference internal" href="video_tutorials.html#create-hdr-from-scene"><span class="std std-ref">Create HDR from scene</span></a></p>
 </div>
 <p>This is useful if you have particularly complex scenes and want to create a 360° background to use in other projects.
 In many cases this saves the rendering time, because you will not need the original scene, which usually includes a
@@ -264,7 +271,7 @@ of the height similar to that of human eyes.</p>
 </ul>
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/360_camera_operators_01.png"><img alt="360 Camera Operators" class="align-center" src="_images/360_camera_operators_01.png" style="width: 400px;" /></a>
-<div class="section" id="panorama-save-panel">
+<section id="panorama-save-panel">
 <h4>Panorama Save Panel<a class="headerlink" href="#panorama-save-panel" title="Permalink to this heading"></a></h4>
 <p>You must press the “Panorama Save” button, a popup will appear that you can see below:</p>
 <a class="reference internal image-reference" href="_images/panorama_save_panel_01.png"><img alt="Panorama Save Panel" class="align-center" src="_images/panorama_save_panel_01.png" style="width: 800px;" /></a>
@@ -324,10 +331,10 @@ message will be shown in the same window. !! do not interrupt the rendering !!</
 </ul>
 <a class="reference internal image-reference" href="_images/RENDER_FINISHED.png"><img alt="Panorama Save" class="align-center" src="_images/RENDER_FINISHED.png" style="width: 400px;" /></a>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="library-tools">
+</section>
+</section>
+</section>
+<section id="library-tools">
 <span id="id3"></span><h2>Library Tools<a class="headerlink" href="#library-tools" title="Permalink to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
@@ -335,7 +342,7 @@ message will be shown in the same window. !! do not interrupt the rendering !!</
 </ul>
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/library_tools_interface_01.png"><img alt="Library Tools Interface" class="align-center" src="_images/library_tools_interface_01.png" style="width: 300px;" /></a>
-<div class="section" id="add-new-category">
+<section id="add-new-category">
 <h3>Add New Category<a class="headerlink" href="#add-new-category" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
@@ -343,8 +350,8 @@ message will be shown in the same window. !! do not interrupt the rendering !!</
 with the same name (Lowercase and uppercase do not make a difference)</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="move-background-to-category">
+</section>
+<section id="move-background-to-category">
 <h3>Move Background to Category<a class="headerlink" href="#move-background-to-category" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
@@ -352,32 +359,32 @@ with the same name (Lowercase and uppercase do not make a difference)</p></li>
 (If the name of the background exists in the destination category, the background will not be moved)</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="rename-background">
+</section>
+<section id="rename-background">
 <h3>Rename Background<a class="headerlink" href="#rename-background" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>This option allows you to rename a background. If the name is already present in the current category, the operation will not be completed.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="rename-category">
+</section>
+<section id="rename-category">
 <h3>Rename Category<a class="headerlink" href="#rename-category" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>This option allows you to rename a category. If the name is already present in the User Library, the operation will not be completed.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="open-current-folder">
+</section>
+<section id="open-current-folder">
 <h3>Open Current Folder<a class="headerlink" href="#open-current-folder" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
 <li><p>For convenience, this button opens the current folder of the user library, so that you can access and check the saved files.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="danger-zone">
+</section>
+<section id="danger-zone">
 <h3>Danger Zone<a class="headerlink" href="#danger-zone" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
@@ -390,16 +397,16 @@ with the same name (Lowercase and uppercase do not make a difference)</p></li>
 </div>
 </div></blockquote>
 </div></blockquote>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="shadow_catcher.html" class="btn btn-neutral float-left" title="Shadow Catcher" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="bugreport_info.html" class="btn btn-neutral float-right" title="Guidelines for bugreport" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="preferences.html" class="btn btn-neutral float-right" title="Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

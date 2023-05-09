@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volumetric &mdash; HDRi Maker 3.0.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -11,10 +12,9 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> HDRi Maker
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HDRi Maker
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -42,6 +46,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#create-asset-browser">Create Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul class="current">
@@ -67,12 +72,21 @@
 <li class="toctree-l1"><a class="reference internal" href="lights_panel.html">Lights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shadow_catcher.html">Shadow Catcher</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="youtube_video.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
 </ul>
 
         </div>
@@ -88,8 +102,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Volumetric</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Volumetric</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/volumetric_panel.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,20 +113,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="volumetric">
+  <section id="volumetric">
 <h1>Volumetric<a class="headerlink" href="#volumetric" title="Permalink to this heading"></a></h1>
-<div class="figure align-center">
+<figure class="align-center">
 <a class="reference internal image-reference" href="_images/car_into_fog_01.jpg"><img alt="car_into_fog_01" src="_images/car_into_fog_01.jpg" style="width: 708.0px; height: 274.40000000000003px;" /></a>
-</div>
+</figure>
 <p>This section of the addon is dedicated to the creation of a Volumetric environment, ie an environment with a simulation
 of “Fog” or “Dust” in the air. This type of effect is very used in films and video games to create a more realistic atmosphere,
 especially if used with adequate lighting (See the <a class="reference internal" href="lights_panel.html#light-section"><span class="std std-ref">Lights</span></a> section for more information).</p>
 <hr class="docutils" />
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 63%" />
-<col style="width: 37%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="_images/volumetric_main_panel_01.png"><img alt="Volume Main Panel" src="_images/volumetric_main_panel_01.png" style="width: 400px;" /></a></p></td>
 <td><ol class="arabic simple">
@@ -130,16 +140,16 @@ especially if used with adequate lighting (See the <a class="reference internal"
 </table>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can find a video tutorial on how to use the volumetric and create animated fog here: <a class="reference internal" href="youtube_video.html#fog-volumetric"><span class="std std-ref">Fog (Volumetric)</span></a></p>
+<p>You can find a video tutorial on how to use the volumetric and create animated fog here: <a class="reference internal" href="video_tutorials.html#fog-volumetric"><span class="std std-ref">Fog (Volumetric)</span></a></p>
 </div>
 <hr class="docutils" />
-<div class="section" id="volume-selector">
+<section id="volume-selector">
 <span id="id1"></span><h2>Volume Selector<a class="headerlink" href="#volume-selector" title="Permalink to this heading"></a></h2>
 <p>The Volume Selector allows you to choose the volume to add to your scene. In the HDRi Maker package there are some types of
 volumes. This one we take as a reference is a type of “Noise” volume (Volumes may vary from version to version).</p>
 <hr class="docutils" />
-</div>
-<div class="section" id="add-remove-volume">
+</section>
+<section id="add-remove-volume">
 <span id="id2"></span><h2>Add/Remove (Volume)<a class="headerlink" href="#add-remove-volume" title="Permalink to this heading"></a></h2>
 <p>These two buttons add or remove the volume from the scene. If the volume is already present in the scene, the “Add” button
 replaces the volume already present with the one selected. If the volume selector volume is the same, the volume is reloaded
@@ -150,8 +160,8 @@ anyway, returning to its default properties.</p>
 directly connected to the World output.</p>
 </div>
 <hr class="docutils" />
-</div>
-<div class="section" id="unlink-volume">
+</section>
+<section id="unlink-volume">
 <span id="unlike-volume"></span><h2>Unlink Volume<a class="headerlink" href="#unlink-volume" title="Permalink to this heading"></a></h2>
 <p>Unlink Volume disconnects / reconnects the volume group node, from the world output node. This allows you to hide the volume
 from the scene, saving many resources, especially during work, when you don’t want to lose the volume settings, but you need
@@ -163,18 +173,10 @@ to hide it.</p>
 volume panel below. This is to avoid confusion, as they would have no immediate effect.</p>
 </div>
 <hr class="docutils" />
-</div>
-<div class="section" id="volume-node-header">
+</section>
+<section id="volume-node-header">
 <span id="id3"></span><h2>Volume Node Header<a class="headerlink" href="#volume-node-header" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 14%" />
-<col style="width: 28%" />
-<col style="width: 23%" />
-<col style="width: 10%" />
-<col style="width: 11%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td colspan="2"><ol class="arabic simple">
 <li><p><a class="reference internal" href="#open-close-panel"><span class="std std-ref">Open/Close Panel</span></a></p></li>
@@ -199,41 +201,41 @@ volume panel below. This is to avoid confusion, as they would have no immediate 
 </tr>
 </tbody>
 </table>
-<div class="section" id="open-close-panel">
+<section id="open-close-panel">
 <span id="id4"></span><h3>Open/Close Panel<a class="headerlink" href="#open-close-panel" title="Permalink to this heading"></a></h3>
 <p>This button opens or closes the volume panel. This is useful if you want to hide the volume node group panel.</p>
-</div>
-<div class="section" id="restore-default">
+</section>
+<section id="restore-default">
 <span id="id5"></span><h3>Restore Default<a class="headerlink" href="#restore-default" title="Permalink to this heading"></a></h3>
 <p>This button restores all the default values of the volume in one go. (To lock the values see the next point)</p>
-</div>
-<div class="section" id="lock-unlock">
+</section>
+<section id="lock-unlock">
 <span id="id6"></span><h3>Lock/Unlock<a class="headerlink" href="#lock-unlock" title="Permalink to this heading"></a></h3>
 <p>This button allows you to show next to all the properties of the node, a small lock, which allows you to lock the value of the
 property. This is useful if you want to lock a value if you intend to restore the values through “Restore Default”, in this way
 the value will not be restored while the others are not locked.</p>
 <a class="reference internal image-reference" href="_images/locked_sliders_01.png"><img alt="Lock Unlock" class="align-center" src="_images/locked_sliders_01.png" style="width: 400px;" /></a>
-</div>
-<div class="section" id="show-info">
+</section>
+<section id="show-info">
 <span id="id7"></span><h3>Show Info<a class="headerlink" href="#show-info" title="Permalink to this heading"></a></h3>
 <p>If pressed, it allows you to show information about the properties of the node, if they exist, a button (?) next to the
 property will be shown, pressing it, a popup will be shown with the description of the property, as in this image:</p>
 <a class="reference internal image-reference" href="_images/volume_sliders_info_01.png"><img alt="Show Info" class="align-center" src="_images/volume_sliders_info_01.png" style="width: 600px;" /></a>
 <hr class="docutils" />
-</div>
-</div>
-<div class="section" id="volume-node-panel">
+</section>
+</section>
+<section id="volume-node-panel">
 <span id="id8"></span><h2>Volume Node Panel<a class="headerlink" href="#volume-node-panel" title="Permalink to this heading"></a></h2>
 <p>The Volumetric Group Nodes are redrawn in this area, the panel is pre-drawn by the HDRi Maker API.</p>
 <hr class="docutils" />
-</div>
-<div class="section" id="visibility-distance">
+</section>
+<section id="visibility-distance">
 <span id="id9"></span><h2>Visibility Distance<a class="headerlink" href="#visibility-distance" title="Permalink to this heading"></a></h2>
 <p>This slider allows you to set the visibility distance of the volume. This is useful if you want to hide the volume at a certain
 distance, to avoid wasting resources.</p>
 <hr class="docutils" />
-</div>
-<div class="section" id="detail">
+</section>
+<section id="detail">
 <span id="volumetric-detail"></span><h2>Detail<a class="headerlink" href="#detail" title="Permalink to this heading"></a></h2>
 <p>This selector allows you to choose the level of detail of the volume. This feature has been preset with presets to automatically
 set the level of detail of the volume.</p>
@@ -361,8 +363,8 @@ the “Suspended Dust” present in some situations.</p>
 <li><p>Adjust the smoothness of the Fog bank. The value closest to 0 means a sharp break in the fog bank.</p></li>
 </ul>
 </div></blockquote>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

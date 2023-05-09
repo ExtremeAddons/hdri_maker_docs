@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Troubleshooting &mdash; HDRi Maker 3.0.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -11,10 +12,9 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> HDRi Maker
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HDRi Maker
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -91,8 +95,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Troubleshooting</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Troubleshooting</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/troubleshooting.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -102,26 +106,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="troubleshooting">
+  <section id="troubleshooting">
 <h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading"></a></h1>
 <p>In this section there are some tips to solve known problems.
 This section will be updated over time based on the major problems encountered by users.
 Problems related to HDRi Maker bugs are usually solved. Here are some of the most common problems.
 Question and answer</p>
-<div class="section" id="i-do-not-receive-mail-from-blendermarket">
+<section id="i-do-not-receive-mail-from-blendermarket">
 <h2>I do not receive mail from BlenderMarket<a class="headerlink" href="#i-do-not-receive-mail-from-blendermarket" title="Permalink to this heading"></a></h2>
 <p>Make sure you consented to receive emails from creators in your Blender Market account preferences:
 <a class="reference external" href="https://blendermarket.com/account/privacy-center/consents">https://blendermarket.com/account/privacy-center/consents</a></p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="find-options-menu">
+<section id="find-options-menu">
 <h2>Find Options Menu<a class="headerlink" href="#find-options-menu" title="Permalink to this heading"></a></h2>
 <p>To go to the HDRi Maker options, you have to go to the addon preferences. But to make this process easier there is
 a button directly in the HDRi Maker interface:</p>
 <a class="reference internal image-reference" href="_images/options_button_011.png"><img alt="Options Button 01" class="align-center" src="_images/options_button_011.png" style="width: 200px;" /></a>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="pink-background">
+<section id="pink-background">
 <h2>Pink Background<a class="headerlink" href="#pink-background" title="Permalink to this heading"></a></h2>
 <p>If you find yourself in a situation of background or Dome with Pink color, this means in 99% of cases that the image
 to which the background refers is no longer linked to the project.</p>
@@ -133,9 +137,9 @@ that the file you are looking for may be. Once the path is indicated, click on �
 <p>The search will be performed in the indicated path and in all subfolders.</p>
 <p><strong>Note</strong>: The process may take a while, depending on the number of files in the library.</p>
 <a class="reference internal image-reference" href="_images/find_missing_files_01.png"><img alt="Find Missing Files 01" class="align-center" src="_images/find_missing_files_01.png" style="width: 600px;" /></a>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="black-background">
+<section id="black-background">
 <h2>Black Background<a class="headerlink" href="#black-background" title="Permalink to this heading"></a></h2>
 <p>In this case there may be a problem when creating a file in a newer version of Blender, and then after saving the project
 it is opened in a previous version of Blender.</p>
@@ -143,9 +147,9 @@ it is opened in a previous version of Blender.</p>
 To solve this I have provided a function that tries to replace the “Unknown” nodes</p>
 <p>You can find it in the HDRi Maker Options menu:</p>
 <a class="reference internal image-reference" href="_images/fix_unknown_nodes_01.png"><img alt="Fix Unknown Nodes 01" class="align-center" src="_images/fix_unknown_nodes_01.png" style="width: 600px;" /></a>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="projection-distorted">
+<section id="projection-distorted">
 <h2>Projection distorted<a class="headerlink" href="#projection-distorted" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><strong>Distorion Example:</strong></p></li>
@@ -162,9 +166,9 @@ from the center to the outside of the imaginary circle that forms the grass. But
 If in the projections you try to frame the grass from the outside point to the center, you will see that the grass is “Splamato” on the floor.</p>
 <p>This can be solved by using a CUBE type dome and using the Hooks system to modify the perimeter of the dome here the page: <a class="reference internal" href="dome_projection_panel.html#dome-hooks"><span class="std std-ref">Dome Hooks</span></a>
 In addition you can use the “Dome Vectors” submenu to correct the projection: <a class="reference internal" href="dome_projection_panel.html#dome-vectors"><span class="std std-ref">Dome Vectors (Node Group)</span></a></p>
-</div>
+</section>
 <hr class="docutils" />
-<div class="section" id="moving-libraries-to-another-computer">
+<section id="moving-libraries-to-another-computer">
 <h2>Moving libraries to another computer<a class="headerlink" href="#moving-libraries-to-another-computer" title="Permalink to this heading"></a></h2>
 <p>(Only for HDRi Maker 3.0 or higher versions)</p>
 <p>To move the libraries to another computer, just copy the “HDRI_MAKER_DEFAULT_LIB” and “HDRI_MAKER_USER_LIB” folders
@@ -202,8 +206,8 @@ it could be that in the folders mentioned above, the “._data” folders are mi
 </div></blockquote>
 </li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lights &mdash; HDRi Maker 3.0.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -11,10 +12,9 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> HDRi Maker
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HDRi Maker
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -42,6 +46,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#create-asset-browser">Create Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul class="current">
@@ -82,12 +87,21 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="shadow_catcher.html">Shadow Catcher</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_panel.html">Save</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="youtube_video.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
 </ul>
 
         </div>
@@ -103,8 +117,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Lights</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Lights</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/lights_panel.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -114,17 +128,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="lights">
+  <section id="lights">
 <span id="light-section"></span><h1>Lights<a class="headerlink" href="#lights" title="Permalink to this heading"></a></h1>
 <p>The light panel was introduced by version of HDRi Maker 3.0.100, and allows to create 2 types of lighting:
 Solar / Studio Light</p>
 <p><strong>Example of basic panel:</strong></p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 28%" />
-<col style="width: 43%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><ol class="arabic simple">
 <li><p><a class="reference internal" href="#lamps-menu"><span class="std std-ref">Lamps Menu</span></a></p></li>
@@ -143,7 +152,7 @@ Solar / Studio Light</p>
 </tr>
 </tbody>
 </table>
-<div class="section" id="lamps-menu">
+<section id="lamps-menu">
 <span id="id1"></span><h2>Lamps Menu<a class="headerlink" href="#lamps-menu" title="Permalink to this heading"></a></h2>
 <p>Lamps allows you to create a set of lights at your own choice on the fly. It will create a Circle with anchored to it the set of lights.
 It has in addition a target point (See yellow arrow in the image) this allows you to keep the lights pointed where you want.
@@ -153,14 +162,10 @@ the lights also on objects that move)</p>
 <hr class="docutils" />
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can find a video tutorial on how to use the Light studio: <a class="reference internal" href="youtube_video.html#light-studio"><span class="std std-ref">Light Studio</span></a></p>
+<p>You can find a video tutorial on how to use the Light studio: <a class="reference internal" href="video_tutorials.html#light-studio"><span class="std std-ref">Light Studio</span></a></p>
 </div>
 <p><strong>The panel looks like this once the lights have been added via the “Add” button:</strong></p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 54%" />
-<col style="width: 46%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><ul class="simple">
 <li><ol class="arabic simple">
@@ -199,20 +204,20 @@ the lights also on objects that move)</p>
 </table>
 <blockquote>
 <div></div></blockquote>
-<div class="section" id="add-reload-remove">
+<section id="add-reload-remove">
 <span id="id2"></span><h3>Add-Reload/Remove<a class="headerlink" href="#add-reload-remove" title="Permalink to this heading"></a></h3>
 <p>These 2 buttons add or remove the set of lights, the amount of lights depends on the value “Light Count” set.
 (At the moment only 1 set of lights can be added HDRiMaker 3.0.100)</p>
-</div>
-<div class="section" id="light-count">
+</section>
+<section id="light-count">
 <span id="id3"></span><h3>Light Count<a class="headerlink" href="#light-count" title="Permalink to this heading"></a></h3>
 <p>This value (Integer) changes the number of lights connected to the set of lights, the addon will divide the circle evenly.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you increase the number of lights, these new ones will have the same properties as the last one at the bottom of the list.</p>
 </div>
-</div>
-<div class="section" id="lamps">
+</section>
+<section id="lamps">
 <span id="id4"></span><h3>Lamps<a class="headerlink" href="#lamps" title="Permalink to this heading"></a></h3>
 <p>Lamps changes the position of the set of lights on the X-Y-Z axis.</p>
 <p>The button next to it (Link) is to link the set of lights to any object selected in the scene, this is useful
@@ -221,16 +226,16 @@ to make the set of lights move with the object indicated.</p>
 <p>To unlink from parent object, just click again on the “Link” button because it has become “Unlink” itself.
 Take a look in the image below:</p>
 <a class="reference internal image-reference" href="_images/link_unlink_parent_lamps_01.png"><img alt="Link Unlink Parent Lamps" class="align-center" src="_images/link_unlink_parent_lamps_01.png" style="width: 400px;" /></a>
-</div>
-<div class="section" id="target">
+</section>
+<section id="target">
 <span id="id5"></span><h3>Target<a class="headerlink" href="#target" title="Permalink to this heading"></a></h3>
 <p>Target is the point where the set of lights will be pointed, it is useful to keep the lights pointed at the object
 you want to illuminate.</p>
 <p>The target is an empty object that is created automatically when you add the set of lights, it is anchored to the set of lights.</p>
 <p>Like a Lamps, the button next to it (Link) is to link the target to any object selected in the scene, this is useful
 to make the target move with the object indicated in order to keep the lights pointed at the object you want to illuminate when it moves.</p>
-</div>
-<div class="section" id="light-type-area-shape">
+</section>
+<section id="light-type-area-shape">
 <span id="id6"></span><h3>Light Type / Area Shape<a class="headerlink" href="#light-type-area-shape" title="Permalink to this heading"></a></h3>
 <dl class="simple">
 <dt>Light type allows you to choose between many types of lights:</dt><dd><ul class="simple">
@@ -246,8 +251,8 @@ to make the target move with the object indicated in order to keep the lights po
 <p>Area type have a property called “Area Shape” that allows you to choose between 4 different shapes:
 (Square, Disc, Rectangle, Ellipse)</p>
 </div>
-</div>
-<div class="section" id="lights-properties">
+</section>
+<section id="lights-properties">
 <span id="id7"></span><h3>Lights Properties<a class="headerlink" href="#lights-properties" title="Permalink to this heading"></a></h3>
 <p>This panel allows you to modify the values of the properties of each single light or all the lights together.</p>
 <a class="reference internal image-reference" href="_images/light_properties_01.png"><img alt="Lights Properties" class="align-center" src="_images/light_properties_01.png" style="width: 400px;" /></a>
@@ -272,18 +277,14 @@ this will allow you to change all the values at once.</p>
 </li>
 </ul>
 <hr class="docutils" />
-</div>
-</div>
-<div class="section" id="sun-menu">
+</section>
+</section>
+<section id="sun-menu">
 <span id="id8"></span><h2>Sun Menu<a class="headerlink" href="#sun-menu" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>The sun menu allows you to create a sun light and manage it in a simple way.</p></li>
 </ul>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>Panel Without HDRi Maker Sun in the scene</strong></p></td>
 <td><p><strong>Panel when the sun has been added</strong></p></td>
@@ -293,14 +294,10 @@ this will allow you to change all the values at once.</p>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="sun-menu-legenda">
+</section>
+<section id="sun-menu-legenda">
 <h2>Sun Menu legenda<a class="headerlink" href="#sun-menu-legenda" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><ul class="simple">
 <li><p>1 <a class="reference internal" href="#add-sun"><span class="std std-ref">Add Sun</span></a></p></li>
@@ -327,95 +324,95 @@ this will allow you to change all the values at once.</p>
 </tr>
 </tbody>
 </table>
-<div class="section" id="add-sun">
+<section id="add-sun">
 <span id="id9"></span><h3>Add Sun<a class="headerlink" href="#add-sun" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This button adds a sun in the scene, this is different from adding a sun manually via Blender,
 because this sun is recognized by HDRi Maker and can be managed via the Sun menu.</p></li>
 </ul>
-</div>
-<div class="section" id="remove-sun">
+</section>
+<section id="remove-sun">
 <span id="id10"></span><h3>Remove Sun<a class="headerlink" href="#remove-sun" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This button removes the sun from the scene.</p></li>
 </ul>
-</div>
-<div class="section" id="sun-height">
+</section>
+<section id="sun-height">
 <span id="id11"></span><h3>Sun Height<a class="headerlink" href="#sun-height" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This value is useful to change the height of the sun in the scene, in any position it is located.</p></li>
 </ul>
-</div>
-<div class="section" id="sun-rotation">
+</section>
+<section id="sun-rotation">
 <span id="id12"></span><h3>Sun Rotation<a class="headerlink" href="#sun-rotation" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This slider manage the rotation of the sun around the point 0,0,0 of the scene. It is managed by an “Empty” object that rotates,
 the sun consequently rotates with it, keeping the same distance from the center of the scene.</p></li>
 </ul>
-</div>
-<div class="section" id="sync-sun">
+</section>
+<section id="sync-sun">
 <span id="id13"></span><h3>Sync Sun<a class="headerlink" href="#sync-sun" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This button syncs the sun with the background, in fact, if you rotate the sun after pressing this button,
 the background will rotate accordingly. (Useful if you want to keep the sun consistent with the background)</p></li>
 </ul>
-</div>
-<div class="section" id="un-sync-sun">
+</section>
+<section id="un-sync-sun">
 <span id="id14"></span><h3>Un Sync Sun<a class="headerlink" href="#un-sync-sun" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This button removes the synchronization of the sun with the background.</p></li>
 </ul>
-</div>
-<div class="section" id="sun-color">
+</section>
+<section id="sun-color">
 <span id="id15"></span><h3>Sun Color<a class="headerlink" href="#sun-color" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This allows you to change the color of the sun.</p></li>
 </ul>
-</div>
-<div class="section" id="sun-color-lab">
+</section>
+<section id="sun-color-lab">
 <span id="id16"></span><h3>Sun Color Lab<a class="headerlink" href="#sun-color-lab" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This button opens a color lab in order to get a colors palette (The color chosen will be applied to the sun)</p></li>
 </ul>
-</div>
-<div class="section" id="sun-strength">
+</section>
+<section id="sun-strength">
 <span id="id17"></span><h3>Sun Strength<a class="headerlink" href="#sun-strength" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>This slider allows you to change the strength of the sun.</p></li>
 </ul>
-</div>
-<div class="section" id="sun-angle">
+</section>
+<section id="sun-angle">
 <span id="id18"></span><h3>Sun Angle<a class="headerlink" href="#sun-angle" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Angular diameter of the sun, as seen from the earth.</p></li>
 </ul>
-</div>
-<div class="section" id="sun-max-bounces">
+</section>
+<section id="sun-max-bounces">
 <span id="id19"></span><h3>Sun Max Bounces<a class="headerlink" href="#sun-max-bounces" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Maximum number of times light from the light is allowed to Bounce. Limited by scene-wide bounce settings.</p></li>
 </ul>
-</div>
-<div class="section" id="sun-cast-shadow">
+</section>
+<section id="sun-cast-shadow">
 <span id="id20"></span><h3>Sun Cast Shadow<a class="headerlink" href="#sun-cast-shadow" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Light casts shadows</p></li>
 </ul>
-</div>
-<div class="section" id="sun-multiple-importance">
+</section>
+<section id="sun-multiple-importance">
 <span id="id21"></span><h3>Sun Multiple Importance<a class="headerlink" href="#sun-multiple-importance" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>By default lights use only direct light sampling. For area lights and sharp glossy reflections, however, this can be noisy, and enabling this option will enable indirect light sampling to be used in addition to reduce noise.</p></li>
 </ul>
-</div>
-<div class="section" id="sun-shadow-caustic">
+</section>
+<section id="sun-shadow-caustic">
 <span id="id22"></span><h3>Sun Shadow Caustic<a class="headerlink" href="#sun-shadow-caustic" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Mark a light as a refractive caustic caster. This setting can be used in conjunction with the Cast and Receive caustics object settings to selectively speed up refractive caustic rendering of select objects.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="eevee-shadow-detail">
+</section>
+</section>
+<section id="eevee-shadow-detail">
 <span id="id23"></span><h2>Eevee Shadow Detail<a class="headerlink" href="#eevee-shadow-detail" title="Permalink to this heading"></a></h2>
 <p>This is a selector of Eevee shadow detail level. I compiled in it some presets that automatically modify the settings
 of the Eevee shadow detail level (Only works with Eevee)</p>
@@ -423,8 +420,8 @@ of the Eevee shadow detail level (Only works with Eevee)</p>
 <p>The level of detail greatly affects the performance of Eevee, so it is necessary to choose carefully the level of detail,
 it can be changed at any time.</p>
 <a class="reference internal image-reference" href="_images/eevee_shadow_detail_enum_01.png"><img alt="Shadow Detail Enum" class="align-center" src="_images/eevee_shadow_detail_enum_01.png" style="width: 250px;" /></a>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

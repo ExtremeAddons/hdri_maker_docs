@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shadow Catcher &mdash; HDRi Maker 3.0.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -11,10 +12,9 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -29,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> HDRi Maker
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HDRi Maker
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -42,6 +46,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#create-asset-browser">Create Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
 <ul class="current">
@@ -77,6 +82,10 @@
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
+</ul>
 
         </div>
       </div>
@@ -91,8 +100,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Shadow Catcher</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Shadow Catcher</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/shadow_catcher.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -102,11 +111,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="shadow-catcher">
+  <section id="shadow-catcher">
 <span id="id1"></span><h1>Shadow Catcher<a class="headerlink" href="#shadow-catcher" title="Permalink to this heading"></a></h1>
-<div class="figure align-center">
+<figure class="align-center">
 <img alt="_images/shadow_catcher_800x300.png" src="_images/shadow_catcher_800x300.png" />
-</div>
+</figure>
 <p>This model “Lightning Mage (Free Download)” comes from sketchfab and was created by <strong>Adipriatna</strong> under license <strong>CC BY</strong>,
 you can find it at this link: <a class="reference external" href="https://sketchfab.com/3d-models/lightning-mage-free-download-f89b591b51cb42c98f84606999e4ec89">https://sketchfab.com/3d-models/lightning-mage-free-download-f89b591b51cb42c98f84606999e4ec89</a></p>
 <div class="admonition important">
@@ -123,10 +132,6 @@ in post-production, keeping the original shadows and reflections.</p>
 <p>The shadow catcher components automatically adapt by switching between Cycles and Eevee.</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>Panel Without Shadow Catcher</strong></p></td>
 <td><p><strong>Panel With Shadow Catcher</strong></p></td>
@@ -140,7 +145,7 @@ in post-production, keeping the original shadows and reflections.</p>
 <p class="admonition-title">Tip</p>
 <p>You can find a video tutorial here: <a class="reference internal" href="video_tutorials.html#shadow-catcher-tutorial"><span class="std std-ref">Shadow Catcher</span></a></p>
 </div>
-<div class="section" id="add-shadow-catcher">
+<section id="add-shadow-catcher">
 <h2>Add Shadow Catcher<a class="headerlink" href="#add-shadow-catcher" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>Pressing the “Add Shadow Catcher” button, a plane is added at the 3D cursor in the scene.
@@ -148,10 +153,6 @@ When it is present in the scene, the “Shadow Catcher” panel will be activate
 </ul>
 <a class="reference internal image-reference" href="_images/shadow_catcher_plane_eevee_01.png"><img alt="Shadow Catcher Panel Active" src="_images/shadow_catcher_plane_eevee_01.png" style="width: 800px;" /></a>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 38%" />
-<col style="width: 62%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td colspan="2"><p><strong>The shadow catcher panel activated</strong></p></td>
 </tr>
@@ -166,8 +167,8 @@ When it is present in the scene, the “Shadow Catcher” panel will be activate
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="remove-shadow-catcher">
+</section>
+<section id="remove-shadow-catcher">
 <span id="id2"></span><h2>Remove Shadow Catcher<a class="headerlink" href="#remove-shadow-catcher" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>Pressing the “Remove Shadow Catcher” button, the plane is removed from the scene.
@@ -175,8 +176,8 @@ If you have manually removed the shadow catcher
 from the scene, there will certainly be components of it in the scene (Like the reflection plane)
 To remove them, use this button that will remove all the components of the shadow catcher from the scene.</p></li>
 </ul>
-</div>
-<div class="section" id="shadow-catcher-node-group-inputs">
+</section>
+<section id="shadow-catcher-node-group-inputs">
 <span id="id3"></span><h2>Shadow Catcher Node Group inputs<a class="headerlink" href="#shadow-catcher-node-group-inputs" title="Permalink to this heading"></a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -257,8 +258,8 @@ value of Shadow Strength.</p>
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="shadow-catcher-normals">
+</section>
+<section id="shadow-catcher-normals">
 <span id="id4"></span><h2>Shadow Catcher Normals<a class="headerlink" href="#shadow-catcher-normals" title="Permalink to this heading"></a></h2>
 <ul>
 <li><p>With the selector you can apply some normals map, you can choose between 3 types of normals, or none.</p>
@@ -266,14 +267,10 @@ value of Shadow Strength.</p>
 <a class="reference internal image-reference" href="_images/shadow_catcher_water_plane_eevee_01.png"><img alt="Shadow Catcher Normals Water" src="_images/shadow_catcher_water_plane_eevee_01.png" style="width: 600px;" /></a>
 </li>
 </ul>
-</div>
-<div class="section" id="shadow-catcher-options">
+</section>
+<section id="shadow-catcher-options">
 <span id="id5"></span><h2>Shadow Catcher Options<a class="headerlink" href="#shadow-catcher-options" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 31%" />
-<col style="width: 69%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><ol class="arabic simple">
 <li><p><a class="reference internal" href="#film-transparent"><span class="std std-ref">Film Transparent</span></a></p></li>
@@ -286,20 +283,20 @@ value of Shadow Strength.</p>
 </tr>
 </tbody>
 </table>
-<div class="section" id="film-transparent">
+<section id="film-transparent">
 <span id="id6"></span><h3>Film Transparent<a class="headerlink" href="#film-transparent" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>As already explained Here <a class="reference internal" href="world_panel.html#transparent-background"><span class="std std-ref">Transparent Background</span></a>, this box, if active, render the background Transparent</p></li>
 </ul>
-</div>
-<div class="section" id="hide-sc-reflection-plane">
+</section>
+<section id="hide-sc-reflection-plane">
 <span id="id7"></span><h3>Hide SC Reflection Plane<a class="headerlink" href="#hide-sc-reflection-plane" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>If active, the reflection plane will not be visible in the viewport, the reflection plane is only used for Eevee engine,
 in Cycles the reflection is done by the “Shadow Catcher” node group directly on the object. (It is an Eevee limitation)</p></li>
 </ul>
-</div>
-<div class="section" id="hide-cycles-plane">
+</section>
+<section id="hide-cycles-plane">
 <span id="id8"></span><h3>Hide Cycles Plane<a class="headerlink" href="#hide-cycles-plane" title="Permalink to this heading"></a></h3>
 <ul>
 <li><p>If active, the plane used for Cycles will not be visible in the viewport, the plane is only used for Cycles engine,
@@ -310,8 +307,8 @@ in Eevee the reflection is done by the “Shadow Catcher” node group directly 
 </div>
 </li>
 </ul>
-</div>
-<div class="section" id="shadow-details-sc">
+</section>
+<section id="shadow-details-sc">
 <span id="id9"></span><h3>Shadow Details (SC)<a class="headerlink" href="#shadow-details-sc" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Shadow detail</strong> (Only in Eevee) allows you to change between 6 options:</p>
@@ -325,9 +322,9 @@ in Eevee the reflection is done by the “Shadow Catcher” node group directly 
 </ul>
 </li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
