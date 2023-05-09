@@ -12,7 +12,6 @@ I wish you a good reading!
 Andrew_D
 
 
-
 .. image:: _static/_images/arts/bm_cover_01.png
     :align: center
     :width: 800
