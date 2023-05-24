@@ -151,6 +151,27 @@ it could be that in the folders mentioned above, the "._data" folders are missin
 
     Press the menu button in the top-right corner of the window and select Show Hidden Files, or press Ctrl+H.
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+Why if I export the project to another computer I can no longer see the backgrounds?
+****************************************************************************************
+
+This is quite normal, by default blender does not package images in .blend files, to do this you have to go to
+
+- File > External Data > Automatically Pack Resources
+
+Then save the project, and finally you can move it to any other computer. It will contain all the images you used.
+
+Pay attention to this, because your .blend files after these operations will contain all the image files present
+in your project is present an image of 100MB (For example) your .blend file will become 100MB more.
+
+
+.. image:: _static/_images/troubleshooting/auto_pack_resources_01.png
+    :align: center
+    :width: 600
+    :alt: Auto Pack Resources 01
+
 
 
 
