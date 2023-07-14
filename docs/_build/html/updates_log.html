@@ -71,14 +71,15 @@
 <p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Updates Log</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.111</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.110</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.105</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.104</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.103</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.102</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.101</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.100</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.112</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.111</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.110</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.105</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.104</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.103</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.102</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.100</a></li>
 </ul>
 </li>
 </ul>
@@ -110,7 +111,38 @@
   <section id="updates-log">
 <h1>Updates Log<a class="headerlink" href="#updates-log" title="Permalink to this heading"></a></h1>
 <section id="id1">
-<h2>3.0.111<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>3.0.112<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p><strong>Release date: 14-07-2023 (D/M/Y)</strong></p>
+<ul>
+<li><p><strong>Alpha - Beta Version Alert Message added</strong></p>
+<blockquote>
+<div><p>If the version of Blender used is a Beta or Alpha version, a message will be displayed in the main interface of the addon, a confirmation button will hide the message until the next start of Blender, this has been added because many users try the new unstable versions of Blender and sometimes the addons don’t work, I hope this message is useful</p>
+</div></blockquote>
+</li>
+<li><p><strong>Node Alignment improved</strong></p>
+<blockquote>
+<div><p>Added a function that better calculates the size of the nodes, even in conditions where the nodes are not displayed, the node.dimensions property does not work until the nodes are displayed, a log with the dimensions of the nodes has been added via file.json</p>
+</div></blockquote>
+</li>
+<li><p><strong>Bugfix - Add background reset the orientation and the other properties</strong></p>
+<blockquote>
+<div><p>If you add an HDR in version 1k and then replace it with the same background at another resolution (For example 4k) the background rotation was reset, this no longer happens, the rotation remains unchanged and also the other properties</p>
+</div></blockquote>
+</li>
+<li><p><strong>Improvement - Library paths updated when the addon is activated</strong></p>
+<blockquote>
+<div><p>When the addon is activated with the checkbox, if it was already activated before, it now updates the library paths and you don’t have to reassign the paths. This only happens if HDRi Maker was already installed and with the library paths already assigned (It only works if the paths were assigned in the previous 3.x version)</p>
+</div></blockquote>
+</li>
+<li><p><strong>Bugfix - Error Index negative during Add Hooks in Blender 3.6</strong></p>
+<blockquote>
+<div><p>For some reason, the vertex indices of the Dome, changed to negative indices during the compilation of the vertex list and the assignment of a Modifier for each Hook. Now the list is compiled in a further step and the indices no longer change.</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h2>3.0.111<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 08-05-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Error During Asset Browser Creation</strong></p>
@@ -130,8 +162,8 @@
 </li>
 </ul>
 </section>
-<section id="id2">
-<h2>3.0.110<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<section id="id3">
+<h2>3.0.110<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 29-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Added - Creation of library in Asset Browser</strong></p>
@@ -151,8 +183,8 @@
 </li>
 </ul>
 </section>
-<section id="id3">
-<h2>3.0.105<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<section id="id4">
+<h2>3.0.105<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 16-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Pose Mode Bug</strong></p>
@@ -177,8 +209,8 @@
 </li>
 </ul>
 </section>
-<section id="id4">
-<h2>3.0.104<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<section id="id5">
+<h2>3.0.104<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Retrocompatibility Dome Material</strong></p>
@@ -188,8 +220,8 @@
 </li>
 </ul>
 </section>
-<section id="id5">
-<h2>3.0.103<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<section id="id6">
+<h2>3.0.103<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - (Choose path) For Mac and Linux</strong></p>
@@ -199,8 +231,8 @@
 </li>
 </ul>
 </section>
-<section id="id6">
-<h2>3.0.102<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<section id="id7">
+<h2>3.0.102<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 02-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix when installing expansions</strong></p>
@@ -215,8 +247,8 @@
 </li>
 </ul>
 </section>
-<section id="id7">
-<h2>3.0.101<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
+<section id="id8">
+<h2>3.0.101<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 01-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Installation Bugfix for Mac-Linux</strong></p>
@@ -226,8 +258,8 @@
 </li>
 </ul>
 </section>
-<section id="id8">
-<h2>3.0.100<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<section id="id9">
+<h2>3.0.100<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 28-02-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Completely redesigned interface</strong></p>

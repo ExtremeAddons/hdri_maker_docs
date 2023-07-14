@@ -1,6 +1,31 @@
 Updates Log
 ===========
 
+3.0.112
+-------
+
+**Release date: 14-07-2023 (D/M/Y)**
+
+- **Alpha - Beta Version Alert Message added**
+
+    If the version of Blender used is a Beta or Alpha version, a message will be displayed in the main interface of the addon, a confirmation button will hide the message until the next start of Blender, this has been added because many users try the new unstable versions of Blender and sometimes the addons don't work, I hope this message is useful
+
+- **Node Alignment improved**
+
+    Added a function that better calculates the size of the nodes, even in conditions where the nodes are not displayed, the node.dimensions property does not work until the nodes are displayed, a log with the dimensions of the nodes has been added via file.json
+
+- **Bugfix - Add background reset the orientation and the other properties**
+
+    If you add an HDR in version 1k and then replace it with the same background at another resolution (For example 4k) the background rotation was reset, this no longer happens, the rotation remains unchanged and also the other properties
+
+- **Improvement - Library paths updated when the addon is activated**
+
+    When the addon is activated with the checkbox, if it was already activated before, it now updates the library paths and you don't have to reassign the paths. This only happens if HDRi Maker was already installed and with the library paths already assigned (It only works if the paths were assigned in the previous 3.x version)
+
+- **Bugfix - Error Index negative during Add Hooks in Blender 3.6**
+
+    For some reason, the vertex indices of the Dome, changed to negative indices during the compilation of the vertex list and the assignment of a Modifier for each Hook. Now the list is compiled in a further step and the indices no longer change.
+
 3.0.111
 -------
 
