@@ -3,9 +3,6 @@
 World
 =====
 
-Qui poi trovare un video tutorial di questa sezione all'opera:
-
-
 .. Tip::
     Here you can find a video tutorial of this section at work: :ref:`world_manipulation`
 
