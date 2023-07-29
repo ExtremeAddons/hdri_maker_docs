@@ -587,10 +587,11 @@ Example: (Only from HDRi Maker version 3.0.113 and higher)
 **That a message like this occurs:**
 
 
-.. image:: _static/_images/asset_browser/file_missing_message_asset_browser_creation_01.png
+.. image:: _static/_images/asset_browser/asset_browser_creation_mis_list_01.png
     :align: center
     :width: 600
-    :alt: File missing message asset browser creation 01
+    :alt: Asset browser creation mis list 01
+
 
 |
 
