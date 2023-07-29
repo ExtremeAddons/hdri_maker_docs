@@ -10,7 +10,7 @@
 project = 'HDRi Maker'
 copyright = '2022, Andrea Donati (Andrew_D)'
 author = 'Andrea Donati (Andrew_D)'
-release = '3.0.100'
+release = '3.0.116'
 
 import os, sys
 

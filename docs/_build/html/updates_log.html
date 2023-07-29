@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Updates Log &mdash; HDRi Maker 3.0.100 documentation</title>
+  <title>Updates Log &mdash; HDRi Maker 3.0.116 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/extreme_addons_blue_32.ico"/>
@@ -71,15 +71,16 @@
 <p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Updates Log</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.112</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.111</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.110</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.105</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.104</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.103</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.102</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.101</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.100</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.113</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.112</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.111</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.110</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.105</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.104</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.103</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.102</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">3.0.100</a></li>
 </ul>
 </li>
 </ul>
@@ -111,7 +112,28 @@
   <section id="updates-log">
 <h1>Updates Log<a class="headerlink" href="#updates-log" title="Permalink to this heading"></a></h1>
 <section id="id1">
-<h2>3.0.112<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>3.0.113<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p><strong>Release date: 29-07-2023 (D/M/Y)</strong></p>
+<ul>
+<li><p><strong>Bugfix Json Save</strong></p>
+<blockquote>
+<div><p>During the saving of json files, it could happen that if blender stopped abnormally, the json file would be corrupted. Now a temporary saving system has been implemented, only if the writing is successful, the file is then converted to json. This to avoid corrupted files</p>
+</div></blockquote>
+</li>
+<li><p><strong>Bugfix - Error during the creation of the Asset Browser</strong></p>
+<blockquote>
+<div><p>In some cases (Probably still to be fully understood) the process was blocked by an error if the background file was not present in the library folder, so an exception was put, in case it occurred, the process bypasses the background and continues</p>
+</div></blockquote>
+</li>
+<li><p><strong>Improvement - Added additional warning if the background file is not present</strong></p>
+<blockquote>
+<div><p>As described in the previous point, if the preview file is not present, by pressing the ‘Add’ button an additional message will now be shown informing in which exapack volume the missing background is present, so that you can download only that package</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h2>3.0.112<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 14-07-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Alpha - Beta Version Alert Message added</strong></p>
@@ -141,8 +163,8 @@
 </li>
 </ul>
 </section>
-<section id="id2">
-<h2>3.0.111<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<section id="id3">
+<h2>3.0.111<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 08-05-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Error During Asset Browser Creation</strong></p>
@@ -162,8 +184,8 @@
 </li>
 </ul>
 </section>
-<section id="id3">
-<h2>3.0.110<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<section id="id4">
+<h2>3.0.110<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 29-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Added - Creation of library in Asset Browser</strong></p>
@@ -183,8 +205,8 @@
 </li>
 </ul>
 </section>
-<section id="id4">
-<h2>3.0.105<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<section id="id5">
+<h2>3.0.105<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 16-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Pose Mode Bug</strong></p>
@@ -209,8 +231,8 @@
 </li>
 </ul>
 </section>
-<section id="id5">
-<h2>3.0.104<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<section id="id6">
+<h2>3.0.104<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Retrocompatibility Dome Material</strong></p>
@@ -220,8 +242,8 @@
 </li>
 </ul>
 </section>
-<section id="id6">
-<h2>3.0.103<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<section id="id7">
+<h2>3.0.103<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - (Choose path) For Mac and Linux</strong></p>
@@ -231,8 +253,8 @@
 </li>
 </ul>
 </section>
-<section id="id7">
-<h2>3.0.102<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
+<section id="id8">
+<h2>3.0.102<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 02-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix when installing expansions</strong></p>
@@ -247,8 +269,8 @@
 </li>
 </ul>
 </section>
-<section id="id8">
-<h2>3.0.101<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<section id="id9">
+<h2>3.0.101<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 01-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Installation Bugfix for Mac-Linux</strong></p>
@@ -258,8 +280,8 @@
 </li>
 </ul>
 </section>
-<section id="id9">
-<h2>3.0.100<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
+<section id="id10">
+<h2>3.0.100<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 28-02-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Completely redesigned interface</strong></p>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Installation &mdash; HDRi Maker 3.0.100 documentation</title>
+  <title>Installation &mdash; HDRi Maker 3.0.116 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/extreme_addons_blue_32.ico"/>
@@ -76,6 +76,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#create-asset-browser">Create Asset Browser</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#missing-files-during-the-asset-browser-creation">Missing Files during the asset browser creation</a></li>
 </ul>
 </li>
 </ul>
@@ -542,6 +543,29 @@ I received many requests regarding the asset browser which led me to create this
 But at the moment Blender’s Asset Browser has some big limitations on the Python side, so many things still can’t be done.</p>
 <p>Surely in the future they are planned.</p>
 </div>
+</section>
+<hr class="docutils" />
+<section id="missing-files-during-the-asset-browser-creation">
+<h2>Missing Files during the asset browser creation<a class="headerlink" href="#missing-files-during-the-asset-browser-creation" title="Permalink to this heading"></a></h2>
+<p>It can happen that during the process of creating the Asset Browser through the buttons present in the options of HDRi Maker
+Example: (Only from HDRi Maker version 3.0.113 and higher)</p>
+<p><strong>That a message like this occurs:</strong></p>
+<a class="reference internal image-reference" href="_images/file_missing_message_asset_browser_creation_01.png"><img alt="File missing message asset browser creation 01" class="align-center" src="_images/file_missing_message_asset_browser_creation_01.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this case the message is useful because during the process of creating the asset browser the HDRi Maker has detected
+some missing files from the library, the reasons can be various, among the most common I have been told that some files
+have been mistakenly deleted manually (It can happen), among the less common, the cause is still to be understood well.</p>
+<p><strong>What does this message mean?</strong></p>
+<p>There is a list of missing files in this message, in which it is indicated:</p>
+<ul class="simple">
+<li><p><strong>Background Name:</strong> This is the name of the missing background</p></li>
+<li><p><strong>Version:</strong> This is the version of the background, for example it could be the 1k, 2k, 4k, 8k, 16k version or another name (It’s not very important)</p></li>
+<li><p><strong>From:</strong> This is important because it says from which Volume the missing file comes from, so the name of the <strong>volume.exapack</strong></p></li>
+</ul>
+<p>So in the end, this is very useful to understand which Volume exapack contains that file, so that if you have to
+reinstall or download that package again, you will know exactly which one to install.</p>
 </section>
 </section>
 

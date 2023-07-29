@@ -575,3 +575,43 @@ Now in the list of assets you should see the new assets, repeat this operation f
 
              Surely in the future they are planned.
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+Missing Files during the asset browser creation
+---------------------------------------------------
+
+It can happen that during the process of creating the Asset Browser through the buttons present in the options of HDRi Maker
+Example: (Only from HDRi Maker version 3.0.113 and higher)
+
+**That a message like this occurs:**
+
+
+.. image:: _static/_images/asset_browser/file_missing_message_asset_browser_creation_01.png
+    :align: center
+    :width: 600
+    :alt: File missing message asset browser creation 01
+
+|
+
+In this case the message is useful because during the process of creating the asset browser the HDRi Maker has detected
+some missing files from the library, the reasons can be various, among the most common I have been told that some files
+have been mistakenly deleted manually (It can happen), among the less common, the cause is still to be understood well.
+
+**What does this message mean?**
+
+There is a list of missing files in this message, in which it is indicated:
+
+- **Background Name:** This is the name of the missing background
+- **Version:** This is the version of the background, for example it could be the 1k, 2k, 4k, 8k, 16k version or another name (It's not very important)
+- **From:** This is important because it says from which Volume the missing file comes from, so the name of the **volume.exapack**
+
+So in the end, this is very useful to understand which Volume exapack contains that file, so that if you have to
+reinstall or download that package again, you will know exactly which one to install.
+
+
+
+
+
+
+

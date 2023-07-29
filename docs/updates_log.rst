@@ -1,6 +1,23 @@
 Updates Log
 ===========
 
+3.0.113
+-------
+
+**Release date: 29-07-2023 (D/M/Y)**
+
+- **Bugfix Json Save**
+
+    During the saving of json files, it could happen that if blender stopped abnormally, the json file would be corrupted. Now a temporary saving system has been implemented, only if the writing is successful, the file is then converted to json. This to avoid corrupted files
+
+- **Bugfix - Error during the creation of the Asset Browser**
+
+    In some cases (Probably still to be fully understood) the process was blocked by an error if the background file was not present in the library folder, so an exception was put, in case it occurred, the process bypasses the background and continues
+
+- **Improvement - Added additional warning if the background file is not present**
+
+    As described in the previous point, if the preview file is not present, by pressing the 'Add' button an additional message will now be shown informing in which exapack volume the missing background is present, so that you can download only that package
+
 3.0.112
 -------
 
