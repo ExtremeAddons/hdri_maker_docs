@@ -38,15 +38,15 @@ Andrew_D
 
 
 .. toctree::
-   :maxdepth: 4
-   :caption: Get started:
+   :maxdepth: 1
+   :caption: Get started: 🚀
 
    installation
 
 
 .. toctree::
-   :maxdepth: 4
-   :caption: Interface and functions:
+   :maxdepth: 1
+   :caption: Interface and functions: 📱
 
    library_manager_panel
    world_panel
@@ -58,22 +58,22 @@ Andrew_D
    preferences
 
 .. toctree::
-   :maxdepth: 4
-   :caption: Tutorials:
+   :maxdepth: 1
+   :caption: Tutorials: 📺
 
    video_tutorials
 
 
 .. toctree::
-   :maxdepth: 4
-   :caption: FAQs & Troubleshooting:
+   :maxdepth: 1
+   :caption: FAQs & Troubleshooting: 💡
 
    faqs
    troubleshooting
    bugreport_info
 
 .. toctree::
-    :maxdepth: 4
-    :caption: Changelog:
+    :maxdepth: 1
+    :caption: Changelog: ⏲
 
     updates_log

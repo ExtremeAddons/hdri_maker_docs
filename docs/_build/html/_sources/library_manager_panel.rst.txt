@@ -224,6 +224,8 @@ Edit Tags
       To do this, just click on the "Edit Tags" button and enter the desired tags.
       You can also delete existing tags, just press on them, and a dialog box will be displayed
       that will ask you if you want to delete the tag.
+      This tag will then be useful for searching for backgrounds by tag.
+
 
 .. image:: _static/_images/main_panel/tag_modify.png
     :align: center
