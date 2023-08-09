@@ -169,6 +169,7 @@ Diffuse and Light Situation
 | 3. :ref:`invert_diffuse_light`  |                                                            |
 | 4. :ref:`change_light`          |                                                            |
 | 5. :ref:`remove_light`          |                                                            |
+| 6. :ref:`change_light_path`     |                                                            |
 +---------------------------------+------------------------------------------------------------+
 
 
