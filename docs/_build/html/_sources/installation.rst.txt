@@ -333,11 +333,11 @@ All new packages will be in the form of numbered volumes Here is an example of n
 Default Library
 ***************
 
-- **HDRiMkr_1k_vol_1.exapack**: HDRiMkr 1k Volume 1: Contains files from 1k, previews, and data files
-- **HDRiMkr_2k_vol_1.exapack**: HDRiMkr 1k Volume 2: Contains files from 2k, previews, and data files
-- **HDRiMkr_4k_vol_1.exapack**: HDRiMkr 1k Volume 3: Contains files from 4k, previews, and data files
-- **HDRiMkr_8k_vol_1.exapack**: HDRiMkr 1k Volume 4: Contains files from 8k, previews, and data files
-- **HDRiMkr_16k_vol_1.exapack**: HDRiMkr 1k Volume 5: Contains files from 16k, previews, and data files
+- **HDRiMkr_1k_vol_1.exapack**: Contains files from 1k, previews, and data files
+- **HDRiMkr_2k_vol_1.exapack**: Contains files from 2k, previews, and data files
+- **HDRiMkr_4k_vol_1.exapack**: Contains files from 4k, previews, and data files
+- **HDRiMkr_8k_vol_1.exapack**: Contains files from 8k, previews, and data files
+- **HDRiMkr_16k_vol_1.exapack**: Contains files from 16k, previews, and data files
 
 The packages are consecutive, Vol_1, Vol_2, Vol_3, I tried to limit as much as possible the size of the packages,
 so that their maximum is around 2GB (Some can reach 2.5GB).
