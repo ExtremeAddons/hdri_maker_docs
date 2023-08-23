@@ -66,6 +66,13 @@ Andrew_D
 
 .. toctree::
    :maxdepth: 1
+   :caption: Tips & Tricks: 🎯
+
+   python
+
+
+.. toctree::
+   :maxdepth: 1
    :caption: FAQs & Troubleshooting: 💡
 
    faqs
