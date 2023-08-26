@@ -28,6 +28,22 @@ a button directly in the HDRi Maker interface:
 
 ------------------------------------------------------------------------------------------------------------------------
 
+The rotation of the background changes when I render
+-----------------------------------------------------
+
+
+1 - Make sure you have synchronized :ref:`vector_properties` and :ref:`dome_vectors` with the Dome/Background rotation
+    and that you have not inserted animation keyframes in the sliders.
+2 - Make sure there is no third-party addon installed that may interfere with the rotation of the camera, in the past I had a report
+    with an addon that interfered with the rotation of the Background.
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 Pink Background
 ---------------
 
