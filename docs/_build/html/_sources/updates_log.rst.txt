@@ -1,6 +1,31 @@
 Updates Log
 ===========
 
+3.0.114
+-------
+
+**Release date: 30-09-2023 (D/M/Y)**
+
+- **Bugfix - Add light during paint mode error**
+
+    If you were in paint mode and tried to add a light, an error occurred, this has now been fixed by adding the object mode check
+
+- **Improvement - Link Unlink World-Dome Rotation Buttons**
+
+    A depress state has been added to the respective buttons for the synchronization of the dome and background rotation, now when the respective driver is activated, the button lights up, to indicate that it has been activated, and turns off in case of unlink or activation of the opposite driver
+
+- **Patch - Regeneration of Preview Icons**
+
+    A button named 'Regenerate Previews and Icons' has been added in the options section, this button regenerates the icons and the preview icons of the backgrounds, now also regenerates the icons damaged by the Beta-Alpha versions of Blender, so they are regenerated simply by copying and deleting the damaged icons and reloading the Background Previews
+
+- **Added - Purge Cache Button into Options Section**
+
+    HDRi Maker uses Json files that store library paths, so that whenever the addon is installed in a new version of Blender, the addon itself recognizes the library paths set by another version of Blender, this is also useful for update the addon, which in fact, once updated and started Blender, will automatically recognize the library paths. There have been some cases, however, that the addon stored paths that no longer existed, and for some reason they were not removed automatically, for this reason this button has been added, which in addition also removes all the .json files present in the addon folder called 'online_utility', these files are for updates and other online functions, these are always deleted via this button
+
+- **Fix - Library paths storage**
+
+    It has been reported to us that the library paths stored in the .json file present in the ExtremeAddons folder (As explained in the previous point) may no longer exist, so if this is the case, they will be ignored and no longer set to the default and user libraries so as to avoid confusion
+
 3.0.113
 -------
 

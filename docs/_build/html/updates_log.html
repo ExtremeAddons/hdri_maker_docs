@@ -75,16 +75,17 @@
 <p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Updates Log</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.113</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.112</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.111</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.110</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.105</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.104</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.103</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.102</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.101</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10">3.0.100</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.114</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.113</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.112</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.111</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.110</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.105</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.104</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.103</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.102</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">3.0.101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">3.0.100</a></li>
 </ul>
 </li>
 </ul>
@@ -116,7 +117,38 @@
   <section id="updates-log">
 <h1>Updates Log<a class="headerlink" href="#updates-log" title="Permalink to this heading"></a></h1>
 <section id="id1">
-<h2>3.0.113<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>3.0.114<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p><strong>Release date: 30-09-2023 (D/M/Y)</strong></p>
+<ul>
+<li><p><strong>Bugfix - Add light during paint mode error</strong></p>
+<blockquote>
+<div><p>If you were in paint mode and tried to add a light, an error occurred, this has now been fixed by adding the object mode check</p>
+</div></blockquote>
+</li>
+<li><p><strong>Improvement - Link Unlink World-Dome Rotation Buttons</strong></p>
+<blockquote>
+<div><p>A depress state has been added to the respective buttons for the synchronization of the dome and background rotation, now when the respective driver is activated, the button lights up, to indicate that it has been activated, and turns off in case of unlink or activation of the opposite driver</p>
+</div></blockquote>
+</li>
+<li><p><strong>Patch - Regeneration of Preview Icons</strong></p>
+<blockquote>
+<div><p>A button named ‘Regenerate Previews and Icons’ has been added in the options section, this button regenerates the icons and the preview icons of the backgrounds, now also regenerates the icons damaged by the Beta-Alpha versions of Blender, so they are regenerated simply by copying and deleting the damaged icons and reloading the Background Previews</p>
+</div></blockquote>
+</li>
+<li><p><strong>Added - Purge Cache Button into Options Section</strong></p>
+<blockquote>
+<div><p>HDRi Maker uses Json files that store library paths, so that whenever the addon is installed in a new version of Blender, the addon itself recognizes the library paths set by another version of Blender, this is also useful for update the addon, which in fact, once updated and started Blender, will automatically recognize the library paths. There have been some cases, however, that the addon stored paths that no longer existed, and for some reason they were not removed automatically, for this reason this button has been added, which in addition also removes all the .json files present in the addon folder called ‘online_utility’, these files are for updates and other online functions, these are always deleted via this button</p>
+</div></blockquote>
+</li>
+<li><p><strong>Fix - Library paths storage</strong></p>
+<blockquote>
+<div><p>It has been reported to us that the library paths stored in the .json file present in the ExtremeAddons folder (As explained in the previous point) may no longer exist, so if this is the case, they will be ignored and no longer set to the default and user libraries so as to avoid confusion</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h2>3.0.113<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 29-07-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix Json Save</strong></p>
@@ -136,8 +168,8 @@
 </li>
 </ul>
 </section>
-<section id="id2">
-<h2>3.0.112<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<section id="id3">
+<h2>3.0.112<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 14-07-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Alpha - Beta Version Alert Message added</strong></p>
@@ -167,8 +199,8 @@
 </li>
 </ul>
 </section>
-<section id="id3">
-<h2>3.0.111<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<section id="id4">
+<h2>3.0.111<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 08-05-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Error During Asset Browser Creation</strong></p>
@@ -188,8 +220,8 @@
 </li>
 </ul>
 </section>
-<section id="id4">
-<h2>3.0.110<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<section id="id5">
+<h2>3.0.110<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 29-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Added - Creation of library in Asset Browser</strong></p>
@@ -209,8 +241,8 @@
 </li>
 </ul>
 </section>
-<section id="id5">
-<h2>3.0.105<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<section id="id6">
+<h2>3.0.105<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 16-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Pose Mode Bug</strong></p>
@@ -235,8 +267,8 @@
 </li>
 </ul>
 </section>
-<section id="id6">
-<h2>3.0.104<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<section id="id7">
+<h2>3.0.104<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Retrocompatibility Dome Material</strong></p>
@@ -246,8 +278,8 @@
 </li>
 </ul>
 </section>
-<section id="id7">
-<h2>3.0.103<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
+<section id="id8">
+<h2>3.0.103<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - (Choose path) For Mac and Linux</strong></p>
@@ -257,8 +289,8 @@
 </li>
 </ul>
 </section>
-<section id="id8">
-<h2>3.0.102<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<section id="id9">
+<h2>3.0.102<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 02-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix when installing expansions</strong></p>
@@ -273,8 +305,8 @@
 </li>
 </ul>
 </section>
-<section id="id9">
-<h2>3.0.101<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
+<section id="id10">
+<h2>3.0.101<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 01-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Installation Bugfix for Mac-Linux</strong></p>
@@ -284,8 +316,8 @@
 </li>
 </ul>
 </section>
-<section id="id10">
-<h2>3.0.100<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
+<section id="id11">
+<h2>3.0.100<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 28-02-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Completely redesigned interface</strong></p>
