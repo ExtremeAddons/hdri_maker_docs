@@ -9,6 +9,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
+
+python:
+   install:
+     - requirements: docs/requirements.txt
     # You can also specify other tool versions:
     # nodejs: "20"
     # rust: "1.70"
@@ -21,6 +25,8 @@ sphinx:
   # builder: "dirhtml"
   # Fail on all warnings to avoid broken references
   # fail_on_warning: true
+
+
 
 # Optionally build your docs in additional formats such as PDF and ePub
 # formats:
