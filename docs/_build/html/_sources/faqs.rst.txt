@@ -149,13 +149,21 @@ The answer is yes, but it doesn't make sense. It's not a VFX addon, so it's not 
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Can I use my libraries?
+Can I use my HDRs?
 ******************************
 
-Yes, but be careful! If they are libraries created with HDRi Maker yes. In the case in which you have HDR or EXR image libraries
-you can create custom libraries in HDRi Maker with the use of Batch Save. This tool included in HDRi Maker
-allows you to import in batch even hundreds of HDR / EXR backgrounds in one go, this makes it so that it creates a category
-in the library "USER Library" so as to have in HDRi Maker all your custom libraries.
+Yes, and there are various ways to do it!
+
+1. You can import an HDR / EXR (or other image files) on the fly simply by pressing SHIFT + the Import button See here :ref:`add_button`
+   and selecting the file you want to import.
+
+2. You can batch import the HDRs or EXRs you need and create your own Category. See here the tutorial :ref:`batch_scene`
+
+3. You can try to convert a World with the "Try to convert" button if the World has been imported with asset browser, it will try to recover the image
+   and convert it to an HDRi Maker Background Button Here :ref:`try_to_convert`
+
+
+These are 3 simple methods to use HDRs from sources other than HDRi Maker.
 
 
 ------------------------------------------------------------------------------------------------------------------------

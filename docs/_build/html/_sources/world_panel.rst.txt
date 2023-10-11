@@ -24,8 +24,6 @@ Here below the World Panel is shown as it is usually when a new world is added, 
 +------------------------------+------------------------------------------------------------+
 
 
-
-
 The World panel is the one that allows you to adjust the World Background, it is consistent with the nodes that are
 found in the world node tree, so it is drawn based on the various situations.
 
@@ -239,6 +237,7 @@ Change Light Path
 
 
 
+.. _try_to_convert:
 
 Unknown world Situation
 ***********************

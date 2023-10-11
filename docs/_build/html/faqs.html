@@ -85,7 +85,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#can-i-use-hdri-maker-on-software-other-than-blender">Can I use HDRi Maker on Software other than Blender?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#can-i-export-the-dome-as-a-3d-model">Can I export the dome as a 3D model?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#can-i-import-videos-as-backgrounds">Can I import videos as backgrounds?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#can-i-use-my-libraries">Can I use my libraries?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-i-use-my-hdrs">Can I use my HDRs?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#does-it-work-with-blender-asset-browser">Does it work with Blender Asset Browser?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#the-dome-can-be-modified">The dome can be modified?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#will-i-get-a-perfect-projection-with-the-dome">Will I get a perfect projection with the dome?</a></li>
@@ -221,12 +221,17 @@ to address the issue. I have also been asked many times if you can import videos
 The answer is yes, but it doesn’t make sense. It’s not a VFX addon, so it’s not planned to use it.</p>
 </section>
 <hr class="docutils" />
-<section id="can-i-use-my-libraries">
-<h2>Can I use my libraries?<a class="headerlink" href="#can-i-use-my-libraries" title="Permalink to this heading"></a></h2>
-<p>Yes, but be careful! If they are libraries created with HDRi Maker yes. In the case in which you have HDR or EXR image libraries
-you can create custom libraries in HDRi Maker with the use of Batch Save. This tool included in HDRi Maker
-allows you to import in batch even hundreds of HDR / EXR backgrounds in one go, this makes it so that it creates a category
-in the library “USER Library” so as to have in HDRi Maker all your custom libraries.</p>
+<section id="can-i-use-my-hdrs">
+<h2>Can I use my HDRs?<a class="headerlink" href="#can-i-use-my-hdrs" title="Permalink to this heading"></a></h2>
+<p>Yes, and there are various ways to do it!</p>
+<ol class="arabic simple">
+<li><p>You can import an HDR / EXR (or other image files) on the fly simply by pressing SHIFT + the Import button See here <span class="xref std std-ref">add_button</span>
+and selecting the file you want to import.</p></li>
+<li><p>You can batch import the HDRs or EXRs you need and create your own Category. See here the tutorial <a class="reference internal" href="video_tutorials.html#batch-scene"><span class="std std-ref">Batch Save</span></a></p></li>
+<li><p>You can try to convert a World with the “Try to convert” button if the World has been imported with asset browser, it will try to recover the image
+and convert it to an HDRi Maker Background Button Here <a class="reference internal" href="world_panel.html#try-to-convert"><span class="std std-ref">Unknown world Situation</span></a></p></li>
+</ol>
+<p>These are 3 simple methods to use HDRs from sources other than HDRi Maker.</p>
 </section>
 <hr class="docutils" />
 <section id="does-it-work-with-blender-asset-browser">

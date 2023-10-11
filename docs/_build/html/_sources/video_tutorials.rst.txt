@@ -19,9 +19,6 @@ on new tutorials and news.
 
 
 
-
-
-
 Basic tutorial
 --------------
 
