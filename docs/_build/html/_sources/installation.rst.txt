@@ -208,6 +208,12 @@ Download the addon and install it in Blender, the procedure is as follows:
 Install The library
 ----------------------------
 
+.. important::
+
+    This step is not necessary if you are just updating the addon from a version of HDRi Maker 3.0.XXX to a higher version!
+
+|
+
 - If you have installed the addon correctly, now you can proceed with the installation of the library.
 
 .. Note:: If you are a user coming from a version of HDRi Maker 2.0 you can convert your library **HDRI_MAKER_LIB**
