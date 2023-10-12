@@ -120,10 +120,10 @@ HDRi Maker addon, it will manage your exapack packages and install them. (You wi
 Install Into Blender
 ********************
 
-Now, download the addon and install it in Blender, the procedure is as follows:
+Download the addon and install it in Blender, the procedure is as follows:
 
 
-1) Download the addon (Remember that you must be logged in to the site where you purchased the addon):
+1. Download the addon (Remember that you must be logged in to the site where you purchased the addon):
 
     - If you purchased on Blendermarket you can find the addon here:
 
@@ -142,57 +142,56 @@ Now, download the addon and install it in Blender, the procedure is as follows:
 
 
 
-
-
-2) **Unistall previous versions** This step is only necessary if you had a version of HDRi Maker
+2. **Unistall previous versions** This step is only necessary if you had a version of HDRi Maker
     previously installed in the current version of Blender
 
     ``Edit > Preferences > Add-ons > HDRi Maker``
 
-Press **REMOVE** and save the preferences (Only if you have not set the automatic saving of preferences)
+    Press **REMOVE** and save the preferences (Only if you have not set the automatic saving of preferences)
 
 
-.. note::
+    .. note::
 
-    I suggest restarting Blender after this step, so as to be sure that the new version does not conflict with the old
-    version in the current session of Blender.
-
-
-.. image:: _static/_images/installation/uninstall_previous_version.webp
-    :align: center
-    :width: 800
-    :alt: Uninstall previous version
-
-|
+        I suggest restarting Blender after this step, so as to be sure that the new version does not conflict with the old
+        version in the current session of Blender.
 
 
-3) Once the addon is downloaded, open Blender and go to:
-
-   ``Edit > Preferences > Add-ons > Install``
-
-.. image:: _static/_images/installation/install_addon_in_blender_01.png
-    :align: center
-    :width: 800
-    :alt: Install addon in Blender
+    .. image:: _static/_images/installation/uninstall_previous_version.webp
+        :align: center
+        :width: 800
+        :alt: Uninstall previous version
 
 |
 
-4) Select the downloaded file (**hdri_maker_v30100.zip** <-- !This name is only an example!) and click on "Install Addon" (The name of the file can be different from version to version)
 
-.. image:: _static/_images/installation/install_addon_zip_blender_01.png
-    :align: center
-    :width: 800
-    :alt: Install addon zip in Blender
+3. Once the addon is downloaded, open Blender and go to:
+
+       ``Edit > Preferences > Add-ons > Install``
+
+    .. image:: _static/_images/installation/install_addon_in_blender_01.png
+        :align: center
+        :width: 800
+        :alt: Install addon in Blender
 
 |
 
-5) If everything went well, the addon is in the list of installed addons, you can also search for it by typing "HDRi Maker"
+4. Select the downloaded file (**hdri_maker_v30100.zip** <-- !This name is only an example!) and click on "Install Addon"
+   (The name of the file can be different from version to version)
+
+    .. image:: _static/_images/installation/install_addon_zip_blender_01.png
+        :align: center
+        :width: 800
+        :alt: Install addon zip in Blender
+
+|
+
+5. If everything went well, the addon is in the list of installed addons, you can also search for it by typing "HDRi Maker"
    Mark the checkbox to activate it.
 
-.. image:: _static/_images/installation/install_addon_zip_blender_02.png
-    :align: center
-    :width: 800
-    :alt: Install addon zip in Blender 2
+    .. image:: _static/_images/installation/install_addon_zip_blender_02.png
+        :align: center
+        :width: 800
+        :alt: Install addon zip in Blender 2
 
 
 ------------------------------------------------------------------------------------------------------------------------
