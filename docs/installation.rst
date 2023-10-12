@@ -140,7 +140,33 @@ Now, download the addon and install it in Blender, the procedure is as follows:
    .. Important:: The addon file must remain in zip format! Do not unzip the file, otherwise you will not be able to install it correctly.
                   This note is especially for Mac users. If you do not know how to prevent Safari from decompressing zip files, take a look here :ref:`mac_safari_zip`
 
-2) Once the addon is downloaded, open Blender and go to:
+
+
+
+
+2) **Unistall previous versions** This step is only necessary if you had a version of HDRi Maker
+    previously installed in the current version of Blender
+
+    ``Edit > Preferences > Add-ons > HDRi Maker``
+
+Press **REMOVE** and save the preferences (Only if you have not set the automatic saving of preferences)
+
+
+.. note::
+
+    I suggest restarting Blender after this step, so as to be sure that the new version does not conflict with the old
+    version in the current session of Blender.
+
+
+.. image:: _static/_images/installation/uninstall_previous_version.webp
+    :align: center
+    :width: 800
+    :alt: Uninstall previous version
+
+|
+
+
+3) Once the addon is downloaded, open Blender and go to:
 
    ``Edit > Preferences > Add-ons > Install``
 
@@ -149,14 +175,18 @@ Now, download the addon and install it in Blender, the procedure is as follows:
     :width: 800
     :alt: Install addon in Blender
 
-3) Select the downloaded file (**hdri_maker_v30100.zip** <-- !This name is only an example!) and click on "Install Addon" (The name of the file can be different from version to version)
+|
+
+4) Select the downloaded file (**hdri_maker_v30100.zip** <-- !This name is only an example!) and click on "Install Addon" (The name of the file can be different from version to version)
 
 .. image:: _static/_images/installation/install_addon_zip_blender_01.png
     :align: center
     :width: 800
     :alt: Install addon zip in Blender
 
-4) If everything went well, the addon is in the list of installed addons, you can also search for it by typing "HDRi Maker"
+|
+
+5) If everything went well, the addon is in the list of installed addons, you can also search for it by typing "HDRi Maker"
    Mark the checkbox to activate it.
 
 .. image:: _static/_images/installation/install_addon_zip_blender_02.png
