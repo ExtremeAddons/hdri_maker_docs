@@ -142,7 +142,7 @@ Download the addon and install it in Blender, the procedure is as follows:
 
 
 
-2. **Unistall previous versions** This step is only necessary if you had a version of HDRi Maker
+2. **Uninstall previous versions** This step is only necessary if you had a version of HDRi Maker
     previously installed in the current version of Blender
 
     ``Edit > Preferences > Add-ons > HDRi Maker``
