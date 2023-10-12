@@ -123,6 +123,12 @@ Install Into Blender
 Download the addon and install it in Blender, the procedure is as follows:
 
 
+.. important::
+
+    If you are updating the addon from a version HDRi Maker 3.0.X series to a higher version you absolutely must **not**
+    download the libraries again! The addon once installed in addition should already recognize the paths of the libraries
+
+
 1. Download the addon (Remember that you must be logged in to the site where you purchased the addon):
 
     - If you purchased on Blendermarket you can find the addon here:
