@@ -75,17 +75,18 @@
 <p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Updates Log</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.114</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.113</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.112</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.111</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.110</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.105</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.104</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.103</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.102</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10">3.0.101</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id11">3.0.100</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.115</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.114</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.113</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.112</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.111</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.110</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.105</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.104</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.103</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">3.0.102</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">3.0.101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">3.0.100</a></li>
 </ul>
 </li>
 </ul>
@@ -117,7 +118,38 @@
   <section id="updates-log">
 <h1>Updates Log<a class="headerlink" href="#updates-log" title="Permalink to this heading"></a></h1>
 <section id="id1">
-<h2>3.0.114<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>3.0.115<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p><strong>Release date: 12-10-2023 (D/M/Y)</strong></p>
+<ul>
+<li><p><strong>Improvement - Support For Blender 4.0</strong></p>
+<blockquote>
+<div><p>Now HDRi Maker also works on Blender 4.0 maintaining backward compatibility with previous versions from 3.0 onwards</p>
+</div></blockquote>
+</li>
+<li><p><strong>BugFix - Export Image</strong></p>
+<blockquote>
+<div><p>From the Save Menu, Export image did not work well, the Blender image.has_data APIs always returned False, now I have solved it by updating the image before checking if image.has_data with image.update()</p>
+</div></blockquote>
+</li>
+<li><p><strong>BugFix - Batch Save</strong></p>
+<blockquote>
+<div><p>If the batch save contained a .blend file and the .blend file for some reason did not have a world, this created an error, now it is bypassed, in addition at the end of the operation. In addition, now the preview icons are redrawn in order to make the backgrounds immediately available from the HDRi Maker Browser menu</p>
+</div></blockquote>
+</li>
+<li><p><strong>BugFix - Add Diffuse/Light Bug (Convert World to HDRi Maker World)</strong></p>
+<blockquote>
+<div><p>If you added a Diffuse or Light, from the ‘World’ panel if the World nodes had not been created with HDRi Maker, they were no longer added to a Group (Which had to be created) now, the group will be created and positioned correctly both as Diffuse and as Light</p>
+</div></blockquote>
+</li>
+<li><p><strong>Improve - Restore Node Value</strong></p>
+<blockquote>
+<div><p>The confirmation method has been improved with a new popup</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h2>3.0.114<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 30-09-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Add light during paint mode error</strong></p>
@@ -147,8 +179,8 @@
 </li>
 </ul>
 </section>
-<section id="id2">
-<h2>3.0.113<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<section id="id3">
+<h2>3.0.113<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 29-07-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix Json Save</strong></p>
@@ -168,8 +200,8 @@
 </li>
 </ul>
 </section>
-<section id="id3">
-<h2>3.0.112<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<section id="id4">
+<h2>3.0.112<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 14-07-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Alpha - Beta Version Alert Message added</strong></p>
@@ -199,8 +231,8 @@
 </li>
 </ul>
 </section>
-<section id="id4">
-<h2>3.0.111<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<section id="id5">
+<h2>3.0.111<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 08-05-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Error During Asset Browser Creation</strong></p>
@@ -220,8 +252,8 @@
 </li>
 </ul>
 </section>
-<section id="id5">
-<h2>3.0.110<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<section id="id6">
+<h2>3.0.110<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 29-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Added - Creation of library in Asset Browser</strong></p>
@@ -241,8 +273,8 @@
 </li>
 </ul>
 </section>
-<section id="id6">
-<h2>3.0.105<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<section id="id7">
+<h2>3.0.105<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 16-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Pose Mode Bug</strong></p>
@@ -267,8 +299,8 @@
 </li>
 </ul>
 </section>
-<section id="id7">
-<h2>3.0.104<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
+<section id="id8">
+<h2>3.0.104<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Retrocompatibility Dome Material</strong></p>
@@ -278,8 +310,8 @@
 </li>
 </ul>
 </section>
-<section id="id8">
-<h2>3.0.103<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<section id="id9">
+<h2>3.0.103<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - (Choose path) For Mac and Linux</strong></p>
@@ -289,8 +321,8 @@
 </li>
 </ul>
 </section>
-<section id="id9">
-<h2>3.0.102<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
+<section id="id10">
+<h2>3.0.102<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 02-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix when installing expansions</strong></p>
@@ -305,8 +337,8 @@
 </li>
 </ul>
 </section>
-<section id="id10">
-<h2>3.0.101<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
+<section id="id11">
+<h2>3.0.101<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 01-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Installation Bugfix for Mac-Linux</strong></p>
@@ -316,8 +348,8 @@
 </li>
 </ul>
 </section>
-<section id="id11">
-<h2>3.0.100<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h2>
+<section id="id12">
+<h2>3.0.100<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 28-02-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Completely redesigned interface</strong></p>

@@ -1,6 +1,31 @@
 Updates Log
 ===========
 
+3.0.115
+-------
+
+**Release date: 12-10-2023 (D/M/Y)**
+
+- **Improvement - Support For Blender 4.0**
+
+    Now HDRi Maker also works on Blender 4.0 maintaining backward compatibility with previous versions from 3.0 onwards
+
+- **BugFix - Export Image**
+
+    From the Save Menu, Export image did not work well, the Blender image.has_data APIs always returned False, now I have solved it by updating the image before checking if image.has_data with image.update()
+
+- **BugFix - Batch Save**
+
+    If the batch save contained a .blend file and the .blend file for some reason did not have a world, this created an error, now it is bypassed, in addition at the end of the operation. In addition, now the preview icons are redrawn in order to make the backgrounds immediately available from the HDRi Maker Browser menu
+
+- **BugFix - Add Diffuse/Light Bug (Convert World to HDRi Maker World)**
+
+    If you added a Diffuse or Light, from the 'World' panel if the World nodes had not been created with HDRi Maker, they were no longer added to a Group (Which had to be created) now, the group will be created and positioned correctly both as Diffuse and as Light
+
+- **Improve - Restore Node Value**
+
+    The confirmation method has been improved with a new popup
+
 3.0.114
 -------
 
