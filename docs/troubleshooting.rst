@@ -189,6 +189,36 @@ in your project is present an image of 100MB (For example) your .blend file will
     :alt: Auto Pack Resources 01
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Hi, when i add a custom hdri and active the dome, a black circular gradient appears on the ground in the center. How can i remove that?
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Depending on the lighting of the scene, you may have a Dark Ground, this is the area that captures the shadows, so everything is ok,
+you need to fix the ground exposure values (Follow the next Image)
+
+
+.. image:: _static/_images/troubleshooting/dome_ground_darkness_01.webp
+    :align: center
+    :width: 800
+    :alt: Dome Ground Darkness 01
+
+|
+
+In order to fix the ground exposure values, it is sufficient from the **Dome** panel and from the **Dome Color** submenu
+modify the **Exposure Ground** property, raising the exposure value until you have a right lighting as
+in this example:
+
+.. image:: _static/_images/troubleshooting/dome_ground_darkness_corrected.webp
+    :align: center
+    :width: 800
+    :alt: Dome Ground Darkness Corrected
+
+
+
+
 
 
 

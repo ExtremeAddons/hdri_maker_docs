@@ -79,6 +79,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#projection-distorted">Projection distorted</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#moving-libraries-to-another-computer">Moving libraries to another computer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#why-if-i-export-the-project-to-another-computer-i-can-no-longer-see-the-backgrounds">Why if I export the project to another computer I can no longer see the backgrounds?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hi-when-i-add-a-custom-hdri-and-active-the-dome-a-black-circular-gradient-appears-on-the-ground-in-the-center-how-can-i-remove-that">Hi, when i add a custom hdri and active the dome, a black circular gradient appears on the ground in the center. How can i remove that?</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -234,6 +235,20 @@ it could be that in the folders mentioned above, the “._data” folders are mi
 <p>Pay attention to this, because your .blend files after these operations will contain all the image files present
 in your project is present an image of 100MB (For example) your .blend file will become 100MB more.</p>
 <a class="reference internal image-reference" href="_images/auto_pack_resources_01.png"><img alt="Auto Pack Resources 01" class="align-center" src="_images/auto_pack_resources_01.png" style="width: 600px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="hi-when-i-add-a-custom-hdri-and-active-the-dome-a-black-circular-gradient-appears-on-the-ground-in-the-center-how-can-i-remove-that">
+<h2>Hi, when i add a custom hdri and active the dome, a black circular gradient appears on the ground in the center. How can i remove that?<a class="headerlink" href="#hi-when-i-add-a-custom-hdri-and-active-the-dome-a-black-circular-gradient-appears-on-the-ground-in-the-center-how-can-i-remove-that" title="Permalink to this heading"></a></h2>
+<p>Depending on the lighting of the scene, you may have a Dark Ground, this is the area that captures the shadows, so everything is ok,
+you need to fix the ground exposure values (Follow the next Image)</p>
+<a class="reference internal image-reference" href="_images/dome_ground_darkness_01.webp"><img alt="Dome Ground Darkness 01" class="align-center" src="_images/dome_ground_darkness_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In order to fix the ground exposure values, it is sufficient from the <strong>Dome</strong> panel and from the <strong>Dome Color</strong> submenu
+modify the <strong>Exposure Ground</strong> property, raising the exposure value until you have a right lighting as
+in this example:</p>
+<a class="reference internal image-reference" href="_images/dome_ground_darkness_corrected.webp"><img alt="Dome Ground Darkness Corrected" class="align-center" src="_images/dome_ground_darkness_corrected.webp" style="width: 800px;" /></a>
 </section>
 </section>
 

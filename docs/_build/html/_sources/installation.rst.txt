@@ -11,7 +11,7 @@ Below 2 videos dedicated to 2 different types of users (New and old users) who w
 
 
 
-                                   **!Please read carefully before proceeding with the installation!**
+**!Please read carefully before proceeding with the installation!**
 
 
 I suggest you to watch the videos about the installation.
