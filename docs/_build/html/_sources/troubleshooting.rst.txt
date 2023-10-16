@@ -191,9 +191,8 @@ in your project is present an image of 100MB (For example) your .blend file will
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Hi, when i add a custom hdri and active the dome, a black circular gradient appears on the ground in the center. How can i remove that?
-----------------------------------------------------------------------------------------------------------------------------------------
-
+A darkness circular gradient appears on the ground in the center. How can i fix that?
+------------------------------------------------------------------------------------------
 
 
 Depending on the lighting of the scene, you may have a Dark Ground, this is the area that captures the shadows, so everything is ok,
