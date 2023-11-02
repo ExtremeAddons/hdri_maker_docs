@@ -1,6 +1,19 @@
 Updates Log
 ===========
 
+3.0.116
+-------
+
+**Release date: 02-11-2023 (D/M/Y)**
+
+- **BugFix - Reuse images**
+
+    The texture image loading script analyzed whether the image was already present in the project and checked whether the image had the data via image.has_data, this could happen if the image did not have has_data an error was raised in the texture loading. The script has been improved and if there is no has_data, the image is now reloaded correctly
+
+- **BugFix - Add Dome-Hooks Error**
+
+    It happened that if the VIEW_3D windows were more than one, trying to add a Dome or adding the Hooks to the Dome raised an error 'TypeError: Region not found in area', this because the function that did the override did not take into account the Region, but only the area, so everything worked fine only if the 3D windows was only one.
+
 3.0.115
 -------
 

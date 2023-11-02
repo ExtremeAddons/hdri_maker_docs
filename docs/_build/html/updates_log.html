@@ -75,18 +75,19 @@
 <p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Updates Log</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.115</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.114</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.113</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.112</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.111</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.110</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.105</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.104</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.103</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10">3.0.102</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id11">3.0.101</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id12">3.0.100</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.0.116</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.0.115</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.0.114</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3.0.113</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.0.112</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.0.111</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">3.0.110</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">3.0.105</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">3.0.104</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">3.0.103</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">3.0.102</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">3.0.101</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">3.0.100</a></li>
 </ul>
 </li>
 </ul>
@@ -118,7 +119,23 @@
   <section id="updates-log">
 <h1>Updates Log<a class="headerlink" href="#updates-log" title="Permalink to this heading"></a></h1>
 <section id="id1">
-<h2>3.0.115<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>3.0.116<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p><strong>Release date: 02-11-2023 (D/M/Y)</strong></p>
+<ul>
+<li><p><strong>BugFix - Reuse images</strong></p>
+<blockquote>
+<div><p>The texture image loading script analyzed whether the image was already present in the project and checked whether the image had the data via image.has_data, this could happen if the image did not have has_data an error was raised in the texture loading. The script has been improved and if there is no has_data, the image is now reloaded correctly</p>
+</div></blockquote>
+</li>
+<li><p><strong>BugFix - Add Dome-Hooks Error</strong></p>
+<blockquote>
+<div><p>It happened that if the VIEW_3D windows were more than one, trying to add a Dome or adding the Hooks to the Dome raised an error ‘TypeError: Region not found in area’, this because the function that did the override did not take into account the Region, but only the area, so everything worked fine only if the 3D windows was only one.</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h2>3.0.115<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 12-10-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Improvement - Support For Blender 4.0</strong></p>
@@ -148,8 +165,8 @@
 </li>
 </ul>
 </section>
-<section id="id2">
-<h2>3.0.114<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<section id="id3">
+<h2>3.0.114<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 30-09-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Add light during paint mode error</strong></p>
@@ -179,8 +196,8 @@
 </li>
 </ul>
 </section>
-<section id="id3">
-<h2>3.0.113<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<section id="id4">
+<h2>3.0.113<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 29-07-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix Json Save</strong></p>
@@ -200,8 +217,8 @@
 </li>
 </ul>
 </section>
-<section id="id4">
-<h2>3.0.112<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<section id="id5">
+<h2>3.0.112<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 14-07-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Alpha - Beta Version Alert Message added</strong></p>
@@ -231,8 +248,8 @@
 </li>
 </ul>
 </section>
-<section id="id5">
-<h2>3.0.111<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<section id="id6">
+<h2>3.0.111<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 08-05-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Error During Asset Browser Creation</strong></p>
@@ -252,8 +269,8 @@
 </li>
 </ul>
 </section>
-<section id="id6">
-<h2>3.0.110<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<section id="id7">
+<h2>3.0.110<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 29-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Added - Creation of library in Asset Browser</strong></p>
@@ -273,8 +290,8 @@
 </li>
 </ul>
 </section>
-<section id="id7">
-<h2>3.0.105<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
+<section id="id8">
+<h2>3.0.105<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 16-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Pose Mode Bug</strong></p>
@@ -299,8 +316,8 @@
 </li>
 </ul>
 </section>
-<section id="id8">
-<h2>3.0.104<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<section id="id9">
+<h2>3.0.104<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - Retrocompatibility Dome Material</strong></p>
@@ -310,8 +327,8 @@
 </li>
 </ul>
 </section>
-<section id="id9">
-<h2>3.0.103<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
+<section id="id10">
+<h2>3.0.103<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 03-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix - (Choose path) For Mac and Linux</strong></p>
@@ -321,8 +338,8 @@
 </li>
 </ul>
 </section>
-<section id="id10">
-<h2>3.0.102<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
+<section id="id11">
+<h2>3.0.102<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 02-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Bugfix when installing expansions</strong></p>
@@ -337,8 +354,8 @@
 </li>
 </ul>
 </section>
-<section id="id11">
-<h2>3.0.101<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h2>
+<section id="id12">
+<h2>3.0.101<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 01-03-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Installation Bugfix for Mac-Linux</strong></p>
@@ -348,8 +365,8 @@
 </li>
 </ul>
 </section>
-<section id="id12">
-<h2>3.0.100<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h2>
+<section id="id13">
+<h2>3.0.100<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h2>
 <p><strong>Release date: 28-02-2023 (D/M/Y)</strong></p>
 <ul>
 <li><p><strong>Completely redesigned interface</strong></p>
