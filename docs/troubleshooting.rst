@@ -217,6 +217,23 @@ in this example:
 
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+Material icons not visible
+---------------------------
+
+
+A problem is quite well known with the Blender Template Preview Icons, which in some situations may not be
+loaded correctly by the addon, to solve this problem a Button has been inserted which once pressed, reloads
+the Icons, making it possible to view them correctly. Here you will find the paragraph that indicates the button::ref:`force_reload_icons`
+
+
+.. image:: _static/_images/troubleshooting/preview_icons_not_load_01.webp
+    :align: center
+    :width: 600
+    :alt: Preview Icons Not Load 01
+
 
 
 
