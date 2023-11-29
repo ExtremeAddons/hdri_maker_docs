@@ -235,6 +235,32 @@ the Icons, making it possible to view them correctly. Here you will find the par
     :alt: Preview Icons Not Load 01
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+How do I check the version of the addon?
+------------------------------------------
+
+If the addon is installed, press the button that sends to the options, a popup will open directly on the addon preferences,
+where the version is also shown:
+
+.. image:: _static/_images/troubleshooting/check_addon_version.webp
+    :align: center
+    :width: 800
+    :alt: Check Addon Version
+
+|
+
+If the addon is not active, you can check the version of the addon by going to: ``Edit--> Preferences--> Addons``
+and looking for the addon ``Extreme PBR``
+
+.. image:: _static/_images/troubleshooting/check_addon_version_02.webp
+    :align: center
+    :width: 800
+    :alt: Check Addon Version 02
+
+
+
+
 
 
 
