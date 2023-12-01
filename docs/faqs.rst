@@ -16,7 +16,7 @@ How can I contact you for assistance?
 If you have purchased the addon on BlenderMarket, go directly to the addon page and click on "Ask a question"
 usually I answer within 24 hours
 
-If you have purchased the addon on Gumroad, you can contact me via the chat at the bottom right on https://extreme-addons.com/
+If you have purchased the addon on Gumroad, you can contact me on **tredistudio@hotmail.com** or **info@extreme-addons.com**
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -113,8 +113,7 @@ Cycles and Eevee are the rendering engines supported by HDRi Maker, support for 
 Is there support?
 *****************
 
-Of course! You can contact me on https://blendermarket.com/ or on http://extreme-addons.com/
-(On extreme-addons.com you can find a chat button in the bottom right corner)
+Of course! You can contact me on https://blendermarket.com/ or on **tredistudio@hotmail.com** or **info@extreme-addons.com**
 
 ------------------------------------------------------------------------------------------------------------------------
 
