@@ -259,6 +259,28 @@ and looking for the addon ``Extreme PBR``
     :alt: Check Addon Version 02
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Permission Error
+-----------------
+
+In some cases the addon needs to write files, for example if you are installing the addon or saving
+some settings, in some cases it may happen that the addon does not have permission to write the files, this
+causes an error of this type: ``Python: Traceback (most recent call last) ....``
+
+This can be solved in this way:
+
+- **Windows**
+    - Close Blender, right click on the Blender icon and click on ``Run as administrator``
+- **Linux**
+    - Close Blender, here you will simply have to open Blender from the terminal with root permissions, so open the terminal
+      you will only have to write ``sudo`` before the command to open Blender, so you will have to write something like this:
+      ``sudo blender``
+
+
+
+
+
 
 
 

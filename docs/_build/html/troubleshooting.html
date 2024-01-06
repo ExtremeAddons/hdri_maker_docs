@@ -82,6 +82,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#a-darkness-circular-gradient-appears-on-the-ground-in-the-center-how-can-i-fix-that">A darkness circular gradient appears on the ground in the center. How can i fix that?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#material-icons-not-visible">Material icons not visible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-do-i-check-the-version-of-the-addon">How do I check the version of the addon?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#permission-error">Permission Error</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -272,6 +273,32 @@ where the version is also shown:</p>
 <p>If the addon is not active, you can check the version of the addon by going to: <code class="docutils literal notranslate"><span class="pre">Edit--&gt;</span> <span class="pre">Preferences--&gt;</span> <span class="pre">Addons</span></code>
 and looking for the addon <code class="docutils literal notranslate"><span class="pre">Extreme</span> <span class="pre">PBR</span></code></p>
 <a class="reference internal image-reference" href="_images/check_addon_version_02.webp"><img alt="Check Addon Version 02" class="align-center" src="_images/check_addon_version_02.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="permission-error">
+<h2>Permission Error<a class="headerlink" href="#permission-error" title="Permalink to this heading"></a></h2>
+<p>In some cases the addon needs to write files, for example if you are installing the addon or saving
+some settings, in some cases it may happen that the addon does not have permission to write the files, this
+causes an error of this type: <code class="docutils literal notranslate"><span class="pre">Python:</span> <span class="pre">Traceback</span> <span class="pre">(most</span> <span class="pre">recent</span> <span class="pre">call</span> <span class="pre">last)</span> <span class="pre">....</span></code></p>
+<p>This can be solved in this way:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Windows</strong></dt><dd><ul>
+<li><p>Close Blender, right click on the Blender icon and click on <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">as</span> <span class="pre">administrator</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Linux</strong></dt><dd><ul>
+<li><p>Close Blender, here you will simply have to open Blender from the terminal with root permissions, so open the terminal
+you will only have to write <code class="docutils literal notranslate"><span class="pre">sudo</span></code> before the command to open Blender, so you will have to write something like this:
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">blender</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 </section>
 
