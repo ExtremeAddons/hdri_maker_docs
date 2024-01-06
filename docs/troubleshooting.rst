@@ -278,22 +278,3 @@ This can be solved in this way:
       ``sudo blender``
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
