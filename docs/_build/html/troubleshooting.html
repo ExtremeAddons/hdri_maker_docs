@@ -83,6 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#material-icons-not-visible">Material icons not visible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-do-i-check-the-version-of-the-addon">How do I check the version of the addon?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#permission-error">Permission Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#my-object-does-not-cast-shadows-on-the-dome-ground">My object does not cast shadows on the dome ground</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -299,6 +300,28 @@ you will only have to write <code class="docutils literal notranslate"><span cla
 </dl>
 </li>
 </ul>
+</section>
+<hr class="docutils" />
+<section id="my-object-does-not-cast-shadows-on-the-dome-ground">
+<h2>My object does not cast shadows on the dome ground<a class="headerlink" href="#my-object-does-not-cast-shadows-on-the-dome-ground" title="Permalink to this heading"></a></h2>
+<p>2 Different situations:</p>
+<p><strong>Eevee Only:</strong></p>
+<blockquote>
+<div><p>Make sure to insert a light, I personally suggest inserting a <code class="docutils literal notranslate"><span class="pre">Sun</span> <span class="pre">Light</span></code> so as to have the possibility of
+shadows, this is a limitation of the Eevee rendering engine in which the World and objects in general do not emit light in the scene,
+so the only solution is to insert a light.
+To do this press <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">A</span></code> and select <code class="docutils literal notranslate"><span class="pre">Light</span> <span class="pre">--&gt;</span> <span class="pre">Sun</span></code></p>
+<a class="reference internal image-reference" href="_images/add_sun.webp"><img alt="Add Sun" class="align-center" src="_images/add_sun.webp" style="width: 400px;" /></a>
+</div></blockquote>
+<p><strong>Cycles/Eevee</strong></p>
+<blockquote>
+<div><p>Make sure that the Catcher area is configured correctly, it is usually configured to capture shadows near the center
+of the dome ground, but you can expand it using the <strong>Expand Catcher Plane</strong> property
+This will allow you to capture shadows even outside the center of the dome ground, but be careful
+a value too high could create an artifact and a sharp color detachment between the ground and the beginning of the dome edge.
+If you are in Eevee render, make sure you have a light in the scene, otherwise you will not see the shadows.</p>
+<a class="reference internal image-reference" href="_images/expand_catcher_plane.webp"><img alt="Expand Catcher Plane" class="align-center" src="_images/expand_catcher_plane.webp" style="width: 800px;" /></a>
+</div></blockquote>
 </section>
 </section>
 

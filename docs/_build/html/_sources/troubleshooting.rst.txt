@@ -278,15 +278,39 @@ This can be solved in this way:
       ``sudo blender``
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+My object does not cast shadows on the dome ground
+---------------------------------------------------
+
+2 Different situations:
+
+**Eevee Only:**
+
+    Make sure to insert a light, I personally suggest inserting a ``Sun Light`` so as to have the possibility of
+    shadows, this is a limitation of the Eevee rendering engine in which the World and objects in general do not emit light in the scene,
+    so the only solution is to insert a light.
+    To do this press ``Shift + A`` and select ``Light --> Sun``
+
+    .. image:: _static/_images/troubleshooting/add_sun.webp
+        :align: center
+        :width: 400
+        :alt: Add Sun
 
 
 
+**Cycles/Eevee**
 
+    Make sure that the Catcher area is configured correctly, it is usually configured to capture shadows near the center
+    of the dome ground, but you can expand it using the **Expand Catcher Plane** property
+    This will allow you to capture shadows even outside the center of the dome ground, but be careful
+    a value too high could create an artifact and a sharp color detachment between the ground and the beginning of the dome edge.
+    If you are in Eevee render, make sure you have a light in the scene, otherwise you will not see the shadows.
 
-
-
-
-
+    .. image:: _static/_images/troubleshooting/expand_catcher_plane.webp
+        :align: center
+        :width: 800
+        :alt: Expand Catcher Plane
 
 
 
