@@ -8,7 +8,7 @@
 
 
 project = 'HDRi Maker'
-copyright = '2022, Andrea Donati (Andrew_D)'
+copyright = '2024, Andrea Donati (Andrew_D)'
 author = 'Andrea Donati (Andrew_D)'
 release = '3.0.114'
 
