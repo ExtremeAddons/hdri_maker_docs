@@ -1,6 +1,19 @@
 Updates Log
 ===========
 
+3.0.117
+-------
+
+**Release date: 21-02-2024 (D/M/Y)**
+
+- **Fix - Update for Blender 4.1 API**
+
+    Update to the new Blender 4.1 API and various fixes for the addon to work on Blender 4.1
+
+- **Fix - Asset Browser Creation Popup Message**
+
+    Regardless of the library you wanted to create, the text relating to the creation of the Default Library was always shown, in truth it was just a code error, as the selected library was actually created with the button, it was just a misleading message. Fixed, now shows the right text
+
 3.0.116
 -------
 
