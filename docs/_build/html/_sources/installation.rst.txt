@@ -117,6 +117,8 @@ HDRi Maker addon, it will manage your exapack packages and install them. (You wi
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _install_into_blender:
+
 Install Into Blender
 ********************
 
@@ -413,7 +415,36 @@ In that section you will understand if the addon is updated or not.
 If a new version of the addon is available, you can find it on the download page of the site where you bought the addon.
 
 Download it, uninstall the previous version **Do not remove the libraries, if you had already installed them there is no need to reinstall them**
-and install the new version. The steps for the installation can be found above here: :ref:`installation`
+and install the new version.
+
+- Go to Edit-->Preferences-->Addons
+- Search for HDRi Maker into Search box
+- Press Remove
+- Save the preferences (if blender is not set to automatically save the preferences)
+- Restart Blender! This is important, because some old python modules may still be in memory and may conflict with the new version.
+
+.. image:: _static/_images/installation/uninstall_old_version_01.webp
+    :align: center
+    :width: 800
+    :alt: Uninstall old version 01
+
+
+|
+
+- Download the addon zip file:
+
+.. image:: _static/_images/installation/addon_zipped_01.png
+    :align: center
+    :width: 300
+    :alt: Addon zipped 01
+
+|
+
+Now follow the guide here, to install only the addon and not the libraries, if you have already installed the libraries previously:
+
+--> :ref:`install_into_blender` <--
+
+- If the libraries are not automatically attached, restart Blender!
 
 
 ------------------------------------------------------------------------------------------------------------------------

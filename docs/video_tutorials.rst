@@ -167,6 +167,8 @@ Custom Dome Projection
 Move the dome
 *************
 
+Only from HDRi Maker version 3.0.118 or higher 👍
+
 .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/cj6CAFMdgYI?si=VJV7n-bxsefYAiX1"

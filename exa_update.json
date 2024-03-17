@@ -36,6 +36,10 @@
 				"4": {
 					"title": "Added - Exposed the Z location of the World Background",
 					"description": "Now the Z location of the World Background can be managed directly from the HDRi Maker panel, this was present until version 2.0 and given the many requests from users, it has been exposed again in the HDRi Maker World panel"
+				},
+				"5": {
+					"title": "Improvement - Remind me later",
+					"description": "If the addon shows that an update is available in the main panel, now it is possible to hide the message by choosing how long it should not be shown, from a minimum of 1 day to a maximum of 15 days, this is to keep important updates in view, as they will be reported as such in that context"
 				}
 			}
 		},

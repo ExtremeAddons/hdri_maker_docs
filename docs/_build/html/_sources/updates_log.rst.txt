@@ -3,41 +3,6 @@
 Updates Log
 ===========
 
-3.0.118
--------
-
-**Release date: xx-xx-2024 (D/M/Y)**
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cj6CAFMdgYI?si=VJV7n-bxsefYAiX1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-|
-
-- **BugFix - Dome Material HDR Light range**
-
-    The dome material had a Mix node with Clamp Result setting activated, this caused the loss of the light range of the HDR image, this has been fixed simply by correcting that property that was active
-
-- **Improvement - Update menu Preferences**
-
-    The Updates menu for exapacks has been greatly improved, now it is much faster and has an improved grid to see what is available to download and what has been installed
-
-- **Improvement - Dome Handler Free**
-
-    From this version the property **Enable Manual Control** has been added to make the dome free, so the movement of location, rotation and scale of the dome can be managed directly in the 3D viewport. In addition, some buttons have been added to allow you to Reset the positions of the dome, deactivating the property **Enable Manual Control** the dome will return to the origin of the scene axes, that is, at the point (0,0,0) The Handler is an object of type Empty, and now it can be replaced with all the types available in Blender, in addition its size can be adjusted without this affecting the size of the Dome
-
-- **Added - Exposed the Z location of the World Background**
-
-    Now the Z location of the World Background can be managed directly from the HDRi Maker panel, this was present until version 2.0 and given the many requests from users, it has been exposed again in the HDRi Maker World panel
-
-- **Improvement - Remind me later**
-
-    If the addon shows that an update is available in the main panel, now it is possible to hide the message by choosing how long it should not be shown, from a minimum of 1 day to a maximum of 15 days, this is to keep important updates in view, as they will be reported as such in that context
-
-
-
---------------------------------------------------------------------------------------------
-
 3.0.117
 -------
 

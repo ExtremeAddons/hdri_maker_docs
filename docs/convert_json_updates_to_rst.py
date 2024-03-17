@@ -42,6 +42,9 @@ def update_changelog():
         for version, value in updates.items():
             version_index += 1
             date = value.get("date")
+            if "xx" in date:
+                continue
+
             video_embed_code = value.get("video_embed_code")
 
             # Scriviamo la versione
