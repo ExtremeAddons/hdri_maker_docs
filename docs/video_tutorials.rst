@@ -162,6 +162,16 @@ Custom Dome Projection
         web-share" allowfullscreen></iframe>
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Move the dome
+*************
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cj6CAFMdgYI?si=VJV7n-bxsefYAiX1"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ------------------------------------------------------------------------------------------------------------------------

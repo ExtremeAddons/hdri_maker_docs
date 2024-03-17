@@ -1,5 +1,42 @@
+.. _updates_log:
+
 Updates Log
 ===========
+
+3.0.118
+-------
+
+**Release date: xx-xx-2024 (D/M/Y)**
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cj6CAFMdgYI?si=VJV7n-bxsefYAiX1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+|
+
+- **BugFix - Dome Material HDR Light range**
+
+    The dome material had a Mix node with Clamp Result setting activated, this caused the loss of the light range of the HDR image, this has been fixed simply by correcting that property that was active
+
+- **Improvement - Update menu Preferences**
+
+    The Updates menu for exapacks has been greatly improved, now it is much faster and has an improved grid to see what is available to download and what has been installed
+
+- **Improvement - Dome Handler Free**
+
+    From this version the property **Enable Manual Control** has been added to make the dome free, so the movement of location, rotation and scale of the dome can be managed directly in the 3D viewport. In addition, some buttons have been added to allow you to Reset the positions of the dome, deactivating the property **Enable Manual Control** the dome will return to the origin of the scene axes, that is, at the point (0,0,0) The Handler is an object of type Empty, and now it can be replaced with all the types available in Blender, in addition its size can be adjusted without this affecting the size of the Dome
+
+- **Added - Exposed the Z location of the World Background**
+
+    Now the Z location of the World Background can be managed directly from the HDRi Maker panel, this was present until version 2.0 and given the many requests from users, it has been exposed again in the HDRi Maker World panel
+
+- **Improvement - Remind me later**
+
+    If the addon shows that an update is available in the main panel, now it is possible to hide the message by choosing how long it should not be shown, from a minimum of 1 day to a maximum of 15 days, this is to keep important updates in view, as they will be reported as such in that context
+
+
+
+--------------------------------------------------------------------------------------------
 
 3.0.117
 -------
@@ -14,6 +51,10 @@ Updates Log
 
     Regardless of the library you wanted to create, the text relating to the creation of the Default Library was always shown, in truth it was just a code error, as the selected library was actually created with the button, it was just a misleading message. Fixed, now shows the right text
 
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.116
 -------
 
@@ -26,6 +67,10 @@ Updates Log
 - **BugFix - Add Dome-Hooks Error**
 
     It happened that if the VIEW_3D windows were more than one, trying to add a Dome or adding the Hooks to the Dome raised an error 'TypeError: Region not found in area', this because the function that did the override did not take into account the Region, but only the area, so everything worked fine only if the 3D windows was only one.
+
+
+
+--------------------------------------------------------------------------------------------
 
 3.0.115
 -------
@@ -52,6 +97,10 @@ Updates Log
 
     The confirmation method has been improved with a new popup
 
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.114
 -------
 
@@ -77,6 +126,10 @@ Updates Log
 
     It has been reported to us that the library paths stored in the .json file present in the ExtremeAddons folder (As explained in the previous point) may no longer exist, so if this is the case, they will be ignored and no longer set to the default and user libraries so as to avoid confusion
 
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.113
 -------
 
@@ -93,6 +146,10 @@ Updates Log
 - **Improvement - Added additional warning if the background file is not present**
 
     As described in the previous point, if the preview file is not present, by pressing the 'Add' button an additional message will now be shown informing in which exapack volume the missing background is present, so that you can download only that package
+
+
+
+--------------------------------------------------------------------------------------------
 
 3.0.112
 -------
@@ -119,6 +176,10 @@ Updates Log
 
     For some reason, the vertex indices of the Dome, changed to negative indices during the compilation of the vertex list and the assignment of a Modifier for each Hook. Now the list is compiled in a further step and the indices no longer change.
 
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.111
 -------
 
@@ -136,6 +197,10 @@ Updates Log
 
     During the creation of the Asset Browser In versions prior to Blender 3.4 an error (check_existing) occurred, this was due to the fact that the check_existing parameter was not present in the bpy.ops.preferences.asset_library_add operator, now this parameter has been removed if the Blender version is prior to 3.4
 
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.110
 -------
 
@@ -152,6 +217,10 @@ Updates Log
 - **Added - Reload Dome Image**
 
     A new Reload Image button has been added to the Dome menu. This is useful if you work with asset browsers, once any World (even of a non-HDRi Maker type) has been added, it can also be added to the dome, without necessarily having to add a new dome. This works provided that in the World Added to the scene, there is an HDR or EXR image inside the World nodes.
+
+
+
+--------------------------------------------------------------------------------------------
 
 3.0.105
 -------
@@ -174,6 +243,10 @@ Updates Log
 
     When you update the addon from version 3.x and up of HDRi Maker, the addon now also saves the directories and names of the Expansion Library, so that if you update the addon, you do not have to re-indicate the paths of the Expansion Library. Now all directories are stored in a json file, in order to simplify the update phase of the addon. Even when you switch to a later version of Blender, the addon always recognizes the directories, as long as they still exist and have not been moved on the computer to another location
 
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.104
 -------
 
@@ -183,6 +256,10 @@ Updates Log
 
     Dome material was reflective on Blender versions 3.0 to 3.3 (Not on 3.4) Fixed issue, it was the Mix nodes that didn't have proper input and black was grayed out, causing reflection to always be on, and also the metallic. Now everything should work from Blender 3.0 and up. Previous versions have been abandoned, as they are now obsolete. a positive note for the support of Blender 3.3 which is an LTS release, so it is necessary to make HDRi Maker workable on it.
 
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.103
 -------
 
@@ -191,6 +268,10 @@ Updates Log
 - **Bugfix - (Choose path) For Mac and Linux**
 
     For some reason, it was no longer possible to select the library paths. I had used the ntpath.normpath module to make sure I normalized the paths. It worked during testing, but now it doesn't work anymore on Mac and Linux. Maybe I missed something. The new version checks the path with os.path.normpath. You should now be able to select the path to the libraries correctly
+
+
+
+--------------------------------------------------------------------------------------------
 
 3.0.102
 -------
@@ -205,6 +286,10 @@ Updates Log
 
     Expansion volumes were not removed from the Updates menu, they can now be removed.
 
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.101
 -------
 
@@ -213,6 +298,10 @@ Updates Log
 - **Installation Bugfix for Mac-Linux**
 
     For some reason, using os.path.realpath didn't work well on Mac and Linux. It has been replaced with ntpath.normpath module, this blocked the installation of files.exapack now it's back it works on Win-Mac-Linux
+
+
+
+--------------------------------------------------------------------------------------------
 
 3.0.100
 -------

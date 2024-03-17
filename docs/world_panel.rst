@@ -10,7 +10,7 @@ World
 Here below the World Panel is shown as it is usually when a new world is added, from the HDRi Maker library:
 
 
-.. |wp_01| image:: _static/_images/world/world_panel_simple_01.png
+.. |wp_01| image:: _static/_images/world/world_panel_simple_01.webp
               :width: 400
               :alt: Tools Category Light Studio
 
@@ -30,7 +30,7 @@ found in the world node tree, so it is drawn based on the various situations.
 - Example of the simple HDRi Maker Node Tree setup:
 
 
-  .. image:: _static/_images/world/world_node_complete_01.png
+  .. image:: _static/_images/world/world_node_complete_01.webp
           :width: 600
           :align: center
           :alt: World Node Tree Example Complete
@@ -109,10 +109,13 @@ Vector Properties (Inputs)
 
  - The strength of the blur applied to the background image, 0 = no blur, 1 = full blur
 
-2. **Angle  (Value)**
+2. **Angle (Value)**
 
  - The rotation angle of the background image
 
+3. **Z Location  (Value)**
+
+ - The Z location of the background image 0 is the default location, a higher value raises the image, a lower value lowers it
 
 .. _other_properties:
 

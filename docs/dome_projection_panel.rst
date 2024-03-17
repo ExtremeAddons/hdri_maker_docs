@@ -6,6 +6,9 @@ Dome
     :align: center
     :alt: Dome Without Wireframe
 
+
+|
+
 Introduction:
 -------------
 
@@ -161,13 +164,15 @@ Dome Properties
 The Submenu "Dome Properties" is designed to modify some properties of the dome:
 
 
-+---------------------+---------------------------------+------------------------+----------------------+
-| 1. :ref:`hide_dome` | 2. :ref:`hide_reflection_plane` | 3. :ref:`display_wire` | 4. :ref:`scale_dome` |
-+---------------------+---------------------------------+------------------------+----------------------+
++---------------------------+---------------------------------+------------------------+----------------------+
+| 1. :ref:`hide_dome`       | 2. :ref:`hide_reflection_plane` | 3. :ref:`display_wire` | 4. :ref:`scale_dome` |
++---------------------------+---------------------------------+------------------------+----------------------+
+| 5. :ref:`enable_manually` | 6. :ref:`rotate_dome`           |                        |                      |
++---------------------------+---------------------------------+------------------------+----------------------+
 
 
 
-.. image:: _static/_images/dome_projection/dome_properties_01.png
+.. image:: _static/_images/dome_projection/dome_properties_01.webp
     :width: 500
     :align: center
     :alt: Main Panel
@@ -240,10 +245,109 @@ Scale Dome
         Light studio is not scaled with the dome at the moment
 
 
+.. _rotate_dome:
+
+Rotate Dome
+***************
+
+
+This slider allows you to rotate the dome on its Z axis
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _enable_manually:
+
+Enable Manually
+-----------------
+
+**Features present from HDRi Maker version 3.0.118**
+
+
+If the checkbox **Enable Manually** is activated, the dome can be moved freely in the scene, and will no longer be
+blocked at the origin of the scene axes.
+
+.. image:: _static/_images/dome_projection/enable_manually.webp
+    :align: center
+    :width: 800
+    :alt: Main Panel
+
+|
+
+When the checkbox is active, some properties will be shown
+
+Handler Display Type
+************************
+
+This selector allows you to modify the appearance of the Empty object, that is the Handler that allows you to move the Dome
+
+.. image:: _static/_images/dome_projection/handler_display_type.webp
+    :align: center
+    :width: 400
+    :alt: Main Panel
+
+|
+
+Handler display Size
+*********************
+
+This slider allows you to modify the size of the Empty object, that is the Handler that allows you to move the Dome
+
+.. note::
+        The size of the Handler Display Size does not affect the size of the dome.
+
+
+.. image:: _static/_images/dome_projection/handler_display_size.webp
+    :align: center
+    :width: 800
+    :alt: Main Panel
+
+
+|
+
+Reset Handler
+*************
+
+When you modify the position, rotation, scale, or inclination of the dome, a box with some buttons inside will appear,
+this will allow you to bring the dome back to some key positions.
+
+.. image:: _static/_images/dome_projection/reset_handler.webp
+    :align: center
+    :width: 800
+    :alt: Main Panel
+
+
+|
+
+Tilt
+#######
+
+If the floor of the dome is not perfectly horizontal, the Tilt button will be shown, pressing this button the dome
+will be realigned horizontally
+
+Loc
+#######
+
+If the dome is not at the center of the scene axes (0, 0, 0) the Loc button will be shown, pressing this button the dome
+will be brought back to the center of the scene axes
+
+Rot
+#######
+
+If the rotation on the Z axis of the dome is different from 0, the Rot button will be shown, pressing this button the dome
+will return to the rotation 0 on the Z axis (The X and Y rotations will remain unchanged)
+
+Scale
+#######
+
+If the sum of the scale of the dome is different from 3 (So if the scale is not 1, 1, 1) the Scale button will be shown,
+pressing this button the dome will return to the scale 1, 1, 1 that is the original size of the dome when it was added to the scene
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _dome_hooks:
 
 Dome Hooks
-----------
+-------------
 
 
 ..  |hooks_subpanel| image:: _static/_images/dome_projection/hooks_subpanel_01.png
@@ -258,7 +362,7 @@ Dome Hooks
 |                                           |hooks_subpanel|                                                           |
 +----------------------------------------------------------------------------------------------------------------------+
 
-.. seealso:: Here you can see a video tutorial on how to use the hooks: :ref:`custom_dome_with_hooks`
+.. seealso:: Here you can see a video tutorial on how to use the hooks: :ref:`custom_dome_projection_tutorial`
 
     .. raw:: html
 
