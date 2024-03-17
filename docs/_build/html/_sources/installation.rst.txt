@@ -444,7 +444,7 @@ Now follow the guide here, to install only the addon and not the libraries, if y
 
 --> :ref:`install_into_blender` <--
 
-- If the libraries are not automatically attached, restart Blender!
+- If the libraries are not automatically linked, restart Blender!
 
 
 ------------------------------------------------------------------------------------------------------------------------
