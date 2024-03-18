@@ -40,6 +40,10 @@
 				"5": {
 					"title": "Improvement - Remind me later",
 					"description": "If the addon shows that an update is available in the main panel, now it is possible to hide the message by choosing how long it should not be shown, from a minimum of 1 day to a maximum of 15 days, this is to keep important updates in view, as they will be reported as such in that context"
+				},
+				"6": {
+					"title": "BugFix - Empty Material Slot into the Dome",
+					"description": "It could happen for some error, that an empty material slot was inside the dome objects, so when trying to delete the Background with the Remove button, an error was raised, and made it impossible to delete the dome. This has now been corrected with an exception if there is an empty material slot"
 				}
 			}
 		},
