@@ -1,3 +1,5 @@
+.. _save_editor:
+
 Save
 ====
 

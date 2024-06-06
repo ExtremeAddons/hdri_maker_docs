@@ -191,6 +191,15 @@ No, the projection will never be perfect 100% because the image is without Paral
 of HDR and EXR images, you can safely say that with HDRi Maker you have an easy and innovative system to manage your domes
 I personally think that it is the best you can find (But I am biased and my judgment counts little)
 
+------------------------------------------------------------------------------------------------------------------------
+
+What is the User Library for?
+********************************
+
+The User Library is a library that by default will be empty, it will be a real folder on your computer, and will be
+managed directly by the addon, it is used to save the materials you have created or modified,
+to save a material in the user Library take a look at this section: :ref:`save_editor`
+
 
 
 
