@@ -30,10 +30,10 @@ found in the world node tree, so it is drawn based on the various situations.
 - Example of the simple HDRi Maker Node Tree setup:
 
 
-  .. image:: _static/_images/world/world_node_complete_01.webp
-          :width: 600
-          :align: center
-          :alt: World Node Complete 01
+.. image:: _static/_images/world/world_node_complete_01.webp
+      :width: 600
+      :align: center
+      :alt: World Node Complete 01
 
 
 
