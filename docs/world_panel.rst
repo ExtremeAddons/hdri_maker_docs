@@ -12,7 +12,7 @@ Here below the World Panel is shown as it is usually when a new world is added, 
 
 .. |wp_01| image:: _static/_images/world/world_panel_simple_01.webp
               :width: 400
-              :alt: Tools Category Light Studio
+              :alt: World Panel Simple
 
 +------------------------------+------------------------------------------------------------+
 |  **Example With HDRi Maker Standard Background**                                          |
@@ -33,7 +33,7 @@ found in the world node tree, so it is drawn based on the various situations.
   .. image:: _static/_images/world/world_node_complete_01.webp
           :width: 600
           :align: center
-          :alt: World Node Tree Example Complete
+          :alt: World Node Complete 01
 
 
 
