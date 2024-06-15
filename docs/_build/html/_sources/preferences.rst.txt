@@ -195,32 +195,6 @@ Experimental Options
 
    - **Color Space**
 
-      - Questa opzione "Molto sperimentale" cambia lo spazio del colore delle immagini (Se ce ne sono) HDR usate come sfondo.
-        Di default il color space è "Linear"
-
-   - **Show Creator Utility**
-
-      - Questa opzione è quella che ho usato io (Andrew_D creatore di questo addon) per facilitare la creazione di nuove librerie e materiali/world
-        Una volta attivata, potrai vedere in Shader edito, un nuovo pannello. Questa sezione è davvero "Pericolosa" da usare, potrebbe compromettere
-        il buon funzionamento di HDRi Maker. Se non sai cosa stai facendo, non toccare questa opzione.
-
-   - **Volumetric Detail**
-
-      - Questa opzione ti permette di utilizzare dei preset creati da me, per gestire la qualità dei volumi.
-        Le impostazioni vanno da Very Low a Ultra. Dove very low è la qualità più bassa e Ultra la qualità più alta.
-        Questa opzione è anche disponibile nella sezione qui: :ref:`volumetric_detail`
-
-   - **Shadow Detail**
-
-      - Questa opzione ti permette di utilizzare dei preset creati da me, per gestire la qualità delle ombre.
-        Le impostazioni vanno da Very Low a Ultra. Dove very low è la qualità più bassa e Ultra la qualità più alta.
-        Questa opzione è anche disponibile nella sezione qui: :ref:`eevee_shadow_detail`
-
-
-.. Translate:
-
-   - **Color Space**
-
       - This option "Very experimental" changes the color space of the images (if there are) HDR used as background.
         By default the color space is "Linear"
 
@@ -238,9 +212,13 @@ Experimental Options
 
    - **Shadow Detail**
 
+      .. note:: This option will no longer be visible in Blender 4.2 as it is no longer needed. Into previous versions of Blender,
+                Show Shadow Detail is available.
+
       - This option allows you to use presets created by me, to manage the quality of the shadows.
         The settings range from Very Low to Ultra. Where very low is the lowest quality and Ultra the highest quality.
         This option is also available in the section here: :ref:`eevee_shadow_detail`
+
 
 
 ------------------------------------------------------------------------------------------------------------------------

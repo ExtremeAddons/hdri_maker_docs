@@ -3,6 +3,35 @@
 Updates Log
 ===========
 
+3.0.119
+-------
+
+**Release date: 15-06-2024 (D/M/Y)**
+
+- **Compatibility with Blender 4.2**
+
+    The new extensions/addons system uses a new blender_manifest.toml, which replaces the old bl_info, an update has been made to make HDRi Maker compatible with Blender 4.2 while maintaining retro-compatibility with previous Blender versions
+
+- **Error Fix - On activation of HDRi Maker**
+
+    When you activate the addon, that is, by checking the checkbox to activate it in Blender, an error was produced, as an Essential function, which reattaches the libraries automatically, was executed during the registration of the addon, in the function in it there is the autosave, missing the context, the operator threw an error, this was simply fixed by delaying the execution of the function by 1 second via a bpy.app.timers
+
+- **Fix - Error when deactivate and reactivate the addon preview**
+
+    A function to unregister the texture previews was not executed correctly, if the addon was deactivated and reactivated, an error was shown in the console, this happened because the function was not called, now it is called correctly and the error is no longer present
+
+- **Added - Raytracing activation (Blender 4.2)**
+
+    In Blender 4.2 the use_raytracing property has been added, this property will be activated automatically by adding a Background/ a Dome/ a Shadow Catcher, it will be recognized automatically if the current version of Blender is 4.2, otherwise it will be ignored
+
+- **Added - Hide Wrap Objects**
+
+    A new button has been added to hide the Wrap objects, this is useful because in in Viewport Shading Mode Rendered, the Wrap objects are visible and can be annoying, now you can hide them
+
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.118
 -------
 

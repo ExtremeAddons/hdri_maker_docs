@@ -151,12 +151,13 @@ Shadow Catcher Options
                       :width: 800
                       :alt: Shadow Catcher Options
 
-+------------------------------------+---------------------------------------------------------------------------------+
-| 1. :ref:`film_transparent`         |                                                                                 |
-| 2. :ref:`hide_sc_reflection_plane` |              |sc_p_options|                                                     |
-| 3. :ref:`hide_cycles_plane`        |                                                                                 |
-| 4. :ref:`shadow_details_sc`        |                                                                                 |
-+------------------------------------+---------------------------------------------------------------------------------+
++-------------------------------------+--------------------------------------------------------------------------------+
+| 1. :ref:`film_transparent`          |                                                                                |
+| 2. :ref:`hide_sc_reflection_plane`  |              |sc_p_options|                                                    |
+| 3. :ref:`hide_cycles_plane`         |                                                                                |
+| 4. :ref:`shadow_details_sc` *       |                                                                                |
+|       *(Deprecated in Blender 4.2)  |                                                                                |
++-------------------------------------+--------------------------------------------------------------------------------+
 
 
 .. _film_transparent:
@@ -189,6 +190,9 @@ Hide Cycles Plane
 
 Shadow Details (SC)
 *******************
+
+.. note:: This option is deprecated if you are using Blender 4.2 as the shadows are already of high quality, so if you
+          are using Blender 4.2 you will not see this option, if you are using Blender 4.1 or earlier, you will see this option.
 
 - **Shadow detail** (Only in Eevee) allows you to change between 6 options:
 

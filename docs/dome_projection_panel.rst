@@ -199,7 +199,8 @@ Hide Reflection Plane
     :align: center
     :alt: Main Panel
 
-    The 3d model (Mei Posed 001 - Female Walking Business Model) is licensed CC Attribution, comes from sketchfab, and was made by "Renderpeople" the link here: https://sketchfab.com/3d-model
+    The 3d model (Mei Posed 001 - Female Walking Business Model) is licensed CC Attribution, comes from sketchfab, and
+    was made by "Renderpeople" the link here: https://sketchfab.com/3d-models/mei-posed-001-female-walking-business-model-07f308b81bc045c8917104a72ce2ffe4
 
     .. note::
         The reflection plane follows the scale of the dome, it will always be the right size to adapt to the size
@@ -420,8 +421,8 @@ Hide Hooks
 Hook Size
 *********
 
-    This slider allows you to modify the size of the hooks, in order to make more confortable the work with the hooks.
-    Big Hooks = More visible = More confortable to work with (If necessary)
+    This slider allows you to modify the size of the hooks, in order to make more comfortable the work with the hooks.
+    Big Hooks = More visible = More comfortable to work with (If necessary)
 
 
 .. _expand_hooks:
@@ -472,6 +473,8 @@ Dome Wrap is a very powerful tool that uses Blender modifiers to create real dis
 | 8. :ref:`subdivision_level`       |
 | 9. :ref:`smooth_factor`           |
 | 10. :ref:`smooth_iterations`      |
+| 11. :ref:`move_wrap`              |
+| 12. :ref:`hide_wrap`              |
 +-----------------------------------+
 |          |wrap_submenu|           |
 +-----------------------------------+
@@ -479,7 +482,7 @@ Dome Wrap is a very powerful tool that uses Blender modifiers to create real dis
 
 .. Note::
 
-    Once the wrap has been added to an object, if you intend to scale the dome, no problem, the wraped object(s) will
+    Once the wrap has been added to an object, if you intend to scale the dome, no problem, the wrapped object(s) will
     scale with the dome, so as to always keep the same proportional size to the dome.
 
 ..  figure:: _static/_images/dome_projection/wrap_in_construction_site_01.png
@@ -624,6 +627,27 @@ Smooth Iterations
     This "Spreads" the smooth better, making it more expanded and more homogeneous.
 
 
+.. _move_wrap:
+
+Move Wrap
+***********
+
+    This button allows you to move the wrap object up or down, this allows you to put order to which wrap object should
+    have precedence over the other, only in the case where the wrap objects are more than one
+
+
+.. _hide_wrap:
+
+Hide Wrap
+**********
+
+    This button allows you to hide the wrap objects, in order to work better (If necessary), this allows you to keep the wrap
+    objects in place, so when you want to work with the wrap objects again, just click on this button again to make them reappear.
+
+    This is particularly useful if you want to have a Rendered view in the viewport, as the object will be visible in that mode
+
+
+
 .. _ground_material:
 
 Ground Material
@@ -763,7 +787,7 @@ Dome Color (Node Group)
 
 3. **Exposure Full  (Value)**
 
- - It adjusts the exposure of the entire dome, both the ground and the sky, and also acts as an illuminator
+ - It adjusts the exposure of the entire dome, both the ground and the sky, and also acts as an illumination
 
 4. **Exposure Ground  (Value)**
 

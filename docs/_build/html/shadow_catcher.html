@@ -280,7 +280,11 @@ value of Shadow Strength.</p>
 <li><p><a class="reference internal" href="#film-transparent"><span class="std std-ref">Film Transparent</span></a></p></li>
 <li><p><a class="reference internal" href="#hide-sc-reflection-plane"><span class="std std-ref">Hide SC Reflection Plane</span></a></p></li>
 <li><p><a class="reference internal" href="#hide-cycles-plane"><span class="std std-ref">Hide Cycles Plane</span></a></p></li>
-<li><p><a class="reference internal" href="#shadow-details-sc"><span class="std std-ref">Shadow Details (SC)</span></a></p></li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="#shadow-details-sc"><span class="std std-ref">Shadow Details (SC)</span></a> *</dt><dd><p><a href="#id6"><span class="problematic" id="id7">*</span></a>(Deprecated in Blender 4.2)</p>
+</dd>
+</dl>
+</li>
 </ol>
 </td>
 <td><p><a class="reference internal" href="_images/shadow_catcher_options_01.png"><img alt="Shadow Catcher Options" src="_images/shadow_catcher_options_01.png" style="width: 800px;" /></a></p></td>
@@ -288,20 +292,20 @@ value of Shadow Strength.</p>
 </tbody>
 </table>
 <section id="film-transparent">
-<span id="id6"></span><h3>Film Transparent<a class="headerlink" href="#film-transparent" title="Permalink to this heading"></a></h3>
+<span id="id8"></span><h3>Film Transparent<a class="headerlink" href="#film-transparent" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>As already explained Here <a class="reference internal" href="world_panel.html#transparent-background"><span class="std std-ref">Transparent Background</span></a>, this box, if active, render the background Transparent</p></li>
 </ul>
 </section>
 <section id="hide-sc-reflection-plane">
-<span id="id7"></span><h3>Hide SC Reflection Plane<a class="headerlink" href="#hide-sc-reflection-plane" title="Permalink to this heading"></a></h3>
+<span id="id9"></span><h3>Hide SC Reflection Plane<a class="headerlink" href="#hide-sc-reflection-plane" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>If active, the reflection plane will not be visible in the viewport, the reflection plane is only used for Eevee engine,
 in Cycles the reflection is done by the “Shadow Catcher” node group directly on the object. (It is an Eevee limitation)</p></li>
 </ul>
 </section>
 <section id="hide-cycles-plane">
-<span id="id8"></span><h3>Hide Cycles Plane<a class="headerlink" href="#hide-cycles-plane" title="Permalink to this heading"></a></h3>
+<span id="id10"></span><h3>Hide Cycles Plane<a class="headerlink" href="#hide-cycles-plane" title="Permalink to this heading"></a></h3>
 <ul>
 <li><p>If active, the plane used for Cycles will not be visible in the viewport, the plane is only used for Cycles engine,
 in Eevee the reflection is done by the “Shadow Catcher” node group directly on the object. (It is an Eevee limitation)</p>
@@ -313,7 +317,12 @@ in Eevee the reflection is done by the “Shadow Catcher” node group directly 
 </ul>
 </section>
 <section id="shadow-details-sc">
-<span id="id9"></span><h3>Shadow Details (SC)<a class="headerlink" href="#shadow-details-sc" title="Permalink to this heading"></a></h3>
+<span id="id11"></span><h3>Shadow Details (SC)<a class="headerlink" href="#shadow-details-sc" title="Permalink to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option is deprecated if you are using Blender 4.2 as the shadows are already of high quality, so if you
+are using Blender 4.2 you will not see this option, if you are using Blender 4.1 or earlier, you will see this option.</p>
+</div>
 <ul class="simple">
 <li><p><strong>Shadow detail</strong> (Only in Eevee) allows you to change between 6 options:</p>
 <ul>
