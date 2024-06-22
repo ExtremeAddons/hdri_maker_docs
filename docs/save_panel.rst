@@ -4,6 +4,10 @@ Save
 ====
 
 
+.. warning:: The backgrounds saved with this tool, will be saved in the USER LIBRARY folder, this folder is managed
+                directly by the addon, do not modify the content of this folder manually, the addon may not work correctly.
+
+
 This section of the addon is dedicated to the background saves, the export, and the creation of 360° backgrounds from a scene.
 
 There is also a section to manipulate the user library.

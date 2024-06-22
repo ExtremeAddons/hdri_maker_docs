@@ -200,6 +200,9 @@ The User Library is a library that by default will be empty, it will be a real f
 managed directly by the addon, it is used to save the materials you have created or modified,
 to save a material in the user Library take a look at this section: :ref:`save_editor`
 
+.. warning:: Do not modify the content of this folder manually, the addon may not work correctly.
+
+
 
 
 
