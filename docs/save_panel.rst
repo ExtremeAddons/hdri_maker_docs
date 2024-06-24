@@ -290,3 +290,53 @@ Danger Zone
 
     .. Warning:: The deletion of a category will also delete all the backgrounds contained in it.
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+Redraw Preview
+------------------
+
+All the previews of the backgrounds saved in the user library can be redrawn, to do this just press the "Redraw Preview" button.
+a popup will appear with some options to redraw the previews.
+
+.. image:: _static/_images/save/redraw_preview_button.webp
+  :width: 400
+  :align: center
+  :alt: Redraw Preview Button
+
+
+|
+
+**Popup Panel**
+
+This panel will appear once the above button is pressed
+
+.. image:: _static/_images/save/redraw_preview_popup_panel.webp
+  :width: 600
+  :align: center
+  :alt: Redraw Preview Popup Panel
+
+
+|
+
+
+- **Rotation**
+    This option allows you to rotate the camera, the camera is placed by default in the center of the scene, this option allows you to rotate it.
+    and consequently the background will be framed from another angle. (Press Ok to confirm and redraw the preview)
+
+
+- **Emission**
+    This option allows you to change the emission of the background, the default value is 1, you can increase or decrease it.
+    Questo permette di Schiarire o Scurire il prossimo preview. (Press Ok to confirm and redraw the preview)
+
+- **Saturation**
+    This option allows you to change the saturation of the background, This allows you to increase or decrease the color
+    intensity of the next preview. (Press Ok to confirm and redraw the preview)
+
+- **Camera Lens**
+    This is the camera aperture angle, the lower the angle, the more background portion will be seen, the higher the angle,
+    the more the field of view will be restricted, by default the value is 12mm this is already a very large angle that can capture
+    a very wide portion of the background. (Press Ok to confirm and redraw the preview)
+
+
+
