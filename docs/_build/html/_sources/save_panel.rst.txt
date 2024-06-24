@@ -312,7 +312,7 @@ a popup will appear with some options to redraw the previews.
 This panel will appear once the above button is pressed
 
 .. image:: _static/_images/save/redraw_preview_popup_panel.webp
-  :width: 600
+  :width: 500
   :align: center
   :alt: Redraw Preview Popup Panel
 
