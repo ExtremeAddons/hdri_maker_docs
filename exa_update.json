@@ -10,6 +10,27 @@
 		"description": ""
 	},
 	"updates": {
+				"3.0.120": {
+			"date": "27-06-2024",
+			"name": "HDRi Maker",
+			"edition": "Studio",
+			"url": "",
+			"urgency": true,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Library Previews Error in Blender 4.2",
+					"description": "On Blender 4.2 an error could occur if Extreme PBR was installed (The Extreme PBR libraries were displayed in HDRi Maker), as with the change of Blender 4.2 APIs it created a conflict of names of that property, now it has been definitively fixed."
+				},
+				"2": {
+					"title": "Hdr-Exr Shadow in 'Eevee Next' Blender 4.2",
+					"description": "With the advent of Blender 4.2 now HDR backgrounds produce shadows, before this was not possible, now when you apply an HDR, the shadows will be activated by default using the 'use_sun_shadow' property"
+				}
+			}
+		},
 		"3.0.119": {
 			"date": "15-06-2024",
 			"name": "HDRi Maker",
