@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lights &mdash; HDRi Maker 3.0.114 documentation</title>
+  <title>Lights &mdash; HDRi Maker 3.0.121 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/extreme_addons_blue_32.ico"/>
@@ -65,7 +65,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#sun-menu">Sun Menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sun-menu-legenda">Sun Menu legenda</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sun-menu-eevee-next">Sun Menu (Eevee Next)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#add-sun">Add Sun</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remove-sun">Remove Sun</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sun-height">Sun Height</a></li>
@@ -75,14 +75,24 @@
 <li class="toctree-l3"><a class="reference internal" href="#sun-color">Sun Color</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sun-color-lab">Sun Color Lab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sun-strength">Sun Strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-diffuse">Sun Diffuse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-specular">Sun Specular</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sun-volume">Sun Volume</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sun-angle">Sun Angle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sun-max-bounces">Sun Max Bounces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sun-cast-shadow">Sun Cast Shadow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sun-multiple-importance">Sun Multiple Importance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sun-shadow-caustic">Sun Shadow Caustic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shadow-checkbox">Shadow Checkbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shadow-jitter">Shadow Jitter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shadow-overblur">Shadow Overblur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#filter">Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resolution-limit">Resolution Limit</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#eevee-shadow-detail">Eevee Shadow Detail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sun-menu-cycles">Sun Menu (Cycles)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#use-shadow">Use Shadow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#max-bounces">Max Bounces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiple-importance">Multiple Importance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shadow-caustics">Shadow Caustics</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="shadow_catcher.html">Shadow Catcher</a></li>
@@ -139,20 +149,12 @@ Solar / Studio Light</p>
 <p><strong>Example of basic panel:</strong></p>
 <table class="docutils align-default">
 <tbody>
-<tr class="row-odd"><td><ol class="arabic simple">
-<li><p><a class="reference internal" href="#lamps-menu"><span class="std std-ref">Lamps Menu</span></a></p></li>
-</ol>
-</td>
-<td><ol class="arabic simple" start="2">
-<li><p><a class="reference internal" href="#sun-menu"><span class="std std-ref">Sun Menu</span></a></p></li>
-</ol>
-</td>
-<td><ol class="arabic simple" start="3">
-<li><p><a class="reference internal" href="#eevee-shadow-detail"><span class="std std-ref">Eevee Shadow Detail</span></a></p></li>
+<tr class="row-odd"><td colspan="2"><ol class="arabic simple">
+<li><p><a class="reference internal" href="#lamps-menu"><span class="std std-ref">Lamps Menu</span></a> | 2. <a class="reference internal" href="#sun-menu"><span class="std std-ref">Sun Menu</span></a></p></li>
 </ol>
 </td>
 </tr>
-<tr class="row-even"><td colspan="3"><p><a class="reference internal" href="_images/lights_panel_closed_01.png"><img alt="Lights Panel" src="_images/lights_panel_closed_01.png" style="width: 500px;" /></a></p></td>
+<tr class="row-even"><td colspan="2"><p><a class="reference internal" href="_images/lights_panel_closed_01.webp"><img alt="Lights Panel" src="_images/lights_panel_closed_01.webp" style="width: 500px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -299,8 +301,14 @@ this will allow you to change all the values at once.</p>
 </tbody>
 </table>
 </section>
-<section id="sun-menu-legenda">
-<h2>Sun Menu legenda<a class="headerlink" href="#sun-menu-legenda" title="Permalink to this heading"></a></h2>
+<section id="sun-menu-eevee-next">
+<span id="sun-menu-evee-next"></span><h2>Sun Menu (Eevee Next)<a class="headerlink" href="#sun-menu-eevee-next" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We recommend using HDRi Maker from Blender 4.2 onwards to display the panel in this way, this
+because of the new “Eevee Next” that makes use of Ray Tracing, so these settings below are valid for Hdri Maker
+installed from Blender 4.2 onwards.</p>
+</div>
 <table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td><ul class="simple">
@@ -308,23 +316,27 @@ this will allow you to change all the values at once.</p>
 <li><p>4 <a class="reference internal" href="#sun-rotation"><span class="std std-ref">Sun Rotation</span></a></p></li>
 <li><p>5 <a class="reference internal" href="#sync-sun"><span class="std std-ref">Sync Sun</span></a></p></li>
 <li><p>7 <a class="reference internal" href="#sun-color"><span class="std std-ref">Sun Color</span></a></p></li>
-<li><p>12 <a class="reference internal" href="#sun-cast-shadow"><span class="std std-ref">Sun Cast Shadow</span></a></p></li>
-<li><p>13 <a class="reference internal" href="#sun-multiple-importance"><span class="std std-ref">Sun Multiple Importance</span></a></p></li>
-<li><p>14 <a class="reference internal" href="#sun-shadow-caustic"><span class="std std-ref">Sun Shadow Caustic</span></a></p></li>
+<li><p>10 <a class="reference internal" href="#sun-diffuse"><span class="std std-ref">Sun Diffuse</span></a></p></li>
+<li><p>12 <a class="reference internal" href="#sun-volume"><span class="std std-ref">Sun Volume</span></a></p></li>
+<li><p>14 <a class="reference internal" href="#sun-shadow-checkbox"><span class="std std-ref">Shadow Checkbox</span></a></p></li>
+<li><p>16 <a class="reference internal" href="#sun-shadow-jitter"><span class="std std-ref">Shadow Jitter</span></a></p></li>
+<li><p>18 <a class="reference internal" href="#sun-shadow-resolution-limit"><span class="std std-ref">Resolution Limit</span></a></p></li>
 </ul>
 </td>
 <td><ul class="simple">
 <li><p>2 <a class="reference internal" href="#remove-sun"><span class="std std-ref">Remove Sun</span></a></p></li>
+<li><p>3 <a class="reference internal" href="#sun-height"><span class="std std-ref">Sun Height</span></a></p></li>
 <li><p>6 <a class="reference internal" href="#un-sync-sun"><span class="std std-ref">Un Sync Sun</span></a></p></li>
 <li><p>8 <a class="reference internal" href="#sun-color-lab"><span class="std std-ref">Sun Color Lab</span></a></p></li>
 <li><p>9 <a class="reference internal" href="#sun-strength"><span class="std std-ref">Sun Strength</span></a></p></li>
-<li><p>10 <a class="reference internal" href="#sun-angle"><span class="std std-ref">Sun Angle</span></a></p></li>
-<li><p>11 <a class="reference internal" href="#sun-max-bounces"><span class="std std-ref">Sun Max Bounces</span></a></p></li>
-<li><p>15 <a class="reference internal" href="#eevee-shadow-detail"><span class="std std-ref">Eevee Shadow Detail</span></a></p></li>
+<li><p>11 <a class="reference internal" href="#sun-specular"><span class="std std-ref">Sun Specular</span></a></p></li>
+<li><p>13 <a class="reference internal" href="#sun-angle"><span class="std std-ref">Sun Angle</span></a></p></li>
+<li><p>15 <a class="reference internal" href="#sun-shadow-overblur"><span class="std std-ref">Shadow Overblur</span></a></p></li>
+<li><p>17 <a class="reference internal" href="#sun-shadow-filter"><span class="std std-ref">Filter</span></a></p></li>
 </ul>
 </td>
 </tr>
-<tr class="row-even"><td colspan="2"><p><a class="reference internal" href="_images/light_sun_panel_legenda_01.png"><img alt="Sun Menu Legend" src="_images/light_sun_panel_legenda_01.png" style="width: 400px;" /></a></p></td>
+<tr class="row-even"><td colspan="2"><p><a class="reference internal" href="_images/light_sun_panel_legenda_01.webp"><img alt="Sun Menu Legend" src="_images/light_sun_panel_legenda_01.webp" style="width: 800px;" /></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -385,45 +397,108 @@ the background will rotate accordingly. (Useful if you want to keep the sun cons
 <li><p>This slider allows you to change the strength of the sun.</p></li>
 </ul>
 </section>
+<section id="sun-diffuse">
+<span id="id18"></span><h3>Sun Diffuse<a class="headerlink" href="#sun-diffuse" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Diffuse reflection Multiplier of the sun.</p></li>
+</ul>
+</section>
+<section id="sun-specular">
+<span id="id19"></span><h3>Sun Specular<a class="headerlink" href="#sun-specular" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Specular reflection Multiplier of the sun.</p></li>
+</ul>
+</section>
+<section id="sun-volume">
+<span id="id20"></span><h3>Sun Volume<a class="headerlink" href="#sun-volume" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Volume light multiplier of the sun.</p></li>
+</ul>
+</section>
 <section id="sun-angle">
-<span id="id18"></span><h3>Sun Angle<a class="headerlink" href="#sun-angle" title="Permalink to this heading"></a></h3>
+<span id="id21"></span><h3>Sun Angle<a class="headerlink" href="#sun-angle" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Angular diameter of the sun, as seen from the earth.</p></li>
 </ul>
 </section>
-<section id="sun-max-bounces">
-<span id="id19"></span><h3>Sun Max Bounces<a class="headerlink" href="#sun-max-bounces" title="Permalink to this heading"></a></h3>
+<section id="shadow-checkbox">
+<span id="sun-shadow-checkbox"></span><h3>Shadow Checkbox<a class="headerlink" href="#shadow-checkbox" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Maximum number of times light from the light is allowed to Bounce. Limited by scene-wide bounce settings.</p></li>
+<li><p>This checkbox allows you to enable or disable the shadow generated by the sun.</p></li>
 </ul>
 </section>
-<section id="sun-cast-shadow">
-<span id="id20"></span><h3>Sun Cast Shadow<a class="headerlink" href="#sun-cast-shadow" title="Permalink to this heading"></a></h3>
+<section id="shadow-jitter">
+<span id="sun-shadow-jitter"></span><h3>Shadow Jitter<a class="headerlink" href="#shadow-jitter" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Light casts shadows</p></li>
+<li><p>This checkbox allows you to enable Jittered soft shadows to increase shadow precision. (High performance cost)</p></li>
 </ul>
 </section>
-<section id="sun-multiple-importance">
-<span id="id21"></span><h3>Sun Multiple Importance<a class="headerlink" href="#sun-multiple-importance" title="Permalink to this heading"></a></h3>
+<section id="shadow-overblur">
+<span id="sun-shadow-overblur"></span><h3>Shadow Overblur<a class="headerlink" href="#shadow-overblur" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>By default lights use only direct light sampling. For area lights and sharp glossy reflections, however, this can be noisy, and enabling this option will enable indirect light sampling to be used in addition to reduce noise.</p></li>
+<li><p>Apply shadow tracing to each jittered sample to reduce under-sampling artifacts</p></li>
 </ul>
 </section>
-<section id="sun-shadow-caustic">
-<span id="id22"></span><h3>Sun Shadow Caustic<a class="headerlink" href="#sun-shadow-caustic" title="Permalink to this heading"></a></h3>
+<section id="filter">
+<span id="sun-shadow-filter"></span><h3>Filter<a class="headerlink" href="#filter" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Mark a light as a refractive caustic caster. This setting can be used in conjunction with the Cast and Receive caustics object settings to selectively speed up refractive caustic rendering of select objects.</p></li>
+<li><p>Blur shadow aliasing using Percentage Closer Filtering</p></li>
+</ul>
+</section>
+<section id="resolution-limit">
+<span id="sun-shadow-resolution-limit"></span><h3>Resolution Limit<a class="headerlink" href="#resolution-limit" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Minimum size of a shadow map pixel. Higher values use less memory at the cost of shadow quality.</p></li>
 </ul>
 </section>
 </section>
-<section id="eevee-shadow-detail">
-<span id="id23"></span><h2>Eevee Shadow Detail<a class="headerlink" href="#eevee-shadow-detail" title="Permalink to this heading"></a></h2>
-<p>This is a selector of Eevee shadow detail level. I compiled in it some presets that automatically modify the settings
-of the Eevee shadow detail level (Only works with Eevee)</p>
-<p>Enum In (Very Low, Low, Default, High, Very High, Ultra)</p>
-<p>The level of detail greatly affects the performance of Eevee, so it is necessary to choose carefully the level of detail,
-it can be changed at any time.</p>
-<a class="reference internal image-reference" href="_images/eevee_shadow_detail_enum_01.png"><img alt="Shadow Detail Enum" class="align-center" src="_images/eevee_shadow_detail_enum_01.png" style="width: 250px;" /></a>
+<hr class="docutils" />
+<section id="sun-menu-cycles">
+<h2>Sun Menu (Cycles)<a class="headerlink" href="#sun-menu-cycles" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td colspan="2"><ul class="simple">
+<li><p>R: Same Eevee settings: <a class="reference internal" href="#sun-menu-evee-next"><span class="std std-ref">Sun Menu (Eevee Next)</span></a></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>1 <a class="reference internal" href="#cycles-sun-use-shadow"><span class="std std-ref">Use Shadow</span></a></p></li>
+<li><p>3 <a class="reference internal" href="#cycles-shadow-caustics"><span class="std std-ref">Shadow Caustics</span></a></p></li>
+</ul>
+</td>
+<td><p>2 - <a class="reference internal" href="#cycles-sun-max-bounces"><span class="std std-ref">Max Bounces</span></a></p>
+<p>4 - <a class="reference internal" href="#cycles-sun-multiple-importance"><span class="std std-ref">Multiple Importance</span></a></p>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><a class="reference internal" href="_images/light_sun_panel_legenda_cycles_01.webp"><img alt="Sun Menu Legend" src="_images/light_sun_panel_legenda_cycles_01.webp" style="width: 800px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="use-shadow">
+<span id="cycles-sun-use-shadow"></span><h3>Use Shadow<a class="headerlink" href="#use-shadow" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>This checkbox allows you to enable or disable the shadow generated by the sun.</p></li>
+</ul>
+</section>
+<section id="max-bounces">
+<span id="cycles-sun-max-bounces"></span><h3>Max Bounces<a class="headerlink" href="#max-bounces" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Maximum number of bounces for the sun light to contribute to the render.</p></li>
+</ul>
+</section>
+<section id="multiple-importance">
+<span id="cycles-sun-multiple-importance"></span><h3>Multiple Importance<a class="headerlink" href="#multiple-importance" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Use multiple importance sampling for the light reduces noise for area lights and sharp glossy materials</p></li>
+</ul>
+</section>
+<section id="shadow-caustics">
+<span id="cycles-shadow-caustics"></span><h3>Shadow Caustics<a class="headerlink" href="#shadow-caustics" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Generate approximate caustics in shadow of relative surfaces. Light, caster and receiver must have caustic enabled</p></li>
+</ul>
+</section>
 </section>
 </section>
 

@@ -9,15 +9,15 @@ Solar / Studio Light
 **Example of basic panel:**
 
 
-.. |lights_panel| image:: _static/_images/lights/lights_panel_closed_01.png
+.. |lights_panel| image:: _static/_images/lights/lights_panel_closed_01.webp
                     :width: 500
                     :alt: Lights Panel
 
-+----------------------+---------------------+--------------------------------+
-| 1. :ref:`lamps_menu` | 2. :ref:`sun_menu`  | 3. :ref:`eevee_shadow_detail`  |
-+----------------------+---------------------+--------------------------------+
-|                          |lights_panel|                                     |
-+----------------------+---------------------+--------------------------------+
++----------------------+---------------------+
+| 1. :ref:`lamps_menu` | 2. :ref:`sun_menu`  |
++--------------------------------------------+
+|               |lights_panel|               |
++----------------------+---------------------+
 
 
 
@@ -183,30 +183,37 @@ Sun Menu
 +-----------------------------------------------+-----------------------------------------------+
 
 
-Sun Menu legenda
-----------------
+.. _sun_menu_evee_next:
+
+Sun Menu (Eevee Next)
+----------------------
+
+.. note::
+    We recommend using HDRi Maker from Blender 4.2 onwards to display the panel in this way, this
+    because of the new "Eevee Next" that makes use of Ray Tracing, so these settings below are valid for Hdri Maker
+    installed from Blender 4.2 onwards.
 
 
-.. |light_sun_legenda| image:: _static/_images/lights/light_sun_panel_legenda_01.png
-    :width: 400
+.. |light_sun_legenda_eevee| image:: _static/_images/lights/light_sun_panel_legenda_01.webp
+    :width: 800
     :alt: Sun Menu Legend
 
-+-------------------------------------+-------------------------------------+
-| - 1 :ref:`add_sun`                  | - 2 :ref:`remove_sun`               |
-|                                     |                                     |
-| - 4 :ref:`sun_rotation`             |                                     |
-|                                     | - 6 :ref:`un_sync_sun`              |
-| - 5 :ref:`sync_sun`                 | - 8 :ref:`sun_color_lab`            |
-| - 7 :ref:`sun_color`                | - 9 :ref:`sun_strength`             |
-|                                     | - 10 :ref:`sun_angle`               |
-|                                     | - 11 :ref:`sun_max_bounces`         |
-| - 12 :ref:`sun_cast_shadow`         |                                     |
-| - 13 :ref:`sun_multiple_importance` |                                     |
-| - 14 :ref:`sun_shadow_caustic`      |                                     |
-|                                     | - 15 :ref:`eevee_shadow_detail`     |
-+-------------------------------------+-------------------------------------+
-|  |light_sun_legenda|                                                      |
-+-------------------------------------+-------------------------------------+
++-----------------------------------------+-------------------------------------+
+| - 1 :ref:`add_sun`                      |                                     |
+|                                         | - 2 :ref:`remove_sun`               |
+| - 4 :ref:`sun_rotation`                 | - 3 :ref:`sun_height`               |
+| - 5 :ref:`sync_sun`                     | - 6 :ref:`un_sync_sun`              |
+| - 7 :ref:`sun_color`                    | - 8 :ref:`sun_color_lab`            |
+| - 10 :ref:`sun_diffuse`                 | - 9 :ref:`sun_strength`             |
+|                                         | - 11 :ref:`sun_specular`            |
+| - 12 :ref:`sun_volume`                  |                                     |
+|                                         | - 13 :ref:`sun_angle`               |
+| - 14 :ref:`sun_shadow_checkbox`         | - 15 :ref:`sun_shadow_overblur`     |
+| - 16 :ref:`sun_shadow_jitter`           | - 17 :ref:`sun_shadow_filter`       |
+| - 18 :ref:`sun_shadow_resolution_limit` |                                     |
++-----------------------------------------+-------------------------------------+
+|  |light_sun_legenda_eevee|                                                    |
++-----------------------------------------+-------------------------------------+
 
 
 .. _add_sun:
@@ -275,6 +282,32 @@ Sun Strength
 
 - This slider allows you to change the strength of the sun.
 
+
+.. _sun_diffuse:
+
+Sun Diffuse
+***********
+
+- Diffuse reflection Multiplier of the sun.
+
+
+.. _sun_specular:
+
+Sun Specular
+*************
+
+- Specular reflection Multiplier of the sun.
+
+
+
+.. _sun_volume:
+
+Sun Volume
+**********
+
+- Volume light multiplier of the sun.
+
+
 .. _sun_angle:
 
 Sun Angle
@@ -282,63 +315,108 @@ Sun Angle
 
 - Angular diameter of the sun, as seen from the earth.
 
-.. _sun_max_bounces:
-
-Sun Max Bounces
-***************
-
-- Maximum number of times light from the light is allowed to Bounce. Limited by scene-wide bounce settings.
 
 
-.. _sun_cast_shadow:
+.. _sun_shadow_checkbox:
 
-Sun Cast Shadow
-***************
+Shadow Checkbox
+**********************
 
-- Light casts shadows
-
-.. _sun_multiple_importance:
-
-Sun Multiple Importance
-***********************
-
-- By default lights use only direct light sampling. For area lights and sharp glossy reflections, however, this can be noisy, and enabling this option will enable indirect light sampling to be used in addition to reduce noise.
+- This checkbox allows you to enable or disable the shadow generated by the sun.
 
 
 
-.. _sun_shadow_caustic:
+.. _sun_shadow_jitter:
 
-Sun Shadow Caustic
+Shadow Jitter
+****************
+
+- This checkbox allows you to enable Jittered soft shadows to increase shadow precision. (High performance cost)
+
+
+
+.. _sun_shadow_overblur:
+
+Shadow Overblur
 ******************
 
-- Mark a light as a refractive caustic caster. This setting can be used in conjunction with the Cast and Receive caustics object settings to selectively speed up refractive caustic rendering of select objects.
+- Apply shadow tracing to each jittered sample to reduce under-sampling artifacts
+
+
+
+.. _sun_shadow_filter:
+
+Filter
+***************
+
+- Blur shadow aliasing using Percentage Closer Filtering
+
+
+
+.. _sun_shadow_resolution_limit:
+
+Resolution Limit
+******************
+
+- Minimum size of a shadow map pixel. Higher values use less memory at the cost of shadow quality.
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+Sun Menu (Cycles)
+--------------------
+
+
+.. |light_sun_legenda_cycles| image:: _static/_images/lights/light_sun_panel_legenda_cycles_01.webp
+    :width: 800
+    :alt: Sun Menu Legend
+
+
++-------------------------------------------------------------------------------------------------+
+| - R: Same Eevee settings: :ref:`sun_menu_evee_next`                                             |
++-----------------------------------------------------+-------------------------------------------+
+| - 1 :ref:`cycles_sun_use_shadow`                    | 2 - :ref:`cycles_sun_max_bounces`         |
+| - 3 :ref:`cycles_shadow_caustics`                   |                                           |
+|                                                     | 4 - :ref:`cycles_sun_multiple_importance` |
++-----------------------------------------------------+-------------------------------------------+
+| |light_sun_legenda_cycles|                                                                      |
++-------------------------------------------------------------------------------------------------+
 
 
 
 
+.. _cycles_sun_use_shadow:
 
-.. _eevee_shadow_detail:
+Use Shadow
+***********
 
-Eevee Shadow Detail
--------------------
-
-This is a selector of Eevee shadow detail level. I compiled in it some presets that automatically modify the settings
-of the Eevee shadow detail level (Only works with Eevee)
-
-Enum In (Very Low, Low, Default, High, Very High, Ultra)
-
-The level of detail greatly affects the performance of Eevee, so it is necessary to choose carefully the level of detail,
-it can be changed at any time.
-
-.. image:: _static/_images/lights/eevee_shadow_detail_enum_01.png
-    :width: 250
-    :align: center
-    :alt: Shadow Detail Enum
+- This checkbox allows you to enable or disable the shadow generated by the sun.
 
 
 
+.. _cycles_sun_max_bounces:
+
+Max Bounces
+*************
+
+- Maximum number of bounces for the sun light to contribute to the render.
 
 
 
+.. _cycles_sun_multiple_importance:
+
+Multiple Importance
+*********************
+
+- Use multiple importance sampling for the light reduces noise for area lights and sharp glossy materials
 
 
+.. _cycles_shadow_caustics:
+
+Shadow Caustics
+*****************
+
+- Generate approximate caustics in shadow of relative surfaces. Light, caster and receiver must have caustic enabled

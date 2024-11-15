@@ -10,7 +10,40 @@
 		"description": ""
 	},
 	"updates": {
-				"3.0.120": {
+		"3.0.121": {
+			"date": "15-11-2024",
+			"name": "HDRi Maker",
+			"edition": "Studio",
+			"url": "",
+			"urgency": true,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Blender 4.3 Support - No Module Named toml",
+					"description": "The Python module 'toml' is no longer included in Blender 4.3, it has been replaced by the tomllib module, this module is used to read the blender_manifest.toml file."
+				},
+				"2": {
+					"title": "Blender 4.3 Support - Some APIs have changed",
+					"description": "Some APIs have changed in Blender 4.3, this has caused some errors in the addon, now everything has been fixed, and the addon is fully compatible with Blender 4.3 and previous versions of Blender"
+				},
+				"3": {
+					"title": "Debug admin problem",
+					"description": "Some users reported having the Hdri Maker preference property 'debug' enabled, this showed an 'HDRi Maker Admin Panel' , it was not a bug, but we were unable to identify what could activate the addon preferences on admin==True, so this mode is now managed by the checkbox 'Show creator utility' already present in the options of HDRi Maker"
+				},
+				"4": {
+					"title": "BugFix - Use Shadow (Cycles)",
+					"description": "Starting from Blender 4.2 the 'Use Shadow' checkbox no longer worked returning an error in the console, this because the declared property was incorrect (sun.data.cycles.use_shadow) now it has been corrected to (sun.data.use_shadow) and works correctly"
+				},
+				"5": {
+					"title": "BugFix - Update Message",
+					"description": "After updating the addon to the latest version, the message informing of an available update was not hidden, it was possible to hide it only after pressing the 'Check addon update' button from the HDRi Maker preferences menu. This has been fixed by adding the call to the Blender startup to the function that compares the installed version with the newer one available"
+				}
+			}
+		},
+		"3.0.120": {
 			"date": "27-06-2024",
 			"name": "HDRi Maker",
 			"edition": "Studio",

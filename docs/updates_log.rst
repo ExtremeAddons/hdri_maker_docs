@@ -3,6 +3,35 @@
 Updates Log
 ===========
 
+3.0.121
+-------
+
+**Release date: 15-11-2024 (D/M/Y)**
+
+- **Blender 4.3 Support - No Module Named toml**
+
+    The Python module 'toml' is no longer included in Blender 4.3, it has been replaced by the tomllib module, this module is used to read the blender_manifest.toml file.
+
+- **Blender 4.3 Support - Some APIs have changed**
+
+    Some APIs have changed in Blender 4.3, this has caused some errors in the addon, now everything has been fixed, and the addon is fully compatible with Blender 4.3 and previous versions of Blender
+
+- **Debug admin problem**
+
+    Some users reported having the Hdri Maker preference property 'debug' enabled, this showed an 'HDRi Maker Admin Panel' , it was not a bug, but we were unable to identify what could activate the addon preferences on admin==True, so this mode is now managed by the checkbox 'Show creator utility' already present in the options of HDRi Maker
+
+- **BugFix - Use Shadow (Cycles)**
+
+    Starting from Blender 4.2 the 'Use Shadow' checkbox no longer worked returning an error in the console, this because the declared property was incorrect (sun.data.cycles.use_shadow) now it has been corrected to (sun.data.use_shadow) and works correctly
+
+- **BugFix - Update Message**
+
+    After updating the addon to the latest version, the message informing of an available update was not hidden, it was possible to hide it only after pressing the 'Check addon update' button from the HDRi Maker preferences menu. This has been fixed by adding the call to the Blender startup to the function that compares the installed version with the newer one available
+
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.120
 -------
 
