@@ -14,7 +14,7 @@ Example python code:
     import os
 
 
-    default_lib_path = "\\EXTREME_PBR_DEFAULT_LIB" # Path to your folder, you need to get your full path, this is only an example path
+    default_lib_path = "\\HDRI_MAKER_DEFAULT_LIB" # Path to your folder, you need to get your full path, this is only an example path
 
     for root, dirs, files in os.walk(default_lib_path):
         for fn in files:

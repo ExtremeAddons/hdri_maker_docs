@@ -10,6 +10,159 @@
 		"description": ""
 	},
 	"updates": {
+		"3.1.100": {
+			"date": "xx-xx-2024",
+			"name": "HDRi Maker",
+			"edition": "Studio",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Important!",
+					"description": "Make sure after updating the addon to download and install the package available on the store called 'Custom Default Domes.exapack' these are the new Custom Domes"
+				},
+				"2": {
+					"title": "Change - Ground Material Name",
+					"description": "Ground Material becomes 'Environment Material', this to better identify the the material"
+				},
+				"3": {
+					"title": "New Feature - Ground Material List",
+					"description:": "Given the new update focused on custom domes, it has now become necessary to display the list of objects to which the projection material is applied in a classic Blender UI list, in order to make the interface as compact as possible"
+				},
+				"4": {
+					"title": "New Hot Feature - Pin Projection",
+					"description": "The 'Ground Material' can now be Pinned, so that once done, the projection will remain still even when moving the object in question"
+				},
+				"5": {
+					"title": "New Hot Feature - Make Env Material Independent",
+					"description": "This new feature allows you to make the Environment material applied to the object independent in terms of some properties such as 'Specular', 'Roughness', 'Metallic', etc. so that you can set independently from the 'Dome Color' such parameters. This is useful for example if there are objects that you want to make Reflective or Metallic, this will not affect other Environment objects or the dome"
+				},
+				"6": {
+					"title": "New Hot Feature - Save Dome",
+					"description": "Added the possibility to save the dome created or modified, in addition to the dome, all the objects related to it will be saved, such as ['Wrap', 'Ground Material (Now called 'Environment')', 'Hooks'] positions and rotations, it will be possible to rename or delete the saved domes"
+				},
+				"7": {
+					"title": "New Feature - Smart Apply Environment Material",
+					"description": "When the environment material is applied, it is now checked if the origin of the object axes is greater than 0.1 of the Z axis of the Global axes, if it is above this object will automatically assume the value Material Type == 'Top', otherwise 'GROUND'"
+				},
+				"8": {
+					"title": "New Feature - Skip Boundary",
+					"description": "The slider that adjusts the Boundary of the Dome Material or Environment Material, can now be disabled via this button. This is useful when working on environment objects, to eliminate any distortions. NOTE: This new parameter will be activated automatically by adding the Cube-Cylinder type Dome and will be disabled for the other types of domes"
+				},
+				"9": {
+					"title": "New Feature - Tilt X and Y (Rotation)",
+					"description": "Some users pointed out to me that some of their personal images do not have a perfectly level horizon, so they needed to be able to rotate the X and Y axis of the World and the Dome, so the properties have also been integrated to adjust the inclination"
+				},
+				"10": {
+					"title": "Added - Find Source",
+					"description": "Added a button to search for which library the hdr applied to the scene comes from, this will set the library preview in case the hdr file comes from a library connected to HDRi Maker, in case the file comes from a position on disk the folder containing the file will be opened"
+				},
+				"11": {
+					"title": "Added - Find Library Source",
+					"description": "In the addon preferences under the 'Libraries' tab to the left of each installed library there is now a button that if pressed opens the folder where the context library is installed"
+				},
+				"12": {
+					"title": "Added - Hide Environment Objects and Wrap Objects",
+					"description": "In the 'Properties' submenu of the 'DOME' panel, buttons are now available to respectively hide the Environment (The Old 'Ground objects') and Wrap Objects, this allows you to work better when creating custom domes"
+				},
+				"13": {
+					"title": "Improve - Add Environment Material on multiple objects",
+					"description": "Now you can add the Environment material to multiple objects at the same time"
+				},
+				"14": {
+					"title": "Improve - Select Object Button",
+					"description": "The buttons to select the Wrap objects and the objects on which the Dome material was applied, had a button to select them, the icon was the vector, now this button also performs the 'Hide Select' function by pressing it 2 times in this case the icon takes on the role of Hide Select just like in the Blender outliner. To make the object selectable again, just press it again."
+				},
+				"15": {
+					"title": "Improve - Remove Dome Parts",
+					"description": "Now when you remove the dome or the background, if the dome is present, objects to which the Environment material and Wrap objects were applied, will now also be removed, as they are part of the dome."
+				},
+				"16": {
+					"title": "Improve - Purge images-node groups etc...",
+					"description": "Every time you change a background, load a dome, remove background-dome, the management of unnecessary data is handled much better than the previous version, this to avoid duplicates of names with .001 .002 etc... and an excess of memory usage."
+				},
+				"17": {
+					"title": "Improve - Dome Material Duplicate",
+					"description": "In the case where the 'Remove' button is used from the main panel, if a Dome is present, the material applied to it remained in the data, Now it is removed. In addition, now when a dome is added, it is checked if the material is already present in the data materials, avoiding creating duplicates named with .001, .002, etc."
+				},
+				"18": {
+					"title": "Improve - Sync Environment rotation buttons",
+					"description": "Before this update these buttons were 2, one to synchronize, and the other to remove the synchronization of the rotation between the Environment of the dome and that of the World. Now it has been replaced by a single Boolean button"
+				},
+				"19": {
+					"title": "Improve - Environment Material (Remove Problem)",
+					"description": "If for some reason the material is removed manually from the object, the object still appeared to be projected, now instead, a red button will be shown, indicating that the material is not on the object, pressing the button, it will be applied again."
+				},
+				"20": {
+					"title": "Improve - Enumerate Library",
+					"description": "The library enumeration system is now more faster, the function has been improved"
+				},
+				"21": {
+					"title": "Improve - Find Lost Images Update into all installed libraries",
+					"description": "The 'Find Lost images' button in the addon options, if now the 'Shift' key is kept pressed, the search will be performed on all installed libraries and will not open the file browser for manual selection of the path"
+				},
+				"22": {
+					"title": "Improve - Find Lost Images Update the render mode",
+					"description": "The 'Find Lost Images' button in the addon options once pressed, it could happen that if blender was in render mode and the image was found, the background continued to be 'Pink', this because the only way seems to bring the shading type back to 'Material Preview', this could cause confusion, as it seemed that the background image was not found, in reality it was just an interface update problem that seems to work only by setting from 'Render' to 'Material Preview'"
+				},
+				"23": {
+					"title": "Improve - Dome Display Wire",
+					"description": "The 'Display Wire' property if there are objects to which the environment material is applied, they will also be displayed in wireframe in addition to the dome"
+				},
+				"24": {
+					"title": "Improve - Apply Environment Material",
+					"description": "In previous versions, if you tried to add the Dome material to an object where materials other than Dome were present, you would get a message that warned of the situation and blocked the operation (For security reasons) now instead, a popup with a message will always be displayed, but if you want to proceed, just press 'OK' from the popup, the operator will remove all the materials from the selected object and apply the Environment material"
+				},
+				"25": {
+					"title": "Improve - Show Helps",
+					"description": "In the previous versions of the 3.x series, the buttons (?) with the question mark were shown in each panel, now you can decide whether to hide them by deactivating the checkbox, accessing from the HELPS button of the main panel or from the addon preferences"
+				},
+				"26": {
+					"title": "Improve - Add Hooks",
+					"description": "Previously if there were already hooks in the dome, and the 'Add Hooks' button was pressed, the hooks were reset to the default position. Now a message will be launched that warns that the Hooks are already present, so the positions of the Hooks will no longer be reset"
+				},
+				"27": {
+					"title": "Bug Fix - Material Selector in Edit Mode",
+					"description": "If you were in the object's Edit Mode and changed the state from Ground to Sky or vice versa, the operation failed. Now it has been fixed."
+				},
+				"28": {
+					"title": "Retro-compatibility - Old Dome HDRi Maker 2.0",
+					"description": "If you opened a scene in which a dome of HDRi Maker 2.0 was present, it was not possible to remove it, and if you changed the background to the scene, the dome did not change image. Now it is possible to apply the image to the old dome in the scene, and by pressing 'Add Dome' the old dome will disappear in favor of the new one."
+				},
+				"29": {
+					"title": "Deprecated support for Blender versions prior to 3.6",
+					"description": "Support for Blender versions prior to 3.6 is deprecated, so if you try to install this version of HDRi Maker on Blender 3.5 or earlier, it will not work. We are also trying to maintain consistency with the Blender LTS system, of which version 3.6, today, is an LTS release still supported"
+				},
+				"30": {
+					"title": "BugFix - Error when pressing the buttons in the material properties Only in Blender 3.6",
+					"description": "An error occurred when pressing the buttons in the World and Dome material properties, this prevented correct operation in Blender 3.6 but not in later versions"
+				},
+				"31": {
+					"title": "BugFix - Remove Ground Material",
+					"description": "If on the object to which the ground material was added there is an empty material slot, when the button to remove the ground material was pressed, an error was obtained. This has been corrected by putting an exception"
+				},
+				"32": {
+					"title": "BugFix - Projection Object",
+					"description": "In the list of objects on which the material is projected, it could happen that by deleting the object from the scene, the object was still present in the list. Now if the object is deleted from the scene, but is still present in the data, it will no longer be shown in the list"
+				},
+				"33": {
+					"title": "BugFix - Remove Projection Material Empty Slot",
+					"description": "It could happen, and we are not yet clear about the reason, that by removing the Material for the projection on the object, an empty material slot remained that could not be removed even with the Blender buttons. This has been fixed by applying an API"
+				},
+				"34": {
+					"title": "BugFix - Remove Projection Material",
+					"description": "When you pressed 'Remove Dome', the materials for the projection on the objects remained applied. This should not happen, so now when you press 'Remove Dome', the Environment material is removed from all the objects in the scene on which it was applied"
+				},
+				"35": {
+					"title": "BigFix - Unused Drivers",
+					"description": "In the Blender console an error was displayed about the drivers, this happened because 2 drivers were added both on the World and on the Dome Material even in the absence of the object that controls them, that is the sun handler, This now no longer happens. In addition, in some versions of HDRi Maker the World had a 'prop' driver in bpy.data.materials, this has been removed. Note: If you open a project in which a Dome and a World created previously with HDRi Maker are present, this version needs to update the materials, so a button will appear, pressing this button will also fix the invalid drivers"
+				}
+			}
+		},
 		"3.0.121": {
 			"date": "15-11-2024",
 			"name": "HDRi Maker",
@@ -334,7 +487,7 @@
 				},
 				"2": {
 					"title": "Added - Convert World to HDRi Maker World",
-					"description": "Now if the World is not of type HDRi Maker, the usual menu appears in the HDRi Maker World panel, with a button called TRY TO CONVERT, this operator, attempts to convert any World to an HDRi Maker Wordl. This will only work if there is an HDR/EXR File in the World. This for obvious reasons, first of all, will allow you to use some functions present only if the group nodes are recognized by HDRi maker."
+					"description": "Now if the World is not of type HDRi Maker, the usual menu appears in the HDRi Maker World panel, with a button called TRY TO CONVERT, this operator, attempts to convert any World to an HDRi Maker World. This will only work if there is an HDR/EXR File in the World. This for obvious reasons, first of all, will allow you to use some functions present only if the group nodes are recognized by HDRi maker."
 				},
 				"3": {
 					"title": "Added - Reload Dome Image",
@@ -354,7 +507,7 @@
 			"descriptions": {
 				"1": {
 					"title": "Bugfix - Pose Mode Bug",
-					"description": "If in Pose Mode, trying to add Backgrouns-Dome-Lamps, an error occurred. This has now been fixed, if you are in pose mode and do one of the above operations, the object goes back to Edit Mode, and the script executes correctly."
+					"description": "If in Pose Mode, trying to add Backgrounds-Dome-Lamps, an error occurred. This has now been fixed, if you are in pose mode and do one of the above operations, the object goes back to Edit Mode, and the script executes correctly."
 				},
 				"2": {
 					"title": "New feature - Dome Rotation",
@@ -381,7 +534,7 @@
 			],
 			"descriptions": {
 				"1": {
-					"title": "Bugfix - Retrocompatibility Dome Material",
+					"title": "Bugfix - Retro-compatibility Dome Material",
 					"description": "Dome material was reflective on Blender versions 3.0 to 3.3 (Not on 3.4) Fixed issue, it was the Mix nodes that didn't have proper input and black was grayed out, causing reflection to always be on, and also the metallic. Now everything should work from Blender 3.0 and up. Previous versions have been abandoned, as they are now obsolete. a positive note for the support of Blender 3.3 which is an LTS release, so it is necessary to make HDRi Maker workable on it."
 				}
 			}

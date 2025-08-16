@@ -14,6 +14,12 @@ you can find it at this link: https://sketchfab.com/3d-models/lightning-mage-fre
 .. Important:: In Eevee the shadow catcher need a light source to work because the background in Eevee does not produce shadows
                unlike Cycles.
 
+
+
+.. Tip::
+    If you are inside a Dome, this tool is not necessary as the Dome already has a built-in shadow catcher area.
+
+
 The shadow catcher in HDRi Maker works also in Eevee as well as in Cycles.
 This tool is used to create shadows and reflections of objects in the scene on an Invisible plane.
 This technique is very suitable when you want an image with a transparent background, in order to apply another background
@@ -37,7 +43,9 @@ in post-production, keeping the original shadows and reflections.
 +------------------------------------+------------------------------------+
 
 
-.. Tip::
+.. admonition:: Video Tutorial
+    :class: youtube
+
     You can find a video tutorial here: :ref:`shadow_catcher_tutorial`
 
 

@@ -44,6 +44,10 @@ html_theme_path = ["_themes", ]
 
 html_static_path = ['_static']
 
+html_css_files = [
+    'css/custom.css',
+                  ]
+
 html_favicon = "extreme_addons_blue_32.ico"
 
 # html_logo = os.path.join(html_static_path[0], "_images", "logos", "exa_logo_orange_512.png")

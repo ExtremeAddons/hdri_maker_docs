@@ -291,7 +291,7 @@ Updates Log
 
 - **Added - Convert World to HDRi Maker World**
 
-    Now if the World is not of type HDRi Maker, the usual menu appears in the HDRi Maker World panel, with a button called TRY TO CONVERT, this operator, attempts to convert any World to an HDRi Maker Wordl. This will only work if there is an HDR/EXR File in the World. This for obvious reasons, first of all, will allow you to use some functions present only if the group nodes are recognized by HDRi maker.
+    Now if the World is not of type HDRi Maker, the usual menu appears in the HDRi Maker World panel, with a button called TRY TO CONVERT, this operator, attempts to convert any World to an HDRi Maker World. This will only work if there is an HDR/EXR File in the World. This for obvious reasons, first of all, will allow you to use some functions present only if the group nodes are recognized by HDRi maker.
 
 - **Added - Reload Dome Image**
 
@@ -308,7 +308,7 @@ Updates Log
 
 - **Bugfix - Pose Mode Bug**
 
-    If in Pose Mode, trying to add Backgrouns-Dome-Lamps, an error occurred. This has now been fixed, if you are in pose mode and do one of the above operations, the object goes back to Edit Mode, and the script executes correctly.
+    If in Pose Mode, trying to add Backgrounds-Dome-Lamps, an error occurred. This has now been fixed, if you are in pose mode and do one of the above operations, the object goes back to Edit Mode, and the script executes correctly.
 
 - **New feature - Dome Rotation**
 
@@ -331,7 +331,7 @@ Updates Log
 
 **Release date: 03-03-2023 (D/M/Y)**
 
-- **Bugfix - Retrocompatibility Dome Material**
+- **Bugfix - Retro-compatibility Dome Material**
 
     Dome material was reflective on Blender versions 3.0 to 3.3 (Not on 3.4) Fixed issue, it was the Mix nodes that didn't have proper input and black was grayed out, causing reflection to always be on, and also the metallic. Now everything should work from Blender 3.0 and up. Previous versions have been abandoned, as they are now obsolete. a positive note for the support of Blender 3.3 which is an LTS release, so it is necessary to make HDRi Maker workable on it.
 
