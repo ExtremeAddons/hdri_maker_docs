@@ -69,6 +69,7 @@ def update_changelog():
                 title = title_description.get("title")
                 description = title_description.get("description")
 
+
                 f.write("- **" + title + "**\n")
                 f.write("\n")
                 f.write("    " + description + "\n")

@@ -554,7 +554,7 @@ In these cases, the downloaded file may be damaged, and therefore it cannot be i
 This you can check at the time of the installation of the damaged exapack, so download the damaged exapack again
 
 
-
+.. _create_asset_browser:
 
 Create Asset Browser
 ====================
@@ -635,6 +635,20 @@ Procedure:
 
 
 Now in the list of assets you should see the new assets, repeat this operation for all the HDRi Maker libraries
+
+|
+
+From Version 3.0.122 it is possible to delete the assets present in the Asset Browser through the appropriate buttons that
+will appear only if the Asset Browser has been created previously.
+
+
+.. image:: _static/_images/asset_browser/delete_asset_browser_buttons_01.webp
+    :align: center
+    :width: 600
+    :alt: Delete asset browser buttons 01
+
+
+|
 
 
 .. Warning:: **Current limitations in Asset Browser:**

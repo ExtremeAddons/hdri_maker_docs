@@ -69,6 +69,27 @@ Libraries Tab
           :ref:`libraries_selector`
 
 
+
+
+Asset Browser
+************************
+
+   - This section allows you to create the libraries in the Asset Browser of Blender. To do this, just select the
+     library you want to connect and press the button with the name of the library you want to create.
+     When it is created, that button will turn Blue. To delete the asset browser, just press the button below that
+     appears when the library has been created. You can find more information about the Asset Browser here: :ref:`create_asset_browser`
+
+
+
+.. image:: _static/_images/asset_browser/asset_browser_buttons_section.webp
+    :align: center
+    :width: 800
+    :alt: Asset Browser
+
+|
+
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 .. _update_tab:

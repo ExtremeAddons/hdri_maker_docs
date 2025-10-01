@@ -3,6 +3,39 @@
 Updates Log
 ===========
 
+3.0.123
+-------
+
+**Release date: 22-09-2025 (D/M/Y)**
+
+- **Added - Remove Asset Browser**
+
+    A new button for removing HDRi Maker asset_browser libraries has been added in the 'Preferences' --> 'Libraries' section under the buttons to create libraries in the Asset Browser, this button only appears if there is an Asset Browser library created with HDRi Maker.
+
+- **Improvement - Make Asset Browser buttons**
+
+    Now if there is an asset browser library created with the 'Make Asset Browser' buttons, the corresponding button will be highlighted in blue, so as to make it clear that such an asset browser is installed
+
+- **Bugfix - Add background from User Library**
+
+    It could happen that an old Background saved in the User Library, created in versions of HDRi Maker prior to the 3.x.x series were unnecessarily converted into group nodes. This has been resolved, if there is an image in the saved world, it performs an improved check to verify if the saved world was made with HDRi Maker versions prior to 3.x.x, this check already took place, but there were cases where a group node containing the old node tree of HDRi Maker versions prior to 3.x.x was unnecessarily created
+
+- **Bugfix - Create Asset browser**
+
+    Also due to the problem described in the previous point, during the creation of the asset browser, especially that relating to the User Library, if the node tree was that of a previous version of HDRi Maker 3.x.x such a node tree was enclosed in a useless group node and saved as an Asset Browser object, now this happens only if the node configuration was not created with HDRi Maker
+
+- **Bugfix - Errore Add User Library Background**
+
+    Always based on the errors reported above, while adding a Background from the HDRi Maker panel of the User Library category, it could happen that an error occurred, this error was related to the fact that the image found in the background, by convention is retrieved if the node tree is of version Previous to HDRi Maker 3.x.x, it happened that due to a bug, this image was deleted before being able to insert it into the new node tree, causing an error.
+
+- **Bugfix - Create Asset Browser from Expansion Library**
+
+    It could happen when creating the asset browser library from the HDR Maps library that the process gave an error, this has been resolved for all Expansion libraries
+
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.121
 -------
 
