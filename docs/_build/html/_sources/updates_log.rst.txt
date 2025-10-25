@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+3.0.130
+-------
+
+**Release date: 25-10-2025 (D/M/Y)**
+
+- **Compatibility with Blender 5.0**
+
+    Some Blender 5.0 APIs and some nodes have changed, this update maintains backward compatibility from Blender 3.0 onwards
+
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.123
 -------
 
