@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+3.0.131
+-------
+
+**Release date: 18-12-2025 (D/M/Y)**
+
+- **BugFix**
+
+    An error could occur in some phases of use of the addon regarding the new BlNodeSize class, this has been resolved
+
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.130
 -------
 

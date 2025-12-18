@@ -10,6 +10,23 @@
 		"description": ""
 	},
 	"updates": {
+		"3.0.131": {
+			"date": "18-12-2025",
+			"name": "HDRi Maker",
+			"edition": "Studio",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "BugFix",
+					"description": "An error could occur in some phases of use of the addon regarding the new BlNodeSize class, this has been resolved"
+				}
+			}
+		},
 		"3.0.130": {
 			"date": "25-10-2025",
 			"name": "HDRi Maker",
