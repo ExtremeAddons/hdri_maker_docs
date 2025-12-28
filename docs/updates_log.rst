@@ -3,6 +3,49 @@
 Updates Log
 ===========
 
+3.1.100
+-------
+
+**Release date: 28-12-2025 (D/M/Y)**
+
+- **Blender 4.2**
+
+    From this version onwards, in accordance with the BlenderFoundation (LTS) policy for practical and structural reasons of the code of this addon, HDRi Maker will no longer be compatible with Blender versions prior to 4.2, check on blender.org for more information regarding LTS versions of Blender: 'https://www.blender.org/download/lts/'  A legacy version 3.0.131 will be kept available, compatible with Blender 3.0 through Blender 4.2.
+
+- **Improve and fix Volumetric**
+
+    The Volumetric system that allows you to create animated fog in HDRi Maker did not work properly in Eevee for some versions because the volumetric node was used directly in the node tree of the World in use, this could be circumvented but we preferred to opt for a scalable cylindrical container from the appropriate 'Volume' panel
+
+- **Custom Range Checkbox**
+
+    The native Blender checkbox 'Use Custom Range' has been added in the Volumetric panel, this allows you to adjust the maximum viewing distance of the volume in Eevee, useful for very large scenes where you want to limit the rendering distance of the volume itself
+
+- **Improve volumetric Start/End distance (Volumetric menu) ex 'Visibility distance'**
+
+    Previously there was only the 'Visibility Distance' slider that allowed you to adjust the visibility distance of the fog, now two separate sliders 'Start Distance' and 'End Distance' have been added for more precise control of the beginning and end of the fog and the slider named 'Visibility Distance' has been removed
+
+- **Improved - Volumetric workflow**
+
+    The fog now works independently of the world background, it is no longer part of the world, so even when changing the world or removing the world the fog will remain present and unchanged
+
+- **Additional notes on the object that contains the volumetric node**
+
+    After some tests we decided to use a non-Volumetric object but simply a Mesh type Cylindrical object without using a geometric modifier that transforms the object into a volumetric object.
+
+    1. The mesh cylinder object is easier to control and manage in terms of resources and delimits a circular area of the 'Volume'.
+
+    2. Both using a Mesh object and a Volumetric object we have problems in Solid Mode, both will display an object that hides what is inside.
+
+    So we chose a simple Mesh object, this can be easily hidden via the button in the 'Volumetric' interface called 'Hide Volume' so if you are working in solid mode this will be completely hidden from the viewport.
+
+- **Improve - Make Asset browser**
+
+    In previous versions, when pressing the button to create the asset browser, if there were some elements in the default scene, for security reasons (Too rigid) the execution of the script was blocked. This check has been removed. Now to execute this operator it is sufficient to be in an unsaved .blend project.
+
+
+
+--------------------------------------------------------------------------------------------
+
 3.0.131
 -------
 

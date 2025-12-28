@@ -14,7 +14,7 @@ especially if used with adequate lighting (See the :ref:`light_section` section 
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. |vmp| image:: _static/_images/volumetric/volumetric_main_panel_01.png
+.. |vmp| image:: _static/_images/volumetric/volumetric_main_panel_01.webp
             :width: 400
             :alt: Volume Main Panel
 
@@ -22,11 +22,12 @@ especially if used with adequate lighting (See the :ref:`light_section` section 
 +-------------------------------------------------------+--------------------------------+
 |                                  |VMP|                | 1. :ref:`volume_selector`      |
 |                                                       | 2. :ref:`add_remove_volume`    |
-|                                                       | 3. :ref:`unlike_volume`        |
+|                                                       | 3. :ref:`hide_volume`          |
 |                                                       | 4. :ref:`volume_node_header`   |
 |                                                       | 5. :ref:`volume_node_panel`    |
-|                                                       | 6. :ref:`visibility_distance`  |
-|                                                       | 7. :ref:`volumetric_detail`    |
+|                                                       | 6. :ref:`volume_radius`        |
+|                                                       | 7. :ref:`volume_visibility`    |
+|                                                       | 8. :ref:`volumetric_detail`    |
 +-------------------------------------------------------+--------------------------------+
 
 
@@ -63,22 +64,25 @@ anyway, returning to its default properties.
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. _unlike_volume:
+.. _hide_volume:
 
-Unlink Volume
+Hide Volume
 *************
 
-Unlink Volume disconnects / reconnects the volume group node, from the world output node. This allows you to hide the volume
-from the scene, saving many resources, especially during work, when you don't want to lose the volume settings, but you need
-to hide it.
 
-.. image:: _static/_images/volumetric/unlink_volume_01.png
+Hide Volume allows you to hide or show the volume in the scene, this will hide the volume container object
+and the volume itself, so you will no longer see the fog effect. In solid mode it will also hide the volume container object.
+
+
+
+.. image:: _static/_images/volumetric/hide_volume_example.webp
     :width: 800
     :align: center
     :alt: Link Unlink Volume Node
 
-.. Note:: When the volume is disconnected, in the user panel, it is not possible to interact with the properties in the
-          volume panel below. This is to avoid confusion, as they would have no immediate effect.
+
+.. Note:: When the volume is hidden, in the user panel it is not possible to interact with the properties in the underlying volume panel.
+          This is to avoid confusion.
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -152,15 +156,53 @@ The Volumetric Group Nodes are redrawn in this area, the panel is pre-drawn by t
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. _visibility_distance:
+.. _volume_radius:
 
-Visibility Distance
+Volume Radius
 *******************
 
-This slider allows you to set the visibility distance of the volume. This is useful if you want to hide the volume at a certain
-distance, to avoid wasting resources.
+This slider allows you to adjust the size of the volume radius, it regulates the size of the volume container object.
+So as in the example below, if the volume radius will be 25, the volume will
+have a diameter of 50.
+
+.. image:: _static/_images/volumetric/volume_radius_example_01.webp
+    :width: 800
+    :align: center
+    :alt: Volume Radius Slider
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _volume_visibility:
+
+Volumetric Visibility
+**********************
+
+.. image:: _static/_images/volumetric/volume_custom_range.webp
+    :width: 400
+    :align: center
+    :alt: Volume Visibility
+
+|
+
+This section allows you to adjust the volume's visibility in the scene based on the distance from the camera/viewpoint.
+
+- 1. **Custom Range**
+
+    - When enabled, lets you manually set the minimum and maximum visibility distances for the volume.
+
+- 2. **Min Distance**
+
+    - Sets the minimum visibility distance for the volume. If the camera/viewpoint is closer than this distance,
+      the volume will not be visible.
+
+- 3. **Max Distance**
+    - Sets the maximum visibility distance for the volume. If the camera/viewpoint is farther than this distance,
+      the volume will not be visible.
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 .. _volumetric_detail:
 
@@ -245,17 +287,3 @@ the "Suspended Dust" present in some situations.
 14. **Smooth Expand  (Value)**
 
  - Adjust the smoothness of the Fog bank. The value closest to 0 means a sharp break in the fog bank.
-
-
-
-
-
-
-
-
-
-
-
-
-
-

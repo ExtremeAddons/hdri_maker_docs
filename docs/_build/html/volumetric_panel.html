@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Volumetric &mdash; HDRi Maker 3.0.121 documentation</title>
+  <title>Volumetric &mdash; HDRi Maker 3.1.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -57,7 +57,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Volumetric</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#volume-selector">Volume Selector</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#add-remove-volume">Add/Remove (Volume)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#unlink-volume">Unlink Volume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hide-volume">Hide Volume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#volume-node-header">Volume Node Header</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#open-close-panel">Open/Close Panel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#restore-default">Restore Default</a></li>
@@ -66,7 +66,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#volume-node-panel">Volume Node Panel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#visibility-distance">Visibility Distance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#volume-radius">Volume Radius</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#volumetric-visibility">Volumetric Visibility</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#detail">Detail</a></li>
 </ul>
 </li>
@@ -129,14 +130,15 @@ especially if used with adequate lighting (See the <a class="reference internal"
 <hr class="docutils" />
 <table class="docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="_images/volumetric_main_panel_01.png"><img alt="Volume Main Panel" src="_images/volumetric_main_panel_01.png" style="width: 400px;" /></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/volumetric_main_panel_01.webp"><img alt="Volume Main Panel" src="_images/volumetric_main_panel_01.webp" style="width: 400px;" /></a></p></td>
 <td><ol class="arabic simple">
 <li><p><a class="reference internal" href="#volume-selector"><span class="std std-ref">Volume Selector</span></a></p></li>
 <li><p><a class="reference internal" href="#add-remove-volume"><span class="std std-ref">Add/Remove (Volume)</span></a></p></li>
-<li><p><a class="reference internal" href="#unlike-volume"><span class="std std-ref">Unlink Volume</span></a></p></li>
+<li><p><a class="reference internal" href="#hide-volume"><span class="std std-ref">Hide Volume</span></a></p></li>
 <li><p><a class="reference internal" href="#volume-node-header"><span class="std std-ref">Volume Node Header</span></a></p></li>
 <li><p><a class="reference internal" href="#volume-node-panel"><span class="std std-ref">Volume Node Panel</span></a></p></li>
-<li><p><a class="reference internal" href="#visibility-distance"><span class="std std-ref">Visibility Distance</span></a></p></li>
+<li><p><a class="reference internal" href="#volume-radius"><span class="std std-ref">Volume Radius</span></a></p></li>
+<li><p><a class="reference internal" href="#volume-visibility"><span class="std std-ref">Volumetric Visibility</span></a></p></li>
 <li><p><a class="reference internal" href="#volumetric-detail"><span class="std std-ref">Detail</span></a></p></li>
 </ol>
 </td>
@@ -166,21 +168,20 @@ directly connected to the World output.</p>
 </div>
 <hr class="docutils" />
 </section>
-<section id="unlink-volume">
-<span id="unlike-volume"></span><h2>Unlink Volume<a class="headerlink" href="#unlink-volume" title="Permalink to this heading"></a></h2>
-<p>Unlink Volume disconnects / reconnects the volume group node, from the world output node. This allows you to hide the volume
-from the scene, saving many resources, especially during work, when you don’t want to lose the volume settings, but you need
-to hide it.</p>
-<a class="reference internal image-reference" href="_images/unlink_volume_01.png"><img alt="Link Unlink Volume Node" class="align-center" src="_images/unlink_volume_01.png" style="width: 800px;" /></a>
+<section id="hide-volume">
+<span id="id3"></span><h2>Hide Volume<a class="headerlink" href="#hide-volume" title="Permalink to this heading"></a></h2>
+<p>Hide Volume allows you to hide or show the volume in the scene, this will hide the volume container object
+and the volume itself, so you will no longer see the fog effect. In solid mode it will also hide the volume container object.</p>
+<a class="reference internal image-reference" href="_images/hide_volume_example.webp"><img alt="Link Unlink Volume Node" class="align-center" src="_images/hide_volume_example.webp" style="width: 800px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When the volume is disconnected, in the user panel, it is not possible to interact with the properties in the
-volume panel below. This is to avoid confusion, as they would have no immediate effect.</p>
+<p>When the volume is hidden, in the user panel it is not possible to interact with the properties in the underlying volume panel.
+This is to avoid confusion.</p>
 </div>
 <hr class="docutils" />
 </section>
 <section id="volume-node-header">
-<span id="id3"></span><h2>Volume Node Header<a class="headerlink" href="#volume-node-header" title="Permalink to this heading"></a></h2>
+<span id="id4"></span><h2>Volume Node Header<a class="headerlink" href="#volume-node-header" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td colspan="2"><ol class="arabic simple">
@@ -207,22 +208,22 @@ volume panel below. This is to avoid confusion, as they would have no immediate 
 </tbody>
 </table>
 <section id="open-close-panel">
-<span id="id4"></span><h3>Open/Close Panel<a class="headerlink" href="#open-close-panel" title="Permalink to this heading"></a></h3>
+<span id="id5"></span><h3>Open/Close Panel<a class="headerlink" href="#open-close-panel" title="Permalink to this heading"></a></h3>
 <p>This button opens or closes the volume panel. This is useful if you want to hide the volume node group panel.</p>
 </section>
 <section id="restore-default">
-<span id="id5"></span><h3>Restore Default<a class="headerlink" href="#restore-default" title="Permalink to this heading"></a></h3>
+<span id="id6"></span><h3>Restore Default<a class="headerlink" href="#restore-default" title="Permalink to this heading"></a></h3>
 <p>This button restores all the default values of the volume in one go. (To lock the values see the next point)</p>
 </section>
 <section id="lock-unlock">
-<span id="id6"></span><h3>Lock/Unlock<a class="headerlink" href="#lock-unlock" title="Permalink to this heading"></a></h3>
+<span id="id7"></span><h3>Lock/Unlock<a class="headerlink" href="#lock-unlock" title="Permalink to this heading"></a></h3>
 <p>This button allows you to show next to all the properties of the node, a small lock, which allows you to lock the value of the
 property. This is useful if you want to lock a value if you intend to restore the values through “Restore Default”, in this way
 the value will not be restored while the others are not locked.</p>
 <a class="reference internal image-reference" href="_images/locked_sliders_01.png"><img alt="Lock Unlock" class="align-center" src="_images/locked_sliders_01.png" style="width: 400px;" /></a>
 </section>
 <section id="show-info">
-<span id="id7"></span><h3>Show Info<a class="headerlink" href="#show-info" title="Permalink to this heading"></a></h3>
+<span id="id8"></span><h3>Show Info<a class="headerlink" href="#show-info" title="Permalink to this heading"></a></h3>
 <p>If pressed, it allows you to show information about the properties of the node, if they exist, a button (?) next to the
 property will be shown, pressing it, a popup will be shown with the description of the property, as in this image:</p>
 <a class="reference internal image-reference" href="_images/volume_sliders_info_01.png"><img alt="Show Info" class="align-center" src="_images/volume_sliders_info_01.png" style="width: 600px;" /></a>
@@ -230,14 +231,56 @@ property will be shown, pressing it, a popup will be shown with the description 
 </section>
 </section>
 <section id="volume-node-panel">
-<span id="id8"></span><h2>Volume Node Panel<a class="headerlink" href="#volume-node-panel" title="Permalink to this heading"></a></h2>
+<span id="id9"></span><h2>Volume Node Panel<a class="headerlink" href="#volume-node-panel" title="Permalink to this heading"></a></h2>
 <p>The Volumetric Group Nodes are redrawn in this area, the panel is pre-drawn by the HDRi Maker API.</p>
 <hr class="docutils" />
 </section>
-<section id="visibility-distance">
-<span id="id9"></span><h2>Visibility Distance<a class="headerlink" href="#visibility-distance" title="Permalink to this heading"></a></h2>
-<p>This slider allows you to set the visibility distance of the volume. This is useful if you want to hide the volume at a certain
-distance, to avoid wasting resources.</p>
+<section id="volume-radius">
+<span id="id10"></span><h2>Volume Radius<a class="headerlink" href="#volume-radius" title="Permalink to this heading"></a></h2>
+<p>This slider allows you to adjust the size of the volume radius, it regulates the size of the volume container object.
+So as in the example below, if the volume radius will be 25, the volume will
+have a diameter of 50.</p>
+<a class="reference internal image-reference" href="_images/volume_radius_example_01.webp"><img alt="Volume Radius Slider" class="align-center" src="_images/volume_radius_example_01.webp" style="width: 800px;" /></a>
+<hr class="docutils" />
+</section>
+<section id="volumetric-visibility">
+<span id="volume-visibility"></span><h2>Volumetric Visibility<a class="headerlink" href="#volumetric-visibility" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/volume_custom_range.webp"><img alt="Volume Visibility" class="align-center" src="_images/volume_custom_range.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This section allows you to adjust the volume’s visibility in the scene based on the distance from the camera/viewpoint.</p>
+<ul>
+<li><ol class="arabic simple">
+<li><p><strong>Custom Range</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>When enabled, lets you manually set the minimum and maximum visibility distances for the volume.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p><strong>Min Distance</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Sets the minimum visibility distance for the volume. If the camera/viewpoint is closer than this distance,
+the volume will not be visible.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p><strong>Max Distance</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Sets the maximum visibility distance for the volume. If the camera/viewpoint is farther than this distance,
+the volume will not be visible.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
 <hr class="docutils" />
 </section>
 <section id="detail">
@@ -382,7 +425,7 @@ the “Suspended Dust” present in some situations.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Andrea Donati (Andrew_D).</p>
+    <p>&#169; Copyright 2025, Andrea Donati (Andrew_D).</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

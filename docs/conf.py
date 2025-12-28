@@ -8,9 +8,6 @@
 
 
 project = 'HDRi Maker'
-copyright = '2024, Andrea Donati (Andrew_D)'
-author = 'Andrea Donati (Andrew_D)'
-release = '3.0.121'
 
 import os, sys
 
@@ -18,6 +15,14 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # Inseriamo il percorso al file conf.py:
 sys.path.append(os.path.relpath(os.path.dirname(__file__)))
+
+# Import dynamic build metadata functions
+from build_meta import grab_release, get_copyright
+
+# Use functions to set dynamic metadata during Sphinx build (no try/except per project rules)
+copyright = get_copyright()
+author = 'Andrea Donati (Andrew_D)'
+release = grab_release()
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
