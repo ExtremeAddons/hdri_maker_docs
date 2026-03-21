@@ -86,16 +86,6 @@ I understand that this is not the best way to distribute the packages, but it is
 
 In addition, those who have a fast line can download all the packages at once, and those who have a slow line can download the packages in more times.
 
-
-------------------------------------------------------------------------------------------------------------------------
-
-Are updates free?
-***********************
-
-HDRi Maker was born in 2019 and since then all users who have purchased the addon have received all updates for free. This means that if you buy the addon today, you will have access to all future updates.
-
-So, Yes!
-
 ------------------------------------------------------------------------------------------------------------------------
 
 If I bought a version that is not PRO, can I upgrade to PRO in the future?
