@@ -23,7 +23,7 @@
 			"descriptions": {
 				"1": {
 					"title": "Bugfix Poll Error",
-                    "description": "Se una versione vecchia dell'addon era installata tra gli addon, poteva succedere che venisse mostrato un errore e non venisse mostrata l'interfaccia, questo per via di una funzione che restituisce il nome dell'addon nelle nuove versioni di Blender da 4.2 in poi. Ora è stato risolto"
+					"description": "If an old version of the addon was installed among the addons, it could happen that an error was shown and the interface was not shown, this is due to a function that returns the name of the addon in the new versions of Blender from 4.2 onwards. Now it has been resolved"
 				},
 				"2": {
 					"title": "Bugfix Syntax Warnings",
