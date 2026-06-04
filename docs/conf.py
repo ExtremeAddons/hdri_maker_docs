@@ -20,7 +20,7 @@ sys.path.append(os.path.relpath(os.path.dirname(__file__)))
 # Use functions to set dynamic metadata during Sphinx build (no try/except per project rules)
 copyright = '2025, Andrea Donati (Andrew_D)'
 author = 'Andrea Donati (Andrew_D)'
-release = "3.1.100"
+release = "3.1.101"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

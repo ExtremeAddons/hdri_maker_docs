@@ -10,6 +10,27 @@
 		"description": ""
 	},
 	"updates": {
+		"3.1.101": {
+			"date": "04-06-2026",
+			"name": "HDRi Maker",
+			"edition": "Studio",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Bugfix Poll Error",
+                    "description": "Se una versione vecchia dell'addon era installata tra gli addon, poteva succedere che venisse mostrato un errore e non venisse mostrata l'interfaccia, questo per via di una funzione che restituisce il nome dell'addon nelle nuove versioni di Blender da 4.2 in poi. Ora è stato risolto"
+				},
+				"2": {
+					"title": "Bugfix Syntax Warnings",
+					"description": "Fixed syntax warnings related to internal text escape sequences (\"\"). This ensures full stability and forward-compatibility with newer Python versions in Blender 5.1 and above."
+				}
+			}
+		},
 		"3.1.100": {
 			"date": "28-12-2025",
 			"name": "HDRi Maker",
