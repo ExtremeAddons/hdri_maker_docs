@@ -30,18 +30,36 @@ Basic tutorial
 .. _first_installation:
 
 
-First installation
+Installation
 ********************
 
+Method A: SuperHive (Blender 4.2+)
 
-This installation is to be performed if you are a new user of HDRi Maker and it is the first time you install it:
+.. admonition:: Installation From SuperHive
+    :class: youtube
+
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iCOzHY0oQFg?si=xkJy3ZK_p-bnqW9T"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+|
+
+Method B: Manual Zip (Gumroad or others)
+
+.. admonition:: Installation From Gumroad or other sources
+    :class: youtube
+
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ActXR3EmUdI?si=XE6ulOYvuuuBbFdJ"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+|
 
 
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nb9IKZQB7uk" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
 
 
 ------------------------------------------------------------------------------------------------------------------------

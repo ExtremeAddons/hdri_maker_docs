@@ -1,205 +1,159 @@
-
 .. _installation:
 
+==============================================
 Installation
-============
+==============================================
+
+**We highly recommend using Blender 4.2 or higher!**
+
+This chapter is dedicated to the first installation of the addon. If you have already installed the addon and want to
+update it, you can go to the chapter :ref:`update_only_the_addon`
 
 
-Below 2 videos dedicated to 2 different types of users (New and old users) who want to install or update the addon:
+------------------------------------------------------------------------------------------------------------------------
+
+==============================================
+Install the Addon
+==============================================
+
+The installation of the addon (Core) depends on where you purchased it. Choose your method below.
+
+- Follow **Method A** if you purchased on SuperHive (Formerly BlenderMarket): :ref:`install_from_superhive`
+- Follow **Method B** if you purchased on Gumroad or other sources: :ref:`manual_extension_installation_from_zip`
+
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
 
+.. _install_from_superhive:
 
-**!Please read carefully before proceeding with the installation!**
+Method A: SuperHive (Blender 4.2+)
+***************************************************************
+
+.. image:: _static/_images/logos/superhive_logo_wide_01.webp
+   :class: rounded-img
+   :width: 100%
 
 
-I suggest you to watch the videos about the installation.
-
-------------------------------------------------------------------------------------------------------------------------
+This method is for users who purchased on SuperHive and use Blender 4.2 or later. The new repository system simplifies both installation and future updates.
 
 
-.. Tip::
-        This video shows how to install HDRi Maker 3.0 (Studio edition) from scratch. If you already have version 2.0 and you need to update
-        go to the next video
+.. admonition:: Installation From SuperHive
+    :class: youtube
 
         .. raw:: html
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nb9IKZQB7uk" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iCOzHY0oQFg?si=xkJy3ZK_p-bnqW9T"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+|
+
+
+1. **Go to your SuperHive Order Page (make sure you are logged in):**
+    .. raw:: html
+
+        <a href="https://superhivemarket.com/account/orders" target="_blank" rel="noopener noreferrer">https://superhivemarket.com/account/orders</a>
+
+2. **Drag and drop the addon from the order page directly into your Blender 4.2+ window.**
+
+    .. image:: _static/_images/installation/superhive_drag_and_drop_01.jpg
+        :align: center
+        :width: 800
+        :alt: SuperHive drag and drop 01
+
+3. **Click Add Repository... when prompted (Skip if you already configured it in the past).**
+
+    .. image:: _static/_images/installation/set_sh_repo_01.jpg
+        :align: center
+        :width: 800
+        :alt: Set SuperHive repository in Blender 01
+
+4. **Set Api Token (Skip if you already configured it in the past).**
+
+    .. image:: _static/_images/installation/set_sh_api_token_in_blender_01.jpg
+        :align: center
+        :width: 800
+        :alt: Set SuperHive API token in Blender 01
+
+
+5. **Make sure to press Install from Extensions:**
+
+    .. image:: _static/_images/installation/first_installation_extension.jpg
+        :align: center
+        :width: 800
+        :alt: Install from SuperHive 01
+
+
+6. **Ensure the addon is checked and activated in your Addons list.**
+
+    .. image:: _static/_images/installation/check_addon_installed_01.jpg
+        :align: center
+        :width: 800
+        :alt: Check addon installed 01
+
+
+|
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+.. _manual_extension_installation_from_zip:
+
+Method B: Manual Zip (Gumroad or others)
+********************************************************************
+
+.. image:: _static/_images/logos/gumroad_logo_wide_01.webp
+   :class: rounded-img
+   :width: 100%
+
+
+This method is dedicated to those who purchased on Gumroad or prefer a manual installation.
 
 
 
-        In this video we will see how to update HDRi Maker 2.0 to version 3.0 (Studio edition) if you are a new user
-        follow the previous video, not this.
-
+.. admonition:: Installation From Gumroad or other sources
+    :class: youtube
 
         .. raw:: html
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eGVxiqmfXxs" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ActXR3EmUdI?si=XE6ulOYvuuuBbFdJ"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
-
-
-
-.. Note:: If you are already a HDRi Maker user and you currently have a version prior to 3.0.100, please
-          uninstall it and proceed with the installation of this new version.
-          If you already have a version 3.0.100 or higher, you do not need to uninstall the previous one.
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-Instal the addon
--------------------------
-
-The first step is to install the addon in Blender. Below are instructions for installing the addon
-
-
-
-.. _mac_safari_zip:
-
-Download the files
-******************
-
-.. Tip:: **You can download the .exapack files little by little and install only 1 volume at a time, it doesn't matter the order.**
-
-         I suggest you to download first the HDRMkr_1k_Vol_001.exapack and the HDRMkr_Main_Vol_001.exapack packages.
-
-         You can install the others at any time. The addon recognizes what has already been installed and what not.
-
-         This will allow you to try HDRi Maker while the other files are downloaded
-
-In your product page, you can find various files, the main ones for the installation are the following:
-
-- **hdri_maker_v301##.zip** is the addon for blender, this is the first element to download and install
-
-  .. image:: _static/_images/installation/addon_zipped_01.png
-      :align: center
-      :width: 300
-      :alt: Addon zipped 01
 
 |
 
-- **HDRiMkr_##_Vol_#.exapack** are the files of the library. and they are divided with increasing number.
-  Example of downloaded .exapack files on the computer, below in the image:
 
+1. **Download the addon file from your order page:** https://app.gumroad.com/library
 
-  .. image:: _static/_images/installation/exapack_files_on_computer_01.png
-      :align: center
-      :width: 300
-      :alt: Exapack files on computer
+    .. image:: _static/_images/installation/addon_zipped_01.jpg
+        :align: center
+        :width: 250
+        :alt: Addon zipped 01
 
-|
-
-- **HDRMAPS_VOL_##.zip** These are the files of the library that I have inserted thanks to the support of the author of these backgrounds **Grzegorz Wronkowski**
-  you can find these maps also on the site https://hdrmaps.com/ They are free and are granted under the CC BY license, you can find them at this
-  link: https://hdrmaps.com/freebies/free-hdri-maps/
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
-The **.exapack** files are installed by the addon, they do not need to be installed manually! After installing the
-HDRi Maker addon, it will manage your exapack packages and install them. (You will see in the following steps)
-
-
-
-.. Note:: **For Mac users:** it often happens that Safari Browser is set to decompress .zip files, make sure this does not happen,
-          otherwise the .zip file will no longer be a .zip file and you will not be able to install the addon as follows.
-
-          Just go to the Safari menu bar at the top left and click on Safari>Preferences, then remove the check mark from
-          "Open safe files after download" in the "General" window. Done, if in the future you download zipped files with safari,
-          they will no longer be unzipped.
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-.. _install_into_blender:
-
-Install Into Blender
-********************
-
-Download the addon and install it in Blender, the procedure is as follows:
-
+    |
 
 .. important::
+    The file must remain in **zip format**. Do not unzip it. If your browser automatically unzips the file, compress
+    it again or use another browser.
 
-    If you are updating the addon from a version HDRi Maker 3.0.X series to a higher version you absolutely must **not**
-    download the libraries again! The addon once installed in addition should already recognize the paths of the libraries
+2. **Open Blender and drag the zip file directly into the Blender window.**
 
-
-1. Download the addon (Remember that you must be logged in to the site where you purchased the addon):
-
-    - If you purchased on Blendermarket you can find the addon here:
-
-       - https://blendermarket.com/account/orders
-
-
-    - If you purchased on Gumroad you can find the addon here:
-
-       - https://app.gumroad.com/library
-
-    - Addon name Example: **hdri_maker_v30100.zip** (The number can be different, it depends on the version you are downloading)
-
-
-   .. Important:: The addon file must remain in zip format! Do not unzip the file, otherwise you will not be able to install it correctly.
-                  This note is especially for Mac users. If you do not know how to prevent Safari from decompressing zip files, take a look here :ref:`mac_safari_zip`
-
-
-
-2. **Uninstall previous versions** This step is only necessary if you had a version of HDRi Maker
-    previously installed in the current version of Blender
-
-    ``Edit > Preferences > Add-ons > HDRi Maker``
-
-    Press **REMOVE** and save the preferences (Only if you have not set the automatic saving of preferences)
-
-
-    .. note::
-
-        I suggest restarting Blender after this step, so as to be sure that the new version does not conflict with the old
-        version in the current session of Blender.
-
-
-    .. image:: _static/_images/installation/uninstall_previous_version.webp
+    .. image:: _static/_images/installation/install_addon_drag_and_drop_file_zip.jpg
         :align: center
-        :width: 800
-        :alt: Uninstall previous version
+        :width: 600
+        :alt: Drag and drop addon 01
 
-|
+3. **Search for HDRi Maker in your installed addons list and mark the checkbox to activate it.**
 
-
-3. Once the addon is downloaded, open Blender and go to:
-
-       ``Edit > Preferences > Add-ons > Install``
-
-    .. image:: _static/_images/installation/install_addon_in_blender_01.png
-        :align: center
-        :width: 800
-        :alt: Install addon in Blender
-
-|
-
-4. Select the downloaded file (**hdri_maker_v30100.zip** <-- !This name is only an example!) and click on "Install Addon"
-   (The name of the file can be different from version to version)
-
-    .. image:: _static/_images/installation/install_addon_zip_blender_01.png
-        :align: center
-        :width: 800
-        :alt: Install addon zip in Blender
-
-|
-
-5. If everything went well, the addon is in the list of installed addons, you can also search for it by typing "HDRi Maker"
-   Mark the checkbox to activate it.
-
-    .. image:: _static/_images/installation/install_addon_zip_blender_02.png
+    .. image:: _static/_images/installation/check_addon_installed_01.jpg
         :align: center
         :width: 800
         :alt: Install addon zip in Blender 2
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -207,8 +161,9 @@ Download the addon and install it in Blender, the procedure is as follows:
 
 .. _how_to_install_libraries:
 
-Install The library
-----------------------------
+==============================================
+Install the addon library
+==============================================
 
 .. important::
 
@@ -403,48 +358,6 @@ For example, the expansions of HDRMaps are distributed without the resolution va
        :width: 300
        :alt: Expansion exapack nomenclature
 
-
-------------------------------------------------------------------------------------------------------------------------
-
-Update The Addon
-----------------
-
-From time to time, I release updates. They can be checked from the **Preferences** menu "Updates" (TAB) here: :ref:`update_tab`
-In that section you will understand if the addon is updated or not.
-
-If a new version of the addon is available, you can find it on the download page of the site where you bought the addon.
-
-Download it, uninstall the previous version **Do not remove the libraries, if you had already installed them there is no need to reinstall them**
-and install the new version.
-
-- Go to Edit-->Preferences-->Addons
-- Search for HDRi Maker into Search box
-- Press Remove
-- Save the preferences (if blender is not set to automatically save the preferences)
-- Restart Blender! This is important, because some old python modules may still be in memory and may conflict with the new version.
-
-.. image:: _static/_images/installation/uninstall_old_version_01.webp
-    :align: center
-    :width: 800
-    :alt: Uninstall old version 01
-
-
-|
-
-- Download the addon zip file:
-
-.. image:: _static/_images/installation/addon_zipped_01.png
-    :align: center
-    :width: 300
-    :alt: Addon zipped 01
-
-|
-
-Now follow the guide here, to install only the addon and not the libraries, if you have already installed the libraries previously:
-
---> :ref:`install_into_blender` <--
-
-- If the libraries are not automatically linked, restart Blender!
 
 
 ------------------------------------------------------------------------------------------------------------------------

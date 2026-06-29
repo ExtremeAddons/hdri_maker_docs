@@ -249,7 +249,7 @@ where the version is also shown:
 |
 
 If the addon is not active, you can check the version of the addon by going to: ``Edit--> Preferences--> Addons``
-and looking for the addon ``Extreme PBR``
+and looking for the addon ``HDRi Maker``
 
 .. image:: _static/_images/troubleshooting/check_addon_version_02.webp
     :align: center

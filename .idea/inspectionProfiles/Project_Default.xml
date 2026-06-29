@@ -1,0 +1,74 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="BuildoutUnresolvedPartInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="E302" />
+          <option value="E402" />
+          <option value="E701" />
+          <option value="E722" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N801" />
+          <option value="N802" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="dir" />
+          <option value="input" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="bpy.types.ID.uv_layers" />
+          <option value="bpy.types.Context.object" />
+          <option value="bpy.ops.*" />
+          <option value="bpy.types.Context.selected_objects" />
+          <option value="bpy.types.Node.layer_name" />
+          <option value="tuple.x" />
+          <option value="tuple.y" />
+          <option value="utility.utility.wima" />
+          <option value="bpy.types.OperatorProperties.manual_key" />
+          <option value="bpy.types.OperatorProperties.*" />
+          <option value="bpy.types.Material.*" />
+          <option value="addon_preferences.preferences_addon.ExtremePbrPreferences.layout" />
+          <option value="bpy.types.Scene.colorlab_scene_prop" />
+          <option value="main_addon_tools.make_materials_ops.ot_import_media.EXTREMEPBR_OT_ImportMedia.*" />
+          <option value="bpy.types.ID.*" />
+          <option value="addon_preferences.preferences_props.Mail.get" />
+          <option value="addon_preferences.preferences_props.Password.get" />
+          <option value="addon_preferences.preferences_props.Mail.__setitem__" />
+          <option value="addon_preferences.preferences_props.Password.__setitem__" />
+          <option value="addon_preferences.preferences_props.ProductLicense.__setitem__" />
+          <option value="addon_preferences.preferences_props.ProductLicense.get" />
+          <option value="bpy.types.AnyType.material" />
+          <option value="bpy.types.AnyType.mode" />
+          <option value="object.split" />
+          <option value="object.column" />
+          <option value="list.scale" />
+          <option value="bpy.types.*" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="YAMLSchemaValidation" enabled="true" level="ERROR" enabled_by_default="true" editorAttributes="ERRORS_ATTRIBUTES">
+      <option name="myCaseInsensitiveEnum" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

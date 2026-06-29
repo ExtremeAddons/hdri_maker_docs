@@ -1,0 +1,112 @@
+
+/* Boxed paragraphs. */
+.rst-content .refbox .admonition-title {
+	background-color: #bbb
+}
+
+.rst-content .refbox {
+	background-color: #e3e3e3
+}
+
+.rst-content .seealso .admonition-title {
+	background-color: #7a87e6
+}
+
+.rst-content .seealso {
+	background-color: #e7ebfa
+}
+
+.rst-content .important .admonition-title {
+	background-color: #f08a00
+}
+
+.rst-content .important {
+	background-color: #F0DFCC
+}
+
+.refbox .admonition-title::before {
+	content: "\f00b"
+}
+
+.seealso .admonition-title::before {
+	content: "\f138"
+}
+
+.note .admonition-title::before {
+	content: "\f05a"
+}
+
+.tip .admonition-title::before {
+	content: "\f129";
+	width: 0.75em;
+	text-align: center
+}
+
+.hint .admonition-title::before {
+	content: "\f055"
+}
+
+.warning .admonition-title::before {
+	content: "\f071"
+}
+
+/* 'refbox' field. */
+.refbox .field-list .field-name,
+.refbox .field-list .field-body {
+	padding: 0px;
+}
+
+.refbox dl dt {
+	font-weight: normal
+}
+
+/* 'Video Tutorial' icon like youtube icon*/
+.admonition.youtube .admonition-title::before {
+    content: "\f16a";
+}
+
+/* Title color */
+.admonition.youtube .admonition-title {
+	background-color: #CD201F;
+}
+
+/* Background color */
+.admonition.youtube {
+   background-color: #FFD8D8;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+
+/* 'Deprecated advise' icon like warning icon*/
+.admonition.deprecated .admonition-title::before {
+    content: "\f071";
+}
+
+/* Title color */
+.admonition.deprecated .admonition-title {
+    background-color: #F44336;
+}
+
+/* Background color */
+.admonition.deprecated {
+   background-color: #FFCDD2;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+
+.admonition.credits .admonition-title::before {
+    content: "\f1f9";
+}
+
+.admonition.credits .admonition-title {
+    background-color: #ee5b32;
+}
+.admonition.credits {
+   background-color: #EEBEB9;
+}
+
+
+
