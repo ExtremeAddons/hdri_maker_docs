@@ -3,6 +3,35 @@
 Updates Log
 ===========
 
+3.1.102
+-------
+
+**Release date: 23-10-2026 (D/M/Y)**
+
+- **Bugfix - Save World in user library with images**
+
+    The image files of the world (if exists) were not packed together with the save in the library
+
+- **Bugfix - Generic World saved in user library**
+
+    If a world was saved in the user library with a generic node configuration, the addon tried to build HDRi Maker group nodes on it unnecessarily, making the import of this world impossible. Now any world, even if not built with HDRi Maker, can be imported correctly from the user library
+
+- **Bugfix - Name of the world saved in the user library**
+
+    The name entered in the 'Save Current Background' popup was correctly assigned to the name of the saved preset but not to the name of the World, this happened only if a different name was entered from that of the selected data world to be saved.
+
+- **Bugfix - Error when trying to import a generic World from the User Library**
+
+    As described in the previous points, if one of these generic worlds saved in the user library was imported, consistently with the bugfixes described previously, the world tried to be converted into a HDRi Maker type world, but if the world did not contain an HDR or EXR image, the world could not be converted and therefore the import failed showing an error related to the sockets of a group node. Now importing any world from the user library works correctly, even if it was not created with HDRi Maker
+
+- **Bugfix - Unsorted K-Size**
+
+    Fixed the issue where the K-Size selector in the Main panel was not sorting correctly when 16K libraries were installed.
+
+
+
+--------------------------------------------------------------------------------------------
+
 3.1.101
 -------
 
