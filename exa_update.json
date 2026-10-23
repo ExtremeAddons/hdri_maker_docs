@@ -15,7 +15,7 @@
 			"name": "HDRi Maker",
 			"edition": "Studio",
 			"url": "",
-			"urgency": false,
+			"urgency": true,
 			"video_embed_code": "",
 			"lock_operators": [
 				""
