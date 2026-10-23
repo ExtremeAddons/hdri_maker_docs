@@ -2,7 +2,7 @@ Guidelines for bugreport
 ========================
 
 I can guarantee the resolution of bugs only if the product has been purchased through our official channels
-(extreme-addons.com, blendermarket.com, gumroad.com)
+(extreme-addons.com, superhive.com (blendermarket), gumroad.com)
 
 In addition, sometimes some versions of Blender are not official, have different APIs from the official version,
 unfortunately not always these versions respect the official APIs, and therefore it is not possible to guarantee the
@@ -24,11 +24,11 @@ How to report the bug
 Method 1:
 *********
 
-**If you bought on BlenderMarket** You can contact me through the messaging system of Blendermarket, this is really good
+**If you bought on SuperHive (BlenderMarket)** You can contact me through the messaging system of SuperHive, this is really good
 because I can also see if you are really a user. So you will have the assistance worthy of a customer.
 
 Log into your account, then messages can be sent by clicking under the lifebelt icon in HDRi Maker page Ask a Question
-in this page: https://blendermarket.com/products/hdri-maker
+in this page: https://superhive.com/products/hdri-maker
 
 .. image:: _static/_images/troubleshooting/ask_a_question_01.png
     :align: center
@@ -65,7 +65,7 @@ Method 3:
 *********
 
 Use the "System To Clipboard" button to copy the system information, and paste it into the bug report, now you can
-paste the system information and think of contacting me on BlenderMarket (If you are a Blendermarket user) https://blendermarket.com/products/hdri-maker
+paste the system information and think of contacting me on SuperHive (BlenderMarket) (If you are a SuperHive user) https://superhive.com/products/hdri-maker
 
 
 Or you can contact me on **tredistudio@hotmail.com** or **info@extreme@addons.com**

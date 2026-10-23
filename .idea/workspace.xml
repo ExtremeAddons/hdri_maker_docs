@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="334bbdb4-e51c-43b4-b485-adf0925f8131" name="Changes" comment="Nuova installazione Extension tutorial video nuovi">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="334bbdb4-e51c-43b4-b485-adf0925f8131" name="Changes" comment="Update to 3.1.102">
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/bugreport_info.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/bugreport_info.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/updates_log.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/updates_log.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/video_tutorials.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/video_tutorials.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/updates_log.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/updates_log.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/video_tutorials.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/video_tutorials.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/faqs.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/faqs.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/troubleshooting.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/troubleshooting.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/bugreport_info.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/bugreport_info.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/faqs.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/faqs.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/troubleshooting.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/troubleshooting.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/bugreport_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/bugreport_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/faqs.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/faqs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/updates_log.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/updates_log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/updates_log.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/updates_log.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exa_update.json" beforeDir="false" afterPath="$PROJECT_DIR$/exa_update.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/troubleshooting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bugreport_info.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bugreport_info.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/faqs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/faqs.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/troubleshooting.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/troubleshooting.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -559,7 +563,7 @@
       <option name="project" value="LOCAL" />
       <updated>1766044992944</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +585,8 @@
     <MESSAGE value="Update to 3.1.100" />
     <MESSAGE value="Updates" />
     <MESSAGE value="Nuova installazione Extension tutorial video nuovi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nuova installazione Extension tutorial video nuovi" />
+    <MESSAGE value="Update to 3.1.102" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update to 3.1.102" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

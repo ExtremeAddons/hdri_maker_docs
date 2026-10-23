@@ -7,11 +7,11 @@ Problems related to HDRi Maker bugs are usually solved. Here are some of the mos
 Question and answer
 
 
-I do not receive mail from BlenderMarket
+I do not receive mail from Superhive
 -----------------------------------------
 
 Make sure you consented to receive emails from creators in your Blender Market account preferences:
-https://blendermarket.com/account/privacy-center/consents
+https://superhive.com/account/privacy-center/consents
 
 ------------------------------------------------------------------------------------------------------------------------
 
