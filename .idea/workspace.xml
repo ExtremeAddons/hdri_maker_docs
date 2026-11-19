@@ -8,16 +8,7 @@
     <option name="selectedProviderName" value="Ollama" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="334bbdb4-e51c-43b4-b485-adf0925f8131" name="Changes" comment="Update BlenderMarket as Superhive">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/updates_log.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/updates_log.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/updates_log.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/updates_log.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/updates_log.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/updates_log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/updates_log.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/updates_log.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exa_update.json" beforeDir="false" afterPath="$PROJECT_DIR$/exa_update.json" afterDir="false" />
-    </list>
+    <list default="true" id="334bbdb4-e51c-43b4-b485-adf0925f8131" name="Changes" comment="Update BlenderMarket as Superhive" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,35 +119,35 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.compile_docs.executor": "Run",
-    "Python.run_browser.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Raid 8Tb/3D Studio 2018/Hdri Maker/hdri_maker_docs/docs/_static/_images/installation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "two.files.diff.last.used.file": "G:/3D Studio 2018/Hdri Maker/hdri_maker_docs/docs/_build/html/_images/auto_pack_resources_01.png"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.compile_docs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_browser.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Raid 8Tb/3D Studio 2018/Hdri Maker/hdri_maker_docs/docs/_static/_images/installation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;G:/3D Studio 2018/Hdri Maker/hdri_maker_docs/docs/_build/html/_images/auto_pack_resources_01.png&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs/_static/_images/installation" />
@@ -592,7 +583,7 @@
       <option name="project" value="LOCAL" />
       <updated>1766044992944</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
