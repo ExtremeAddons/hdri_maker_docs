@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+3.1.103
+-------
+
+**Release date: 19-11-2026 (D/M/Y)**
+
+- **Bugfix Blender 5.3 - Choose Exapack 'No ExaPack(s) selected'**
+
+    Choose Exapack was failing because, starting from this version of Blender, the operator expected a declared CollectionProperty. The error has been fixed.
+
+
+
+--------------------------------------------------------------------------------------------
+
 3.1.102
 -------
 

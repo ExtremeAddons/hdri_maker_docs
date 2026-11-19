@@ -3,22 +3,20 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="Bennu/phoenix:latest" />
+    <option name="selectedProviderName" value="Ollama" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="334bbdb4-e51c-43b4-b485-adf0925f8131" name="Changes" comment="Update to 3.1.102">
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/bugreport_info.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/bugreport_info.doctree" afterDir="false" />
+    <list default="true" id="334bbdb4-e51c-43b4-b485-adf0925f8131" name="Changes" comment="Update BlenderMarket as Superhive">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/faqs.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/faqs.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/troubleshooting.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/troubleshooting.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/bugreport_info.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/bugreport_info.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/faqs.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/faqs.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/troubleshooting.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/troubleshooting.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/bugreport_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/bugreport_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/faqs.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/faqs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/updates_log.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/updates_log.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/updates_log.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/updates_log.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/troubleshooting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/bugreport_info.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bugreport_info.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/faqs.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/faqs.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/troubleshooting.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/troubleshooting.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/updates_log.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/updates_log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/updates_log.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/updates_log.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exa_update.json" beforeDir="false" afterPath="$PROJECT_DIR$/exa_update.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +54,9 @@
       <entry key="agent-panel" value="GPT-5 mini" />
     </selectedModels>
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="632" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -91,6 +92,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3,
   &quot;fromUser&quot;: true
@@ -99,35 +104,59 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="ensembleEnabled" value="false" />
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelProviderName" value="Ollama" />
+            <option name="modelType" value="byok_id" />
+            <option name="modelValue" value="Bennu/phoenix:latest" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.compile_docs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.run_browser.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Raid 8Tb/3D Studio 2018/Hdri Maker/hdri_maker_docs/docs/_static/_images/installation&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;G:/3D Studio 2018/Hdri Maker/hdri_maker_docs/docs/_build/html/_images/auto_pack_resources_01.png&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.compile_docs.executor": "Run",
+    "Python.run_browser.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Raid 8Tb/3D Studio 2018/Hdri Maker/hdri_maker_docs/docs/_static/_images/installation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "two.files.diff.last.used.file": "G:/3D Studio 2018/Hdri Maker/hdri_maker_docs/docs/_build/html/_images/auto_pack_resources_01.png"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JSON&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs/_static/_images/installation" />
@@ -563,7 +592,7 @@
       <option name="project" value="LOCAL" />
       <updated>1766044992944</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +615,8 @@
     <MESSAGE value="Updates" />
     <MESSAGE value="Nuova installazione Extension tutorial video nuovi" />
     <MESSAGE value="Update to 3.1.102" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update to 3.1.102" />
+    <MESSAGE value="Update BlenderMarket as Superhive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update BlenderMarket as Superhive" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
